@@ -1,15 +1,12 @@
 {
   "name": "hackathlone",
   "private": true,
-  "workspaces": [
-    "current",
-    "2024"
-  ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
+    "dev": "turbo run dev --filter=@hackathlone/current",
     "lint": "turbo run lint",
-     "test": "turbo run test",
+    "start": "turbo run start --filter=@hackathlone/current",
+    "test": "turbo run test",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
   },

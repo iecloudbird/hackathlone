@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "es2020",
+      "module": "esnext",
+      "jsx": "preserve",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "baseUrl": ".",
+      "paths": {
+        "@hackathlone/shared/*": ["packages/shared/src/*"] //mapping for easy imports
+      }
+    }
+  }
