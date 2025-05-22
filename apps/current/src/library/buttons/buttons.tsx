@@ -1,9 +1,9 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, VariantLabels, TargetAndTransition } from "framer-motion";
 
 type ButtonProps = {
-  whileHover?: object;
-  whileTap?: object;
+  whileHover?: VariantLabels | TargetAndTransition;
+  whileTap?: VariantLabels | TargetAndTransition;
   type?: "button" | "submit" | "reset";
   title?: string;
   disabled?: boolean;

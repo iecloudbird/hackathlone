@@ -1,108 +1,107 @@
-"use client";
-{
-    /*This is a empty structure for now, keep just in case design require changes to individual page for itinerary.*/
+import { notFound } from "next/navigation";
+import TimelinePage from "./TimelinePage";
+
+interface TimelineItem {
+  time: string;
+  title: string;
+  content: string;
 }
-import React from 'react';
-import { useParams } from 'next/navigation';
-import { Canvas } from "@react-three/fiber";
-import CloudParticleBg from "@/app/general/cloud-particle-bg";
-import NavigationBar from "../../general/navigation-bar";
-import Footer from "../../general/footer";
-import { schedule } from "../timeline.dto"
-import {
-    Timeline as MuiTimeline,
-    TimelineItem,
-    TimelineSeparator,
-    TimelineConnector,
-    TimelineContent,
-    TimelineDot,
-    TimelineOppositeContent,
-} from "@mui/lab";
-import { Paper, Typography } from "@mui/material";
 
-const TimelinePage: React.FC = () => {
-    const { slug } = useParams();
-    const daySchedule = schedule.find((d) => d.slug === slug);
+interface DaySchedule {
+  slug: string;
+  title: string;
+  day: TimelineItem[];
+}
 
-    if (!daySchedule) {
-        return <div>Schedule not found</div>;
-    }
+const schedule: DaySchedule[] = [
+  {
+    slug: "day-1",
+    title: "Day 1",
+    day: [
+      {
+        time: "9:00 AM",
+        title: "Registration & Breakfast",
+        content: "Check-in and enjoy a light breakfast to kick off the event.",
+      },
+      {
+        time: "10:00 AM",
+        title: "Opening Ceremony",
+        content: "Welcome remarks and overview of the hackathon challenges.",
+      },
+      {
+        time: "11:00 AM",
+        title: "Team Formation & Pitchfest",
+        content: "Form teams, pitch ideas, and start brainstorming.",
+      },
+      {
+        time: "12:00 PM",
+        title: "Hacking Begins",
+        content:
+          "Start working on your projects with access to mentors and resources.",
+      },
+      {
+        time: "6:00 PM",
+        title: "Dinner Break",
+        content: "Enjoy dinner and network with other participants.",
+      },
+      {
+        time: "8:00 PM",
+        title: "Evening Hacking Session",
+        content: "Continue working on your projects with mentor support.",
+      },
+    ],
+  },
+  {
+    slug: "day-2",
+    title: "Day 2",
+    day: [
+      {
+        time: "8:00 AM",
+        title: "Breakfast",
+        content: "Fuel up for the final day with breakfast.",
+      },
+      {
+        time: "9:00 AM",
+        title: "Final Hacking Session",
+        content: "Wrap up your projects and prepare for presentations.",
+      },
+      {
+        time: "12:00 PM",
+        title: "Lunch Break",
+        content: "Take a break and enjoy lunch.",
+      },
+      {
+        time: "2:00 PM",
+        title: "Project Submissions",
+        content: "Submit your final projects for judging.",
+      },
+      {
+        time: "3:00 PM",
+        title: "Presentations & Judging",
+        content: "Present your projects to the judges.",
+      },
+      {
+        time: "5:00 PM",
+        title: "Closing Ceremony & Awards",
+        content: "Celebrate the winners and wrap up the event.",
+      },
+    ],
+  },
+];
 
-    return (
-        <div className="relative min-h-screen bg-black text-white">
-            <div className="fixed inset-0 z-0">
-                <Canvas camera={{ position: [0, 0, 1] }}>
-                    <CloudParticleBg />
-                </Canvas>
-            </div>
-            <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
-                <NavigationBar />
-                <div>
-                    <div
-                        id="timeline"
-                        className="flex flex-col items-center justify-center lg:mx-[8.68%] TabletScreen:mx-[3.5%]
-    md:my-[10rem] my-[8rem] min-h-screen py-2 text-hackathone-font-rocket-red"
-                    >
-                        <Typography
-                            variant="h3"
-                            component="h1"
-                            className="text-4xl font-bold mb-10 r MobileScreen:text-center MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px] md:text-[32.99px]"
-                        >
-                            {daySchedule.title} Schedule
-                        </Typography>
-                        <MuiTimeline position="alternate-reverse">
-                            {daySchedule.day.map((item, index) => (
-                                <TimelineItem
-                                    key={index}
-                                    className="cursor-pointer"
-                                    tabIndex={0}
-                                >
-                                    <TimelineOppositeContent className="hidden md:block px-4">
-                                        <Typography
-                                            variant="body2"
-                                            color="white"
-                                            className="text-base font-normal MobileScreen:text-center"
-                                        >
-                                            {item.time}
-                                        </Typography>
-                                    </TimelineOppositeContent>
-                                    <TimelineSeparator>
-                                        <TimelineDot className="bg-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden" />
-                                        {index < daySchedule.day.length - 1 && (
-                                            <TimelineConnector
-                                                className="transition-all duration-500 ease-in-out TabletScreen:hidden MobileScreen:hidden"
-                                            />
-                                        )}
-                                    </TimelineSeparator>
-                                    <TimelineContent>
-                                        <Paper
-                                            elevation={3}
-                                            className="relative flex-1 p-4 rounded-xl transition-all mb-4 duration-500 ease-in-out"
-                                        >
-                                            <Typography
-                                                variant="h6"
-                                                component="h1"
-                                                className="md:text-xl text-[14px] font-bold text-hackathone-font-rocket-red MobileScreen:text-center"
-                                            >
-                                                {item.title}
-                                            </Typography>
-                                            <Typography
-                                                variant="body1"
-                                                className="text-white"
-                                            >
-                                                {item.content}
-                                            </Typography>
-                                        </Paper>
-                                    </TimelineContent>
-                                </TimelineItem>
-                            ))}
-                        </MuiTimeline>
-                    </div>
-                </div>
-                <Footer />
-            </div>
-        </div>
-    );
-};
+// Generate static parameters for all schedule days
+export async function generateStaticParams() {
+  return schedule.map((day) => ({
+    slug: day.slug,
+  }));
+}
 
-export default TimelinePage;
+export default function Page({ params }: { params: { slug: string } }) {
+  const daySchedule = schedule.find((d) => d.slug === params.slug);
+
+  if (!daySchedule) {
+    notFound();
+  }
+
+  return <TimelinePage daySchedule={daySchedule} />;
+}

@@ -13,13 +13,12 @@ import HackathoneTimeline from "./timeline";
 import Socials from "./socials-page";
 import Footer from "./footer";
 import BackToTopButton from "../general/back-to-top";
-import { getMessaging, onMessage, getToken } from "firebase/messaging";
-import firebaseApp from "../notification/firebase";
 import DesignBrew from "./design-brew";
 
 const LandingPage = () => {
   const [token, setToken] = useState("");
-  const [notificationPermissionStatus, setNotificationPermissionStatus] = useState("");
+  const [notificationPermissionStatus, setNotificationPermissionStatus] =
+    useState("");
 
   // Function to send the token to the API
   const sendTokenToApi = async (token: string) => {
@@ -43,59 +42,6 @@ const LandingPage = () => {
       console.error("Error sending token:", error);
     }
   };
-
-  useEffect(() => {
-    const retrieveToken = async () => {
-      try {
-        if ("serviceWorker" in navigator && typeof window !== "undefined") {
-          // Explicitly register the service worker
-          const registration = await navigator.serviceWorker.register("/firebase-messaging-sw.js");
-          console.log("Service Worker registered:", registration);
-
-          const messaging = getMessaging(firebaseApp);
-
-          // Request notification permission
-          const permission = await Notification.requestPermission();
-          setNotificationPermissionStatus(permission);
-
-          if (permission === "granted") {
-            // Get token after service worker is registered
-            const currentToken = await getToken(messaging, {
-              vapidKey: "BLqeKzVjYZhFeAeLkoWVcqxT9vGse9-tzRZV-nh0I5sU3YVxgRzGlVVAYDsvg-Jtr3eV1IgrUrhwtxwnTJRA-Qk",
-              serviceWorkerRegistration: registration, // Pass the service worker registration
-            });
-
-            if (currentToken) {
-              console.log("Token retrieved:", currentToken);
-              await sendTokenToApi(currentToken);
-              setToken(currentToken);
-            } else {
-              console.log("No registration token available. Request permission to generate one.");
-            }
-          } else {
-            console.log("Notification permission denied");
-          }
-        }
-      } catch (error) {
-        console.error("An error occurred while retrieving token:", error);
-      }
-    };
-
-    retrieveToken();
-  }, []);
-
-  useEffect(() => {
-    if ("serviceWorker" in navigator && typeof window !== "undefined") {
-      const messaging = getMessaging(firebaseApp);
-      const unsubscribe = onMessage(messaging, (payload) => {
-        console.log("Foreground push notification received:", payload);
-        // Handle the received push notification while the app is in the foreground
-      });
-      return () => {
-        unsubscribe(); // Unsubscribe from the onMessage event
-      };
-    }
-  }, []);
 
   return (
     <div className="relative min-h-screen bg-black text-white">
