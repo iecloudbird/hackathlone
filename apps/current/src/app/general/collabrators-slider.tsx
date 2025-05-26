@@ -1,6 +1,6 @@
-import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import React from "react";
 import { collabratorsSlider } from "./general.dto";
 
 const sliderItems = [...collabratorsSlider];
@@ -27,28 +27,36 @@ export const CollabratorsSlider = () => {
             className="flex items-center justify-center px-4 py-2"
             style={{
               gridArea:
-                index === 0 ? 'top' : index === 1 ? 'bottom-left' : 'bottom-right',
+                index === 0
+                  ? "top"
+                  : index === 1
+                    ? "bottom-left"
+                    : "bottom-right",
               // Make the first image larger
-              height: index === 0 ? '200px' : '100px',  // Adjust the height as needed
+              height: index === 0 ? "200px" : "100px", // Adjust the height as needed
             }}
           >
-            {index === 0 ? <Image
-              className={`cursor-pointer w-4/5`} // Make the first image take up 4/5 of its container width
-              src={item.img}
-              width={index === 0 ? 400 : 100}
-              height={index === 0 ? 400 : 100}
-              alt={"Agencies Icon"}
-              // layout="responsive"
-              onClick={item.route}
-            /> : <Image
-              className={`cursor-pointer`} // Make the rest of the images take up responsive sizing
-              src={item.img}
-              width={100}
-              height={100}
-              alt={"Agencies Icon"}
-              layout="responsive"
-              onClick={item.route}
-            />}
+            {index === 0 ? (
+              <Image
+                className={`cursor-pointer w-4/5`} // Make the first image take up 4/5 of its container width
+                src={item.img}
+                width={index === 0 ? 400 : 100}
+                height={index === 0 ? 400 : 100}
+                alt={"Agencies Icon"}
+                // layout="responsive"
+                onClick={item.route}
+              />
+            ) : (
+              <Image
+                className={`cursor-pointer`} // Make the rest of the images take up responsive sizing
+                src={item.img}
+                width={100}
+                height={100}
+                alt={"Agencies Icon"}
+                layout="responsive"
+                onClick={item.route}
+              />
+            )}
           </div>
         ))}
       </div>

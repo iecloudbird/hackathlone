@@ -42,7 +42,7 @@ const HeroPage = () => {
         {/* Subtitle */}
         <div className="mx-auto text-[1rem] leading-[24.57px] sm:text-[20px] sm:leading-[28.57px] lg:text-[24px] lg:leading-[36.57px] lg:mx-[10rem]">
           <p className="mt-3 font-hackathoneSFProDisplay font-normal text-white">
-            New challenges and features coming soon—stay tuned!
+            Registration will start soon — stay tuned!
           </p>
         </div>
 

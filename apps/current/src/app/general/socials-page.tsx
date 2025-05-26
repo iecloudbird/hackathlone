@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import Image from 'next/image';
 import { motion } from "framer-motion";
+import Image from "next/image";
+import React, { useState, useEffect } from "react";
+import InstaIcon from "@/assets/images/general/landing-page/instagram.png";
+import InIcon from "@/assets/images/general/landing-page/linkedin.png";
+import XIcon from "@/assets/images/general/landing-page/x_logo.svg";
 import { fadeIn } from "../../utils/motion";
-import XIcon from "@/assets/images/general/landing-page/x_logo.svg"
-import InstaIcon from "@/assets/images/general/landing-page/instagram.png"
-import InIcon from "@/assets/images/general/landing-page/linkedin.png"
-import TweetEmbed from "./xpost-embed";
 import InPostEmbed from "./linkedin-embed";
+import TweetEmbed from "./xpost-embed";
 
 const Socials = () => {
   const [animationComplete, setAnimationComplete] = useState(false);
@@ -30,11 +30,17 @@ const Socials = () => {
           onAnimationComplete={handleAnimationComplete}
           className="font-hackathoneCabinetGrotesk text-white font-[700] text-5xl tracking-tight mb-[1rem] text-center MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px] px-[3rem]"
         >
-          Discover more on Our <span className="font-extrabold text-hackathone-font-rocket-red ">Socials</span>
+          Discover more on Our{" "}
+          <span className="font-extrabold text-hackathone-font-rocket-red ">
+            Socials
+          </span>
         </motion.h1>
         <div className="mb-[2rem]">
           <p className="font-hackathoneCabinetGrotesk text-[22px] leading-tight text-white MobileScreen:px-[1rem]">
-            Keep your self updated by{" "}<span className="font-extrabold text-hackathone-font-rocket-red ">following us on social media</span>
+            Keep your self updated by{" "}
+            <span className="font-extrabold text-hackathone-font-rocket-red ">
+              following us on social media
+            </span>
           </p>
         </div>
         <motion.div
@@ -66,7 +72,6 @@ const Socials = () => {
                 alt={"XIcon"}
               ></Image>
             </a>
-
           </motion.div>
 
           <motion.div
@@ -98,7 +103,6 @@ const Socials = () => {
                 width={80}
                 alt={"InstaIcon"}
               ></Image>
-
             </a>
           </motion.div>
           <motion.div
@@ -123,10 +127,7 @@ const Socials = () => {
                 alt={"InIcon"}
               ></Image>
             </a>
-
           </motion.div>
-
-
         </motion.div>
       </motion.div>
     </>

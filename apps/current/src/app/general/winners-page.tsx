@@ -1,5 +1,5 @@
-import React from "react";
 import Image from "next/image";
+import React from "react";
 import FirstPlace from "@/assets/images/general/landing-page/first-place.jpg";
 import SecondPlace from "@/assets/images/general/landing-page/second-place.jpg";
 import ThirdPlace from "@/assets/images/general/landing-page/third-place.jpg";

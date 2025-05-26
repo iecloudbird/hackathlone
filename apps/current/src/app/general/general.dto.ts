@@ -1,64 +1,62 @@
-import Aeb from "@/assets/images/general/landing-page/space-agencies/aeb_w.png";
-import Aeb_O from "@/assets/images/general/landing-page/space-agencies/aeb_round.png";
-import Asi from "@/assets/images/general/landing-page/space-agencies/asi.png";
-import Asi_O from "@/assets/images/general/landing-page/space-agencies/asi_round.png";
-import Aem from "@/assets/images/general/landing-page/space-agencies/aem_w.png";
-import Aem_O from "@/assets/images/general/landing-page/space-agencies/aem_round.png";
-import Aep from "@/assets/images/general/landing-page/space-agencies/aep1.png";
-import Aep_O from "@/assets/images/general/landing-page/space-agencies/aep_round.png";
-import Australia from "@/assets/images/general/landing-page/space-agencies/australia_w.png";
-import Australia_O from "@/assets/images/general/landing-page/space-agencies/australia_round.png";
-import Canada from "@/assets/images/general/landing-page/space-agencies/canada_w.png";
-import Canada_O from "@/assets/images/general/landing-page/space-agencies/canada_round.png";
-import Conae from "@/assets/images/general/landing-page/space-agencies/conae.png";
-import Conae_O from "@/assets/images/general/landing-page/space-agencies/conae_round.png";
-import Eesa from "@/assets/images/general/landing-page/space-agencies/eesa.png";
-import Eesa_O from "@/assets/images/general/landing-page/space-agencies/eesa_round.png";
-import Isro from "@/assets/images/general/landing-page/space-agencies/isro_w.png";
-import Isro_O from "@/assets/images/general/landing-page/space-agencies/isro_round.png";
-import Jaxa from "@/assets/images/general/landing-page/space-agencies/jaxa.png";
-import Jaxa_O from "@/assets/images/general/landing-page/space-agencies/jaxa_round.png";
-import Nssa from "@/assets/images/general/landing-page/space-agencies/nssa_w.png";
-import Nssa_O from "@/assets/images/general/landing-page/space-agencies/nssa_round.png";
-import Sansa from "@/assets/images/general/landing-page/space-agencies/sansa.png";
-import Sansa_O from "@/assets/images/general/landing-page/space-agencies/sansa_round.png";
-import Turkey from "@/assets/images/general/landing-page/space-agencies/tsa_w.png";
-import Turkey_O from "@/assets/images/general/landing-page/space-agencies/turkish_round.png";
-import Cst from "@/assets/images/general/landing-page/space-agencies/cst_w.png";
-import Cst_O from "@/assets/images/general/landing-page/space-agencies/cst_round.png";
-import Ssa from "@/assets/images/general/landing-page/space-agencies/spanish_w.svg";
-import Ssa_O from "@/assets/images/general/landing-page/space-agencies/spanish.jpg";
+import { link } from "fs";
+import AppleEye from "@/assets/images/general/landing-page/apple-eye.jpg";
+import Azure from "@/assets/images/general/landing-page/collabrators/azure.png";
+import Booz from "@/assets/images/general/landing-page/collabrators/booz.png";
+import GoDaddy from "@/assets/images/general/landing-page/collabrators/goDaddy.png";
 import Google from "@/assets/images/general/landing-page/collabrators/google.png";
 import Mindgrub from "@/assets/images/general/landing-page/collabrators/mindgrub.png";
-import Booz from "@/assets/images/general/landing-page/collabrators/booz.png";
-import Tableau from "@/assets/images/general/landing-page/collabrators/tableau.png";
-import GoDaddy from "@/assets/images/general/landing-page/collabrators/goDaddy.png";
-import Planet from "@/assets/images/general/landing-page/collabrators/planet.png";
-import Azure from "@/assets/images/general/landing-page/collabrators/azure.png";
 import Miro from "@/assets/images/general/landing-page/collabrators/miro.png";
+import Ms from "@/assets/images/general/landing-page/collabrators/ms.png";
 import SecondMuse from "@/assets/images/general/landing-page/collabrators/muse.png";
+import Planet from "@/assets/images/general/landing-page/collabrators/planet.png";
+import Tableau from "@/assets/images/general/landing-page/collabrators/tableau.png";
+import GloablCollabSection from "@/assets/images/general/landing-page/gloabl_collab_section.jpg";
+import HackathloneChallenge from "@/assets/images/general/landing-page/hackathlone_challenge.jpg";
+import Machine from "@/assets/images/general/landing-page/machine.jpg";
 import Tus1 from "@/assets/images/general/landing-page/mapping-images/tus1.jpg";
 import Tus2 from "@/assets/images/general/landing-page/mapping-images/tus2.jpg";
 import Tus3 from "@/assets/images/general/landing-page/mapping-images/tus3.jpg";
 import Tus4 from "@/assets/images/general/landing-page/mapping-images/tus4.jpg";
+import Office from "@/assets/images/general/landing-page/office.jpg";
+import Robotics from "@/assets/images/general/landing-page/robotics.jpg";
+import Aeb_O from "@/assets/images/general/landing-page/space-agencies/aeb_round.png";
+import Aeb from "@/assets/images/general/landing-page/space-agencies/aeb_w.png";
+import Aem_O from "@/assets/images/general/landing-page/space-agencies/aem_round.png";
+import Aem from "@/assets/images/general/landing-page/space-agencies/aem_w.png";
+import Aep from "@/assets/images/general/landing-page/space-agencies/aep1.png";
+import Aep_O from "@/assets/images/general/landing-page/space-agencies/aep_round.png";
+import Asi from "@/assets/images/general/landing-page/space-agencies/asi.png";
+import Asi_O from "@/assets/images/general/landing-page/space-agencies/asi_round.png";
+import Australia_O from "@/assets/images/general/landing-page/space-agencies/australia_round.png";
+import Australia from "@/assets/images/general/landing-page/space-agencies/australia_w.png";
+import Canada_O from "@/assets/images/general/landing-page/space-agencies/canada_round.png";
+import Canada from "@/assets/images/general/landing-page/space-agencies/canada_w.png";
+import Conae from "@/assets/images/general/landing-page/space-agencies/conae.png";
+import Conae_O from "@/assets/images/general/landing-page/space-agencies/conae_round.png";
+import Cst_O from "@/assets/images/general/landing-page/space-agencies/cst_round.png";
+import Cst from "@/assets/images/general/landing-page/space-agencies/cst_w.png";
+import Eesa from "@/assets/images/general/landing-page/space-agencies/eesa.png";
+import Eesa_O from "@/assets/images/general/landing-page/space-agencies/eesa_round.png";
+import Isro_O from "@/assets/images/general/landing-page/space-agencies/isro_round.png";
+import Isro from "@/assets/images/general/landing-page/space-agencies/isro_w.png";
+import Jaxa from "@/assets/images/general/landing-page/space-agencies/jaxa.png";
+import Jaxa_O from "@/assets/images/general/landing-page/space-agencies/jaxa_round.png";
+import Nssa_O from "@/assets/images/general/landing-page/space-agencies/nssa_round.png";
+import Nssa from "@/assets/images/general/landing-page/space-agencies/nssa_w.png";
+import Sansa from "@/assets/images/general/landing-page/space-agencies/sansa.png";
+import Sansa_O from "@/assets/images/general/landing-page/space-agencies/sansa_round.png";
+import Ssa_O from "@/assets/images/general/landing-page/space-agencies/spanish.jpg";
+import Ssa from "@/assets/images/general/landing-page/space-agencies/spanish_w.svg";
+import Turkey from "@/assets/images/general/landing-page/space-agencies/tsa_w.png";
+import Turkey_O from "@/assets/images/general/landing-page/space-agencies/turkish_round.png";
 import Antriksh from "@/assets/images/general/landing-page/team_section/antriksh.png";
 import Arthemis from "@/assets/images/general/landing-page/team_section/arthemis_go.png";
 import Cococrunch from "@/assets/images/general/landing-page/team_section/cococrunch.png";
 import HelpKelp from "@/assets/images/general/landing-page/team_section/help-kelp.png";
 import IDontThink from "@/assets/images/general/landing-page/team_section/idontthink.png";
-import Ms from "@/assets/images/general/landing-page/collabrators/ms.png";
-import HackathloneChallenge from "@/assets/images/general/landing-page/hackathlone_challenge.jpg";
-import Machine from "@/assets/images/general/landing-page/machine.jpg";
-import GloablCollabSection from "@/assets/images/general/landing-page/gloabl_collab_section.jpg";
-import AppleEye from "@/assets/images/general/landing-page/apple-eye.jpg";
-import Office from "@/assets/images/general/landing-page/office.jpg";
-import Robotics from "@/assets/images/general/landing-page/robotics.jpg";
-import CloudFlies from "@/assets/images/general/landing-page/winners/cloudfliers.jpeg"
-import ShakeItOff from "@/assets/images/general/landing-page/winners/shakeitoff.jpeg"
-import EnigmaPro from "@/assets/images/general/landing-page/winners/enigmapro.jpeg"
-import { link } from "fs";
-
-
+import CloudFlies from "@/assets/images/general/landing-page/winners/cloudfliers.jpeg";
+import EnigmaPro from "@/assets/images/general/landing-page/winners/enigmapro.jpeg";
+import ShakeItOff from "@/assets/images/general/landing-page/winners/shakeitoff.jpeg";
 
 // Get the current date in Irish time and format it
 const currentDateInIrishTime = new Date(
@@ -240,17 +238,12 @@ export const agenciesSlider = [
 export const collabratorsSlider = [
   {
     img: Booz,
-    route: () =>
-      window.open(
-        "https://www.boozallen.com/",
-        "_blank"
-      ),
+    route: () => window.open("https://www.boozallen.com/", "_blank"),
   },
 
   {
     img: Mindgrub,
-    route: () =>
-      window.open("https://mindgrub.com/", "_blank"),
+    route: () => window.open("https://mindgrub.com/", "_blank"),
   },
   {
     img: SecondMuse,
@@ -330,8 +323,8 @@ export const Stories = [
 
 export const events = (Router: any) => [
   {
-    date: currentDate,
-    title: "2024 Challenges are out",
+    date: "15th June 2025",
+    title: "2025 Challenges brewing",
     subtitle: "Explore and choose the one that fits you the best!",
     content: `Register for a Local Event near you or 
     our Universal Event (please note you MUST be 
@@ -343,7 +336,7 @@ export const events = (Router: any) => [
       ),
   },
   {
-    date: "4th October 2024:",
+    date: "4th October 2025:",
     title: "Day 1",
     subtitle: "Assemble at TU Shannon & Start problem-solving with your team",
     content: `Get ready for the NASA Space Apps Challenge!
@@ -351,7 +344,7 @@ export const events = (Router: any) => [
     route: () => Router.push("/timeline#day-1"),
   },
   {
-    date: "5th October 2024:",
+    date: "5th October 2025:",
     title: "Day 2",
     subtitle:
       "Connect with industry experts: Get tips and feedback for your project",
@@ -361,7 +354,7 @@ export const events = (Router: any) => [
     route: () => Router.push("/timeline#day-2"),
   },
   {
-    date: "6th October 2024:",
+    date: "6th October 2025:",
     title: "Day 3",
     subtitle:
       "Get ready to present your project & Get a chance to win the challenge",
@@ -393,7 +386,6 @@ export const shannonData = [
   },
 ];
 
-
 export const winners = [
   {
     place: "3rd",
@@ -413,4 +405,4 @@ export const winners = [
     name: "EnigmaPro",
     link: "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/enigmapro/",
   },
-]
+];

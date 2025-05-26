@@ -1,18 +1,18 @@
 "use client";
-import React from "react";
 import { Canvas } from "@react-three/fiber";
+import React from "react";
 import CloudParticleBg from "@/app/general/cloud-particle-bg";
 import NavigationBar from "@/app/general/navigation-bar";
+import BackToTopButton from "../general/back-to-top";
+import Footer from "./footer";
+import GlobalCollabrators from "./global-collabrators";
 import HeroPage from "./hero-page";
 import JoinUsPage from "./join-us-page";
-import SpaceAgencies from "./space-agencies";
-import GlobalCollabrators from "./global-collabrators";
 import Shannon from "./shannon";
+import Socials from "./socials-page";
+import SpaceAgencies from "./space-agencies";
 import TeamStories from "./team-stories";
 import HackathoneTimeline from "./timeline";
-import Socials from "./socials-page";
-import Footer from "./footer";
-import BackToTopButton from "../general/back-to-top";
 
 const LandingPage = () => {
   return (

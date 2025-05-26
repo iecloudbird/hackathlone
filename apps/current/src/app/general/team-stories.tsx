@@ -1,6 +1,6 @@
+import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
-import Image from "next/image";
 import { Stories } from "./general.dto";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,7 +18,7 @@ const TeamStories = () => {
     autoplaySpeed: 5000,
     arrows: false,
     adaptiveHeight: true,
-    cssEase: 'ease-out',
+    cssEase: "ease-out",
     responsive: [
       {
         breakpoint: 2250,
@@ -33,12 +33,20 @@ const TeamStories = () => {
                 listStyle: "none",
               }}
             >
-              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+              <ul
+                style={{
+                  margin: "0px",
+                  padding: "0px",
+                  listStyle: "none",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 {dots}
               </ul>
             </div>
           ),
-        }
+        },
       },
       {
         breakpoint: 1900,
@@ -53,12 +61,20 @@ const TeamStories = () => {
                 listStyle: "none",
               }}
             >
-              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+              <ul
+                style={{
+                  margin: "0px",
+                  padding: "0px",
+                  listStyle: "none",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 {dots}
               </ul>
             </div>
           ),
-        }
+        },
       },
       {
         breakpoint: 1800,
@@ -73,12 +89,20 @@ const TeamStories = () => {
                 listStyle: "none",
               }}
             >
-              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+              <ul
+                style={{
+                  margin: "0px",
+                  padding: "0px",
+                  listStyle: "none",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 {dots}
               </ul>
             </div>
           ),
-        }
+        },
       },
       {
         breakpoint: 1540,
@@ -94,12 +118,20 @@ const TeamStories = () => {
                 listStyle: "inside",
               }}
             >
-              <ul style={{ margin: "0px", padding: "0px", listStyle: "inside", display: "flex", justifyContent: "center" }}>
+              <ul
+                style={{
+                  margin: "0px",
+                  padding: "0px",
+                  listStyle: "inside",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 {dots}
               </ul>
             </div>
           ),
-        }
+        },
       },
       {
         breakpoint: 1441,
@@ -113,12 +145,20 @@ const TeamStories = () => {
                 marginLeft: "6vw",
               }}
             >
-              <ul style={{ margin: "0px", padding: "0px", listStyle: "inside", display: "flex", justifyContent: "center" }}>
+              <ul
+                style={{
+                  margin: "0px",
+                  padding: "0px",
+                  listStyle: "inside",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 {dots}
               </ul>
             </div>
           ),
-        }
+        },
       },
       {
         breakpoint: 1300,
@@ -133,12 +173,20 @@ const TeamStories = () => {
                 listStyle: "none",
               }}
             >
-              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+              <ul
+                style={{
+                  margin: "0px",
+                  padding: "0px",
+                  listStyle: "none",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 {dots}
               </ul>
             </div>
           ),
-        }
+        },
       },
       {
         breakpoint: 1140,
@@ -153,12 +201,20 @@ const TeamStories = () => {
                 listStyle: "none",
               }}
             >
-              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+              <ul
+                style={{
+                  margin: "0px",
+                  padding: "0px",
+                  listStyle: "none",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 {dots}
               </ul>
             </div>
           ),
-        }
+        },
       },
       {
         breakpoint: 1024,
@@ -172,12 +228,20 @@ const TeamStories = () => {
                 marginLeft: "9vw",
               }}
             >
-              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+              <ul
+                style={{
+                  margin: "0px",
+                  padding: "0px",
+                  listStyle: "none",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 {dots}
               </ul>
             </div>
           ),
-        }
+        },
       },
       {
         breakpoint: 890,
@@ -191,12 +255,20 @@ const TeamStories = () => {
                 marginLeft: "11vw",
               }}
             >
-              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+              <ul
+                style={{
+                  margin: "0px",
+                  padding: "0px",
+                  listStyle: "none",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 {dots}
               </ul>
             </div>
           ),
-        }
+        },
       },
       {
         breakpoint: 768.5,
@@ -211,12 +283,20 @@ const TeamStories = () => {
                 listStyle: "none",
               }}
             >
-              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+              <ul
+                style={{
+                  margin: "0px",
+                  padding: "0px",
+                  listStyle: "none",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 {dots}
               </ul>
             </div>
           ),
-        }
+        },
       },
       {
         breakpoint: 480,
@@ -232,12 +312,20 @@ const TeamStories = () => {
                 padding: "0px",
               }}
             >
-              <ul style={{ margin: "0px", padding: "0px", listStyle: "inside", display: "flex", justifyContent: "center" }}>
+              <ul
+                style={{
+                  margin: "0px",
+                  padding: "0px",
+                  listStyle: "inside",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 {dots}
               </ul>
             </div>
           ),
-        }
+        },
       },
       {
         breakpoint: 376,
@@ -254,12 +342,20 @@ const TeamStories = () => {
                 listStyle: "none",
               }}
             >
-              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+              <ul
+                style={{
+                  margin: "0px",
+                  padding: "0px",
+                  listStyle: "none",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 {dots}
               </ul>
             </div>
           ),
-        }
+        },
       },
       {
         breakpoint: 321,
@@ -276,19 +372,27 @@ const TeamStories = () => {
                 listStyle: "none",
               }}
             >
-              <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+              <ul
+                style={{
+                  margin: "0px",
+                  padding: "0px",
+                  listStyle: "none",
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 {dots}
               </ul>
             </div>
           ),
-        }
+        },
       },
       {
         breakpoint: 300,
         settings: {
-          dots: false
-        }
-      }
+          dots: false,
+        },
+      },
     ],
     customPaging: (i: any) => (
       <div
@@ -315,13 +419,19 @@ const TeamStories = () => {
           listStyle: "none",
         }}
       >
-        <ul style={{ margin: "0px", padding: "0px", listStyle: "none", display: "flex", justifyContent: "center" }}>
+        <ul
+          style={{
+            margin: "0px",
+            padding: "0px",
+            listStyle: "none",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           {dots}
         </ul>
       </div>
     ),
-
-
   };
 
   return (
@@ -335,7 +445,10 @@ const TeamStories = () => {
       <div className="relative overflow-hidden rounded-lg shadow-md mt-8 MobileScreen:min-h-[650px] min-h-[600px] md:min-h-[400px]">
         <Slider {...settings}>
           {Stories.map((item, index) => (
-            <div key={index} className="items-stretch !flex md:!flex-row !flex-col h-auto items-center justify-center">
+            <div
+              key={index}
+              className="items-stretch !flex md:!flex-row !flex-col h-auto items-center justify-center"
+            >
               <div className="md:w-1/2 w-full !flex md:items-center MobileScreen:justify-center justify-center md:justify-start max-h-[560px] TabletScreen:px-4 MobileScreen:mt-[2.5rem]">
                 <Image
                   className="cursor-pointer rounded-2xl max-w-[100%] max-h-[350px] MobileScreen:max-h-[320px]"

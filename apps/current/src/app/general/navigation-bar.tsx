@@ -1,12 +1,12 @@
-import React, { useState, useMemo, useEffect } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { motion } from "framer-motion";
-import { navigationData } from "./general.dto";
+import React, { useState, useMemo, useEffect } from "react";
 // import Google from "@/assets/images/general/landing-page/logo2.png";
+import Google from "@/assets/images/general/landing-page/collabrators/google.png";
+import RunEU from "@/assets/images/general/landing-page/collabrators/runeulogo.png";
 import MenuIcon from "@/assets/images/general/landing-page/menu-icon.svg";
-import Google from "@/assets/images/general/landing-page/collabrators/google.png"
-import RunEU from "@/assets/images/general/landing-page/collabrators/runeulogo.png"
+import { navigationData } from "./general.dto";
 export default function NavigationBar() {
   const Router = useRouter();
   const navigationInfo = useMemo(() => navigationData(Router), [Router]);
@@ -26,37 +26,42 @@ export default function NavigationBar() {
 
   React.useEffect(() => {
     if (isHovered) {
-      window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener("mousemove", handleMouseMove);
     } else {
-      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener("mousemove", handleMouseMove);
     }
 
     // Cleanup event listener on unmount or when `isHovered` changes
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener("mousemove", handleMouseMove);
     };
   }, [isHovered]);
 
+  React.useEffect(() => {
+    if (isSideNavOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
 
-    React.useEffect(() => {
-      if (isSideNavOpen) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.style.overflow = "auto";
-      }
-  
-      // Cleanup: Ensure scrolling is re-enabled when the component unmounts
-      return () => {
-        document.body.style.overflow = "auto";
-      };
-    }, [isSideNavOpen]);
+    // Cleanup: Ensure scrolling is re-enabled when the component unmounts
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isSideNavOpen]);
 
   const renderLines = () => {
     const lines = [];
     for (let i = 0; i < 3; i++) {
       lines.push(
-        <div key={i} className="w-[36px] h-[5px] bg-white  mt-[6px] rounded-2xl"></div>
-      ); {/*Or fill with: bg-white */ }
+        <div
+          key={i}
+          className="w-[36px] h-[5px] bg-white  mt-[6px] rounded-2xl"
+        ></div>
+      );
+      {
+        /*Or fill with: bg-white */
+      }
     }
     return lines;
   };
@@ -64,8 +69,6 @@ export default function NavigationBar() {
   const toggleSideNav = () => {
     setIsSideNavOpen(!isSideNavOpen);
   };
-
-   
 
   const sideNavVariants = {
     hidden: { x: "100%" },
@@ -150,7 +153,10 @@ export default function NavigationBar() {
       className="DesktopScreen:hidden MobileScreen:hidden bg-transparent border border-white px-[1.7%]
          flex flex-row justify-between py-[6px] mx-[3%] rounded-xl"
     >
-      <div onClick={() => Router.push("/")} className="px-[0.5rem] py-[0.25rem]">
+      <div
+        onClick={() => Router.push("/")}
+        className="px-[0.5rem] py-[0.25rem]"
+      >
         <Image
           className="cursor-pointer"
           src={Google}
@@ -158,8 +164,10 @@ export default function NavigationBar() {
           alt={"Deedu logo"}
         ></Image>
       </div>
-      <div onClick={toggleSideNav}
-        className="px-[0.5rem] py-[0.5rem] cursor-pointer">
+      <div
+        onClick={toggleSideNav}
+        className="px-[0.5rem] py-[0.5rem] cursor-pointer"
+      >
         {renderLines()}
       </div>
     </nav>
@@ -171,8 +179,10 @@ export default function NavigationBar() {
       className="DesktopScreen:hidden TabletScreen:hidden bg-transparent border border-white px-[1.2%]
          flex flex-row items-center justify-between py-[6px] mx-[1%] rounded-md"
     >
-      <div onClick={() => Router.push("/")}
-        className="px-[0.5rem] py-[0.25rem]">
+      <div
+        onClick={() => Router.push("/")}
+        className="px-[0.5rem] py-[0.25rem]"
+      >
         <Image
           className="cursor-pointer"
           src={Google}
@@ -180,8 +190,10 @@ export default function NavigationBar() {
           alt={"Deedu logo"}
         ></Image>
       </div>
-      <div onClick={toggleSideNav}
-        className="px-[0.5rem] pb-[0.5rem] cursor-pointer tool-to">
+      <div
+        onClick={toggleSideNav}
+        className="px-[0.5rem] pb-[0.5rem] cursor-pointer tool-to"
+      >
         {renderLines()}
       </div>
     </nav>

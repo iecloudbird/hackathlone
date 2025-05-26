@@ -1,14 +1,12 @@
-import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import React, { useState } from "react";
 import { agenciesSlider } from "./general.dto";
 
 const sliderItems = [...agenciesSlider];
 
 export const AgenciesSlider = () => {
-  const [imgSrcs, setImgSrcs] = useState(
-    sliderItems.map((item) => item.img)
-  );
+  const [imgSrcs, setImgSrcs] = useState(sliderItems.map((item) => item.img));
   // Handle mouse enter event to change the image
   const handleMouseEnter = (index: number) => {
     const newImgSrcs = [...imgSrcs];
@@ -29,10 +27,12 @@ export const AgenciesSlider = () => {
           return (
             <div
               key={index}
-              className={`flex items-center justify-center px-4 py-2 max-h-[100px] ${index === sliderItems.length - 1 ? "col-span-2 md:col-span-1 lg:col-span-2 sm:scale-125" : ""
-                }`}
+              className={`flex items-center justify-center px-4 py-2 max-h-[100px] ${
+                index === sliderItems.length - 1
+                  ? "col-span-2 md:col-span-1 lg:col-span-2 sm:scale-125"
+                  : ""
+              }`}
               style={{ transition: "transform 0.3s ease-in-out" }} // Add smooth transition
-
             >
               <Image
                 className={`cursor-pointer transform transition-transform duration-300 lg:hover:scale-125 hover:scale-110 sm:w-[80px] ${index === sliderItems.length - 1 ? "lg:min-w-[130px] MobileScreen:min-w-[130px]" : ""}`}

@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
+import { Canvas, useFrame } from "@react-three/fiber";
+import React, { useState, useRef, useEffect } from "react";
 
 /** Generate Random Sphere Points */
 const generateRandomSpherePoints = (
