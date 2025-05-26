@@ -9,11 +9,7 @@ export const CollabratorsSlider = () => {
   return (
     <div className="overflow-hidden">
       <div
-        className="grid grid-cols-2 grid-rows-2 
-                   sm:grid-cols-2 sm:grid-rows-2
-                   md:grid-cols-2 md:grid-rows-2
-                   lg:grid-cols-2 lg:grid-rows-2
-                   gap-4"
+        className="grid grid-cols-2 grid-rows-2 gap-4 sm:grid-cols-2 sm:grid-rows-2 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-2 lg:grid-rows-2"
         style={{
           gridTemplateAreas: `
             "top top"
@@ -38,7 +34,7 @@ export const CollabratorsSlider = () => {
           >
             {index === 0 ? (
               <Image
-                className={`cursor-pointer w-4/5`} // Make the first image take up 4/5 of its container width
+                className={`w-4/5 cursor-pointer`} // Make the first image take up 4/5 of its container width
                 src={item.img}
                 width={index === 0 ? 400 : 100}
                 height={index === 0 ? 400 : 100}

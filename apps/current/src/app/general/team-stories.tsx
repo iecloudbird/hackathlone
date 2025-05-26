@@ -435,34 +435,34 @@ const TeamStories = () => {
   };
 
   return (
-    <div className="px-4 sm:px-6 lg:px-10 MobileScreen:mx-[1.2rem] lg:mx-[8.06%] md:mx-[2rem] my-[10rem] mb-8 MobileScreen:mb-12 xl:mb-[8rem]">
-      <h1 className="font-hackathoneCabinetGrotesk text-hackathone-font-rocket-red font-extrabold lg:text-[42px] md:text-[32.99px] text-[42px] MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px]">
+    <div className="my-40 mb-8 px-4 sm:px-6 md:mx-8 lg:mx-[8.06%] lg:px-10 xl:mb-32 MobileScreen:mx-[1.2rem] MobileScreen:mb-12">
+      <h1 className="font-hackathoneCabinetGrotesk text-[42px] font-extrabold text-hackathone-font-rocket-red md:text-[32.99px] lg:text-[42px] MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px]">
         Hackathon Unplugged: Team Stories
       </h1>
-      <p className="font-hackathoneSFProDisplay lg:text-xl sm:text-lg text-base mt-4">
-        Let's hear what the Teams have to say
+      <p className="mt-4 font-hackathoneSFProDisplay text-base sm:text-lg lg:text-xl">
+        Let&apos;s hear what the Teams have to say
       </p>
-      <div className="relative overflow-hidden rounded-lg shadow-md mt-8 MobileScreen:min-h-[650px] min-h-[600px] md:min-h-[400px]">
+      <div className="relative mt-8 min-h-[600px] overflow-hidden rounded-lg shadow-md md:min-h-[400px] MobileScreen:min-h-[650px]">
         <Slider {...settings}>
           {Stories.map((item, index) => (
             <div
               key={index}
-              className="items-stretch !flex md:!flex-row !flex-col h-auto items-center justify-center"
+              className="!flex h-auto !flex-col items-center items-stretch justify-center md:!flex-row"
             >
-              <div className="md:w-1/2 w-full !flex md:items-center MobileScreen:justify-center justify-center md:justify-start max-h-[560px] TabletScreen:px-4 MobileScreen:mt-[2.5rem]">
+              <div className="!flex max-h-[560px] w-full justify-center md:w-1/2 md:items-center md:justify-start MobileScreen:mt-10 MobileScreen:justify-center TabletScreen:px-4">
                 <Image
-                  className="cursor-pointer rounded-2xl max-w-[100%] max-h-[350px] MobileScreen:max-h-[320px]"
+                  className="max-h-[350px] max-w-full cursor-pointer rounded-2xl MobileScreen:max-h-[320px]"
                   src={item.img}
                   width={500}
                   height={450}
                   alt={"Team Image"}
                 />
               </div>
-              <div className="md:w-1/2 w-full md:mt-4 md:text-left md:ml-[2.5rem] xl:ml-[2rem] 2xl:ml-[1rem] w-auto pt-[2rem] MobileScreen:pr-[1rem] md:pt-[0px] pr-[1rem] text-center">
-                <p className="font-hackathoneCabinetGrotesk text-lg max-w-prose md:pt-[2.5rem] sm:pt-[2rem] MobileScreen:pb-[2rem]">
+              <div className="w-auto w-full pr-4 pt-8 text-center md:ml-10 md:mt-4 md:w-1/2 md:pt-0 md:text-left xl:ml-8 2xl:ml-4 MobileScreen:pr-4">
+                <p className="max-w-prose font-hackathoneCabinetGrotesk text-lg sm:pt-8 md:pt-10 MobileScreen:pb-8">
                   {item.text}
                 </p>
-                <p className="font-bold text-[22px] leading-[1.5rem] text-hackathone-font-rocket-red sm:pt-[3rem] MobileScreen:pt-[2rem] pt-[3rem] text-center md:text-left">
+                <p className="pt-12 text-center text-[22px] font-bold leading-6 text-hackathone-font-rocket-red sm:pt-12 md:text-left MobileScreen:pt-8">
                   {item.author}
                 </p>
               </div>

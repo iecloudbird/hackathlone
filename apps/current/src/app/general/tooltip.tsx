@@ -46,7 +46,7 @@ const Tooltip: React.FC<TooltipProps> = ({
       ref={parentRef}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="inline-block relative w-fit"
+      className="relative inline-block w-fit"
     >
       {children}
       {isHovered && (
@@ -67,7 +67,7 @@ const Tooltip: React.FC<TooltipProps> = ({
             pointerEvents: "none", // Prevent the tooltip from blocking mouse events
           }}
         >
-          <div className="bg-gray-800 bg-opacity-80 text-white p-2 rounded-md text-sm whitespace-nowrap text-center shadow-lg border border-white">
+          <div className="whitespace-nowrap rounded-md border border-white bg-gray-800 bg-opacity-80 p-2 text-center text-sm text-white shadow-lg">
             {text}
           </div>
         </motion.div>

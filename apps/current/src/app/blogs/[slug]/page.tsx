@@ -1,21 +1,31 @@
 "use client";
-import React from "react";
-import { useParams, useRouter } from "next/navigation"; // Use `useParams` from `next/navigation`
-import { cards } from "../blogs.dto"; // Adjust the import path based on your structure
-import { Canvas } from "@react-three/fiber";
-import CloudParticleBg from "@/app/general/cloud-particle-bg";
-import NavigationBar from "../../general/navigation-bar";
-import Footer from "../../general/footer";
-import Tooltip from "../../general/tooltip";
 import { IconButton } from "@mui/material";
-import { point } from "leaflet";
-import Image from "next/image";
+import { Canvas } from "@react-three/fiber";
+import Image, { StaticImageData } from "next/image";
+import { useParams, useRouter } from "next/navigation";
+import React from "react";
+import CloudParticleBg from "@/app/general/cloud-particle-bg";
+import Footer from "../../general/footer";
+import NavigationBar from "../../general/navigation-bar";
+import Tooltip from "../../general/tooltip";
+import { cards } from "../blogs.dto";
+//Lazy and Dynamic import TODO
+import Space1 from "@/assets/images/blogs/space1.png";
+import Space2 from "@/assets/images/blogs/space2.png";
+import Space3 from "@/assets/images/blogs/space3.png";
+import Space4 from "@/assets/images/blogs/space4.png";
+import Space5 from "@/assets/images/blogs/space5.png";
+import Space6 from "@/assets/images/blogs/space6.png";
+import Space7 from "@/assets/images/blogs/space7.png";
+import Space8 from "@/assets/images/blogs/space8.png";
+import Space9 from "@/assets/images/blogs/space9.png";
+import Space10 from "@/assets/images/blogs/space10.png";
 
 interface Tag {
   name: string;
 }
 interface Blog {
-  image: string;
+  image: StaticImageData;
   tags: Tag[];
 
   title: string;
@@ -46,9 +56,11 @@ const BlogPage: React.FC = () => {
   if (!card) {
     return <div>Blog not found</div>;
   }
+
+  //I don't understand why this is here
   const blogs: Blog[] = [
     {
-      image: "https://i.imgur.com/QpmXELP.png",
+      image: Space1,
       tags: [{ name: "Technology" }],
       title: "The Importance of Diversity in Space Exploration",
       summary:
@@ -65,9 +77,9 @@ const BlogPage: React.FC = () => {
       slug: "card-grid-layout-1",
     },
     {
-      image: "https://i.imgur.com/HVoh2n4.png",
+      image: Space2,
       tags: [{ name: "Technology" }],
-      title: "Here\'s How to Register for SpaceApps 2023!",
+      title: "Here's How to Register for SpaceApps 2023!",
       summary:
         "Register for NASA's SpaceApps Challenge 2023 at TU Shannon, Ireland. Explore the website, find the local event (HackAthlone), choose individual or team registration, access resources, and prepare for an exciting cosmic adventure in space exploration.",
       points: [
@@ -81,8 +93,9 @@ const BlogPage: React.FC = () => {
         <span key={"item-${index}"}>
           {"\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"}First things
           first, open your web browser and head over to the official SpaceApps
-          Challenge website. You can do this by typing 'SpaceApps Challenge'
-          into your preferred search engine or by directly entering the URL:{" "}
+          Challenge website. You can do this by typing &apos;SpaceApps
+          Challenge&apos; into your preferred search engine or by directly
+          entering the URL:{" "}
           <a
             className="hover:text-red-500"
             href="https://www.spaceappschallenge.org/"
@@ -147,7 +160,7 @@ const BlogPage: React.FC = () => {
       slug: "2",
     },
     {
-      image: "https://i.imgur.com/YqPwz7l.png",
+      image: Space3,
       tags: [{ name: "Technology" }],
       title: "Navigating the SpaceApps Hackathon Challenges",
       summary:
@@ -244,7 +257,7 @@ const BlogPage: React.FC = () => {
       slug: "3",
     },
     {
-      image: "https://i.imgur.com/pk4xjMf.png",
+      image: Space4,
       tags: [{ name: "Technology" }],
       title: "Seven Reasons to Choose Space Apps Athlone",
       summary:
@@ -313,7 +326,7 @@ const BlogPage: React.FC = () => {
       slug: "4",
     },
     {
-      image: "https://i.imgur.com/NqvBau2.jpeg",
+      image: Space5,
       tags: [{ name: "Technology" }],
       title:
         "Hacking the Night Away: Unveiling the Thrills of SpaceApps Athlone 2024",
@@ -385,7 +398,7 @@ const BlogPage: React.FC = () => {
       slug: "5",
     },
     {
-      image: "https://i.imgur.com/K803F8Z.jpeg",
+      image: Space6,
       tags: [{ name: "Technology" }],
       title:
         "Decoding the SpaceApps Challenge 2023: How Projects Soar to Victory",
@@ -445,7 +458,7 @@ const BlogPage: React.FC = () => {
       slug: "6",
     },
     {
-      image: "https://i.imgur.com/GHqELEK.jpeg",
+      image: Space7,
       tags: [{ name: "Technology" }],
       title:
         "Navigating Your Way to NASA SpaceApps Challenge at TU Shannon in Athlone",
@@ -468,19 +481,19 @@ const BlogPage: React.FC = () => {
         </strong>,
         "From Dublin, Limerick, Cork, or Galway: Several bus services connect these cities to Athlone, including Citylink, Aircoach, and Bus Éireann.",
         <table
-          className="table-auto border-2 border-gray-700 border-collapse rounded-3xl bg-[#8F8F8F1A] bg-opacity-50 backdrop-blur-md"
+          className="table-auto border-collapse rounded-3xl border-2 border-gray-700 bg-[#8F8F8F1A] bg-opacity-50 backdrop-blur-md"
           key={"item-${index}"}
         >
           <tbody key={"item-${index}"}>
             <tr key={"item-${index}"}>
               <td
-                className="border border-gray-700 p-4 rounded-l-lg"
+                className="rounded-l-lg border border-gray-700 p-4"
                 key={"item-${index}"}
               >
                 Dublin to Athlone
               </td>
               <td
-                className="border border-gray-700 p-4 rounded-r-lg"
+                className="rounded-r-lg border border-gray-700 p-4"
                 key={"item-${index}"}
               >
                 The 763 (Timetable) and 706/706X (Timetable) routes are ideal.
@@ -523,7 +536,7 @@ const BlogPage: React.FC = () => {
           2. Opt for the Train: Comfortable and Budget-Friendly
         </strong>,
         <table
-          className="table-auto border-2 border-gray-700 border-collapse rounded-3xl bg-[#8F8F8F1A] bg-opacity-50 backdrop-blur-md"
+          className="table-auto border-collapse rounded-3xl border-2 border-gray-700 bg-[#8F8F8F1A] bg-opacity-50 backdrop-blur-md"
           key={"item-${index}"}
         >
           <tbody>
@@ -590,7 +603,7 @@ const BlogPage: React.FC = () => {
       slug: "7",
     },
     {
-      image: "https://i.imgur.com/fO5GbMO.jpeg",
+      image: Space8,
       tags: [{ name: "Technology" }],
       title:
         "Navigating the SpaceApps Hackathon Challenges: A Guide to Choosing Your Path",
@@ -654,7 +667,7 @@ const BlogPage: React.FC = () => {
       slug: "8",
     },
     {
-      image: "https://i.imgur.com/PPjAUbl.jpeg",
+      image: Space9,
       tags: [{ name: "Technology" }],
       title:
         "How Hackathons Fuel Personal Growth and Prepare You for Life's Challenges",
@@ -729,7 +742,7 @@ const BlogPage: React.FC = () => {
       slug: "9",
     },
     {
-      image: "https://i.imgur.com/FLcz4Qn.jpeg",
+      image: Space10,
       tags: [{ name: "Technology" }],
       title:
         "Mastering SpaceApps Athlone: Tips for a Stellar Hackathon Experience",
@@ -853,13 +866,13 @@ const BlogPage: React.FC = () => {
       <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
         <NavigationBar />
         {/* laptop view */}
-        <div className="hidden lg:block mx-24 my-16 pl-2">
+        <div className="mx-24 my-16 hidden pl-2 lg:block">
           <Tooltip text="Back to Blogs">
             <IconButton
               size="large"
               color="primary"
               onClick={handleBack}
-              className="mr-4 text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden mb-8"
+              className="mb-8 mr-4 text-white hover:text-hackathone-font-rocket-red MobileScreen:hidden TabletScreen:hidden"
               edge="start"
               sx={{
                 width: "4.5rem",
@@ -894,26 +907,26 @@ const BlogPage: React.FC = () => {
               src={blog.image}
               width={1200} // Increase these values as needed
               height={1200}
-              className="lg:float-right w-1/2 h-auto ml-16 mb-10 rounded-lg"
+              className="mb-10 ml-16 h-auto w-1/2 rounded-lg lg:float-right"
               alt="Blog Image"
             />
           </div>
           <div className="font-hackathoneCabinetGrotesk">
-            <h2 className="text-4xl md:text-5xl font-bold  mb-4 text-white font-hackathoneSFProDisplay">
+            <h2 className="mb-4 font-hackathoneSFProDisplay text-4xl font-bold text-white md:text-5xl">
               {blog.title}
             </h2>
-            <p className="text-base md:text-2xl  mt-2 text-hackathone-font-rocket-red mb-10">
+            <p className="mb-10 mt-2 text-base text-hackathone-font-rocket-red md:text-2xl">
               {blog.author} - {blog.date}
             </p>
-            <p className="text-xl md:text-xl text-slate-50 mt-8 ">
+            <p className="mt-8 text-xl text-slate-50 md:text-xl">
               {blog.summary}
             </p>
             <br />
-            <ul className="list-none space-y-8 ">
+            <ul className="list-none space-y-8">
               {blog.points.map((point, index) => (
                 <li
                   key={`event-point-${index}`}
-                  className="text-xl md:text-xl text-slate-50 "
+                  className="text-xl text-slate-50 md:text-xl"
                 >
                   {point}
                 </li>
@@ -923,13 +936,13 @@ const BlogPage: React.FC = () => {
         </div>
 
         {/* Mobile view */}
-        <div className="block lg:hidden mx-8 my-12 flex flex-col ">
+        <div className="mx-8 my-12 block flex flex-col lg:hidden">
           <Tooltip text="Back to Blogs">
             <IconButton
               size="large"
               color="primary"
               onClick={handleBack}
-              className="mr-4 text-white hover:text-hackathone-font-rocket-red mb-8"
+              className="mb-8 mr-4 text-white hover:text-hackathone-font-rocket-red"
               edge="start"
               sx={{
                 width: "3.5rem",
@@ -962,18 +975,18 @@ const BlogPage: React.FC = () => {
             src={blog.image}
             width={1200} // Increase these values as needed
             height={1200}
-            className="w-auto h-auto mb-8 rounded-lg"
+            className="mb-8 size-auto rounded-lg"
             alt="Blog Image"
           />
 
           <div className="font-hackathoneCabinetGrotesk">
-            <h2 className="text-4xl md:text-5xl font-semibold  mb-4 text-slate-50">
+            <h2 className="mb-4 text-4xl font-semibold text-slate-50 md:text-5xl">
               {blog.title}
             </h2>
-            <p className="text-base md:text-2xl  mt-2 text-hackathone-font-rocket-red mb-10">
+            <p className="mb-10 mt-2 text-base text-hackathone-font-rocket-red md:text-2xl">
               {blog.author} - {blog.date}
             </p>
-            <p className="text-base md:text-lg text-slate-50 mt-8 ">
+            <p className="mt-8 text-base text-slate-50 md:text-lg">
               {blog.summary}
             </p>
             <br />
@@ -981,7 +994,7 @@ const BlogPage: React.FC = () => {
               {blog.points.map((point, index) => (
                 <li
                   key={`event-point-${index}`}
-                  className="text-base md:text-lg text-slate-50"
+                  className="text-base text-slate-50 md:text-lg"
                 >
                   {typeof point === "string" ? point : <>{point}</>}
                 </li>

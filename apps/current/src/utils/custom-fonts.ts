@@ -14,80 +14,80 @@ Font Weight	Numerical Weight
 */
 
 const SFProDisplay = localFont({
-	src: [
-		{
-			path: "../../public/assets/fonts/sf-pro-display/sf-pro-display-thin.ttf",
-			weight: "100",
-			style: "thin",
-		},
-		{
-			path: "../../public/assets/fonts/sf-pro-display/sf-pro-display-light.otf",
-			weight: "300",
-			style: "light",
-		},
-		{
-			path: "../../public/assets/fonts/sf-pro-display/sf-pro-display-regular.otf",
-			weight: "400",
-			style: "regular",
-		},
-		{
-			path: "../../public/assets/fonts/sf-pro-display/sf-pro-display-semibold.ttf",
-			weight: "600",
-			style: "semi bold",
-		},
-		{
-			path: "../../public/assets/fonts/sf-pro-display/sf-pro-display-bold.otf",
-			weight: "700",
-			style: "bold",
-		},
-	],
-	variable: "--font-sf-pro-display",
+  src: [
+    {
+      path: "../../public/assets/fonts/sf-pro-display/sf-pro-display-thin.ttf",
+      weight: "100",
+      style: "thin",
+    },
+    {
+      path: "../../public/assets/fonts/sf-pro-display/sf-pro-display-light.otf",
+      weight: "300",
+      style: "light",
+    },
+    {
+      path: "../../public/assets/fonts/sf-pro-display/sf-pro-display-regular.otf",
+      weight: "400",
+      style: "regular",
+    },
+    {
+      path: "../../public/assets/fonts/sf-pro-display/sf-pro-display-semibold.ttf",
+      weight: "600",
+      style: "semi bold",
+    },
+    {
+      path: "../../public/assets/fonts/sf-pro-display/sf-pro-display-bold.otf",
+      weight: "700",
+      style: "bold",
+    },
+  ],
+  variable: "--font-sf-pro-display",
 });
 
 const CabinetGrotesk = localFont({
-	src: [
-		{
-			path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-thin.ttf",
-			weight: "100",
-			style: "thin",
-		},
-		{
-			path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-extralight.ttf",
-			weight: "200",
-			style: "extra light",
-		},
-		{
-			path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-light.ttf",
-			weight: "300",
-			style: "light",
-		},
-		{
-			path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-regular.ttf",
-			weight: "400",
-			style: "regular",
-		},
-		{
-			path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-medium.ttf",
-			weight: "500",
-			style: "medium",
-		},
-		{
-			path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-bold.ttf",
-			weight: "700",
-			style: "bold",
-		},
-		{
-			path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-extrabold.ttf",
-			weight: "800",
-			style: "extra bold",
-		},
-		{
-			path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-black.ttf",
-			weight: "900",
-			style: "black",
-		},
-	],
-	variable: "--font-cabinet-grotesk",
+  src: [
+    {
+      path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-thin.ttf",
+      weight: "100",
+      style: "thin",
+    },
+    {
+      path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-extralight.ttf",
+      weight: "200",
+      style: "extra light",
+    },
+    {
+      path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-light.ttf",
+      weight: "300",
+      style: "light",
+    },
+    {
+      path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-regular.ttf",
+      weight: "400",
+      style: "regular",
+    },
+    {
+      path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-medium.ttf",
+      weight: "500",
+      style: "medium",
+    },
+    {
+      path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-bold.ttf",
+      weight: "700",
+      style: "bold",
+    },
+    {
+      path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-extrabold.ttf",
+      weight: "800",
+      style: "extra bold",
+    },
+    {
+      path: "../../public/assets/fonts/cabinet-grotesk/cabinet-grotesk-black.ttf",
+      weight: "900",
+      style: "black",
+    },
+  ],
+  variable: "--font-cabinet-grotesk",
 });
 
 export { SFProDisplay, CabinetGrotesk };

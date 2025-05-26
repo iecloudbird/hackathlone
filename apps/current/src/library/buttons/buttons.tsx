@@ -1,5 +1,9 @@
+import {
+  motion,
+  type VariantLabels,
+  type TargetAndTransition,
+} from "framer-motion";
 import React from "react";
-import { motion, VariantLabels, TargetAndTransition } from "framer-motion";
 
 type ButtonProps = {
   whileHover?: VariantLabels | TargetAndTransition;
@@ -36,7 +40,7 @@ const Buttons: React.FC<ButtonProps> = (props): JSX.Element => {
       title={title}
       disabled={disabled || loading}
       onClick={onClick}
-      className={`${className} rounded-3xl flex items-center justify-center`}
+      className={`${className} flex items-center justify-center rounded-3xl`}
     >
       {loading ? (
         <div className="loader"></div>

@@ -29,9 +29,9 @@ export default function Timeline() {
   return (
     <section
       id="timeline"
-      className="flex flex-col items-center justify-center mx-4 sm:mx-[3.5%] lg:mx-[8.68%] mt-20 mb-32 py-2 text-hackathone-font-rocket-red"
+      className="mx-4 mb-32 mt-20 flex flex-col items-center justify-center py-2 text-hackathone-font-rocket-red sm:mx-[3.5%] lg:mx-[8.68%]"
     >
-      <div className="text-[30.99px] leading-[34.62px] sm:text-[32.99px] lg:text-4xl font-bold mb-10 font-hackathoneCabinetGrotesk text-center">
+      <div className="mb-10 text-center font-hackathoneCabinetGrotesk text-[30.99px] font-bold leading-[34.62px] sm:text-[32.99px] lg:text-4xl">
         Timeline
       </div>
       <MuiTimeline position="alternate-reverse">
@@ -49,11 +49,11 @@ export default function Timeline() {
               onClick={event.route}
               tabIndex={0}
             >
-              <TimelineOppositeContent className="hidden md:flex px-4">
+              <TimelineOppositeContent className="hidden px-4 md:flex">
                 <div
-                  className={`text-base font-bold text-white transition-transform duration-300 ease-in-out w-full ${
+                  className={`w-full text-base font-bold text-white transition-transform duration-300 ease-in-out ${
                     hoveredIndex === index
-                      ? `!text-hackathone-font-rocket-red font-extrabold ${
+                      ? `font-extrabold !text-hackathone-font-rocket-red ${
                           isOdd ? "-translate-x-[5%]" : "translate-x-[5%]"
                         }`
                       : "translate-x-0"
@@ -63,10 +63,10 @@ export default function Timeline() {
                 </div>
               </TimelineOppositeContent>
               <TimelineSeparator>
-                <TimelineDot className="bg-hackathone-font-rocket-red hidden sm:block" />
+                <TimelineDot className="hidden bg-hackathone-font-rocket-red sm:block" />
                 {index < timelineInfo.length - 1 && (
                   <TimelineConnector
-                    className="transition-all duration-500 ease-in-out hidden sm:block bg-zinc-600"
+                    className="hidden bg-zinc-600 transition-all duration-500 ease-in-out sm:block"
                     style={{
                       height: hoveredIndex === index ? contentHeight + 20 : 100,
                     }}
@@ -75,9 +75,9 @@ export default function Timeline() {
               </TimelineSeparator>
               <TimelineContent>
                 <div
-                  className={`flex-1 p-4 rounded-xl transition-all mb-4 duration-300 ease-in-out bg-[#1e1e1e] ${
+                  className={`mb-4 flex-1 rounded-xl bg-[#1e1e1e] p-4 transition-all duration-300 ease-in-out ${
                     hoveredIndex === index
-                      ? "border-2 border-[#EAFE07]"
+                      ? "border-2 border-hackathone-background-yellow"
                       : "border-2 border-transparent"
                   }`}
                   style={{
@@ -87,7 +87,7 @@ export default function Timeline() {
                   }}
                 >
                   <div
-                    className={`text-[16px] sm:text-xl font-bold text-hackathone-font-rocket-red text-center ${
+                    className={`text-center text-[16px] font-bold text-hackathone-font-rocket-red sm:text-xl ${
                       isOdd ? "md:text-start" : "md:text-end"
                     }`}
                   >
@@ -96,7 +96,7 @@ export default function Timeline() {
                   {event.subtitle && (
                     <div
                       ref={contentRef}
-                      className={`text-white transition-all duration-500 ease-in-out mt-4 text-[14px] sm:text-[16px] text-center ${
+                      className={`mt-4 text-center text-[14px] text-white transition-all duration-500 ease-in-out sm:text-[16px] ${
                         isOdd ? "md:text-start" : "md:text-end"
                       }`}
                     >

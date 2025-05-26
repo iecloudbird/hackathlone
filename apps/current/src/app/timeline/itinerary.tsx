@@ -1,8 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
-import { schedule, DaySchedule, ScheduleItem } from "./timeline.dto";
+import { ExpandLess } from "@mui/icons-material";
 import {
   Timeline as MuiTimeline,
   TimelineItem,
@@ -13,8 +11,10 @@ import {
   timelineItemClasses,
 } from "@mui/lab";
 import { Paper, Typography, IconButton } from "@mui/material";
-import { ExpandLess } from "@mui/icons-material";
+import { useRouter, useSearchParams } from "next/navigation";
+import React, { useEffect, useState } from "react";
 import Tooltip from "../general/tooltip";
+import { schedule, type DaySchedule, type ScheduleItem } from "./timeline.dto";
 
 const formatDate = (date: Date) => {
   const options: Intl.DateTimeFormatOptions = {
@@ -39,7 +39,7 @@ const Itinerary: React.FC = () => {
 
   const sharedView = () => {
     return (
-      <div className="relative z-10 py-[24px] TabletScreen:mx-[8.06%] DesktopScreen:mx-[8.06%] mt-2">
+      <div className="relative z-10 mt-2 py-[24px] TabletScreen:mx-[8.06%] DesktopScreen:mx-[8.06%]">
         <div>
           {schedule.map((day: DaySchedule, dayIndex: number) => {
             const dayDate = new Date(startDate);
@@ -52,13 +52,13 @@ const Itinerary: React.FC = () => {
               >
                 {/*Desktop Screen*/}
                 <div className="MobileScreen:hidden TabletScreen:hidden">
-                  <div className="flex items-center mb-10">
+                  <div className="mb-10 flex items-center">
                     <Tooltip text="Back to Timeline">
                       <IconButton
                         size="large"
                         color="primary"
                         onClick={() => router.push("/#timeline")}
-                        className="mr-4 text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden MobileScreen:hidden"
+                        className="mr-4 text-white hover:text-hackathone-font-rocket-red MobileScreen:hidden TabletScreen:hidden"
                         edge="start"
                         sx={{
                           width: "4rem",
@@ -90,7 +90,7 @@ const Itinerary: React.FC = () => {
                     <Typography
                       variant="h3"
                       component="h1"
-                      className="text-4xl font-hackathoneCabinetGrotesk font-bold text-hackathone-font-rocket-red text-start md:text-[3.5rem] MobileScreen:hidden"
+                      className="text-start font-hackathoneCabinetGrotesk text-4xl font-bold text-hackathone-font-rocket-red md:text-[3.5rem] MobileScreen:hidden"
                     >
                       {day.title}
                       <span className="text-4xl text-white md:text-[32.99px]">
@@ -100,7 +100,7 @@ const Itinerary: React.FC = () => {
                     <Typography
                       variant="h3"
                       component="h1"
-                      className="text-3xl font-hackathoneCabinetGrotesk font-bold text-hackathone-font-rocket-red text-start DesktopScreen:hidden TabletScreen:hidden sm:text-[3.5rem] pl-4"
+                      className="pl-4 text-start font-hackathoneCabinetGrotesk text-3xl font-bold text-hackathone-font-rocket-red sm:text-[3.5rem] TabletScreen:hidden DesktopScreen:hidden"
                     >
                       <span className="MobileScreen:whitespace-pre">
                         {" "}
@@ -135,11 +135,11 @@ const Itinerary: React.FC = () => {
                             <TimelineConnector className="transition-all duration-500 ease-in-out" />
                           )}
                         </TimelineSeparator>
-                        <div className="w-[18rem] mx-[1rem] justify-center items-center text-center">
+                        <div className="mx-4 w-72 items-center justify-center text-center">
                           <TimelineContent>
                             <Paper
                               elevation={3}
-                              className="p-2 rounded-lg transition-all duration-500  ease-in-out w-[15rem] h-[2.75rem] "
+                              className="h-11 w-60 rounded-lg p-2 transition-all duration-500 ease-in-out"
                               style={{
                                 backgroundColor: "rgb(234 254 7)",
                               }}
@@ -147,7 +147,7 @@ const Itinerary: React.FC = () => {
                               <Typography
                                 variant="h6"
                                 component="h1"
-                                className="md:!text-[1rem] text-[14px] !font-extrabold text-black text-center whitespace-nowrap"
+                                className="whitespace-nowrap text-center text-[14px] !font-extrabold text-black md:!text-[1rem]"
                                 style={{
                                   backgroundColor: "rgb(234 254 7)",
                                 }}
@@ -157,11 +157,11 @@ const Itinerary: React.FC = () => {
                             </Paper>
                           </TimelineContent>
                         </div>
-                        <div className="translate-y-[-30%] w-[55%]">
+                        <div className="w-[55%] translate-y-[-30%]">
                           <TimelineContent>
                             <Paper
                               elevation={3}
-                              className="relative flex-1 p-4 rounded-xl transition-all duration-500 ease-in-out my-4"
+                              className="relative my-4 flex-1 rounded-xl p-4 transition-all duration-500 ease-in-out"
                               style={{
                                 backgroundColor: "#1e1e1e",
                               }}
@@ -169,7 +169,7 @@ const Itinerary: React.FC = () => {
                               <Typography
                                 variant="h6"
                                 component="h1"
-                                className="md:text-xl font-bold text-hackathone-font-rocket-red text-start lg:whitespace-nowrap"
+                                className="text-start font-bold text-hackathone-font-rocket-red md:text-xl lg:whitespace-nowrap"
                               >
                                 {item.title}
                               </Typography>
@@ -188,8 +188,8 @@ const Itinerary: React.FC = () => {
                 </div>
                 {/*Mobile and Tablet Screen*/}
                 <div className="DesktopScreen:hidden">
-                  <div className="flex flex-row items-center text-center justify-center TabletScreen:mb-10 mb-4">
-                    <div className="TabletScreen:w-[20%] TabletScreen:text-left MobileScreen:flex MobileScreen:flex-row MobileScreen:w-full MobileScreen:ml-[2rem]">
+                  <div className="mb-4 flex flex-row items-center justify-center text-center TabletScreen:mb-10">
+                    <div className="MobileScreen:ml-8 MobileScreen:flex MobileScreen:w-full MobileScreen:flex-row TabletScreen:w-1/5 TabletScreen:text-left">
                       {/*Button Sizing for Tablet Screen*/}
                       <IconButton
                         size="medium"
@@ -258,7 +258,7 @@ const Itinerary: React.FC = () => {
                       <Typography
                         variant="h3"
                         component="h1"
-                        className="text-3xl font-hackathoneCabinetGrotesk font-bold text-hackathone-font-rocket-red text-start TabletScreen:hidden sm:text-[3.5rem] pl-4"
+                        className="pl-4 text-start font-hackathoneCabinetGrotesk text-3xl font-bold text-hackathone-font-rocket-red sm:text-[3.5rem] TabletScreen:hidden"
                       >
                         <span className="MobileScreen:whitespace-pre">
                           {" "}
@@ -269,11 +269,11 @@ const Itinerary: React.FC = () => {
                         </span>
                       </Typography>
                     </div>
-                    <div className="TabletScreen:w-[90%] TabletScreen:flex TabletScreen:text-center TabletScreen:justify-center TabletScreen:items-center MobileScreen:hidden">
+                    <div className="MobileScreen:hidden TabletScreen:flex TabletScreen:w-[90%] TabletScreen:items-center TabletScreen:justify-center TabletScreen:text-center">
                       <Typography
                         variant="h3"
                         component="h1"
-                        className="text-3xl font-hackathoneCabinetGrotesk font-bold text-hackathone-font-rocket-red text-center TabletScreen:text-start sm:text-[3.5rem]"
+                        className="text-center font-hackathoneCabinetGrotesk text-3xl font-bold text-hackathone-font-rocket-red sm:text-[3.5rem] TabletScreen:text-start"
                       >
                         {day.title}
                         <span className="text-3xl text-white sm:text-[32.99px] MobileScreen:whitespace-pre">
@@ -306,11 +306,11 @@ const Itinerary: React.FC = () => {
                             <TimelineConnector className="transition-all duration-500 ease-in-out" />
                           )}
                         </TimelineSeparator>
-                        <div className="mx-[1rem] justify-center items-center text-center space-x-4 w-full">
+                        <div className="mx-4 w-full items-center justify-center space-x-4 text-center">
                           <TimelineContent>
                             <Paper
                               elevation={3}
-                              className="h-[2.5rem] TabletScreen:mx-[15%]  MobileScreen:w-[80%] MobileScreen:h-fit"
+                              className="h-10 MobileScreen:h-fit MobileScreen:w-4/5 TabletScreen:mx-[15%]"
                               style={{
                                 backgroundColor: "rgb(234 254 7)",
                               }}
@@ -318,7 +318,7 @@ const Itinerary: React.FC = () => {
                               <Typography
                                 variant="h6"
                                 component="h1"
-                                className="p-2 rounded-lg md:text-[1rem] text-[14px] font-extrabold text-black text-center MobileScreen:text-start MobileScreen:pl-[1rem]"
+                                className="rounded-lg p-2 text-center text-[14px] font-extrabold text-black md:text-[1rem] MobileScreen:pl-4 MobileScreen:text-start"
                                 style={{
                                   backgroundColor: "rgb(234 254 7)",
                                 }}
@@ -328,7 +328,7 @@ const Itinerary: React.FC = () => {
                             </Paper>
                             <Paper
                               elevation={3}
-                              className="relative flex-1 p-4 rounded-xl transition-all duration-500 ease-in-out my-6 MobileScreen:mb-[1.5rem] MobileScreen:mt-[1rem]"
+                              className="relative my-6 flex-1 rounded-xl p-4 transition-all duration-500 ease-in-out MobileScreen:mb-6 MobileScreen:mt-4"
                               style={{
                                 backgroundColor: "#1e1e1e",
                               }}
@@ -338,7 +338,7 @@ const Itinerary: React.FC = () => {
                                 <Typography
                                   variant="h6"
                                   component="h1"
-                                  className="md:text-xl text-[18px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-start lg:whitespace-nowrap"
+                                  className="text-center text-[18px] font-bold text-hackathone-font-rocket-red md:text-xl lg:whitespace-nowrap MobileScreen:text-start"
                                 >
                                   {item.title}
                                 </Typography>
@@ -373,7 +373,7 @@ const Itinerary: React.FC = () => {
                                 <Typography
                                   variant="h6"
                                   component="h1"
-                                  className="md:text-xl text-[18px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-start lg:whitespace-nowrap"
+                                  className="text-center text-[18px] font-bold text-hackathone-font-rocket-red md:text-xl lg:whitespace-nowrap MobileScreen:text-start"
                                 >
                                   {item.title}
                                 </Typography>
@@ -381,7 +381,7 @@ const Itinerary: React.FC = () => {
                               </div>
                               <Typography
                                 variant="body1"
-                                className="text-center MobileScreen:text-start text-white pt-[0.5rem] MobileScreen:hidden"
+                                className="pt-2 text-center text-white MobileScreen:hidden MobileScreen:text-start"
                               >
                                 {item.content}
                               </Typography>
@@ -391,7 +391,7 @@ const Itinerary: React.FC = () => {
                               >
                                 <Typography
                                   variant="body1"
-                                  className="text-center MobileScreen:text-start text-white pt-[0.5rem]"
+                                  className="pt-2 text-center text-white MobileScreen:text-start"
                                 >
                                   {item.content}
                                 </Typography>

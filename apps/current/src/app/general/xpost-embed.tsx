@@ -15,7 +15,7 @@ const TweetEmbed = () => {
 
   return (
     <div
-      className="MobileScreen:mx-[2rem]"
+      className="MobileScreen:mx-8"
       style={{ height: "400px", overflow: "auto" }}
     >
       <blockquote className="twitter-tweet" data-theme="dark" data-width="300">

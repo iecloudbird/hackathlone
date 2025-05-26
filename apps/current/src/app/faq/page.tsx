@@ -1,19 +1,19 @@
 "use client";
 
-import React, { useState } from "react";
-import Image from "next/image";
-import { Canvas } from "@react-three/fiber";
-import CloudParticleBg from "@/app/general/cloud-particle-bg";
-import { faqData } from "./components/faq.dto";
-import NavigationBar from "../general/navigation-bar";
-import Footer from "../general/footer";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import Typography from "@mui/material/Typography";
+import { Canvas } from "@react-three/fiber";
+import Image from "next/image";
+import React, { useState } from "react";
+import CloudParticleBg from "@/app/general/cloud-particle-bg";
 import Sun from "@/assets/images/faq-page/sun - Copy.png";
 import BackToTopButton from "../general/back-to-top";
+import Footer from "../general/footer";
+import NavigationBar from "../general/navigation-bar";
+import { faqData } from "./components/faq.dto";
 
 const Faq = () => {
   const [expanded, setExpanded] = useState<number | false>(false);
@@ -26,7 +26,7 @@ const Faq = () => {
   /** DeskTop View */
   const desktopView = () => {
     return (
-      <div className="TabletScreen:hidden MobileScreen:hidden relative min-h-screen bg-black text-white">
+      <div className="relative min-h-screen bg-black text-white MobileScreen:hidden TabletScreen:hidden">
         <div className="fixed inset-0 z-0">
           <Canvas camera={{ position: [0, 0, 1] }}>
             <CloudParticleBg />
@@ -39,18 +39,18 @@ const Faq = () => {
             <Typography
               variant="h4"
               gutterBottom
-              className="lg:px-[6.8%] md:mt-[3rem] font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red"
+              className="font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red md:mt-12 lg:px-[6.8%]"
             >
               Frequently Asked Questions (FAQs)
             </Typography>
-            <section className="flex flex-row item-center justify-between">
+            <section className="item-center flex flex-row justify-between">
               <div className="w-2/3">
                 {faqData.map((item, index) => (
                   <Accordion
                     key={index}
                     expanded={expanded === index}
                     onChange={handleChange(index)}
-                    className="my-6 border-2 border-hackathone-font-light-grey lg:mx-[9.8%] !bg-transparent text-white rounded py-2"
+                    className="my-6 rounded border-2 border-hackathone-font-light-grey !bg-transparent py-2 text-white lg:mx-[9.8%]"
                     disableGutters
                   >
                     <AccordionSummary
@@ -65,7 +65,7 @@ const Faq = () => {
                       id={`panel${index}-header`}
                     >
                       <h1
-                        className="font-hackathoneSFProDisplay font-[300] text-[18px]"
+                        className="font-hackathoneSFProDisplay text-[18px] font-[300]"
                         style={{
                           color: expanded === index ? "yellow" : "white",
                           fontWeight: expanded === index ? "bold" : "normal",
@@ -74,13 +74,13 @@ const Faq = () => {
                         {item.header}
                       </h1>
                     </AccordionSummary>
-                    <AccordionDetails className="pr-[3rem] text-slate-50">
+                    <AccordionDetails className="pr-12 text-slate-50">
                       <Typography>{item.text}</Typography>
                     </AccordionDetails>
                   </Accordion>
                 ))}
               </div>
-              <div className="w-1/3 -mt-[100px] translate-x-[5%] z-[-1]">
+              <div className="z-[-1] -mt-[100px] w-1/3 translate-x-[5%]">
                 <Image src={Sun} alt={"Sun Image"}></Image>
               </div>
             </section>
@@ -95,7 +95,7 @@ const Faq = () => {
   /** Tablet and Mobile View */
   const tabletMobileView = () => {
     return (
-      <div className="DesktopScreen:hidden relative min-h-screen bg-black text-white">
+      <div className="relative min-h-screen bg-black text-white DesktopScreen:hidden">
         <div className="fixed inset-0 z-0">
           <Canvas camera={{ position: [0, 0, 1] }}>
             <CloudParticleBg />
@@ -108,7 +108,7 @@ const Faq = () => {
             <Typography
               variant="h4"
               gutterBottom
-              className="lg:px-[6.8%] md:my-[42px] font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red"
+              className="font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red md:my-[42px] lg:px-[6.8%]"
             >
               Frequently Asked Questions (FAQs)
             </Typography>
@@ -119,7 +119,7 @@ const Faq = () => {
                     key={index}
                     expanded={expanded === index}
                     onChange={handleChange(index)}
-                    className="my-8 border-2 border-hackathone-font-light-grey lg:mx-[9.8%] !bg-transparent text-white rounded"
+                    className="my-8 rounded border-2 border-hackathone-font-light-grey !bg-transparent text-white lg:mx-[9.8%]"
                     disableGutters
                   >
                     <AccordionSummary
@@ -134,7 +134,7 @@ const Faq = () => {
                       id={`panel${index}-header`}
                     >
                       <h1
-                        className="font-hackathoneSFProDisplay font-[300] text-[14px]"
+                        className="font-hackathoneSFProDisplay text-[14px] font-[300]"
                         style={{
                           color: expanded === index ? "yellow" : "white",
                           fontWeight: expanded === index ? "bold" : "normal",
@@ -143,7 +143,7 @@ const Faq = () => {
                         {item.header}
                       </h1>
                     </AccordionSummary>
-                    <AccordionDetails className="pr-[2rem] text-slate-50">
+                    <AccordionDetails className="pr-8 text-slate-50">
                       <p className="text-[14px]">{item.text}</p>
                     </AccordionDetails>
                   </Accordion>

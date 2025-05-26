@@ -5,24 +5,24 @@ import { CollabratorsSlider } from "./collabrators-slider";
 
 const GlobalCollabrators = () => {
   return (
-    <section className="flex flex-col lg:flex-row gap-6 lg:gap-9 mx-4 sm:mx-8 lg:mx-[8.06%] mt-20 mb-20 items-center">
+    <section className="mx-4 my-20 flex flex-col items-center gap-6 sm:mx-8 lg:mx-[8.06%] lg:flex-row lg:gap-9">
       {/* Left Section: Slider */}
-      <div className="hidden lg:flex mt-6 mt-[5rem] mr-8 w-1/2">
+      <div className="mr-8 mt-20 mt-6 hidden w-1/2 lg:flex">
         <CollabratorsSlider />
       </div>
 
       {/* Right Section: Text Content */}
-      <div className="w-full lg:w-1/2 mt-6 lg:mt-[3%]">
-        <h1 className="font-hackathoneCabinetGrotesk font-bold text-hackathone-font-rocket-red text-[30.99px] leading-[34.62px] sm:text-[32.99px] lg:text-[42px] lg:leading-[44.62px] my-2 pb-2">
+      <div className="mt-6 w-full lg:mt-[3%] lg:w-1/2">
+        <h1 className="my-2 pb-2 font-hackathoneCabinetGrotesk text-[30.99px] font-bold leading-[34.62px] text-hackathone-font-rocket-red sm:text-[32.99px] lg:text-[42px] lg:leading-[44.62px]">
           NASA Space Apps
         </h1>
-        <div className="font-hackathoneCabinetGrotesk font-normal text-slate-50 text-base sm:text-lg lg:text-lg leading-[160%]">
+        <div className="font-hackathoneCabinetGrotesk text-base font-normal leading-[160%] text-slate-50 sm:text-lg lg:text-lg">
           <p>
             The NASA Space Apps Challenge 2025 is backed by NASA’s Earth Science
             Division through collaborations with{" "}
             <a
               href="https://www.boozallen.com/"
-              className="underline text-hackathone-font-rocket-red hover:text-red-400"
+              className="text-hackathone-font-rocket-red underline hover:text-red-400"
               target="_blank"
               rel="noreferrer"
             >
@@ -31,7 +31,7 @@ const GlobalCollabrators = () => {
             ,{" "}
             <a
               href="https://mindgrub.com/"
-              className="underline text-hackathone-font-rocket-red hover:text-red-400"
+              className="text-hackathone-font-rocket-red underline hover:text-red-400"
               target="_blank"
               rel="noreferrer"
             >
@@ -40,7 +40,7 @@ const GlobalCollabrators = () => {
             , and{" "}
             <a
               href="https://www.secondmuse.com/"
-              className="underline text-hackathone-font-rocket-red hover:text-red-400"
+              className="text-hackathone-font-rocket-red underline hover:text-red-400"
               target="_blank"
               rel="noreferrer"
             >
@@ -49,7 +49,7 @@ const GlobalCollabrators = () => {
             . This year’s hackathon theme is funded by NASA’s Heliophysics
             Division in celebration of the Helio Big Year.
           </p>
-          <ul className="list-disc pl-6 sm:pl-12 pr-4 sm:pr-8 pt-8">
+          <ul className="list-disc pl-6 pr-4 pt-8 sm:pl-12 sm:pr-8">
             <li>
               NASA’s Heliophysics Division studies the Sun’s impact on space,
               Earth, and technology, using a fleet of spacecraft to understand
@@ -58,7 +58,7 @@ const GlobalCollabrators = () => {
               habitability.{" "}
               <a
                 href="https://science.nasa.gov/heliophysics/"
-                className="underline text-hackathone-font-rocket-red hover:text-red-400"
+                className="text-hackathone-font-rocket-red underline hover:text-red-400"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -73,7 +73,7 @@ const GlobalCollabrators = () => {
               students to explore and understand our planet.{" "}
               <a
                 href="https://science.nasa.gov/earth-science"
-                className="underline text-hackathone-font-rocket-red hover:text-red-400"
+                className="text-hackathone-font-rocket-red underline hover:text-red-400"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -84,7 +84,7 @@ const GlobalCollabrators = () => {
         </div>
       </div>
       {/* Bottom Section: Slider */}
-      <div className="lg:hidden w-full sm:w-[60%] lg:w-1/2 flex justify-center items-center">
+      <div className="flex w-full items-center justify-center sm:w-3/5 lg:hidden lg:w-1/2">
         <CollabratorsSlider />
       </div>
     </section>

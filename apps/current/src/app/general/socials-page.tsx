@@ -22,23 +22,23 @@ const Socials = () => {
 
   return (
     <>
-      <motion.div className="w-full flex flex-col items-center text-center justify-center bg-center bg-repeat bg-cover md:mb-[3rem] mb-[1.5rem]">
+      <motion.div className="mb-6 flex w-full flex-col items-center justify-center bg-cover bg-center bg-repeat text-center md:mb-12">
         <motion.h1
           variants={fadeIn("down", "tween", 0.5, 0.4)}
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
-          className="font-hackathoneCabinetGrotesk text-white font-[700] text-5xl tracking-tight mb-[1rem] text-center MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px] px-[3rem]"
+          className="mb-4 px-12 text-center font-hackathoneCabinetGrotesk text-5xl font-[700] tracking-tight text-white MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px]"
         >
           Discover more on Our{" "}
-          <span className="font-extrabold text-hackathone-font-rocket-red ">
+          <span className="font-extrabold text-hackathone-font-rocket-red">
             Socials
           </span>
         </motion.h1>
-        <div className="mb-[2rem]">
-          <p className="font-hackathoneCabinetGrotesk text-[22px] leading-tight text-white MobileScreen:px-[1rem]">
+        <div className="mb-8">
+          <p className="font-hackathoneCabinetGrotesk text-[22px] leading-tight text-white MobileScreen:px-4">
             Keep your self updated by{" "}
-            <span className="font-extrabold text-hackathone-font-rocket-red ">
+            <span className="font-extrabold text-hackathone-font-rocket-red">
               following us on social media
             </span>
           </p>
@@ -48,7 +48,7 @@ const Socials = () => {
           initial="hidden"
           animate={animationComplete ? "show" : "hidden"}
           onAnimationComplete={handleAnimationComplete}
-          className="flex flex-row flex-wrap items-start justify-center gap-8 my-3 MobileScreen:mx-[2rem] TabletScreen:mx-[2rem] "
+          className="my-3 flex flex-row flex-wrap items-start justify-center gap-8 MobileScreen:mx-8 TabletScreen:mx-8"
         >
           <motion.div
             variants={fadeIn("down", "tween", 1.0, 0.5)}
@@ -61,11 +61,12 @@ const Socials = () => {
             <a
               href="https://twitter.com/hack_athlone?ref_src=twsrc%5Etfw"
               target="_blank"
-              className="text-hackathone-font-rocket-red font-[700] rounded-lg text-[18px] my-[0.5rem] text-center inline-flex items-center me-2 mb-2"
+              className="my-2 me-2 inline-flex items-center rounded-lg text-center text-[18px] font-[700] text-hackathone-font-rocket-red"
+              rel="noreferrer"
             >
               Follow us on
               <Image
-                className="cursor-pointer w-6 h-6 ms-2 MobileScreen:w-4"
+                className="ms-2 size-6 cursor-pointer MobileScreen:w-4"
                 src={XIcon}
                 height={80}
                 width={80}
@@ -93,11 +94,12 @@ const Socials = () => {
             <a
               href="https://www.instagram.com/spaceappsathlone/"
               target="_blank"
-              className="text-hackathone-font-rocket-red font-[700] rounded-lg text-[18px] my-[1rem] text-center inline-flex items-center me-2 mb-2"
+              className="my-4 mb-2 me-2 inline-flex items-center rounded-lg text-center text-[18px] font-[700] text-hackathone-font-rocket-red"
+              rel="noreferrer"
             >
               Follow us on
               <Image
-                className="cursor-pointer w-6 h-6 ms-2 MobileScreen:w-4 MobileScreen:h-4"
+                className="ms-2 size-6 cursor-pointer MobileScreen:size-4"
                 src={InstaIcon}
                 height={80}
                 width={80}
@@ -110,17 +112,18 @@ const Socials = () => {
             initial="hidden"
             animate={animationComplete ? "show" : "hidden"}
             onAnimationComplete={handleAnimationComplete}
-            className="mb-8 "
+            className="mb-8"
           >
             <InPostEmbed />
             <a
               href="https://www.linkedin.com/company/spaceapps-hackathlone/"
               target="_blank"
-              className="text-hackathone-font-rocket-red font-[700] rounded-lg text-[18px] my-[1rem] text-center inline-flex items-center me-2 mb-2"
+              className="my-4 mb-2 me-2 inline-flex items-center rounded-lg text-center text-[18px] font-[700] text-hackathone-font-rocket-red"
+              rel="noreferrer"
             >
               Follow us on
               <Image
-                className="cursor-pointer w-6 h-6 ms-2 MobileScreen:w-4 MobileScreen:h-4"
+                className="ms-2 size-6 cursor-pointer MobileScreen:size-4"
                 src={InIcon}
                 height={80}
                 width={80}

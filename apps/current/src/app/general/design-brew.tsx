@@ -15,7 +15,7 @@ const StarWithCircles = () => {
     outerRadius: number,
     innerRadius: number
   ) => {
-    let points = [];
+    const points = [];
     for (let i = 0; i < arms * 2; i++) {
       const radius = i % 2 === 0 ? outerRadius : innerRadius;
       const angle = (Math.PI * i) / arms;
@@ -42,12 +42,12 @@ const StarWithCircles = () => {
   );
 
   return (
-    <div className="absolute bottom-[-200px] left-[-5px] w-[400px] h-[400px] overflow-hidden lg:block hidden">
+    <div className="absolute bottom-[-200px] left-[-5px] hidden size-[400px] overflow-hidden lg:block">
       {" "}
       {/* Adjusted container size */}
       <svg
         viewBox="0 0 400 400" // Adjusted viewBox to match new dimensions
-        className="absolute left-[-200px] top-0 w-full h-full" // Shift SVG left to push half the star out
+        className="absolute left-[-200px] top-0 size-full" // Shift SVG left to push half the star out
       >
         <polygon
           points={starPoints}
@@ -88,17 +88,17 @@ const DesignBrew = () => {
       {/* Desktop view */}
       {/* logo row */}
 
-      <div className="relative lg:h-[600px] w-full">
-        <div className="hidden lg:flex px-4 lg:px-10 flex-col lg:flex-row gap-6 pb-30">
+      <div className="relative w-full lg:h-[600px]">
+        <div className="pb-30 hidden flex-col gap-6 px-4 lg:flex lg:flex-row lg:px-10">
           {/* Text on the left */}
-          <div className="lg:w-1/2 w-full flex items-center justify-center  lg:mr-[1rem] pb-20">
-            <div className="items-center ">
+          <div className="flex w-full items-center justify-center pb-20 lg:mr-4 lg:w-1/2">
+            <div className="items-center">
               {/* Hero text */}
-              <div className="flex justify-between items-center mb-12">
+              <div className="mb-12 flex items-center justify-between">
                 <a className="cursor-pointer" href="/">
                   <Image width={100} src={HeroImage} alt="Hero Image" />
                 </a>
-                <a className="cursor-pointer " href="/">
+                <a className="cursor-pointer" href="/">
                   <Image
                     width={100}
                     src={DesignBrewImage}
@@ -107,10 +107,10 @@ const DesignBrew = () => {
                 </a>
               </div>
               <div>
-                <h3 className="font-hackathoneCabinetGrotesk font-extrabold tracking-widest text-[18px]">
+                <h3 className="font-hackathoneCabinetGrotesk text-[18px] font-extrabold tracking-widest">
                   IT ALL STARTS HERE
                 </h3>
-                <h1 className="font-[700] text-[52px] text-hackathone-font-rocket-red tracking-tight leading-tight mt-[1rem] mb-[1rem]">
+                <h1 className="my-4 text-[52px] font-[700] leading-tight tracking-tight text-hackathone-font-rocket-red">
                   Ready to supercharge
                   <br /> your creative process?
                 </h1>
@@ -120,7 +120,7 @@ const DesignBrew = () => {
 
               <motion.button
                 onClick={handleJoinUsClick}
-                className="bg-slate-50 text-black font-[620] py-4 px-3 rounded-lg w-32 h-14 italic text-center flex items-center justify-center gap-2 mt-[1.5rem]  transition duration-200 ease-in-out"
+                className="mt-6 flex h-14 w-32 items-center justify-center gap-2 rounded-lg bg-slate-50 px-3 py-4 text-center font-[620] italic text-black transition duration-200 ease-in-out"
                 initial={{ scale: 1 }} // Initial scale
                 whileHover={{ scale: 1.05 }} // Scale up on hover
                 whileTap={{ scale: 0.95 }} // Scale down on tap
@@ -132,7 +132,7 @@ const DesignBrew = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={3}
                   stroke="currentColor"
-                  className="h-4 w-4"
+                  className="size-4"
                 >
                   <path
                     strokeLinecap="round"
@@ -145,13 +145,13 @@ const DesignBrew = () => {
           </div>
 
           {/* Instagram post on the right */}
-          <div className="lg:w-1/2 w-full flex items-center justify-center rounded-lg lg:h-[550px] h-[500px] mb-4 mr-4 rounded-2xl border-none overflow-hidden mb-20">
-            <div className="w-full rounded-2xl overflow-hidden">
+          <div className="mb-20 mb-4 mr-4 flex h-[500px] w-full items-center justify-center overflow-hidden rounded-2xl rounded-lg border-none lg:h-[550px] lg:w-1/2">
+            <div className="w-full overflow-hidden rounded-2xl">
               <InstagramEmbed
                 url="https://www.instagram.com/p/DALAFgJStm-/"
                 width={450} // Width for large screens
                 height={500} // Height for large screens
-                className="rounded-2xl ml-6"
+                className="ml-6 rounded-2xl"
               />
             </div>
           </div>
@@ -160,27 +160,27 @@ const DesignBrew = () => {
       </div>
 
       {/* Mobile and Tablet view */}
-      <div className="block lg:hidden px-4 sm:px-6 flex flex-col items-center gap-6 pb-30">
+      <div className="pb-30 block flex flex-col items-center gap-6 px-4 sm:px-6 lg:hidden">
         {/* Hero text */}
-        <div className="flex flex-col items-center justify-center text-center mt-[1.5rem] pb-12">
-          <div className="flex justify-between items-center pb-6 ">
-            <a className="cursor-pointer mr-4" href="/">
+        <div className="mt-6 flex flex-col items-center justify-center pb-12 text-center">
+          <div className="flex items-center justify-between pb-6">
+            <a className="mr-4 cursor-pointer" href="/">
               <Image width={100} src={HeroImage} alt="Hero Image" />
             </a>
-            <a className="cursor-pointer ml-4" href="/">
+            <a className="ml-4 cursor-pointer" href="/">
               <Image width={100} src={DesignBrewImage} alt="DesignBrew Image" />
             </a>
           </div>
-          <h3 className="font-hackathoneCabinetGrotesk font-extrabold tracking-widest text-[18px]">
+          <h3 className="font-hackathoneCabinetGrotesk text-[18px] font-extrabold tracking-widest">
             IT ALL STARTS HERE
           </h3>
-          <h1 className="font-[700] text-[32px] sm:text-[40px] md:text-[48px] text-hackathone-font-rocket-red tracking-tight leading-tight mt-[1rem] mb-[1rem]">
+          <h1 className="my-4 text-[32px] font-[700] leading-tight tracking-tight text-hackathone-font-rocket-red sm:text-[40px] md:text-[48px]">
             Ready to supercharge
             <br /> your creative process?
           </h1>
 
           {/* Join button */}
-          <div className="bg-slate-50 text-black font-[620] py-4 px-3 rounded-lg w-32 h-14 italic text-center flex items-center justify-center gap-2 mt-[1.5rem]">
+          <div className="mt-6 flex h-14 w-32 items-center justify-center gap-2 rounded-lg bg-slate-50 px-3 py-4 text-center font-[620] italic text-black">
             <span className="text-lg">Join Us</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -188,7 +188,7 @@ const DesignBrew = () => {
               viewBox="0 0 24 24"
               strokeWidth={3}
               stroke="currentColor"
-              className="h-4 w-4"
+              className="size-4"
             >
               <path
                 strokeLinecap="round"
@@ -200,8 +200,8 @@ const DesignBrew = () => {
         </div>
 
         {/* Instagram post below */}
-        <div className="flex items-center justify-center rounded-lg h-[400px] md:h-[500px] w-full mb-4 border-none overflow-hidden mb-24">
-          <div className="w-full max-w-md md:max-w-lg rounded-2xl overflow-hidden flex items-center justify-center">
+        <div className="mb-24 mb-4 flex h-[400px] w-full items-center justify-center overflow-hidden rounded-lg border-none md:h-[500px]">
+          <div className="flex w-full max-w-md items-center justify-center overflow-hidden rounded-2xl md:max-w-lg">
             <InstagramEmbed
               url="https://www.instagram.com/p/DALAFgJStm-/"
               width={350} // Width for mobile

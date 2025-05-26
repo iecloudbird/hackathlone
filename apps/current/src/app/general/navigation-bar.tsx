@@ -56,7 +56,7 @@ export default function NavigationBar() {
       lines.push(
         <div
           key={i}
-          className="w-[36px] h-[5px] bg-white  mt-[6px] rounded-2xl"
+          className="mt-[6px] h-[5px] w-[36px] rounded-2xl bg-white"
         ></div>
       );
       {
@@ -77,19 +77,19 @@ export default function NavigationBar() {
 
   const SideNav = () => (
     <motion.div
-      className="fixed top-0 right-0 w-[75%] h-full bg-black z-50 p-5"
+      className="fixed right-0 top-0 z-50 h-full w-[75%] bg-black p-5"
       initial="hidden"
       animate={isSideNavOpen ? "visible" : "hidden"}
       variants={sideNavVariants}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
     >
       <div
-        className="absolute right-5 text-[24px] cursor-pointer"
+        className="absolute right-5 cursor-pointer text-[24px]"
         onClick={() => setIsSideNavOpen(false)}
       >
         X
       </div>
-      <div className="flex flex-col gap-4 mt-4">
+      <div className="mt-4 flex flex-col gap-4">
         {navigationInfo.map((item, index) => (
           <div
             key={index}
@@ -105,10 +105,7 @@ export default function NavigationBar() {
 
   /** Desktop View */
   const desktopView = () => (
-    <nav
-      className="MobileScreen:hidden TabletScreen:hidden sticky bg-transparent border border-white
-        flex items-center justify-between h-[68px] px-[1.7%] mx-[7%] rounded-xl"
-    >
+    <nav className="sticky mx-[7%] flex h-[68px] items-center justify-between rounded-xl border border-white bg-transparent px-[1.7%] MobileScreen:hidden TabletScreen:hidden">
       <div onClick={() => Router.push("/")}>
         <Image
           className="cursor-pointer"
@@ -117,7 +114,7 @@ export default function NavigationBar() {
           alt={"Deedu logo"}
         ></Image>
       </div>
-      <div className="flex flex-row gap-[3rem]">
+      <div className="flex flex-row gap-12">
         {navigationInfo.map((item, index) => (
           <div
             key={index}
@@ -131,12 +128,12 @@ export default function NavigationBar() {
             {item.text}
             {index === navigationInfo.length - 1 && isTooltipVisible && (
               <motion.div
-                className="absolute left-[90%] transform -translate-x-[50%] bottom-[-25px] z-50"
+                className="absolute bottom-[-25px] left-[90%] z-50 -translate-x-[50%]"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <div className="bg-gray-800 bg-opacity-90 text-white p-2 rounded-md text-sm whitespace-nowrap text-center shadow-lg border border-white">
+                <div className="whitespace-nowrap rounded-md border border-white bg-gray-800 bg-opacity-90 p-2 text-center text-sm text-white shadow-lg">
                   2024 Challenges
                 </div>
               </motion.div>
@@ -149,14 +146,8 @@ export default function NavigationBar() {
 
   /** Tablet View */
   const tabletView = () => (
-    <nav
-      className="DesktopScreen:hidden MobileScreen:hidden bg-transparent border border-white px-[1.7%]
-         flex flex-row justify-between py-[6px] mx-[3%] rounded-xl"
-    >
-      <div
-        onClick={() => Router.push("/")}
-        className="px-[0.5rem] py-[0.25rem]"
-      >
+    <nav className="mx-[3%] flex flex-row justify-between rounded-xl border border-white bg-transparent px-[1.7%] py-[6px] MobileScreen:hidden DesktopScreen:hidden">
+      <div onClick={() => Router.push("/")} className="px-2 py-1">
         <Image
           className="cursor-pointer"
           src={Google}
@@ -164,10 +155,7 @@ export default function NavigationBar() {
           alt={"Deedu logo"}
         ></Image>
       </div>
-      <div
-        onClick={toggleSideNav}
-        className="px-[0.5rem] py-[0.5rem] cursor-pointer"
-      >
+      <div onClick={toggleSideNav} className="cursor-pointer p-2">
         {renderLines()}
       </div>
     </nav>
@@ -175,14 +163,8 @@ export default function NavigationBar() {
 
   /** Mobile View */
   const mobileView = () => (
-    <nav
-      className="DesktopScreen:hidden TabletScreen:hidden bg-transparent border border-white px-[1.2%]
-         flex flex-row items-center justify-between py-[6px] mx-[1%] rounded-md"
-    >
-      <div
-        onClick={() => Router.push("/")}
-        className="px-[0.5rem] py-[0.25rem]"
-      >
+    <nav className="mx-[1%] flex flex-row items-center justify-between rounded-md border border-white bg-transparent px-[1.2%] py-[6px] TabletScreen:hidden DesktopScreen:hidden">
+      <div onClick={() => Router.push("/")} className="px-2 py-1">
         <Image
           className="cursor-pointer"
           src={Google}
@@ -190,10 +172,7 @@ export default function NavigationBar() {
           alt={"Deedu logo"}
         ></Image>
       </div>
-      <div
-        onClick={toggleSideNav}
-        className="px-[0.5rem] pb-[0.5rem] cursor-pointer tool-to"
-      >
+      <div onClick={toggleSideNav} className="tool-to cursor-pointer px-2 pb-2">
         {renderLines()}
       </div>
     </nav>

@@ -42,7 +42,7 @@ const BackToTopButton = () => {
           whileTap={{ scale: 0.9 }}
           onHoverStart={() => !isClicked && setImageSrc(rocket_hover)}
           onHoverEnd={() => !isClicked && setImageSrc(rocket)}
-          className="fixed bottom-4 right-4 lg:bottom-10 lg:right-10 p-1 sm:p-2 lg:p-3 bg-hackathone-font-rocket-red border-none cursor-pointer z-50 rounded-full transition-opacity duration-300 opacity-50 hover:opacity-100"
+          className="fixed bottom-4 right-4 z-50 cursor-pointer rounded-full border-none bg-hackathone-font-rocket-red p-1 opacity-50 transition-opacity duration-300 hover:opacity-100 sm:p-2 lg:bottom-10 lg:right-10 lg:p-3"
         >
           <motion.div
             animate={isClicked ? { y: -600, scale: 2 } : { y: 0, scale: 1 }} // Animate the rocket on click
@@ -53,7 +53,7 @@ const BackToTopButton = () => {
               alt="Back to top"
               width={40}
               height={40}
-              className="lg:w-[50px] lg:h-[50px] transition-transform duration-300"
+              className="transition-transform duration-300 lg:size-[50px]"
             />
           </motion.div>
         </motion.button>

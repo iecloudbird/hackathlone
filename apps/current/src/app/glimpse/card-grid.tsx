@@ -1,6 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 import { motion, animate } from "framer-motion";
 import Image from "next/image";
+import router, { useRouter } from "next/router";
+import React, { useState, useEffect, useRef } from "react";
+import Slider from "react-slick";
+import Code from "@/assets/images/general/landing-page/Code.png";
 import {
   OverviewImages,
   RevisitImages,
@@ -8,10 +12,6 @@ import {
   PhotoWallImages,
   VolunteerImages,
 } from "./glimpse.dto";
-import router, { useRouter } from "next/router";
-import Slider from "react-slick";
-import { ChevronLeft, ChevronRight } from "@mui/icons-material";
-import Code from "@/assets/images/general/landing-page/Code.png";
 
 const CustomArrow = ({
   direction,
@@ -33,7 +33,7 @@ const CustomArrow = ({
     <div
       className={`absolute top-0 ${
         direction === "prev" ? "left-0" : "right-0"
-      } z-20 h-full w-16 flex items-center justify-center cursor-pointer`}
+      } z-20 flex h-full w-16 cursor-pointer items-center justify-center`}
       onClick={handleClick}
     >
       <motion.div
@@ -44,9 +44,9 @@ const CustomArrow = ({
         }`}
       >
         {direction === "prev" ? (
-          <ChevronLeft className={`w-6 h-6 text-black`} />
+          <ChevronLeft className={`size-6 text-black`} />
         ) : (
-          <ChevronRight className={`w-6 h-6 text-black`} />
+          <ChevronRight className={`size-6 text-black`} />
         )}
       </motion.div>
     </div>
@@ -116,14 +116,14 @@ export const CardGrid = () => {
     );
   };
   return (
-    <div className="overflow-hidden lg:gap-8 TabletScreen:gap-6 gap-4">
-      <div className="flex mb-4 lg:gap-8 TabletScreen:gap-6 gap-4 TabletScreen:flex-col MobileScreen:flex-col">
-        <div className="flex lg:flex-col lg:w-2/5 lg:gap-8 TabletScreen:gap-6 gap-4 flex-row w-full MobileScreen:flex-col">
+    <div className="gap-4 overflow-hidden lg:gap-8 TabletScreen:gap-6">
+      <div className="mb-4 flex gap-4 lg:gap-8 MobileScreen:flex-col TabletScreen:flex-col TabletScreen:gap-6">
+        <div className="flex w-full flex-row gap-4 lg:w-2/5 lg:flex-col lg:gap-8 MobileScreen:flex-col TabletScreen:gap-6">
           {/*Overview: Block 1 */}
-          <div className="bg-gray-800 h-fit rounded-2xl border border-transparent justify-start text-start items-start lg:w-full TabletScreen:w-1/2 MobileScreen:w-full">
-            <div className="bg-hackathone-font-rocket-red rounded-md border w-fit lg:m-6 m-4  justify-center">
+          <div className="h-fit items-start justify-start rounded-2xl border border-transparent bg-gray-800 text-start lg:w-full MobileScreen:w-full TabletScreen:w-1/2">
+            <div className="m-4 w-fit justify-center rounded-md border bg-hackathone-font-rocket-red lg:m-6">
               <motion.button
-                className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
+                className="justify-center rounded-md border bg-hackathone-font-rocket-red ease-in-out"
                 whileHover={{
                   scale: 1.1,
                 }}
@@ -131,18 +131,18 @@ export const CardGrid = () => {
                   scale: 0.9,
                 }}
               >
-                <span className="block text-hackathoneCabinetGrotesk text-black lg:text-lg text-md font-bold px-4 py-2">
+                <span className="text-hackathoneCabinetGrotesk text-md block px-4 py-2 font-bold text-black lg:text-lg">
                   Overview
                 </span>
               </motion.button>
             </div>
-            <div className="flex md:flex-row flex-wrap md:flex-nowrap justify-center MobileScreen:justify-start items-start gap-4 pb-4 MobileScreen:pl-4">
-              <div className="md:w-1/3 md:mx-4">
+            <div className="flex flex-wrap items-start justify-center gap-4 pb-4 md:flex-row md:flex-nowrap MobileScreen:justify-start MobileScreen:pl-4">
+              <div className="md:mx-4 md:w-1/3">
                 <CountUp
                   target={15}
                   suffix="+"
                   duration={2}
-                  className="lg:text-[3rem] text-[2.5rem] font-bold"
+                  className="text-[2.5rem] font-bold lg:text-[3rem]"
                 />
                 <p className="">
                   Subject Matter{" "}
@@ -154,7 +154,7 @@ export const CardGrid = () => {
                   target={140}
                   suffix="+"
                   duration={5}
-                  className="lg:text-[3rem] text-[2.5rem] font-bold"
+                  className="text-[2.5rem] font-bold lg:text-[3rem]"
                 />
                 <p>Participants</p>
               </div>
@@ -164,14 +164,14 @@ export const CardGrid = () => {
                   suffix="k"
                   duration={4}
                   decimals={1}
-                  className="lg:text-[3rem] text-[2.5rem] font-bold"
+                  className="text-[2.5rem] font-bold lg:text-[3rem]"
                 />
                 <p>Cash Prize</p>
               </div>
             </div>
           </div>
           {/*Revisit: Block 2 */}
-          <div className="bg-gray-800 h-fit rounded-2xl border border-4  border-black justify-start text-start items-start relative overflow-hidden lg:w-full TabletScreen:w-1/2 MobileScreen:w-full">
+          <div className="relative h-fit items-start justify-start overflow-hidden rounded-2xl border border-4 border-black bg-gray-800 text-start lg:w-full MobileScreen:w-full TabletScreen:w-1/2">
             {/* Image as background cover */}
             <Image
               src={Code}
@@ -182,9 +182,9 @@ export const CardGrid = () => {
             />
             {/* Content */}
             <div className="relative z-10">
-              <div className="bg-hackathone-font-rocket-red rounded-md border w-fit lg:m-6 m-4 justify-center">
+              <div className="m-4 w-fit justify-center rounded-md border bg-hackathone-font-rocket-red lg:m-6">
                 <motion.button
-                  className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
+                  className="justify-center rounded-md border bg-hackathone-font-rocket-red ease-in-out"
                   whileHover={{
                     scale: 1.1,
                   }}
@@ -198,16 +198,16 @@ export const CardGrid = () => {
                     )
                   }
                 >
-                  <span className="block text-hackathoneCabinetGrotesk text-black lg:text-lg text-md font-bold px-4 py-2">
+                  <span className="text-hackathoneCabinetGrotesk text-md block px-4 py-2 font-bold text-black lg:text-lg">
                     Revisit
                   </span>
                 </motion.button>
               </div>
             </div>
             {/* Text */}
-            <div className="relative flex justify-between items-end z-10">
-              <div className="text-start justify-bottom text-start px-6">
-                <p className="lg:text-[2.5rem] text-[2rem] leading-tight font-bold py-4">
+            <div className="relative z-10 flex items-end justify-between">
+              <div className="justify-bottom px-6 text-start">
+                <p className="py-4 text-[2rem] font-bold leading-tight lg:text-[2.5rem]">
                   <span className="text-hackathone-font-rocket-red">
                     Hackath
                   </span>
@@ -215,12 +215,12 @@ export const CardGrid = () => {
                   <span className="block">2023</span>
                 </p>
               </div>
-              <div className="p-4 hidden md:block">
+              <div className="hidden p-4 md:block">
                 <motion.button
                   transition={{ duration: 0.1 }}
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
-                  className="bg-white rounded-full border p-4 hover:bg-hackathone-font-rocket-red transition duration-300 ease-in-out"
+                  className="rounded-full border bg-white p-4 transition duration-300 ease-in-out hover:bg-hackathone-font-rocket-red"
                   onClick={() =>
                     window.open(
                       "https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/",
@@ -232,13 +232,13 @@ export const CardGrid = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="2"
+                    strokeWidth="2"
                     stroke="currentColor"
                     className="size-6 text-black"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
                     />
                   </svg>
@@ -248,21 +248,21 @@ export const CardGrid = () => {
           </div>
         </div>
         {/* Block 3: Moments to relive */}
-        <div className="lg:w-3/5 bg-gray-800 lg:h-[500px] TabletScreen:h-[400px] MobileScreen:h-52 rounded-2xl border border-4 border-black relative overflow-hidden w-full">
+        <div className="relative w-full overflow-hidden rounded-2xl border border-4 border-black bg-gray-800 lg:h-[500px] lg:w-3/5 MobileScreen:h-52 TabletScreen:h-[400px]">
           <Slider {...settings} className="absolute inset-0 z-0">
             {MomentsImages.map((item, index) => (
-              <div key={index} className="relative w-full h-full">
+              <div key={index} className="relative size-full">
                 <Image
-                  className="rounded-2xl lg:h-[600px] TabletScreen:h-[500px] h-[220px] w-full h-full object-cover"
+                  className="size-full h-[220px] rounded-2xl object-cover lg:h-[600px] TabletScreen:h-[500px]"
                   src={item.img}
                   alt={"Participants"}
                 ></Image>
               </div>
             ))}
           </Slider>
-          <div className="absolute z-10 lg:top-6 lg:left-6 top-4 left-4">
+          <div className="absolute left-4 top-4 z-10 lg:left-6 lg:top-6">
             <motion.button
-              className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
+              className="justify-center rounded-md border bg-hackathone-font-rocket-red ease-in-out"
               whileHover={{
                 scale: 1.1,
               }}
@@ -270,30 +270,30 @@ export const CardGrid = () => {
                 scale: 0.9,
               }}
             >
-              <span className="block text-hackathoneCabinetGrotesk text-black lg:text-lg text-md font-bold px-4 py-2">
+              <span className="text-hackathoneCabinetGrotesk text-md block px-4 py-2 font-bold text-black lg:text-lg">
                 Moments to relive
               </span>
             </motion.button>
           </div>
         </div>
       </div>
-      <div className="flex sm:flex-row flex-col mt-8 MobileScreen:mt-4 lg:gap-8 TabletScreen:gap-6 gap-4">
+      <div className="mt-8 flex flex-col gap-4 sm:flex-row lg:gap-8 MobileScreen:mt-4 TabletScreen:gap-6">
         {/* Block 4: PhotoWall */}
-        <div className="lg:w-3/5 sm:w-1/2 w-full bg-gray-800 lg:h-96 TabletScreen:h-72 MobileScreen:h-52 rounded-2xl border border-4 border-black relative overflow-hidden">
+        <div className="relative w-full overflow-hidden rounded-2xl border border-4 border-black bg-gray-800 sm:w-1/2 lg:h-96 lg:w-3/5 MobileScreen:h-52 TabletScreen:h-72">
           <Slider {...settings} className="absolute inset-0 z-0">
             {PhotoWallImages.map((item, index) => (
-              <div key={index} className="relative w-full h-full">
+              <div key={index} className="relative size-full">
                 <Image
-                  className="rounded-2xl lg:h-[400px] TabletScreen:h-[300px] h-[220px] w-full h-full object-cover"
+                  className="size-full h-[220px] rounded-2xl object-cover lg:h-[400px] TabletScreen:h-[300px]"
                   src={item.img}
                   alt={"Participants"}
                 ></Image>
               </div>
             ))}
           </Slider>
-          <div className="absolute z-10 lg:top-6 lg:left-6 top-4 left-4">
+          <div className="absolute left-4 top-4 z-10 lg:left-6 lg:top-6">
             <motion.button
-              className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
+              className="justify-center rounded-md border bg-hackathone-font-rocket-red ease-in-out"
               whileHover={{
                 scale: 1.1,
               }}
@@ -301,29 +301,29 @@ export const CardGrid = () => {
                 scale: 0.9,
               }}
             >
-              <span className="block text-hackathoneCabinetGrotesk text-black lg:text-lg text-md font-bold px-4 py-2">
+              <span className="text-hackathoneCabinetGrotesk text-md block px-4 py-2 font-bold text-black lg:text-lg">
                 PhotoWall
               </span>
             </motion.button>
           </div>
         </div>
         {/* Block 5 : Volunteer */}
-        <div className="lg:w-2/5 sm:w-1/2 w-full bg-gray-800 lg:h-96 TabletScreen:h-72 MobileScreen:h-52 rounded-2xl border border-4  border-black justify-start text-start items-start relative overflow-hidden">
+        <div className="relative w-full items-start justify-start overflow-hidden rounded-2xl border border-4 border-black bg-gray-800 text-start sm:w-1/2 lg:h-96 lg:w-2/5 MobileScreen:h-52 TabletScreen:h-72">
           {/* Image as background cover */}
           <Slider {...settings} className="absolute inset-0 z-0">
             {VolunteerImages.map((item, index) => (
-              <div key={index} className="relative w-full h-full">
+              <div key={index} className="relative size-full">
                 <Image
-                  className="rounded-2xl lg:h-[400px] TabletScreen:h-[300px] h-[220px] w-full h-full object-cover"
+                  className="size-full h-[220px] rounded-2xl object-cover lg:h-[400px] TabletScreen:h-[300px]"
                   src={item.img}
                   alt={"Volunteers"}
                 />
               </div>
             ))}
           </Slider>
-          <div className="absolute z-10 lg:top-6 lg:left-6 top-4 left-4">
+          <div className="absolute left-4 top-4 z-10 lg:left-6 lg:top-6">
             <motion.button
-              className="bg-hackathone-font-rocket-red rounded-md border justify-center ease-in-out"
+              className="justify-center rounded-md border bg-hackathone-font-rocket-red ease-in-out"
               whileHover={{
                 scale: 1.1,
               }}
@@ -331,7 +331,7 @@ export const CardGrid = () => {
                 scale: 0.9,
               }}
             >
-              <span className="block text-hackathoneCabinetGrotesk text-black lg:text-lg text-md font-bold px-4 py-2">
+              <span className="text-hackathoneCabinetGrotesk text-md block px-4 py-2 font-bold text-black lg:text-lg">
                 Volunteer
               </span>
             </motion.button>

@@ -1,11 +1,9 @@
 "use client";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
-import HeroImage from "@/assets/images/general/landing-page/hero_icon.png";
 
 interface CardProps {
-  imageSrc: string;
+  imageSrc: StaticImageData;
   title: string;
   description: string;
   slug: string;
@@ -13,11 +11,11 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ imageSrc, title, description, slug }) => (
   <>
-    <div className="rounded-lg shadow-lg flex flex-row overflow-hidden flex justify-between ">
-      <div className="card_image">
+    <div className="flex flex-row justify-between overflow-hidden rounded-lg shadow-lg">
+      <div className="">
         <Image src={imageSrc} alt={title} width={400} height={400} />
       </div>
-      <div className="p-4  bg-transparent flex flex-col flex justify-around w-3/6">
+      <div className="flex w-3/6 flex-col justify-around bg-transparent p-4">
         {/* <Image
         src="/assets/images/general/landing-page/hero_icon.png" // Image path relative to `public`
         alt="Hero Icon"
@@ -27,16 +25,13 @@ const Card: React.FC<CardProps> = ({ imageSrc, title, description, slug }) => (
       /> */}
 
         <div className="">
-          <h2 className="text-hackathone-font-rocket-red text-2xl font-bold mb-2">
+          <h2 className="mb-2 text-2xl font-bold text-hackathone-font-rocket-red">
             {title}
           </h2>
-          <p className="text-white text-sm mb-4">{description}</p>
-          {/* <a href={`/blogs/${slug}`} className="btn text-white py-2 px-4 rounded bg-transparent border border-white hover:text-black">
-          Read More
-        </a> */}
+          <p className="mb-4 text-sm text-white">{description}</p>
           <a
             href={`/blogs/${slug}`}
-            className="btn text-white py-2 bg-transparent border-transparent hover:text-hackathone-font-rocket-red underline underline-offset-2"
+            className="border-transparent bg-transparent py-2 text-white underline underline-offset-2 hover:text-hackathone-font-rocket-red"
           >
             Read More...
           </a>

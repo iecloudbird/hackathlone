@@ -21,21 +21,21 @@ export const AgenciesSlider = () => {
   };
   return (
     <div className="overflow-hidden">
-      <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-4 lg:gap-8 md:gap-6 gap-4">
+      <div className="grid grid-cols-4 gap-4 sm:grid-cols-5 md:grid-cols-5 md:gap-6 lg:grid-cols-4 lg:gap-8">
         {sliderItems.map((item, index) => {
           // Initialize the image source state for each item
           return (
             <div
               key={index}
-              className={`flex items-center justify-center px-4 py-2 max-h-[100px] ${
+              className={`flex max-h-[100px] items-center justify-center px-4 py-2 ${
                 index === sliderItems.length - 1
-                  ? "col-span-2 md:col-span-1 lg:col-span-2 sm:scale-125"
+                  ? "col-span-2 sm:scale-125 md:col-span-1 lg:col-span-2"
                   : ""
               }`}
               style={{ transition: "transform 0.3s ease-in-out" }} // Add smooth transition
             >
               <Image
-                className={`cursor-pointer transform transition-transform duration-300 lg:hover:scale-125 hover:scale-110 sm:w-[80px] ${index === sliderItems.length - 1 ? "lg:min-w-[130px] MobileScreen:min-w-[130px]" : ""}`}
+                className={`cursor-pointer transition-transform duration-300 hover:scale-110 sm:w-[80px] lg:hover:scale-125${index === sliderItems.length - 1 ? "lg:min-w-[130px] MobileScreen:min-w-[130px]" : ""}`}
                 src={imgSrcs[index]}
                 width={120}
                 height={120}

@@ -60,12 +60,12 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
     timeLeft[interval] !== undefined ? (
       <div
         key={interval}
-        className="flex flex-col items-center justify-center text-center bg-transparent border rounded text-hackathone-font-rocket-red mx-1 p-2 min-w-[60px] md:min-w-[80px]"
+        className="mx-1 flex min-w-[60px] flex-col items-center justify-center rounded border bg-transparent p-2 text-center text-hackathone-font-rocket-red md:min-w-[80px]"
       >
-        <span className="text-3xl sm:text-4xl font-bold">
+        <span className="text-3xl font-bold sm:text-4xl">
           {timeLeft[interval]}
         </span>
-        <span className="text-xs md:text-lg capitalize text-slate-50 font-[500]">
+        <span className="text-xs font-[500] capitalize text-slate-50 md:text-lg">
           {interval}
         </span>
       </div>
@@ -77,9 +77,9 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center mb-[2rem]">
+    <div className="mb-8 flex flex-col items-center justify-center">
       <div className="flex flex-wrap items-center justify-center space-x-2 md:space-x-4">
-        {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+        {timerComponents.length ? timerComponents : <span>Time&apos;s up!</span>}
       </div>
     </div>
   );

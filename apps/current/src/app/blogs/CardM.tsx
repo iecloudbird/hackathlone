@@ -1,9 +1,9 @@
 "use client";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
-import Image from "next/image";
 
 interface CardProps {
-  imageSrc: string;
+  imageSrc: StaticImageData;
   title: string;
   description: string;
   slug: string;
@@ -11,19 +11,19 @@ interface CardProps {
 
 const CardM: React.FC<CardProps> = ({ imageSrc, title, description, slug }) => (
   <>
-    <div className="rounded-lg shadow-lg flex flex-col overflow-hidden  items-center">
-      <div className="card_image">
+    <div className="flex flex-col items-center overflow-hidden rounded-lg shadow-lg">
+      <div className="">
         <Image src={imageSrc} alt={title} />
       </div>
-      <div className="p-4  bg-transparent flex flex-col flex justify-around w-full">
+      <div className="flex w-full flex-col justify-around bg-transparent p-4">
         <div className="">
-          <h2 className="text-hackathone-font-rocket-red text-2xl font-bold mb-2">
+          <h2 className="mb-2 text-2xl font-bold text-hackathone-font-rocket-red">
             {title}
           </h2>
-          <p className="text-white text-sm mb-4">{description}</p>
+          <p className="mb-4 text-sm text-white">{description}</p>
           <a
             href={`/blogs/${slug}`}
-            className="btn text-white py-2 px-4 rounded bg-transparent border border-white hover:text-black"
+            className="rounded border border-white bg-transparent px-4 py-2 text-white hover:text-black"
           >
             Read More
           </a>

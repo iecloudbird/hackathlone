@@ -29,7 +29,7 @@ const InPostEmbed = () => {
                     
                 </a> */}
         <iframe
-          className="rounded-lg overflow-hidden scrollbar-hide"
+          className="scrollbar-hide overflow-hidden rounded-lg"
           src="https://www.linkedin.com/embed/feed/update/urn:li:share:7228299909630730240/"
           height="400"
           width="300"

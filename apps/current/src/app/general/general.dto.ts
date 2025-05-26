@@ -1,4 +1,3 @@
-import { link } from "fs";
 import AppleEye from "@/assets/images/general/landing-page/apple-eye.jpg";
 import Azure from "@/assets/images/general/landing-page/collabrators/azure.png";
 import Booz from "@/assets/images/general/landing-page/collabrators/booz.png";
