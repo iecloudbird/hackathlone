@@ -67,7 +67,6 @@
     "react/jsx-key": 2,
     "react-hooks/exhaustive-deps": 2,
     "react-hooks/rules-of-hooks": 1,
-    "sort-keys": 1, //Downgrade to warning for now
     "tailwindcss/no-custom-classname": [
       2,
       { "whitelist": ["rapid-.*", "commerce-.*", "widget-*"] }

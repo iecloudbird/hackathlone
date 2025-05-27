@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import React, { useEffect } from "react";
 
 const InPostEmbed = () => {
