@@ -1,4 +1,4 @@
-name: TypeScript-Lint
+name: Typechecks
 
 on:
   push:
@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   type-check:
-    name: Typechecks @hackathlone/current
+    name: linting
     runs-on: ubuntu-latest
 
     steps:
