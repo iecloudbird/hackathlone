@@ -45,7 +45,8 @@ const useWindowSize = () => {
 
 /** Cloud Particle Background */
 const CloudParticleBg: React.FC = () => {
-  const ref = useRef<unknown>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const ref = useRef<any>(null);
   const [sphere] = useState(() => generateRandomSpherePoints(5000, 1.5)); // Reduce 5000 to a lower number if needed
   const windowWidth = useWindowSize();
 
