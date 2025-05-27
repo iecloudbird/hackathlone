@@ -19,7 +19,7 @@ const Faq = () => {
   const [expanded, setExpanded] = useState<number | false>(false);
 
   const handleChange =
-    (panel: number) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+    (panel: number) => (_: React.SyntheticEvent, isExpanded: boolean) => {
       setExpanded(isExpanded ? panel : false);
     };
 
@@ -39,11 +39,11 @@ const Faq = () => {
             <Typography
               variant="h4"
               gutterBottom
-              className="font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red md:mt-12 lg:px-[6.8%]"
+              className="font-hackathoneCabinetGrotesk font-semibold text-hackathone-font-rocket-red md:mt-12 lg:px-[6.8%]"
             >
               Frequently Asked Questions (FAQs)
             </Typography>
-            <section className="item-center flex flex-row justify-between">
+            <section className="flex flex-row items-center justify-between">
               <div className="w-2/3">
                 {faqData.map((item, index) => (
                   <Accordion
@@ -65,7 +65,7 @@ const Faq = () => {
                       id={`panel${index}-header`}
                     >
                       <h1
-                        className="font-hackathoneSFProDisplay text-[18px] font-[300]"
+                        className="font-hackathoneSFProDisplay text-[18px] font-light"
                         style={{
                           color: expanded === index ? "yellow" : "white",
                           fontWeight: expanded === index ? "bold" : "normal",
@@ -80,7 +80,7 @@ const Faq = () => {
                   </Accordion>
                 ))}
               </div>
-              <div className="z-[-1] -mt-[100px] w-1/3 translate-x-[5%]">
+              <div className="z-[-1] mt-[100px] w-1/3 translate-x-[5%]">
                 <Image src={Sun} alt={"Sun Image"}></Image>
               </div>
             </section>
@@ -108,7 +108,7 @@ const Faq = () => {
             <Typography
               variant="h4"
               gutterBottom
-              className="font-hackathoneCabinetGrotesk font-[600] text-hackathone-font-rocket-red md:my-[42px] lg:px-[6.8%]"
+              className="font-hackathoneCabinetGrotesk font-semibold text-hackathone-font-rocket-red md:my-[42px] lg:px-[6.8%]"
             >
               Frequently Asked Questions (FAQs)
             </Typography>
@@ -134,7 +134,7 @@ const Faq = () => {
                       id={`panel${index}-header`}
                     >
                       <h1
-                        className="font-hackathoneSFProDisplay text-[14px] font-[300]"
+                        className="font-hackathoneSFProDisplay text-[14px] font-light"
                         style={{
                           color: expanded === index ? "yellow" : "white",
                           fontWeight: expanded === index ? "bold" : "normal",

@@ -17,8 +17,8 @@ export const useWindowResize = () => {
   }, []);
 
   return {
-    width,
     height,
+    width,
   };
 };
 

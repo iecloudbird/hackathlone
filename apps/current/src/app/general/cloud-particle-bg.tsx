@@ -1,6 +1,7 @@
 import { Points, PointMaterial } from "@react-three/drei";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 import React, { useState, useRef, useEffect } from "react";
+import type * as THREE from "three";
 
 /** Generate Random Sphere Points */
 const generateRandomSpherePoints = (
@@ -45,11 +46,11 @@ const useWindowSize = () => {
 
 /** Cloud Particle Background */
 const CloudParticleBg: React.FC = () => {
-  const ref = useRef<any>();
+  const ref = useRef<THREE.Points>(null);
   const [sphere] = useState(() => generateRandomSpherePoints(5000, 1.5)); // Reduce 5000 to a lower number if needed
   const windowWidth = useWindowSize();
 
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     if (ref.current) {
       ref.current.rotation.x -= delta / 20;
       ref.current.rotation.y -= delta / 30;
@@ -65,8 +66,14 @@ const CloudParticleBg: React.FC = () => {
   };
 
   return (
-    <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={sphere} stride={3} frustumCulled={false}>
+    <group>
+      <Points
+        ref={ref}
+        positions={sphere}
+        stride={3}
+        frustumCulled={false}
+        rotation={[0, 0, Math.PI / 4]}
+      >
         <PointMaterial
           transparent
           color="#eafe07"

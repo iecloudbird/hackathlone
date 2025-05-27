@@ -43,7 +43,7 @@ const Buttons: React.FC<ButtonProps> = (props): JSX.Element => {
       className={`${className} flex items-center justify-center rounded-3xl`}
     >
       {loading ? (
-        <div className="loader"></div>
+        <div className="size-5 animate-spin rounded-full border-y-2 border-gray-900"></div>
       ) : (
         <>
           <p className="font-hackathoneSFProDisplay text-lg">{text}</p>

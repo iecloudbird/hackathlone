@@ -1,17 +1,14 @@
 "use client";
 import { IconButton } from "@mui/material";
 import { Canvas } from "@react-three/fiber";
-import Image, { StaticImageData } from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import React from "react";
 import CloudParticleBg from "@/app/general/cloud-particle-bg";
-import Footer from "../../general/footer";
-import NavigationBar from "../../general/navigation-bar";
-import Tooltip from "../../general/tooltip";
-import { cards } from "../blogs.dto";
-//Lazy and Dynamic import TODO
 import Space1 from "@/assets/images/blogs/space1.png";
+import Space10 from "@/assets/images/blogs/space10.png";
 import Space2 from "@/assets/images/blogs/space2.png";
+//Lazy and Dynamic import TODO
 import Space3 from "@/assets/images/blogs/space3.png";
 import Space4 from "@/assets/images/blogs/space4.png";
 import Space5 from "@/assets/images/blogs/space5.png";
@@ -19,7 +16,10 @@ import Space6 from "@/assets/images/blogs/space6.png";
 import Space7 from "@/assets/images/blogs/space7.png";
 import Space8 from "@/assets/images/blogs/space8.png";
 import Space9 from "@/assets/images/blogs/space9.png";
-import Space10 from "@/assets/images/blogs/space10.png";
+import Footer from "../../general/footer";
+import NavigationBar from "../../general/navigation-bar";
+import Tooltip from "../../general/tooltip";
+import { cards } from "../blogs.dto";
 
 interface Tag {
   name: string;
@@ -481,7 +481,7 @@ const BlogPage: React.FC = () => {
         </strong>,
         "From Dublin, Limerick, Cork, or Galway: Several bus services connect these cities to Athlone, including Citylink, Aircoach, and Bus Éireann.",
         <table
-          className="table-auto border-collapse rounded-3xl border-2 border-gray-700 bg-[#8F8F8F1A] bg-opacity-50 backdrop-blur-md"
+          className="table-auto border-collapse rounded-3xl border-2 border-gray-700 bg-[#8F8F8F1A]/50 backdrop-blur-md"
           key={"item-${index}"}
         >
           <tbody key={"item-${index}"}>
@@ -536,7 +536,7 @@ const BlogPage: React.FC = () => {
           2. Opt for the Train: Comfortable and Budget-Friendly
         </strong>,
         <table
-          className="table-auto border-collapse rounded-3xl border-2 border-gray-700 bg-[#8F8F8F1A] bg-opacity-50 backdrop-blur-md"
+          className="table-auto border-collapse rounded-3xl border-2 border-gray-700 bg-[#8F8F8F1A]/50 backdrop-blur-md"
           key={"item-${index}"}
         >
           <tbody>
@@ -875,14 +875,14 @@ const BlogPage: React.FC = () => {
               className="mb-8 mr-4 text-white hover:text-hackathone-font-rocket-red MobileScreen:hidden TabletScreen:hidden"
               edge="start"
               sx={{
-                width: "4.5rem",
-                height: "4.5rem",
-                fontSize: "6rem",
-                transition:
-                  "transform 0.3s ease-in-out, color 0.3s ease-in-out",
                 "&:hover": {
                   transform: "scale(1.3)",
                 },
+                fontSize: "6rem",
+                height: "4.5rem",
+                transition:
+                  "transform 0.3s ease-in-out, color 0.3s ease-in-out",
+                width: "4.5rem",
               }}
               aria-label="back to home"
             >
@@ -936,7 +936,7 @@ const BlogPage: React.FC = () => {
         </div>
 
         {/* Mobile view */}
-        <div className="mx-8 my-12 block flex flex-col lg:hidden">
+        <div className="mx-8 my-12 flex flex-col lg:hidden">
           <Tooltip text="Back to Blogs">
             <IconButton
               size="large"
@@ -945,11 +945,11 @@ const BlogPage: React.FC = () => {
               className="mb-8 mr-4 text-white hover:text-hackathone-font-rocket-red"
               edge="start"
               sx={{
-                width: "3.5rem",
-                height: "3.5rem",
                 fontSize: "4rem",
+                height: "3.5rem",
                 transition:
                   "transform 0.3s ease-in-out, color 0.3s ease-in-out",
+                width: "3.5rem",
                 "&:hover": {
                   transform: "scale(1.2)",
                 },

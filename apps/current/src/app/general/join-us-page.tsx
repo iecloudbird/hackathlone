@@ -67,15 +67,15 @@ const JoinUsPage = () => {
           </p>
           <motion.a
             whileHover={{
-              scale: 1.07,
               backgroundColor: "rgba(255, 0, 0, 0.8)",
               borderColor: "white",
+              scale: 1.07,
               transition: { duration: 0.3 },
             }}
             whileTap={{
-              scale: 0.9,
-              borderWidth: "3px",
               borderColor: "white",
+              borderWidth: "3px",
+              scale: 0.9,
             }}
             href="#timeline"
             onClick={(event) => {
@@ -88,7 +88,7 @@ const JoinUsPage = () => {
             title="Unfold The Timeline"
             className="mt-4 flex h-[44.31px] w-full items-center justify-center rounded-[6.54px] border-2 border-transparent bg-hackathone-font-rocket-red px-4 py-3 transition-colors duration-300 ease-in-out sm:w-[55%] lg:w-2/5"
           >
-            <p className="font-sefarvestCabinetGrotesk text-[16px] font-bold leading-[18.28px] text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
+            <p className="font-hackathoneCabinetGrotesk text-[16px] font-extrabold leading-[18.28px] text-black transition-all duration-500 ease-in-out hover:text-hackathone-font-rocket-red">
               Unfold the Timeline
             </p>
           </motion.a>

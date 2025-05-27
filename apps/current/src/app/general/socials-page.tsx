@@ -28,7 +28,7 @@ const Socials = () => {
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
-          className="mb-4 px-12 text-center font-hackathoneCabinetGrotesk text-5xl font-[700] tracking-tight text-white MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px]"
+          className="mb-4 px-12 text-center font-hackathoneCabinetGrotesk text-5xl font-extrabold tracking-tight text-white MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px]"
         >
           Discover more on Our{" "}
           <span className="font-extrabold text-hackathone-font-rocket-red">

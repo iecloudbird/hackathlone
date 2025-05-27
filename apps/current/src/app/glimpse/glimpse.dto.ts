@@ -1,6 +1,3 @@
-// import Fwf from "@/assets/images/general/landing-page/winners/Soundsurfers.png";
-import Participants from "@/assets/images/general/landing-page/189 1.png";
-import Code from "@/assets/images/general/landing-page/Code.png";
 //Moments to relive
 import M01 from "@/assets/images/general/landing-page/glimpse/moments-to-relive/010.png";
 import M02 from "@/assets/images/general/landing-page/glimpse/moments-to-relive/017.png";

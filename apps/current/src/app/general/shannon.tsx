@@ -13,35 +13,35 @@ const fadeIn = (
   duration: number
 ) => ({
   hidden: {
+    opacity: 0,
     x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
     y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
-    opacity: 0,
   },
   show: {
-    x: 0,
-    y: 0,
     opacity: 1,
     transition: {
-      type,
       delay,
       duration,
       ease: "easeOut",
+      type,
     },
+    x: 0,
+    y: 0,
   },
 });
 
 const settings = {
+  adaptiveHeight: true,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  cssEase: "ease-out",
   dots: true,
   fade: true,
   infinite: true,
-  speed: 2000,
-  slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  arrows: false,
-  adaptiveHeight: true,
-  cssEase: "ease-out",
+  slidesToShow: 1,
+  speed: 2000,
 };
 
 const Shannon = () => {

@@ -7,10 +7,10 @@ import ThirdPlace from "@/assets/images/general/landing-page/third-place.jpg";
 export const WinnersPage = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <h1 className="text-hackathone-font-yellow text-center font-hackathoneCabinetGrotesk text-[28px] font-[800] lg:text-[48px]">
+      <h1 className="text-center font-hackathoneCabinetGrotesk text-[28px] font-extrabold text-yellow-400 lg:text-[48px]">
         Our Crowned Champions
       </h1>
-      <p className="text-center font-hackathoneSFProDisplay text-[24px] font-[400]">
+      <p className="text-center font-hackathoneSFProDisplay text-[24px]">
         Where Innovation Meets Excellence
       </p>
       <div className="my-5 flex flex-col items-center justify-center md:mx-4 md:flex-row">
