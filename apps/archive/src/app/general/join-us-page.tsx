@@ -19,16 +19,16 @@ const JoinUsPage = () => {
               The Hackathon Challenge will be kicking off soon
             </h3>
             <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18.72px] leading-[24.57px] mt-[9.81px]">
-              Join us on <span className="font-bold text-[18px] text-hackathone-font-rocket-red">
+              Join us on{" "}
+              <span className="font-bold text-[18px] text-hackathone-font-rocket-red">
                 October 4-6, 2024
-              </span> for the largest annual space & sciences
-              hackathon in the world!
+              </span>{" "}
+              for the largest annual space & sciences hackathon in the world!
             </p>
           </div>
           <div className="mt-[2rem]">
             <Image
               className="rounded-xl"
-
               src={HackathoneChallenge}
               alt={"HackathoneChallenge"}
             ></Image>
@@ -38,19 +38,37 @@ const JoinUsPage = () => {
           <div className="h-auto rounded-[13.09px] p-1 border-2 ">
             <div className="pt-[1.5rem] pl-[2rem] pr-[5.48%]">
               <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[28.57px] text-justify">
-                We’re back! The Athlone chapter of the world’s largest annual space and science hackathon is being hosted by the <span className="text-hackathone-font-rocket-red font-[600]">Technological University of the Shannon</span>. HackAthlone is one of over 400 global locations participating in this year's NASA SpaceApps Challenge. Leveraging NASA's data HackAthlone exemplifies the values and ambitions of the competition by promoting diversity in the next generation of scientists, engineers, technologists, and designers.
+                We’re back! The Athlone chapter of the world’s largest annual
+                space and science hackathon is being hosted by the{" "}
+                <span className="text-hackathone-font-rocket-red font-[600]">
+                  Technological University of the Shannon
+                </span>
+                . HackAthlone is one of over 400 global locations participating
+                in this year's NASA SpaceApps Challenge. Leveraging NASA's data
+                HackAthlone exemplifies the values and ambitions of the
+                competition by promoting diversity in the next generation of
+                scientists, engineers, technologists, and designers.
               </p>
             </div>
             <div className="pt-[0.5rem] pl-[2rem] pr-[5.48%] ">
               <br />
               <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[28.57px] pb-[2rem] text-justify">
-                Compete for exciting prizes and goodies, with all the technical resources and F&B provisions you need to keep going. Plus, with guidance from skilled mentors from academia and industry, you’ll have the support to create high-quality projects. The outcomes will be documented for open-source research, contributing to global innovation.
+                Compete for exciting prizes and goodies, with all the technical
+                resources and F&B provisions you need to keep going. Plus, with
+                guidance from skilled mentors from academia and industry, you’ll
+                have the support to create high-quality projects. The outcomes
+                will be documented for open-source research, contributing to
+                global innovation.
               </p>
             </div>
           </div>
           <div className="rounded-[13.09px] mt-[16.63px] pb-[36.17px] border-2">
             <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[28.57px] text-justify p-2 pl-[2rem] pr-[2rem] pt-[1.5rem] mb-[1rem]">
-              Join this 48-hour hackathon, where you'll tackle problem statements curated by NASA and other space agencies, all centred around this year’s theme, "The Sun Touches Everything," across various STEAM fields. Register now and be part of this extraordinary event!
+              Join this 48-hour hackathon, where you'll tackle problem
+              statements curated by NASA and other space agencies, all centred
+              around this year’s theme, "The Sun Touches Everything," across
+              various STEAM fields. Register now and be part of this
+              extraordinary event!
             </p>
             <motion.a
               whileHover={{
@@ -95,13 +113,16 @@ const JoinUsPage = () => {
               The Hackathone Challenge will be kicking off soon
             </h3>
             <p className="font-hackathoneSFProDisplay font-[500] text-slate-50 text-[18px] leading-[24.57px] mt-[9.81px]">
-              Join us on <span className="font-bold text-[18px] text-hackathone-font-rocket-red">October 4-6, 2024</span> for the largest annual space & sciences hackathon in the world!
+              Join us on{" "}
+              <span className="font-bold text-[18px] text-hackathone-font-rocket-red">
+                October 4-6, 2024
+              </span>{" "}
+              for the largest annual space & sciences hackathon in the world!
             </p>
           </div>
           <div className="mt-[2rem]">
             <Image
               className="rounded-xl"
-
               src={HackathoneChallenge}
               alt={"HackathoneChallenge"}
             ></Image>
@@ -112,12 +133,28 @@ const JoinUsPage = () => {
             <div className="h-auto rounded-[13.09px] p-2 border-2">
               <div className="pt-[1rem] pl-[1.5rem] pr-[5.48%]">
                 <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[28.57px] text-justify">
-                  We’re back! The Athlone chapter of the world’s largest annual space and science hackathon is being hosted by the <span className="text-hackathone-font-rocket-red font-[600]">Technological University of the Shannon</span>. HackAthlone is one of over 400 global locations participating in this year's NASA SpaceApps Challenge. Leveraging NASA's data HackAthlone exemplifies the values and ambitions of the competition by promoting diversity in the next generation of scientists, engineers, technologists, and designers.
+                  We’re back! The Athlone chapter of the world’s largest annual
+                  space and science hackathon is being hosted by the{" "}
+                  <span className="text-hackathone-font-rocket-red font-[600]">
+                    Technological University of the Shannon
+                  </span>
+                  . HackAthlone is one of over 400 global locations
+                  participating in this year's NASA SpaceApps Challenge.
+                  Leveraging NASA's data HackAthlone exemplifies the values and
+                  ambitions of the competition by promoting diversity in the
+                  next generation of scientists, engineers, technologists, and
+                  designers.
                 </p>
               </div>
               <div className="mt-[0.5rem] pl-[1.5rem] pr-[5.48%] ">
-                <br /><p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[28.57px] pb-[2rem] text-justify">
-                  Compete for exciting prizes and goodies, with all the technical resources and F&B provisions you need to keep going. Plus, with guidance from skilled mentors from academia and industry, you’ll have the support to create high-quality projects. The outcomes will be documented for open-source research, contributing to global innovation.
+                <br />
+                <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[28.57px] pb-[2rem] text-justify">
+                  Compete for exciting prizes and goodies, with all the
+                  technical resources and F&B provisions you need to keep going.
+                  Plus, with guidance from skilled mentors from academia and
+                  industry, you’ll have the support to create high-quality
+                  projects. The outcomes will be documented for open-source
+                  research, contributing to global innovation.
                 </p>
               </div>
             </div>
@@ -125,7 +162,11 @@ const JoinUsPage = () => {
           <div className="TabletScreen:w-[48%] h-auto">
             <div className="rounded-[13.09px] p-2 pb-[36.17px] border-2">
               <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[18px] leading-[28.57px] text-justify p-4">
-                Join this 48-hour hackathon, where you'll tackle problem statements curated by NASA and other space agencies, all centred around this year’s theme, "The Sun Touches Everything," across various STEAM fields. Register now and be part of this extraordinary event!
+                Join this 48-hour hackathon, where you'll tackle problem
+                statements curated by NASA and other space agencies, all centred
+                around this year’s theme, "The Sun Touches Everything," across
+                various STEAM fields. Register now and be part of this
+                extraordinary event!
               </p>
               <motion.a
                 whileHover={{
@@ -165,8 +206,11 @@ const JoinUsPage = () => {
           </h3>
           <p className="font-hackathoneSFProDisplay font-[500] text-slate-50 text-[16.72px] leading-[24.57px] mt-[9.81px] mb-4 text-justify">
             Join us on
-            <span className="font-bold text-[18px] text-hackathone-font-rocket-red"> October 4-6, 2024</span> for the largest annual space & sciences
-            hackathon in the world!
+            <span className="font-bold text-[18px] text-hackathone-font-rocket-red">
+              {" "}
+              October 4-6, 2024
+            </span>{" "}
+            for the largest annual space & sciences hackathon in the world!
           </p>
           <Image
             className="w-[312.44%] rounded-[13.09px]"
@@ -178,18 +222,36 @@ const JoinUsPage = () => {
           <div className="rounded-[13.09px] p-1 border-2 text-justify">
             <div className="p-2">
               <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[16px] leading-[24.57px] p-4">
-                We’re back! The Athlone chapter of the world’s largest annual space and science hackathon is being hosted by the <span className="text-hackathone-font-rocket-red font-[600]">Technological University of the Shannon</span>. HackAthlone is one of over 400 global locations participating in this year's NASA SpaceApps Challenge. Leveraging NASA's data HackAthlone exemplifies the values and ambitions of the competition by promoting diversity in the next generation of scientists, engineers, technologists, and designers.
+                We’re back! The Athlone chapter of the world’s largest annual
+                space and science hackathon is being hosted by the{" "}
+                <span className="text-hackathone-font-rocket-red font-[600]">
+                  Technological University of the Shannon
+                </span>
+                . HackAthlone is one of over 400 global locations participating
+                in this year's NASA SpaceApps Challenge. Leveraging NASA's data
+                HackAthlone exemplifies the values and ambitions of the
+                competition by promoting diversity in the next generation of
+                scientists, engineers, technologists, and designers.
               </p>
             </div>
             <div className="p-2">
               <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[16px] leading-[24.57px] p-4">
-                Compete for exciting prizes and goodies, with all the technical resources and F&B provisions you need to keep going. Plus, with guidance from skilled mentors from academia and industry, you’ll have the support to create high-quality projects. The outcomes will be documented for open-source research, contributing to global innovation.
+                Compete for exciting prizes and goodies, with all the technical
+                resources and F&B provisions you need to keep going. Plus, with
+                guidance from skilled mentors from academia and industry, you’ll
+                have the support to create high-quality projects. The outcomes
+                will be documented for open-source research, contributing to
+                global innovation.
               </p>
             </div>
           </div>
           <div className="rounded-[13.09px] p-2 mt-[16.63px] pb-[28.17px] border-2">
             <p className="font-hackathoneCabinetGrotesk font-[500] text-slate-50 text-[16px] leading-[24.57px] text-justify p-4">
-              Join this 48-hour hackathon, where you'll tackle problem statements curated by NASA and other space agencies, all centred around this year’s theme, "The Sun Touches Everything," across various STEAM fields. Register now and be part of this extraordinary event!
+              Join this 48-hour hackathon, where you'll tackle problem
+              statements curated by NASA and other space agencies, all centred
+              around this year’s theme, "The Sun Touches Everything," across
+              various STEAM fields. Register now and be part of this
+              extraordinary event!
             </p>
             <div className="w-full flex">
               <motion.a
@@ -220,7 +282,6 @@ const JoinUsPage = () => {
                 </p>
               </motion.a>
             </div>
-
           </div>
         </div>
       </div>

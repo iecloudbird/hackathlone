@@ -6,19 +6,17 @@ import { motion } from "framer-motion";
 import HeroImage from "@/assets/images/general/landing-page/hero_icon.png";
 import RegisterGIF from "@/assets/images/general/landing-page/register.gif";
 import CountDownPage from "./count-down-page";
-import { winners } from "@/app/general/general.dto"
-
+import { winners } from "@/app/general/general.dto";
 
 const targetDate = "2024-10-04T18:00:00";
 const HeroPage = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [isHovered, setIsHovered] = useState(false);
   useEffect(() => {
-    console.log('Hover state:', isHovered);
+    console.log("Hover state:", isHovered);
   }, [isHovered]);
   /** Desktop View */
   const desktopView = () => {
-
     return (
       <div className="TabletScreen:hidden MobileScreen:hidden flex flex-col justify-center items-center text-center mx-[8.06%] mt-[4rem]">
         <div className="w-full mb-[10%]">
@@ -35,10 +33,12 @@ const HeroPage = () => {
             {winners.map((item, index) => (
               <div
                 key={index}
-                className={`text-center group relative transition-transform duration-300 ${hoveredIndex === index || (hoveredIndex === null && item.place === "1st")
-                  ? "z-10"
-                  : "z-0"
-                  }`}
+                className={`text-center group relative transition-transform duration-300 ${
+                  hoveredIndex === index ||
+                  (hoveredIndex === null && item.place === "1st")
+                    ? "z-10"
+                    : "z-0"
+                }`}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
                 style={{
@@ -54,12 +54,13 @@ const HeroPage = () => {
               >
                 {/* Hovered place text */}
                 <div
-                  className={`text-[5rem] font-bold text-hackathone-font-rocket-red opacity-0 group-hover:opacity-100 ${item.place === "1st"
-                    ? "absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                    : item.place === "3rd"
-                      ? "absolute top-0 left-0"
-                      : "absolute top-0 right-0"
-                    }`}
+                  className={`text-[5rem] font-bold text-hackathone-font-rocket-red opacity-0 group-hover:opacity-100 ${
+                    item.place === "1st"
+                      ? "absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                      : item.place === "3rd"
+                        ? "absolute top-0 left-0"
+                        : "absolute top-0 right-0"
+                  }`}
                 >
                   {item.place}
                 </div>
@@ -71,10 +72,7 @@ const HeroPage = () => {
                     alt={item.name}
                     className="w-full h-full object-cover cursor-pointer"
                     onClick={() => {
-                      window.open(
-                        item.link,
-                        "_blank"
-                      );
+                      window.open(item.link, "_blank");
                     }}
                   />
                 </div>
@@ -85,11 +83,26 @@ const HeroPage = () => {
             ))}
           </div>
           <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[65.08px] leading-[73.26px]">
-            <p>Winners of HackAth<span className="text-white">l</span>on<span className="text-white">e</span>’24</p>
+            <p>
+              Winners of HackAth<span className="text-white">l</span>on
+              <span className="text-white">e</span>’24
+            </p>
           </div>
           <div className="mx-[10rem] text-[24px] leading-[36.57px]">
             <p className="mt-[13.3px] font-hackathoneSFProDisplay font-normal  text-white">
-              NASA Space Apps Athlone was a huge success! <span className="font-extrabold text-hackathone-font-rocket-red ">210+ participations</span> with <br /> <span className="font-extrabold text-hackathone-font-rocket-red ">22 global submissions </span>and <span className="font-extrabold text-hackathone-font-rocket-red "> 3 global nominations.</span>
+              NASA Space Apps Athlone was a huge success!{" "}
+              <span className="font-extrabold text-hackathone-font-rocket-red ">
+                210+ participations
+              </span>{" "}
+              with <br />{" "}
+              <span className="font-extrabold text-hackathone-font-rocket-red ">
+                22 global submissions{" "}
+              </span>
+              and{" "}
+              <span className="font-extrabold text-hackathone-font-rocket-red ">
+                {" "}
+                3 global nominations.
+              </span>
             </p>
           </div>
           <div className="flex flex-row justify-center gap-[32px]">
@@ -122,7 +135,7 @@ const HeroPage = () => {
                 onClick={() =>
                   window.open(
                     "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/?tab=teams",
-                    "_blank"
+                    "_blank",
                   )
                 }
                 title="View Teams & Projects"
@@ -168,7 +181,7 @@ const HeroPage = () => {
               onClick={() =>
                 window.open(
                   `https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/`,
-                  "_blank"
+                  "_blank",
                 )
               }
               title="Checkout our 2023 Event"
@@ -180,7 +193,7 @@ const HeroPage = () => {
             </motion.button>
           </div>
         </div>
-      </div >
+      </div>
     );
   };
 
@@ -202,10 +215,12 @@ const HeroPage = () => {
             {winners.map((item, index) => (
               <div
                 key={index}
-                className={`text-center group relative transition-transform duration-300 ${hoveredIndex === index || (hoveredIndex === null && item.place === "1st")
-                  ? "z-10"
-                  : "z-0"
-                  }`}
+                className={`text-center group relative transition-transform duration-300 ${
+                  hoveredIndex === index ||
+                  (hoveredIndex === null && item.place === "1st")
+                    ? "z-10"
+                    : "z-0"
+                }`}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
                 style={{
@@ -221,12 +236,13 @@ const HeroPage = () => {
               >
                 {/* Hovered place text */}
                 <div
-                  className={`text-[3.5rem] font-bold text-hackathone-font-rocket-red ${item.place === "1st"
-                    ? "absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                    : item.place === "3rd"
-                      ? "absolute top-0 left-0"
-                      : "absolute top-0 right-0"
-                    }`}
+                  className={`text-[3.5rem] font-bold text-hackathone-font-rocket-red ${
+                    item.place === "1st"
+                      ? "absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                      : item.place === "3rd"
+                        ? "absolute top-0 left-0"
+                        : "absolute top-0 right-0"
+                  }`}
                 >
                   {item.place}
                 </div>
@@ -238,10 +254,7 @@ const HeroPage = () => {
                     alt={item.name}
                     className="w-full h-full object-cover cursor-pointer"
                     onClick={() => {
-                      window.open(
-                        item.link,
-                        "_blank"
-                      );
+                      window.open(item.link, "_blank");
                     }}
                   />
                 </div>
@@ -252,11 +265,26 @@ const HeroPage = () => {
             ))}
           </div>
           <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[3.5rem] leading-[4rem]">
-            <p>Winners of HackAth<span className="text-white">l</span>on<span className="text-white">e</span>’24</p>
+            <p>
+              Winners of HackAth<span className="text-white">l</span>on
+              <span className="text-white">e</span>’24
+            </p>
           </div>
           <div className="px-[10%] text-[20px] leading-[28.57px]">
             <p className="mt-[13.3px] font-hackathoneSFProDisplay font-normal  text-white">
-              NASA Space Apps Athlone was a huge success! <span className="font-extrabold text-hackathone-font-rocket-red ">210+ participations</span> with <span className="font-extrabold text-hackathone-font-rocket-red ">22 global submissions </span>and <span className="font-extrabold text-hackathone-font-rocket-red "> 3 global nominations.</span>
+              NASA Space Apps Athlone was a huge success!{" "}
+              <span className="font-extrabold text-hackathone-font-rocket-red ">
+                210+ participations
+              </span>{" "}
+              with{" "}
+              <span className="font-extrabold text-hackathone-font-rocket-red ">
+                22 global submissions{" "}
+              </span>
+              and{" "}
+              <span className="font-extrabold text-hackathone-font-rocket-red ">
+                {" "}
+                3 global nominations.
+              </span>
             </p>
           </div>
           <div className="flex flex-row justify-center gap-[16px]">
@@ -275,7 +303,7 @@ const HeroPage = () => {
               onClick={() =>
                 window.open(
                   "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/?tab=teams",
-                  "_blank"
+                  "_blank",
                 )
               }
               title="View Teams & Projects"
@@ -300,7 +328,7 @@ const HeroPage = () => {
               onClick={() =>
                 window.open(
                   `https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/`,
-                  "_blank"
+                  "_blank",
                 )
               }
               title="Click Here To See More Info"
@@ -326,10 +354,12 @@ const HeroPage = () => {
             {winners.map((item, index) => (
               <div
                 key={index}
-                className={`text-center group relative transition-transform duration-300 ${hoveredIndex === index || (hoveredIndex === null && item.place === "1st")
-                  ? "z-10"
-                  : "z-0"
-                  }`}
+                className={`text-center group relative transition-transform duration-300 ${
+                  hoveredIndex === index ||
+                  (hoveredIndex === null && item.place === "1st")
+                    ? "z-10"
+                    : "z-0"
+                }`}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
                 style={{
@@ -345,12 +375,13 @@ const HeroPage = () => {
               >
                 {/* Hovered place text */}
                 <div
-                  className={`text-[2rem] font-bold text-hackathone-font-rocket-red ${item.place === "1st"
-                    ? "absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                    : item.place === "3rd"
-                      ? "absolute top-0 left-0"
-                      : "absolute top-0 right-0"
-                    }`}
+                  className={`text-[2rem] font-bold text-hackathone-font-rocket-red ${
+                    item.place === "1st"
+                      ? "absolute top-1 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                      : item.place === "3rd"
+                        ? "absolute top-0 left-0"
+                        : "absolute top-0 right-0"
+                  }`}
                 >
                   {item.place}
                 </div>
@@ -362,10 +393,7 @@ const HeroPage = () => {
                     alt={item.name}
                     className="w-full h-full object-cover cursor-pointer"
                     onClick={() => {
-                      window.open(
-                        item.link,
-                        "_blank"
-                      );
+                      window.open(item.link, "_blank");
                     }}
                   />
                 </div>
@@ -376,11 +404,26 @@ const HeroPage = () => {
             ))}
           </div>
           <div className="font-hackathoneCabinetGrotesk font-extrabold text-hackathone-font-rocket-red text-[3rem] leading-[51.26px]">
-            <p>Winners of HackAth<span className="text-white">l</span>on<span className="text-white">e</span>’24</p>
+            <p>
+              Winners of HackAth<span className="text-white">l</span>on
+              <span className="text-white">e</span>’24
+            </p>
           </div>
           <div className="text-[1rem] leading-[24.57px]">
             <p className="mt-[13.3px] font-hackathoneSFProDisplay font-[500] text-white">
-              NASA Space Apps Athlone was a huge success! <span className="font-extrabold text-hackathone-font-rocket-red ">210+ participations</span> with <span className="font-extrabold text-hackathone-font-rocket-red ">22 global submissions </span>and <span className="font-extrabold text-hackathone-font-rocket-red "> 3 global nominations.</span>
+              NASA Space Apps Athlone was a huge success!{" "}
+              <span className="font-extrabold text-hackathone-font-rocket-red ">
+                210+ participations
+              </span>{" "}
+              with{" "}
+              <span className="font-extrabold text-hackathone-font-rocket-red ">
+                22 global submissions{" "}
+              </span>
+              and{" "}
+              <span className="font-extrabold text-hackathone-font-rocket-red ">
+                {" "}
+                3 global nominations.
+              </span>
             </p>
           </div>
           <div className="flex flex-col justify-center items-center w-full">
@@ -399,7 +442,7 @@ const HeroPage = () => {
               onClick={() =>
                 window.open(
                   "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/?tab=teams",
-                  "_blank"
+                  "_blank",
                 )
               }
               title="View Teams & Projects"
@@ -424,7 +467,7 @@ const HeroPage = () => {
               onClick={() =>
                 window.open(
                   `https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/`,
-                  "_blank"
+                  "_blank",
                 )
               }
               title="Click Here To See More Info"
@@ -436,8 +479,7 @@ const HeroPage = () => {
             </motion.button>
           </div>
         </div>
-
-      </div >
+      </div>
     );
   };
 

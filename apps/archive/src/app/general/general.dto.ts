@@ -53,18 +53,16 @@ import GloablCollabSection from "@/assets/images/general/landing-page/gloabl_col
 import AppleEye from "@/assets/images/general/landing-page/apple-eye.jpg";
 import Office from "@/assets/images/general/landing-page/office.jpg";
 import Robotics from "@/assets/images/general/landing-page/robotics.jpg";
-import CloudFlies from "@/assets/images/general/landing-page/winners/cloudfliers.jpeg"
-import ShakeItOff from "@/assets/images/general/landing-page/winners/shakeitoff.jpeg"
-import EnigmaPro from "@/assets/images/general/landing-page/winners/enigmapro.jpeg"
+import CloudFlies from "@/assets/images/general/landing-page/winners/cloudfliers.jpeg";
+import ShakeItOff from "@/assets/images/general/landing-page/winners/shakeitoff.jpeg";
+import EnigmaPro from "@/assets/images/general/landing-page/winners/enigmapro.jpeg";
 import { link } from "fs";
-
-
 
 // Get the current date in Irish time and format it
 const currentDateInIrishTime = new Date(
   new Date().toLocaleString("en-US", {
     timeZone: "Europe/Dublin",
-  })
+  }),
 );
 
 // Format the date as '27th August 2024'
@@ -114,7 +112,7 @@ export const navigationData = (Router: any) => [
     route: () =>
       window.open(
         "https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/",
-        "_blank"
+        "_blank",
       ),
   },
 ];
@@ -154,7 +152,7 @@ export const agenciesSlider = [
     route: () =>
       window.open(
         "https://www.iafastro.org/membership/all-members/agencia-espacial-mexicana-aem.html",
-        "_blank"
+        "_blank",
       ),
   },
   {
@@ -168,7 +166,7 @@ export const agenciesSlider = [
     route: () =>
       window.open(
         "https://www.industry.gov.au/australian-space-agency",
-        "_blank"
+        "_blank",
       ),
   },
   {
@@ -182,7 +180,7 @@ export const agenciesSlider = [
     route: () =>
       window.open(
         "https://www.iafastro.org/membership/all-members/brazilian-space-agency-aeb.html",
-        "_blank"
+        "_blank",
       ),
   },
   {
@@ -212,7 +210,7 @@ export const agenciesSlider = [
     route: () =>
       window.open(
         "https://www.iafastro.org/membership/all-members/national-space-science-agency-nssa.html",
-        "_blank"
+        "_blank",
       ),
   },
   {
@@ -240,17 +238,12 @@ export const agenciesSlider = [
 export const collabratorsSlider = [
   {
     img: Booz,
-    route: () =>
-      window.open(
-        "https://www.boozallen.com/",
-        "_blank"
-      ),
+    route: () => window.open("https://www.boozallen.com/", "_blank"),
   },
 
   {
     img: Mindgrub,
-    route: () =>
-      window.open("https://mindgrub.com/", "_blank"),
+    route: () => window.open("https://mindgrub.com/", "_blank"),
   },
   {
     img: SecondMuse,
@@ -339,7 +332,7 @@ export const events = (Router: any) => [
     route: () =>
       window.open(
         "https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/",
-        "_blank"
+        "_blank",
       ),
   },
   {
@@ -393,7 +386,6 @@ export const shannonData = [
   },
 ];
 
-
 export const winners = [
   {
     place: "3rd",
@@ -413,4 +405,4 @@ export const winners = [
     name: "EnigmaPro",
     link: "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/enigmapro/",
   },
-]
+];

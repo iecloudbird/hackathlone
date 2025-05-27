@@ -1,1 +1,1 @@
-declare module '@react-pdf-viewer/default-layout';
+declare module "@react-pdf-viewer/default-layout";

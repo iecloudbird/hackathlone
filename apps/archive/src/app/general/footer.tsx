@@ -2,21 +2,21 @@ import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import HeroImage from "@/assets/images/general/landing-page/hero_icon.png";
-import XIcon from "@/assets/images/general/landing-page/x_logo.svg"
-import InstaIcon from "@/assets/images/general/landing-page/instagram.png"
-import InIcon from "@/assets/images/general/landing-page/linkedin.png"
+import XIcon from "@/assets/images/general/landing-page/x_logo.svg";
+import InstaIcon from "@/assets/images/general/landing-page/instagram.png";
+import InIcon from "@/assets/images/general/landing-page/linkedin.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const router = useRouter();
   const navigateToWinners = () => {
-    router.push('/winners');
+    router.push("/winners");
   };
   const navigateToTeams = () => {
-    router.push('/teams');
+    router.push("/teams");
   };
   const navigateToGlimpse = () => {
-    router.push('/glimpse');
+    router.push("/glimpse");
   };
 
   const desktopView = () => {
@@ -31,8 +31,10 @@ const Footer = () => {
             </div>
 
             <div className="flex gap-3 relative right-1 flex-row items-center justify-between mb-6 ">
-              <a href="https://twitter.com/hack_athlone?ref_src=twsrc%5Etfw"
-                target="_blank">
+              <a
+                href="https://twitter.com/hack_athlone?ref_src=twsrc%5Etfw"
+                target="_blank"
+              >
                 <Image
                   className="hover:scale-110 w-6 h-6 ms-2 MobileScreen:w-4"
                   src={XIcon}
@@ -41,8 +43,10 @@ const Footer = () => {
                   alt={"XIcon"}
                 ></Image>
               </a>
-              <a href="https://www.instagram.com/spaceappsathlone/"
-                target="_blank">
+              <a
+                href="https://www.instagram.com/spaceappsathlone/"
+                target="_blank"
+              >
                 <Image
                   className="hover:scale-110 w-6 h-6 ms-2 MobileScreen:w-4 MobileScreen:h-4"
                   src={InstaIcon}
@@ -51,8 +55,10 @@ const Footer = () => {
                   alt={"InstaIcon"}
                 ></Image>
               </a>
-              <a href="https://www.linkedin.com/company/spaceapps-hackathlone/"
-                target="_blank">
+              <a
+                href="https://www.linkedin.com/company/spaceapps-hackathlone/"
+                target="_blank"
+              >
                 <Image
                   className="hover:scale-110 w-6 h-6 ms-2 MobileScreen:w-4 MobileScreen:h-4"
                   src={InIcon}
@@ -61,12 +67,22 @@ const Footer = () => {
                   alt={"InIcon"}
                 ></Image>
               </a>
-              <a href="mailto:spaceappsathlone@gmail.com"
-                className="ml-[4px] hover:scale-110">
-                <svg width="24" height="24" viewBox="0 0 67 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M60.3 0.398438H6.7C3.015 0.398438 0.0335 3.41344 0.0335 7.09844L0 47.2984C0 50.9834 3.015 53.9984 6.7 53.9984H60.3C63.985 53.9984 67 50.9834 67 47.2984V7.09844C67 3.41344 63.985 0.398438 60.3 0.398438ZM60.3 13.7984L33.5 30.5484L6.7 13.7984V7.09844L33.5 23.8484L60.3 7.09844V13.7984Z" fill="white" />
+              <a
+                href="mailto:spaceappsathlone@gmail.com"
+                className="ml-[4px] hover:scale-110"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 67 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M60.3 0.398438H6.7C3.015 0.398438 0.0335 3.41344 0.0335 7.09844L0 47.2984C0 50.9834 3.015 53.9984 6.7 53.9984H60.3C63.985 53.9984 67 50.9834 67 47.2984V7.09844C67 3.41344 63.985 0.398438 60.3 0.398438ZM60.3 13.7984L33.5 30.5484L6.7 13.7984V7.09844L33.5 23.8484L60.3 7.09844V13.7984Z"
+                    fill="white"
+                  />
                 </svg>
-
               </a>
             </div>
             <hr className="lg:hidden mt-10" />
@@ -250,27 +266,42 @@ const Footer = () => {
           <hr className="w-[92%] mx-auto" />
           <div className="flex flex-col sm:flex-row sm:flex items-center justify-between px-[5%]">
             <p className="font-firaSans text-center py-3">
-              Copyright ©2024 HackAthlone | <a
+              Copyright ©2024 HackAthlone |{" "}
+              <a
                 className="underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                 target="_blank"
                 href="https://www.nasa.gov/about/highlights/HP_Privacy.html"
                 rel="noreferrer"
-              >Privacy Policy</a> |  <a
+              >
+                Privacy Policy
+              </a>{" "}
+              |{" "}
+              <a
                 className="underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                 target="_blank"
                 href="https://www.spaceappschallenge.org/legal/"
                 rel="noreferrer"
-              >Legal</a> | <a
+              >
+                Legal
+              </a>{" "}
+              |{" "}
+              <a
                 className="underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                 target="_blank"
                 href="mailto:spaceappsathlone@gmail.com"
                 rel="noreferrer"
-              >Contact</a> | <a
+              >
+                Contact
+              </a>{" "}
+              |{" "}
+              <a
                 className="underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                 target="_blank"
                 href="https://www.spaceappschallenge.org/resources/"
                 rel="noreferrer"
-              >Resources</a>
+              >
+                Resources
+              </a>
             </p>
             {/* <p className="font-overpass text-center py-3">
               Developed by{" "}
@@ -287,7 +318,7 @@ const Footer = () => {
         </div>
       </div>
     );
-  }
+  };
 
   const tabletView = () => {
     return (
@@ -300,8 +331,10 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex gap-3 relative right-1 flex-row items-center justify-between">
-              <a href="https://twitter.com/hack_athlone?ref_src=twsrc%5Etfw"
-                target="_blank">
+              <a
+                href="https://twitter.com/hack_athlone?ref_src=twsrc%5Etfw"
+                target="_blank"
+              >
                 <Image
                   className="hover:scale-110 w-6 h-6 ms-2 MobileScreen:w-4"
                   src={XIcon}
@@ -310,8 +343,10 @@ const Footer = () => {
                   alt={"XIcon"}
                 ></Image>
               </a>
-              <a href="https://www.instagram.com/spaceappsathlone/"
-                target="_blank">
+              <a
+                href="https://www.instagram.com/spaceappsathlone/"
+                target="_blank"
+              >
                 <Image
                   className="hover:scale-110 w-6 h-6 ms-2 MobileScreen:w-4 MobileScreen:h-4"
                   src={InstaIcon}
@@ -320,8 +355,10 @@ const Footer = () => {
                   alt={"InstaIcon"}
                 ></Image>
               </a>
-              <a href="https://www.linkedin.com/company/spaceapps-hackathlone/"
-                target="_blank">
+              <a
+                href="https://www.linkedin.com/company/spaceapps-hackathlone/"
+                target="_blank"
+              >
                 <Image
                   className="hover:scale-110 w-6 h-6 ms-2 MobileScreen:w-4 MobileScreen:h-4"
                   src={InIcon}
@@ -330,12 +367,22 @@ const Footer = () => {
                   alt={"InIcon"}
                 ></Image>
               </a>
-              <a href="mailto:spaceappsathlone@gmail.com"
-                className="ml-[4px] hover:scale-110">
-                <svg width="24" height="24" viewBox="0 0 67 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M60.3 0.398438H6.7C3.015 0.398438 0.0335 3.41344 0.0335 7.09844L0 47.2984C0 50.9834 3.015 53.9984 6.7 53.9984H60.3C63.985 53.9984 67 50.9834 67 47.2984V7.09844C67 3.41344 63.985 0.398438 60.3 0.398438ZM60.3 13.7984L33.5 30.5484L6.7 13.7984V7.09844L33.5 23.8484L60.3 7.09844V13.7984Z" fill="white" />
+              <a
+                href="mailto:spaceappsathlone@gmail.com"
+                className="ml-[4px] hover:scale-110"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 67 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M60.3 0.398438H6.7C3.015 0.398438 0.0335 3.41344 0.0335 7.09844L0 47.2984C0 50.9834 3.015 53.9984 6.7 53.9984H60.3C63.985 53.9984 67 50.9834 67 47.2984V7.09844C67 3.41344 63.985 0.398438 60.3 0.398438ZM60.3 13.7984L33.5 30.5484L6.7 13.7984V7.09844L33.5 23.8484L60.3 7.09844V13.7984Z"
+                    fill="white"
+                  />
                 </svg>
-
               </a>
             </div>
             <hr className="lg:hidden mt-10" />
@@ -521,33 +568,48 @@ const Footer = () => {
           <hr className="w-[92%] mx-auto" />
           <div className="flex flex-col sm:flex-row sm:flex items-center justify-between px-[5%]">
             <p className="font-firaSans text-center py-3">
-              Copyright ©2024 HackAthlone | <a
+              Copyright ©2024 HackAthlone |{" "}
+              <a
                 className="underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                 target="_blank"
                 href="https://www.nasa.gov/about/highlights/HP_Privacy.html"
                 rel="noreferrer"
-              >Privacy Policy</a> |  <a
+              >
+                Privacy Policy
+              </a>{" "}
+              |{" "}
+              <a
                 className="underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                 target="_blank"
                 href="https://www.spaceappschallenge.org/legal/"
                 rel="noreferrer"
-              >Legal</a> | <a
+              >
+                Legal
+              </a>{" "}
+              |{" "}
+              <a
                 className="underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                 target="_blank"
                 href="mailto:spaceappsathlone@gmail.com"
                 rel="noreferrer"
-              >Contact</a> | <a
+              >
+                Contact
+              </a>{" "}
+              |{" "}
+              <a
                 className="underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                 target="_blank"
                 href="https://www.spaceappschallenge.org/resources/"
                 rel="noreferrer"
-              >Resources</a>
+              >
+                Resources
+              </a>
             </p>
           </div>
         </div>
       </div>
     );
-  }
+  };
   const mobileView = () => {
     return (
       <div className="h-full py-2 flex flex-col justify-evenly w-full gap-4 text-[#F6F4F4] TabletScreen:hidden DesktopScreen:hidden">
@@ -559,8 +621,10 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex gap-3 relative right-1 flex-row items-center justify-between">
-              <a href="https://twitter.com/hack_athlone?ref_src=twsrc%5Etfw"
-                target="_blank">
+              <a
+                href="https://twitter.com/hack_athlone?ref_src=twsrc%5Etfw"
+                target="_blank"
+              >
                 <Image
                   className="hover:scale-110 w-6 h-6 ms-2 MobileScreen:w-4"
                   src={XIcon}
@@ -569,8 +633,10 @@ const Footer = () => {
                   alt={"XIcon"}
                 ></Image>
               </a>
-              <a href="https://www.instagram.com/spaceappsathlone/"
-                target="_blank">
+              <a
+                href="https://www.instagram.com/spaceappsathlone/"
+                target="_blank"
+              >
                 <Image
                   className="hover:scale-110 w-6 h-6 ms-2 MobileScreen:w-4 MobileScreen:h-4"
                   src={InstaIcon}
@@ -579,8 +645,10 @@ const Footer = () => {
                   alt={"InstaIcon"}
                 ></Image>
               </a>
-              <a href="https://www.linkedin.com/company/spaceapps-hackathlone/"
-                target="_blank">
+              <a
+                href="https://www.linkedin.com/company/spaceapps-hackathlone/"
+                target="_blank"
+              >
                 <Image
                   className="hover:scale-110 w-6 h-6 ms-2 MobileScreen:w-4 MobileScreen:h-4"
                   src={InIcon}
@@ -589,12 +657,22 @@ const Footer = () => {
                   alt={"InIcon"}
                 ></Image>
               </a>
-              <a href="mailto:spaceappsathlone@gmail.com"
-                className="ml-[4px] hover:scale-110">
-                <svg width="24" height="24" viewBox="0 0 67 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M60.3 0.398438H6.7C3.015 0.398438 0.0335 3.41344 0.0335 7.09844L0 47.2984C0 50.9834 3.015 53.9984 6.7 53.9984H60.3C63.985 53.9984 67 50.9834 67 47.2984V7.09844C67 3.41344 63.985 0.398438 60.3 0.398438ZM60.3 13.7984L33.5 30.5484L6.7 13.7984V7.09844L33.5 23.8484L60.3 7.09844V13.7984Z" fill="white" />
+              <a
+                href="mailto:spaceappsathlone@gmail.com"
+                className="ml-[4px] hover:scale-110"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 67 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M60.3 0.398438H6.7C3.015 0.398438 0.0335 3.41344 0.0335 7.09844L0 47.2984C0 50.9834 3.015 53.9984 6.7 53.9984H60.3C63.985 53.9984 67 50.9834 67 47.2984V7.09844C67 3.41344 63.985 0.398438 60.3 0.398438ZM60.3 13.7984L33.5 30.5484L6.7 13.7984V7.09844L33.5 23.8484L60.3 7.09844V13.7984Z"
+                    fill="white"
+                  />
                 </svg>
-
               </a>
             </div>
             <hr className="lg:hidden mt-10" />
@@ -778,33 +856,48 @@ const Footer = () => {
           <hr className="w-[92%] mx-auto" />
           <div className="flex flex-col sm:flex-row sm:flex items-center justify-between px-[5%]">
             <p className="font-firaSans text-center py-3">
-              Copyright ©2024 HackAthlone | <a
+              Copyright ©2024 HackAthlone |{" "}
+              <a
                 className="underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                 target="_blank"
                 href="https://www.nasa.gov/about/highlights/HP_Privacy.html"
                 rel="noreferrer"
-              >Privacy Policy</a> |  <a
+              >
+                Privacy Policy
+              </a>{" "}
+              |{" "}
+              <a
                 className="underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                 target="_blank"
                 href="https://www.spaceappschallenge.org/legal/"
                 rel="noreferrer"
-              >Legal</a> | <a
+              >
+                Legal
+              </a>{" "}
+              |{" "}
+              <a
                 className="underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                 target="_blank"
                 href="mailto:spaceappsathlone@gmail.com"
                 rel="noreferrer"
-              >Contact</a> | <a
+              >
+                Contact
+              </a>{" "}
+              |{" "}
+              <a
                 className="underline text-[#f6f4f4] hover:text-hackathone-font-rocket-red"
                 target="_blank"
                 href="https://www.spaceappschallenge.org/resources/"
                 rel="noreferrer"
-              >Resources</a>
+              >
+                Resources
+              </a>
             </p>
           </div>
         </div>
       </div>
     );
-  }
+  };
 
   return (
     <section>

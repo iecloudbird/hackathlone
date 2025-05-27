@@ -17,16 +17,24 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
     const currentDateInIrishTime = new Date(
       new Date().toLocaleString("en-US", {
         timeZone: "Europe/Dublin",
-      })
+      }),
     );
     const difference = +new Date(targetDate) - +currentDateInIrishTime;
     let timeLeft: { [key: string]: string } = {};
 
     if (difference >= 0) {
       timeLeft = {
-        days: String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(2, "0"),
-        hours: String(Math.floor((difference / (1000 * 60 * 60)) % 24)).padStart(2, "0"),
-        minutes: String(Math.floor((difference / 1000 / 60) % 60)).padStart(2, "0"),
+        days: String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(
+          2,
+          "0",
+        ),
+        hours: String(
+          Math.floor((difference / (1000 * 60 * 60)) % 24),
+        ).padStart(2, "0"),
+        minutes: String(Math.floor((difference / 1000 / 60) % 60)).padStart(
+          2,
+          "0",
+        ),
         seconds: String(Math.floor((difference / 1000) % 60)).padStart(2, "0"),
       };
     }
@@ -35,7 +43,7 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   }, [targetDate]);
 
   const [timeLeft, setTimeLeft] = useState<{ [key: string]: string }>(
-    calculateTimeLeft()
+    calculateTimeLeft(),
   );
 
   useEffect(() => {
@@ -57,9 +65,11 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
         <span className="text-2xl md:text-4xl font-bold">
           {timeLeft[interval]}
         </span>
-        <span className="text-xs md:text-lg capitalize text-slate-50 font-[500]">{interval}</span>
+        <span className="text-xs md:text-lg capitalize text-slate-50 font-[500]">
+          {interval}
+        </span>
       </div>
-    ) : null
+    ) : null,
   );
 
   if (!isClient) {

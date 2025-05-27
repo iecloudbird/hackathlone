@@ -14,7 +14,7 @@ interface CardProps {
 const CardM: React.FC<CardProps> = ({ imageSrc, title, description, slug }) => (
   <>
     <div className="rounded-lg shadow-lg flex flex-col overflow-hidden  items-center">
-      <div className="card_image">
+      <div className="">
         <Image src={imageSrc} alt={title} />
       </div>
       <div className="p-4  bg-transparent flex flex-col flex justify-around w-full">

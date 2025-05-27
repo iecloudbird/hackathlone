@@ -5,7 +5,7 @@ import { Points, PointMaterial } from "@react-three/drei";
 /** Generate Random Sphere Points */
 const generateRandomSpherePoints = (
   numPoints: number,
-  radius: number
+  radius: number,
 ): Float32Array => {
   const points = new Float32Array(numPoints * 3);
   for (let i = 0; i < numPoints; i++) {

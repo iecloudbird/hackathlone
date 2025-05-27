@@ -60,10 +60,10 @@ const JoinUsPage = () => {
         {/* Second Text Block with Button */}
         <div className="mt-4 rounded-[13.09px] border-2 p-4 pb-8 sm:p-6 lg:mt-[16.63px] lg:pb-[36.17px]">
           <p className="font-hackathoneCabinetGrotesk text-[16px] font-medium leading-[24.57px] text-slate-50 sm:text-[18px] sm:leading-[28.57px]">
-              Join this 48-hour hackathon, where you’ll tackle problem statements
-              curated by NASA and other space agencies, all centered around this
-              year’s theme, {"\"The Sun Touches Everything\""}, across various STEAM
-              fields. Register now and be part of this extraordinary event!
+            Join this 48-hour hackathon, where you’ll tackle problem statements
+            curated by NASA and other space agencies, all centered around this
+            year’s theme, {'"The Sun Touches Everything"'}, across various STEAM
+            fields. Register now and be part of this extraordinary event!
           </p>
           <motion.a
             whileHover={{

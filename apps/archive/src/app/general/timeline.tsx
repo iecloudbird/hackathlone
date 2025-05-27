@@ -58,10 +58,11 @@ export default function Timeline() {
                 <Typography
                   variant="body2"
                   color="white"
-                  className={`text-base font-bold MobileScreen:text-center transition-transform transition-colors duration-300 ease-in-out transform ${hoveredIndex === index
-                    ? `text-hackathone-font-rocket-red font-extrabold scale-110 ${isOdd ? "translate-x-[-15%]" : "translate-x-[15%]"}`
-                    : "text-white scale-100 translate-x-0"
-                    }`}
+                  className={`text-base font-bold MobileScreen:text-center transition-transform transition-colors duration-300 ease-in-out transform ${
+                    hoveredIndex === index
+                      ? `text-hackathone-font-rocket-red font-extrabold scale-110 ${isOdd ? "translate-x-[-15%]" : "translate-x-[15%]"}`
+                      : "text-white scale-100 translate-x-0"
+                  }`}
                   style={{
                     transformOrigin: "center",
                   }}
@@ -87,7 +88,8 @@ export default function Timeline() {
                   elevation={3}
                   className="relative flex-1 p-4 rounded-xl transition-all mb-4 duration-300 ease-in-out"
                   style={{
-                    maxHeight: hoveredIndex === index ? contentHeight + 140 : "auto",
+                    maxHeight:
+                      hoveredIndex === index ? contentHeight + 140 : "auto",
                     height: hoveredIndex === index ? "auto" : "120px",
                     backgroundColor: "#1e1e1e",
                     border:
@@ -99,8 +101,9 @@ export default function Timeline() {
                   <Typography
                     variant="h6"
                     component="h1"
-                    className={`md:text-xl text-[16px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-center ${isOdd ? "md:text-start" : "md:text-end"
-                      }`}
+                    className={`md:text-xl text-[16px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-center ${
+                      isOdd ? "md:text-start" : "md:text-end"
+                    }`}
                   >
                     {event.title}
                   </Typography>
@@ -110,9 +113,11 @@ export default function Timeline() {
                       className={`
                         text-white transition-all duration-500 ease-in-out transform my-4 text-[16px]
                         TabletScreen:text-[14px] MobileScreen:text-[14px]
-                        ${hoveredIndex === index
-                          ? "translate-y-2"
-                          : "-translate-y-0"}
+                        ${
+                          hoveredIndex === index
+                            ? "translate-y-2"
+                            : "-translate-y-0"
+                        }
                         ${isOdd ? "md:text-start" : "md:text-end"}
                         text-center`}
                     >
@@ -158,10 +163,11 @@ mt-[5rem] mb-[8rem] min-h-max py-2 text-hackathone-font-rocket-red"
                 <Typography
                   variant="body2"
                   color="white"
-                  className={`text-base font-bold MobileScreen:text-center transition-transform transition-colors duration-300 ease-in-out transform ${hoveredIndex === index
-                    ? `text-hackathone-font-rocket-red font-extrabold scale-110 ${isOdd ? "translate-x-[-15%]" : "translate-x-[15%]"}`
-                    : "text-white scale-100 translate-x-0"
-                    }`}
+                  className={`text-base font-bold MobileScreen:text-center transition-transform transition-colors duration-300 ease-in-out transform ${
+                    hoveredIndex === index
+                      ? `text-hackathone-font-rocket-red font-extrabold scale-110 ${isOdd ? "translate-x-[-15%]" : "translate-x-[15%]"}`
+                      : "text-white scale-100 translate-x-0"
+                  }`}
                   style={{
                     transformOrigin: "center",
                   }}
@@ -189,8 +195,7 @@ mt-[5rem] mb-[8rem] min-h-max py-2 text-hackathone-font-rocket-red"
                   style={{
                     maxHeight:
                       hoveredIndex === index ? contentHeight + 160 : "auto",
-                    height:
-                      hoveredIndex === index ? "auto" : "auto",
+                    height: hoveredIndex === index ? "auto" : "auto",
                     backgroundColor: "#1e1e1e",
                     border:
                       hoveredIndex === index
@@ -201,8 +206,9 @@ mt-[5rem] mb-[8rem] min-h-max py-2 text-hackathone-font-rocket-red"
                   <Typography
                     variant="h6"
                     component="h1"
-                    className={`md:text-xl text-[16px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-center ${isOdd ? "md:text-start" : "md:text-end"
-                      }`}
+                    className={`md:text-xl text-[16px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-center ${
+                      isOdd ? "md:text-start" : "md:text-end"
+                    }`}
                   >
                     {event.title}
                   </Typography>
@@ -212,9 +218,11 @@ mt-[5rem] mb-[8rem] min-h-max py-2 text-hackathone-font-rocket-red"
                       className={`
                   text-white transition-all duration-500 ease-in-out transform mt-4 text-[16px]
                   TabletScreen:text-[14px] MobileScreen:text-[14px]
-                  ${hoveredIndex === index
-                          ? "opacity-100 translate-y-0"
-                          : "opacity-0 -translate-y-2"}
+                  ${
+                    hoveredIndex === index
+                      ? "opacity-100 translate-y-0"
+                      : "opacity-0 -translate-y-2"
+                  }
                   ${isOdd ? "md:text-start" : "md:text-end"}
                   text-center
                   MobileScreen:opacity-100 TabletScreen:opacity-100
@@ -230,11 +238,9 @@ mt-[5rem] mb-[8rem] min-h-max py-2 text-hackathone-font-rocket-red"
         })}
       </MuiTimeline>
     </div>
-  )
+  );
   const mobileView = () => (
-    <div
-      className="DesktopScreen:hidden TabletScreen:hidden  flex flex-col items-center justify-center lg:mx-[8.68%] TabletScreen:mx-[3.5%] min-h-screen py-2 text-hackathone-font-rocket-red mb-12"
-    >
+    <div className="DesktopScreen:hidden TabletScreen:hidden  flex flex-col items-center justify-center lg:mx-[8.68%] TabletScreen:mx-[3.5%] min-h-screen py-2 text-hackathone-font-rocket-red mb-12">
       <Typography
         variant="h3"
         component="h1"
@@ -261,10 +267,11 @@ mt-[5rem] mb-[8rem] min-h-max py-2 text-hackathone-font-rocket-red"
                 <Typography
                   variant="body2"
                   color="white"
-                  className={`text-base font-bold MobileScreen:text-center transition-transform transition-colors duration-300 ease-in-out transform ${hoveredIndex === index
-                    ? `text-hackathone-font-rocket-red font-extrabold scale-110 ${isOdd ? "translate-x-[-15%]" : "translate-x-[15%]"}`
-                    : "text-white scale-100 translate-x-0"
-                    }`}
+                  className={`text-base font-bold MobileScreen:text-center transition-transform transition-colors duration-300 ease-in-out transform ${
+                    hoveredIndex === index
+                      ? `text-hackathone-font-rocket-red font-extrabold scale-110 ${isOdd ? "translate-x-[-15%]" : "translate-x-[15%]"}`
+                      : "text-white scale-100 translate-x-0"
+                  }`}
                   style={{
                     transformOrigin: "center",
                   }}
@@ -292,8 +299,7 @@ mt-[5rem] mb-[8rem] min-h-max py-2 text-hackathone-font-rocket-red"
                   style={{
                     maxHeight:
                       hoveredIndex === index ? contentHeight + 80 : "auto",
-                    height:
-                      hoveredIndex === index ? "auto" : "120px",
+                    height: hoveredIndex === index ? "auto" : "120px",
                     backgroundColor: "#1e1e1e",
                     border:
                       hoveredIndex === index
@@ -304,8 +310,9 @@ mt-[5rem] mb-[8rem] min-h-max py-2 text-hackathone-font-rocket-red"
                   <Typography
                     variant="h6"
                     component="h1"
-                    className={`md:text-xl text-[16px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-center ${isOdd ? "md:text-start" : "md:text-end"
-                      }`}
+                    className={`md:text-xl text-[16px] font-bold text-hackathone-font-rocket-red text-center MobileScreen:text-center ${
+                      isOdd ? "md:text-start" : "md:text-end"
+                    }`}
                   >
                     {event.title}
                   </Typography>
@@ -315,9 +322,11 @@ mt-[5rem] mb-[8rem] min-h-max py-2 text-hackathone-font-rocket-red"
                       className={`
                     text-white transition-all duration-500 ease-in-out transform my-4 text-[16px]
                     TabletScreen:text-[14px] MobileScreen:text-[14px]
-                    ${hoveredIndex === index
-                          ? "opacity-100 translate-y-0"
-                          : "opacity-0 -translate-y-2"}
+                    ${
+                      hoveredIndex === index
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 -translate-y-2"
+                    }
                     ${isOdd ? "md:text-start" : "md:text-end"}
                     text-center
                     MobileScreen:opacity-100 TabletScreen:opacity-100

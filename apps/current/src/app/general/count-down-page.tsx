@@ -79,7 +79,11 @@ const CountDownPage: React.FC<CountdownTimerProps> = ({ targetDate }) => {
   return (
     <div className="mb-8 flex flex-col items-center justify-center">
       <div className="flex flex-wrap items-center justify-center space-x-2 md:space-x-4">
-        {timerComponents.length ? timerComponents : <span>Time&apos;s up!</span>}
+        {timerComponents.length ? (
+          timerComponents
+        ) : (
+          <span>Time&apos;s up!</span>
+        )}
       </div>
     </div>
   );

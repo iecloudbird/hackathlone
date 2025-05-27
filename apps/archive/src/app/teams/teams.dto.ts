@@ -27,299 +27,308 @@ import Josh from "@/assets/images/general/landing-page/teams/Josh Quirke.jpeg";
 import Victor from "@/assets/images/general/landing-page/teams/Victor Costello.jpeg";
 
 export const teamMembers = [
-    {
-        name: 'Sahir Sharma',
-        role: 'Location Lead',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/sahir-sharma/',
-            github: null,
-        },
-        image: Sahir,
+  {
+    name: "Sahir Sharma",
+    role: "Location Lead",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/sahir-sharma/",
+      github: null,
     },
-    {
-        name: 'Manav Shah',
-        role: 'Co-Lead',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/manavintech/',
-            github: null,
-        },
-        image: Manav,
+    image: Sahir,
+  },
+  {
+    name: "Manav Shah",
+    role: "Co-Lead",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/manavintech/",
+      github: null,
     },
-    {
-        name: 'Nitish Malik',
-        role: 'Co-Lead',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/nitishmalik07/',
-            github: null,
-        },
-        image: Nitish,
+    image: Manav,
+  },
+  {
+    name: "Nitish Malik",
+    role: "Co-Lead",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/nitishmalik07/",
+      github: null,
     },
-    {
-        name: 'Shean Hans Teoh',
-        role: 'Lead Full Stack Developer',
-        bio: [
-            [
-                { text: "Always learning, glad to be a part of ", highlight: false },
-                { text: "HackAthlone", highlight: true },
-            ],
-        ],
-        socials: {
-            twitter: 'https://x.com/Lovely47409725',
-            linkedin: 'https://www.linkedin.com/in/shean-hans-teoh-3005b024b/',
-            github: 'https://github.com/iecloudbird',
-        },
-        image: Shean,
+    image: Nitish,
+  },
+  {
+    name: "Shean Hans Teoh",
+    role: "Lead Full Stack Developer",
+    bio: [
+      [
+        { text: "Always learning, glad to be a part of ", highlight: false },
+        { text: "HackAthlone", highlight: true },
+      ],
+    ],
+    socials: {
+      twitter: "https://x.com/Lovely47409725",
+      linkedin: "https://www.linkedin.com/in/shean-hans-teoh-3005b024b/",
+      github: "https://github.com/iecloudbird",
     },
-    {
-        name: 'Sudhanshu Bhamburkar',
-        role: 'QA & Backend Developer',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/sudhanshu-bhamburkar-061612168/',
-            github: null,
-        },
-        image: Sudhanshu,
+    image: Shean,
+  },
+  {
+    name: "Sudhanshu Bhamburkar",
+    role: "QA & Backend Developer",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/sudhanshu-bhamburkar-061612168/",
+      github: null,
     },
-    {
-        name: 'Arjun Narayanan',
-        role: 'UI/UX Designer',
-        bio: [
-            [
-                { text: "Hey there! I am Arjun, a passionate ", highlight: false },
-                { text: "designer ", highlight: true },
-                { text: "who focuses on giving good experience to users. Making life easy for everyone!", highlight: false },
+    image: Sudhanshu,
+  },
+  {
+    name: "Arjun Narayanan",
+    role: "UI/UX Designer",
+    bio: [
+      [
+        { text: "Hey there! I am Arjun, a passionate ", highlight: false },
+        { text: "designer ", highlight: true },
+        {
+          text: "who focuses on giving good experience to users. Making life easy for everyone!",
+          highlight: false,
+        },
+      ],
+    ],
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/arjun-s-narayanan-006018185/",
+      github: null,
+    },
+    image: Arjun,
+  },
+  {
+    name: "Catherine Pulickan",
+    role: "Operations & Communications",
+    bio: [
+      [
+        {
+          text: "Im Catherine Pulickan and I'm a master’s student in Human-Computer Interaction at UCD. ",
+          highlight: false,
+        },
+        {
+          text: "I specialise in user-centered design and research, with a passion for solving complex problems and creating accessible digital experiences.",
+          highlight: false,
+        },
+      ],
+    ],
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/catherine-pulickan-731342159/",
+      github: null,
+    },
+    image: Catherine,
+  },
+  {
+    name: "Kkhawaish Gulati",
+    role: "Event Anchor",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/kkhawaish-gulati-050b511ab/",
+      github: null,
+    },
+    image: Kkwaish,
+  },
+  {
+    name: "Khushi Mehta",
+    role: "Social Media Content Designer",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/khushi-mehta-9905101bb/",
+      github: null,
+    },
+    image: Khushi,
+  },
+  {
+    name: "⁠Rochelle Carvalho",
+    role: "Operations & Communications",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/rochelle-carvalho-1501251b/",
+      github: null,
+    },
+    image: Rochelle,
+  },
+  {
+    name: "Khayati Arora",
+    role: "Operations & Communications",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/khayati-arora-99b025205/",
+      github: null,
+    },
+    image: Khayati,
+  },
 
-            ],
-        ],
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/arjun-s-narayanan-006018185/',
-            github: null,
-        },
-        image: Arjun,
+  {
+    name: "Uchenna Nnajiofor",
+    role: "Web Developer",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/nnajiofor-uchenna-746a1b256/",
+      github: null,
     },
-    {
-        name: 'Catherine Pulickan',
-        role: 'Operations & Communications',
-        bio: [
-            [
-                { text: "Im Catherine Pulickan and I'm a master’s student in Human-Computer Interaction at UCD. ", highlight: false },
-                { text: "I specialise in user-centered design and research, with a passion for solving complex problems and creating accessible digital experiences.", highlight: false },
-            ],
-        ],
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/catherine-pulickan-731342159/',
-            github: null,
-        },
-        image: Catherine,
+    image: Nnajiofor,
+  },
+  {
+    name: "Manav Yagnik",
+    role: "Full Stack Developer",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/manav-yagnik-328535241/",
+      github: null,
     },
-    {
-        name: 'Kkhawaish Gulati',
-        role: 'Event Anchor',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/kkhawaish-gulati-050b511ab/',
-            github: null,
-        },
-        image: Kkwaish,
-    },
-    {
-        name: 'Khushi Mehta',
-        role: 'Social Media Content Designer',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/khushi-mehta-9905101bb/',
-            github: null,
-        },
-        image: Khushi,
-    },
-    {
-        name: '⁠Rochelle Carvalho',
-        role: 'Operations & Communications',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/rochelle-carvalho-1501251b/',
-            github: null,
-        },
-        image: Rochelle,
-    },
-    {
-        name: 'Khayati Arora',
-        role: 'Operations & Communications',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/khayati-arora-99b025205/',
-            github: null,
-        },
-        image: Khayati,
-    },
+    image: Yagnik,
+  },
 
-    {
-        name: 'Uchenna Nnajiofor',
-        role: 'Web Developer',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/nnajiofor-uchenna-746a1b256/',
-            github: null,
-        },
-        image: Nnajiofor,
+  {
+    name: "Mavis Hye Xuan Chia",
+    role: "Frontend Developer",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/mavis-hye-xuan-chia-a763a2237/",
+      github: null,
     },
-    {
-        name: 'Manav Yagnik',
-        role: 'Full Stack Developer',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/manav-yagnik-328535241/',
-            github: null,
-        },
-        image: Yagnik,
+    image: Mavis,
+  },
+  {
+    name: "Liew Zi Ken",
+    role: "Event Photographer",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: null,
+      github: null,
+      instagram: "https://www.instagram.com/liewziken/",
     },
-
-    {
-        name: 'Mavis Hye Xuan Chia',
-        role: 'Frontend Developer',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/mavis-hye-xuan-chia-a763a2237/',
-            github: null,
-        },
-        image: Mavis,
+    image: Ken,
+  },
+  {
+    name: "Nguyen Phung",
+    role: "Video Editor",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/mainguyenphung/",
+      github: null,
     },
-    {
-        name: 'Liew Zi Ken',
-        role: 'Event Photographer',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: null,
-            github: null,
-            instagram: 'https://www.instagram.com/liewziken/',
-        },
-        image: Ken,
+    image: Nora,
+  },
+  {
+    name: "Aradhya Bhalla",
+    role: "On-Ground Support",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/aradhya-bhalla/",
+      github: null,
     },
-    {
-        name: 'Nguyen Phung',
-        role: 'Video Editor',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/mainguyenphung/',
-            github: null,
-        },
-        image: Nora,
+    image: AB,
+  },
+  {
+    name: "Tvisha Mehta",
+    role: "Event Space Physical Design",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/tvisha-mehta-10b993207/",
+      github: null,
     },
-    {
-        name: 'Aradhya Bhalla',
-        role: 'On-Ground Support',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/aradhya-bhalla/',
-            github: null,
-        },
-        image: AB,
+    image: Tvisha,
+  },
+  {
+    name: "Ishita Malik",
+    role: "Content Writing & Social Media",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin:
+        "https://www.linkedin.com/in/ishita-malik07/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      github: null,
     },
-    {
-        name: 'Tvisha Mehta',
-        role: 'Event Space Physical Design',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/tvisha-mehta-10b993207/',
-            github: null,
-        },
-        image: Tvisha,
+    image: Ishita,
+  },
+  {
+    name: "Gagan Manchanda",
+    role: "On-Ground Support",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: null,
+      github: null,
     },
-    {
-        name: 'Ishita Malik',
-        role: 'Content Writing & Social Media',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/ishita-malik07/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-            github: null,
-        },
-        image: Ishita,
+    image: Gagan,
+  },
+  {
+    name: "Kshitij Motke",
+    role: "On- Ground Support",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/kshitij-motke/",
+      github: null,
     },
-    {
-        name: 'Gagan Manchanda',
-        role: 'On-Ground Support',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: null,
-            github: null,
-        },
-        image: Gagan,
+    image: Kshitij,
+  },
+  {
+    name: "Yujing Zhang",
+    role: "On Ground Support",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/yujingzhang/",
+      github: null,
     },
-    {
-        name: 'Kshitij Motke',
-        role: 'On- Ground Support',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/kshitij-motke/',
-            github: null,
-        },
-        image: Kshitij,
+    image: YuJing,
+  },
+  {
+    name: "Josh Quirke",
+    role: "On Ground Support",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/josh-quirke-22068028b/",
+      github: null,
     },
-    {
-        name: 'Yujing Zhang',
-        role: 'On Ground Support',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/yujingzhang/',
-            github: null,
-        },
-        image: YuJing,
+    image: Josh,
+  },
+  {
+    name: "Victor Costello",
+    role: "On Ground Support",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/victor-costello/",
+      github: null,
     },
-    {
-        name: 'Josh Quirke',
-        role: 'On Ground Support',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/josh-quirke-22068028b/',
-            github: null,
-        },
-        image: Josh
+    image: Victor,
+  },
+  {
+    name: "Shaiv Mehrotra",
+    role: "Content Writer",
+    bio: null,
+    socials: {
+      twitter: null,
+      linkedin: "https://www.linkedin.com/in/shaiv-mehrotra-2a3135177/",
+      github: null,
     },
-    {
-        name: 'Victor Costello',
-        role: 'On Ground Support',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/victor-costello/',
-            github: null,
-        },
-        image: Victor,
-    },
-    {
-        name: 'Shaiv Mehrotra',
-        role: 'Content Writer',
-        bio: null,
-        socials: {
-            twitter: null,
-            linkedin: 'https://www.linkedin.com/in/shaiv-mehrotra-2a3135177/',
-            github: null,
-        },
-        image: Shaiv,
-    },
-]
+    image: Shaiv,
+  },
+];
