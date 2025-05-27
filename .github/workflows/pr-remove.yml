@@ -1,4 +1,4 @@
-name: PR-Remove
+name: PR-remove
 
 on:
   pull_request:
