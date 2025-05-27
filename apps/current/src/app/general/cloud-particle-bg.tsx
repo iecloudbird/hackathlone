@@ -1,7 +1,6 @@
 import { Points, PointMaterial } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import React, { useState, useRef, useEffect } from "react";
-import type * as THREE from "three";
 
 /** Generate Random Sphere Points */
 const generateRandomSpherePoints = (
@@ -46,7 +45,8 @@ const useWindowSize = () => {
 
 /** Cloud Particle Background */
 const CloudParticleBg: React.FC = () => {
-  const ref = useRef<THREE.Points>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const ref = useRef<any>(null);
   const [sphere] = useState(() => generateRandomSpherePoints(5000, 1.5)); // Reduce 5000 to a lower number if needed
   const windowWidth = useWindowSize();
 
