@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   build:
-    name: Test build @hackathlone/current
+    name: build
     runs-on: ubuntu-latest
 
     steps:
