@@ -1,22 +1,12 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
     "plugin:tailwindcss/recommended",
     "plugin:import/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": [
-    "import",
-    "@typescript-eslint",
-    "react",
-    "react-hooks",
-    "tailwindcss",
-    "prettier"
-  ],
-
+  "plugins": ["import", "@typescript-eslint", "tailwindcss", "prettier"],
   "rules": {
     "@typescript-eslint/consistent-type-imports": [
       2,
