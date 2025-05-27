@@ -21,7 +21,7 @@ const BackToTopButton = () => {
     setImageSrc(rocket_motion);
 
     setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ behavior: "smooth", top: 0 });
       setIsClicked(false);
       setImageSrc(rocket);
     }, 1000);
@@ -45,7 +45,7 @@ const BackToTopButton = () => {
           className="fixed bottom-4 right-4 z-50 cursor-pointer rounded-full border-none bg-hackathone-font-rocket-red p-1 opacity-50 transition-opacity duration-300 hover:opacity-100 sm:p-2 lg:bottom-10 lg:right-10 lg:p-3"
         >
           <motion.div
-            animate={isClicked ? { y: -600, scale: 2 } : { y: 0, scale: 1 }} // Animate the rocket on click
+            animate={isClicked ? { scale: 2, y: -600 } : { scale: 1, y: 0 }} // Animate the rocket on click
             transition={{ duration: 3, ease: "easeOut" }}
           >
             <Image

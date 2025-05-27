@@ -1,10 +1,10 @@
+/* eslint-disable sort-keys */
 import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
 import { Stories } from "./general.dto";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { easing } from "@mui/material";
 
 const TeamStories = () => {
   const settings = {
@@ -23,7 +23,7 @@ const TeamStories = () => {
       {
         breakpoint: 2250,
         settings: {
-          appendDots: (dots: any) => (
+          appendDots: (dots: React.ReactNode[]) => (
             <div
               style={{
                 height: "20px",
@@ -51,7 +51,7 @@ const TeamStories = () => {
       {
         breakpoint: 1900,
         settings: {
-          appendDots: (dots: any) => (
+          appendDots: (dots: React.ReactNode[]) => (
             <div
               style={{
                 height: "20px",
@@ -79,7 +79,7 @@ const TeamStories = () => {
       {
         breakpoint: 1800,
         settings: {
-          appendDots: (dots: any) => (
+          appendDots: (dots: React.ReactNode[]) => (
             <div
               style={{
                 height: "20px",
@@ -107,7 +107,7 @@ const TeamStories = () => {
       {
         breakpoint: 1540,
         settings: {
-          appendDots: (dots: any) => (
+          appendDots: (dots: React.ReactNode[]) => (
             <div
               style={{
                 height: "20px",
@@ -136,7 +136,7 @@ const TeamStories = () => {
       {
         breakpoint: 1441,
         settings: {
-          appendDots: (dots: any) => (
+          appendDots: (dots: React.ReactNode[]) => (
             <div
               style={{
                 height: "20px",
@@ -163,7 +163,7 @@ const TeamStories = () => {
       {
         breakpoint: 1300,
         settings: {
-          appendDots: (dots: any) => (
+          appendDots: (dots: React.ReactNode[]) => (
             <div
               style={{
                 height: "20px",
@@ -191,7 +191,7 @@ const TeamStories = () => {
       {
         breakpoint: 1140,
         settings: {
-          appendDots: (dots: any) => (
+          appendDots: (dots: React.ReactNode[]) => (
             <div
               style={{
                 height: "20px",
@@ -219,7 +219,7 @@ const TeamStories = () => {
       {
         breakpoint: 1024,
         settings: {
-          appendDots: (dots: any) => (
+          appendDots: (dots: React.ReactNode[]) => (
             <div
               style={{
                 height: "20px",
@@ -246,7 +246,7 @@ const TeamStories = () => {
       {
         breakpoint: 890,
         settings: {
-          appendDots: (dots: any) => (
+          appendDots: (dots: React.ReactNode[]) => (
             <div
               style={{
                 height: "20px",
@@ -274,7 +274,7 @@ const TeamStories = () => {
         breakpoint: 768.5,
         settings: {
           speed: 1500,
-          appendDots: (dots: any) => (
+          appendDots: (dots: React.ReactNode[]) => (
             <div
               style={{
                 height: "20px",
@@ -302,7 +302,7 @@ const TeamStories = () => {
         breakpoint: 480,
         settings: {
           speed: 1500,
-          appendDots: (dots: any) => (
+          appendDots: (dots: React.ReactNode[]) => (
             <div
               style={{
                 height: "20px",
@@ -331,7 +331,7 @@ const TeamStories = () => {
         breakpoint: 376,
         settings: {
           speed: 1500,
-          appendDots: (dots: any) => (
+          appendDots: (dots: React.ReactNode[]) => (
             <div
               style={{
                 height: "20px",
@@ -361,7 +361,7 @@ const TeamStories = () => {
         breakpoint: 321,
         settings: {
           speed: 1500,
-          appendDots: (dots: any) => (
+          appendDots: (dots: React.ReactNode[]) => (
             <div
               style={{
                 height: "20px",
@@ -394,7 +394,7 @@ const TeamStories = () => {
         },
       },
     ],
-    customPaging: (i: any) => (
+    customPaging: () => (
       <div
         style={{
           width: "10px",
@@ -406,7 +406,7 @@ const TeamStories = () => {
         }}
       />
     ),
-    appendDots: (dots: any) => (
+    appendDots: (dots: React.ReactNode[]) => (
       <div
         style={{
           //Default view for screen > 2250px
@@ -447,7 +447,7 @@ const TeamStories = () => {
           {Stories.map((item, index) => (
             <div
               key={index}
-              className="!flex h-auto !flex-col items-center items-stretch justify-center md:!flex-row"
+              className="!flex h-auto !flex-col items-center justify-center md:!flex-row"
             >
               <div className="!flex max-h-[560px] w-full justify-center md:w-1/2 md:items-center md:justify-start MobileScreen:mt-10 MobileScreen:justify-center TabletScreen:px-4">
                 <Image
@@ -458,7 +458,7 @@ const TeamStories = () => {
                   alt={"Team Image"}
                 />
               </div>
-              <div className="w-auto w-full pr-4 pt-8 text-center md:ml-10 md:mt-4 md:w-1/2 md:pt-0 md:text-left xl:ml-8 2xl:ml-4 MobileScreen:pr-4">
+              <div className="w-full pr-4 pt-8 text-center md:ml-10 md:mt-4 md:w-1/2 md:pt-0 md:text-left xl:ml-8 2xl:ml-4 MobileScreen:pr-4">
                 <p className="max-w-prose font-hackathoneCabinetGrotesk text-lg sm:pt-8 md:pt-10 MobileScreen:pb-8">
                   {item.text}
                 </p>

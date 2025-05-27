@@ -1,30 +1,29 @@
 import { type Metadata } from "next";
-import { Inter } from "next/font/google";
-import Head from "next/head";
+import React from "react";
 import "./globals.css";
 import { SFProDisplay, CabinetGrotesk } from "@/utils/custom-fonts";
 
 export const metadata: Metadata = {
-  title: "HackAthlone",
   description:
     "✨ Come join us in the world's largest hackathon! 🚀 Register now!",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
+    description:
+      "✨ Come join us in the world's largest hackathon! 🚀 Register now!",
+    images: ["/favicon.ico"],
+    title: "HackAthlone",
     type: "website",
     url: "https://www.hackathlone.com/",
-    title: "HackAthlone",
-    description:
-      "✨ Come join us in the world's largest hackathon! 🚀 Register now!",
-    images: ["/favicon.ico"],
   },
+  title: "HackAthlone",
   twitter: {
     card: "summary_large_image",
-    title: "HackAthlone",
     description:
       "✨ Come join us in the world's largest hackathon! 🚀 Register now!",
     images: ["/favicon.ico"],
+    title: "HackAthlone",
   },
 };
 

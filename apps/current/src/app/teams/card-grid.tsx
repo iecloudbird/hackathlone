@@ -6,6 +6,13 @@ import InIcon from "@/assets/images/general/landing-page/linkedin.png";
 import XIcon from "@/assets/images/general/landing-page/x_logo.svg";
 import { teamMembers } from "./teams.dto";
 
+interface SocialLinks {
+  twitter?: string | null;
+  linkedin?: string | null;
+  github?: string | null;
+  instagram?: string | null;
+}
+
 const gridItems = [...teamMembers];
 
 export const CardGrid = () => {
@@ -21,13 +28,15 @@ export const CardGrid = () => {
     setSelectedMember(null);
   };
 
-  const handleOutsideClick = (e: any) => {
-    if (modalRef.current && !modalRef.current.contains(e.target)) {
+  const handleOutsideClick = (
+    e: React.MouseEvent<HTMLDivElement, MouseEvent>
+  ) => {
+    if (modalRef.current && !modalRef.current.contains(e.target as Node)) {
       handleClosePopup();
     }
   };
 
-  const renderSocialIcons = (socials: any) => {
+  const renderSocialIcons = (socials: SocialLinks) => {
     return (
       <div className="ml-6 mt-4 flex justify-start space-x-4 lg:justify-center">
         {socials.twitter && (
@@ -103,7 +112,7 @@ export const CardGrid = () => {
                 />
               </div>
               {/* Container for the text */}
-              <div className="text-hackathoneCabinetGrotesk w-80 py-4 pl-2 text-start text-lg text-slate-50 MobileScreen:pl-4">
+              <div className="w-80 py-4 pl-2 text-start font-hackathoneCabinetGrotesk text-lg text-slate-50 MobileScreen:pl-4">
                 <p className="font-bold">{item.name}</p>
                 <p className="text-red-400">{item.role}</p>
               </div>
@@ -116,7 +125,7 @@ export const CardGrid = () => {
         (gridItems[selectedMember].socials.instagram ||
           gridItems[selectedMember].socials.linkedin) && (
           <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
             onClick={handleOutsideClick}
           >
             <motion.div
@@ -149,13 +158,13 @@ export const CardGrid = () => {
                 <h2 className="mb-2 text-2xl font-bold md:text-3xl">
                   {gridItems[selectedMember].name}
                 </h2>
-                <p className="text-md mb-4 font-bold text-red-500 md:text-lg">
+                <p className="mb-4 text-base font-bold text-red-500 md:text-lg">
                   {gridItems[selectedMember].role}
                 </p>
 
                 {/* Display bio or other details */}
 
-                <p className="text-md mb-6">
+                <p className="mb-6 text-base">
                   Check for socials media below:
                   {/* {gridItems[selectedMember].bio ? (
                                     gridItems[selectedMember].bio.map((bioArray, index) => (

@@ -11,7 +11,7 @@ import { winners } from "./winners.dto";
 const WinnerDetails: React.FC = () => {
   const router = useRouter();
   return (
-    <div className="flex flex-col gap-8 overflow-x-hidden TabletScreen:mx-[4.06%] DesktopScreen:mx-[8.06%]">
+    <div className="flex flex-col gap-8 overflow-x-hidden DesktopScreen:mx-[8.06%] TabletScreen:mx-[4.06%]">
       {/* Circular icon placeholder */}
       <div className="relative flex w-full items-center justify-center MobileScreen:hidden TabletScreen:hidden">
         {/* Circular icon placeholder */}
@@ -38,7 +38,7 @@ const WinnerDetails: React.FC = () => {
       </div>
 
       {/* Introductory page */}
-      <div className="flex flex-col MobileScreen:mt-8 TabletScreen:mt-8 DesktopScreen:mt-12">
+      <div className="flex flex-col DesktopScreen:mt-12 MobileScreen:mt-8 TabletScreen:mt-8">
         {/* Back Button */}
         {/* Desktop */}
         <Tooltip text="Back to Home">
@@ -75,7 +75,7 @@ const WinnerDetails: React.FC = () => {
             className={`relative mt-2 flex flex-col overflow-hidden rounded-3xl border-2 border-gray-700`}
           >
             {/* Background Layer with Opacity */}
-            <div className="absolute inset-0 z-0 rounded-3xl bg-[#8F8F8F1A] bg-opacity-50 backdrop-blur-md"></div>
+            <div className="absolute inset-0 z-0 rounded-3xl bg-[#8F8F8F]/50 backdrop-blur-md"></div>
 
             {/* Image */}
             <div className="relative z-10 flex h-[300px] w-full justify-center p-7 md:h-[400px]">
@@ -112,7 +112,7 @@ const WinnerDetails: React.FC = () => {
                 </span>
               </div>
 
-              <h3 className="text-grey-800 mb-2 text-xl italic">
+              <h3 className="mb-2 text-xl italic text-gray-800">
                 Team Members
               </h3>
               <div className="grid grid-cols-2 gap-2">

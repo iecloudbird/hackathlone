@@ -54,7 +54,7 @@ export default function Timeline() {
                   className={`w-full text-base font-bold text-white transition-transform duration-300 ease-in-out ${
                     hoveredIndex === index
                       ? `font-extrabold !text-hackathone-font-rocket-red ${
-                          isOdd ? "-translate-x-[5%]" : "translate-x-[5%]"
+                          isOdd ? "translate-x-[-5%]" : "translate-x-[5%]"
                         }`
                       : "translate-x-0"
                   }`}
@@ -81,9 +81,9 @@ export default function Timeline() {
                       : "border-2 border-transparent"
                   }`}
                   style={{
+                    height: hoveredIndex === index ? "auto" : 120,
                     maxHeight:
                       hoveredIndex === index ? contentHeight + 140 : "auto",
-                    height: hoveredIndex === index ? "auto" : 120,
                   }}
                 >
                   <div

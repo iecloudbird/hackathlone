@@ -67,7 +67,7 @@ const Tooltip: React.FC<TooltipProps> = ({
             pointerEvents: "none", // Prevent the tooltip from blocking mouse events
           }}
         >
-          <div className="whitespace-nowrap rounded-md border border-white bg-gray-800 bg-opacity-80 p-2 text-center text-sm text-white shadow-lg">
+          <div className="whitespace-nowrap rounded-md border border-white bg-gray-800/80 p-2 text-center text-sm text-white shadow-lg">
             {text}
           </div>
         </motion.div>

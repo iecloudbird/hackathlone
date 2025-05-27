@@ -1,8 +1,6 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import { motion } from "framer-motion";
-import Image from "next/image";
 import React from "react";
 import CloudParticleBg from "@/app/general/cloud-particle-bg";
 import BackToTopButton from "../general/back-to-top";

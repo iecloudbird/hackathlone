@@ -2,7 +2,7 @@
 import { IconButton } from "@mui/material";
 import { Canvas } from "@react-three/fiber";
 import Image from "next/image";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import React from "react";
 import CloudParticleBg from "@/app/general/cloud-particle-bg";
 import { CardGrid } from "@/app/teams/card-grid";
@@ -46,12 +46,12 @@ const Teams = () => {
               className="object-left text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden"
               edge="start"
               sx={{
-                width: "3rem",
-                height: "3rem",
                 fontSize: "2.5rem",
+                height: "3rem",
+                left: "-0.5rem",
                 position: "relative",
                 top: "0",
-                left: "-0.5rem",
+                width: "3rem",
               }}
               aria-label="back to home"
             >
@@ -82,21 +82,21 @@ const Teams = () => {
   /** Tablet View */
   const tabletView = () => {
     return (
-      <div className="mx-[4.06%] flex flex-col items-center justify-center gap-[36px] MobileScreen:hidden DesktopScreen:hidden">
+      <div className="mx-[4.06%] flex flex-col items-center justify-center gap-[36px] DesktopScreen:hidden MobileScreen:hidden">
         <div className="mt-[3%] w-full">
           <IconButton
             size="small"
             color="primary"
             onClick={() => router.push("/")}
-            className="object-left text-white hover:text-hackathone-font-rocket-red MobileScreen:hidden DesktopScreen:hidden"
+            className="object-left text-white hover:text-hackathone-font-rocket-red DesktopScreen:hidden MobileScreen:hidden"
             edge="start"
             sx={{
-              width: "2.5rem",
-              height: "2.5rem",
               fontSize: "2.5rem",
+              height: "2.5rem",
+              left: "0",
               position: "relative",
               top: "0",
-              left: "0",
+              width: "2.5rem",
             }}
             aria-label="back to home"
           >
@@ -105,7 +105,7 @@ const Teams = () => {
           <h1 className="my-2 text-[32.99px] font-[700] text-hackathone-font-rocket-red">
             Meet the team
           </h1>
-          <p className="pr-[12.7%] font-hackathoneCabinetGrotesk text-[18px] font-[400] leading-[30.57px]">
+          <p className="pr-[12.7%] font-hackathoneCabinetGrotesk text-[18px] leading-[30.57px]">
             that is making a difference!
           </p>
         </div>
@@ -119,30 +119,30 @@ const Teams = () => {
   /** Mobile View */
   const mobileView = () => {
     return (
-      <div className="mx-[1.2rem] flex flex-col items-center justify-center TabletScreen:hidden DesktopScreen:hidden">
+      <div className="mx-[1.2rem] flex flex-col items-center justify-center DesktopScreen:hidden TabletScreen:hidden">
         <div className="mt-[3%] w-full">
           <IconButton
             size="small"
             color="primary"
             onClick={() => router.push("/")}
-            className="object-left text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden DesktopScreen:hidden"
+            className="object-left text-white hover:text-hackathone-font-rocket-red DesktopScreen:hidden TabletScreen:hidden"
             edge="start"
             sx={{
-              width: "2.5rem",
-              height: "2.5rem",
               fontSize: "2.5rem",
+              height: "2.5rem",
+              left: "-3px",
               position: "relative",
               top: "0",
-              left: "-3px",
+              width: "2.5rem",
             }}
             aria-label="back to home"
           >
             <Image width={80} height={80} src={BackButton} alt="Back to Home" />
           </IconButton>
-          <h1 className="my-2 pb-2 font-hackathoneCabinetGrotesk text-[30.99px] font-[800] leading-[44.62px] text-hackathone-font-rocket-red">
+          <h1 className="my-2 pb-2 font-hackathoneCabinetGrotesk text-[30.99px] leading-[44.62px] text-hackathone-font-rocket-red">
             Meet the team
           </h1>
-          <p className="pr-[8.7%] font-hackathoneCabinetGrotesk text-[16px] font-[500] leading-[30.57px] text-slate-50">
+          <p className="pr-[8.7%] font-hackathoneCabinetGrotesk text-[16px] leading-[30.57px] text-slate-50">
             that is making a difference!
           </p>
         </div>

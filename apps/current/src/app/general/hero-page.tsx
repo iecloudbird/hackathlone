@@ -2,15 +2,13 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import HeroImage from "@/assets/images/general/landing-page/hero_icon.png";
 import CountDownPage from "./count-down-page";
 
 const targetDate = "2025-10-04T18:00:00";
 
 const HeroPage = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <section className="mx-auto mt-16 flex flex-col items-center justify-center px-4 text-center sm:px-6 md:px-8 lg:px-[8.06%]">
       <div className="mb-10 w-full">
@@ -55,7 +53,7 @@ const HeroPage = () => {
               scale: 1.1,
               transition: { duration: 0.3 },
             }}
-            whileTap={{ scale: 0.9, borderWidth: "4px", borderColor: "white" }}
+            whileTap={{ borderColor: "white", borderWidth: "4px", scale: 0.9 }}
             onClick={() =>
               window.open(
                 "https://www.spaceappschallenge.org/nasa-space-apps-2024/2024-local-events/athlone/?tab=teams",
@@ -65,7 +63,7 @@ const HeroPage = () => {
             title="View Teams & Projects"
             className="flex h-[44.31px] w-full items-center justify-center rounded-[6.54px] border-2 border-hackathone-font-rocket-red bg-transparent px-4 py-3 transition-colors duration-300 ease-in-out sm:w-[30%] xl:w-1/5"
           >
-            <p className="font-sefarvestCabinetGrotesk text-[16px] font-bold leading-[18.28px] text-hackathone-font-rocket-red transition-all duration-500 ease-in-out">
+            <p className="font-hackathoneCabinetGrotesk text-[16px] font-extrabold leading-[18.28px] text-hackathone-font-rocket-red transition-all duration-500 ease-in-out">
               Previous Teams & Projects
             </p>
           </motion.button>
@@ -77,14 +75,14 @@ const HeroPage = () => {
               scale: 1.1,
               transition: { duration: 0.3 },
             }}
-            whileTap={{ scale: 0.9, borderWidth: "4px", borderColor: "white" }}
+            whileTap={{ borderColor: "white", borderWidth: "4px", scale: 0.9 }}
             onClick={() =>
               window.open("https://nasa-spaceapps.vercel.app/", "_blank")
             }
             title="Checkout our 2024 Event"
             className="flex h-[44.31px] w-full items-center justify-center rounded-[6.54px] border-2 border-hackathone-font-rocket-red bg-transparent px-4 py-3 transition-colors duration-300 ease-in-out sm:w-[30%] xl:w-1/5"
           >
-            <p className="font-sefarvestCabinetGrotesk text-[16px] font-bold leading-[18.28px] text-hackathone-font-rocket-red transition-all duration-500 ease-in-out">
+            <p className="font-hackathoneCabinetGrotesk text-[16px] font-extrabold leading-[18.28px] text-hackathone-font-rocket-red transition-all duration-500 ease-in-out">
               Hackathlone 2024
             </p>
           </motion.button>

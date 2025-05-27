@@ -11,16 +11,16 @@ import {
   timelineItemClasses,
 } from "@mui/lab";
 import { Paper, Typography, IconButton } from "@mui/material";
-import { useRouter, useSearchParams } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import React, { useState } from "react";
 import Tooltip from "../general/tooltip";
 import { schedule, type DaySchedule, type ScheduleItem } from "./timeline.dto";
 
 const formatDate = (date: Date) => {
   const options: Intl.DateTimeFormatOptions = {
-    weekday: "long",
     day: "numeric",
     month: "short",
+    weekday: "long",
   };
   return new Intl.DateTimeFormat("en-GB", options).format(date);
 };
@@ -39,7 +39,7 @@ const Itinerary: React.FC = () => {
 
   const sharedView = () => {
     return (
-      <div className="relative z-10 mt-2 py-[24px] TabletScreen:mx-[8.06%] DesktopScreen:mx-[8.06%]">
+      <div className="relative z-10 mt-2 py-[24px] DesktopScreen:mx-[8.06%] TabletScreen:mx-[8.06%]">
         <div>
           {schedule.map((day: DaySchedule, dayIndex: number) => {
             const dayDate = new Date(startDate);
@@ -61,14 +61,14 @@ const Itinerary: React.FC = () => {
                         className="mr-4 text-white hover:text-hackathone-font-rocket-red MobileScreen:hidden TabletScreen:hidden"
                         edge="start"
                         sx={{
-                          width: "4rem",
-                          height: "4rem",
-                          fontSize: "5rem",
-                          transition:
-                            "transform 0.3s ease-in-out, color 0.3s ease-in-out",
                           "&:hover": {
                             transform: "scale(1.2)",
                           },
+                          fontSize: "5rem",
+                          height: "4rem",
+                          transition:
+                            "transform 0.3s ease-in-out, color 0.3s ease-in-out",
+                          width: "4rem",
                         }}
                         aria-label="back to home"
                       >
@@ -100,7 +100,7 @@ const Itinerary: React.FC = () => {
                     <Typography
                       variant="h3"
                       component="h1"
-                      className="pl-4 text-start font-hackathoneCabinetGrotesk text-3xl font-bold text-hackathone-font-rocket-red sm:text-[3.5rem] TabletScreen:hidden DesktopScreen:hidden"
+                      className="pl-4 text-start font-hackathoneCabinetGrotesk text-3xl font-bold text-hackathone-font-rocket-red sm:text-[3.5rem] DesktopScreen:hidden TabletScreen:hidden"
                     >
                       <span className="MobileScreen:whitespace-pre">
                         {" "}
@@ -198,14 +198,14 @@ const Itinerary: React.FC = () => {
                         className="mr-4 object-left text-white hover:text-hackathone-font-rocket-red MobileScreen:hidden"
                         edge="start"
                         sx={{
-                          width: "3.5rem",
-                          height: "3.5rem",
-                          fontSize: "5rem",
-                          transition:
-                            "transform 0.3s ease-in-out, color 0.3s ease-in-out",
                           "&:hover": {
                             transform: "scale(1.2)",
                           },
+                          fontSize: "5rem",
+                          height: "3.5rem",
+                          transition:
+                            "transform 0.3s ease-in-out, color 0.3s ease-in-out",
+                          width: "3.5rem",
                         }}
                         aria-label="back to home"
                       >
@@ -231,12 +231,12 @@ const Itinerary: React.FC = () => {
                         className="object-left text-white hover:text-hackathone-font-rocket-red TabletScreen:hidden"
                         edge="start"
                         sx={{
-                          width: "2.5rem",
-                          height: "2.5rem",
                           fontSize: "2.5rem",
+                          height: "2.5rem",
+                          left: "-0.5rem",
                           position: "relative",
                           top: "0",
-                          left: "-0.5rem",
+                          width: "2.5rem",
                         }}
                         aria-label="back to home"
                       >
@@ -352,12 +352,12 @@ const Itinerary: React.FC = () => {
                                       : "Expand"
                                   }
                                   sx={{
-                                    color: "white",
                                     alignSelf: "flex-start", // Align button to the top
-                                    transition: "transform 0.5s ease-in-out", // Transition for transform property
+                                    color: "white",
                                     transform: expandedItems.includes(index)
                                       ? "rotate(180deg)"
                                       : "rotate(0deg)",
+                                    transition: "transform 0.5s ease-in-out", // Transition for transform property
                                   }}
                                 >
                                   {expandedItems.includes(index) ? (

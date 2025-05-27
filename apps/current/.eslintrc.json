@@ -1,65 +1,76 @@
 {
   "extends": [
-    "next/core-web-vitals"
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:tailwindcss/recommended",
+    "plugin:import/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
   ],
   "plugins": [
-    "import"
+    "import",
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "tailwindcss",
+    "prettier"
   ],
+
   "rules": {
-    // "@typescript-eslint/consistent-type-imports": [
-    //   2,
-    //   {
-    //     "fixStyle": "inline-type-imports",
-    //     "prefer": "type-imports"
-    //   }
-    // ],
-    // "@typescript-eslint/no-unused-vars": [
-    //   2,
-    //   {
-    //     "argsIgnorePattern": "^_",
-    //     "caughtErrorsIgnorePattern": "^_",
-    //     "destructuredArrayIgnorePattern": "^_",
-    //     "varsIgnorePattern": "^_"
-    //   }
-    // ]
-    // "import/consistent-type-specifier-style": [2, "prefer-inline"],
-    // "import/no-duplicates": [2, { "prefer-inline": true }],
-    // "import/no-extraneous-dependencies": 2,
-    // "import/order": [
-    //   2,
-    //   {
-    //     "alphabetize": {
-    //       "caseInsensitive": true,
-    //       "order": "asc",
-    //       "orderImportKind": "asc"
-    //     },
-    //     "groups": [
-    //       ["builtin", "external"],
-    //       "internal",
-    //       "parent",
-    //       "sibling",
-    //       "index",
-    //       "object"
-    //     ],
-    //     "pathGroups": [
-    //       {
-    //         "group": "internal",
-    //         "pattern": "@/**"
-    //       }
-    //     ]
-    //   }
-    // ],
-    // "jsx-a11y/iframe-has-title": 0,
-    // "no-console": [2, { "allow": ["warn", "error", "table"] }],
-    // "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
-    // "react/jsx-key": 2,
-    // "react-hooks/exhaustive-deps": 2,
-    // "react-hooks/rules-of-hooks": 1,
-    // // "sort-keys": 1, //Downgrade to warning for now
-    // "tailwindcss/no-custom-classname": [
-    //   2,
-    //   { "whitelist": ["rapid-.*", "commerce-.*", "widget-*"] }
-    // ]
+    "@typescript-eslint/consistent-type-imports": [
+      2,
+      {
+        "fixStyle": "inline-type-imports",
+        "prefer": "type-imports"
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      2,
+      {
+        "argsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_",
+        "destructuredArrayIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "import/consistent-type-specifier-style": [2, "prefer-inline"],
+    "import/no-duplicates": [2, { "prefer-inline": true }],
+    "import/no-extraneous-dependencies": 2,
+    "import/order": [
+      2,
+      {
+        "alphabetize": {
+          "caseInsensitive": true,
+          "order": "asc",
+          "orderImportKind": "asc"
+        },
+        "groups": [
+          ["builtin", "external"],
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object"
+        ],
+        "pathGroups": [
+          {
+            "group": "internal",
+            "pattern": "@/**"
+          }
+        ]
+      }
+    ],
+    "jsx-a11y/iframe-has-title": 0,
+    "no-console": [2, { "allow": ["warn", "error", "table"] }],
+    "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
+    "react/jsx-key": 2,
+    "react-hooks/exhaustive-deps": 2,
+    "react-hooks/rules-of-hooks": 1,
+    "tailwindcss/no-custom-classname": [
+      2,
+      { "whitelist": ["rapid-.*", "commerce-.*", "widget-*"] }
+    ]
   },
   "settings": {
     "react": {
@@ -68,11 +79,4 @@
   }
 }
 
-//Plugins:     "@typescript-eslint","react","react-hooks","tailwindcss","prettier"
 //Extends
-//    "plugin:react/recommended",
-    // "plugin:react-hooks/recommended",
-    // "plugin:tailwindcss/recommended",
-    // "plugin:import/recommended",
-    // "plugin:@typescript-eslint/recommended",
-    // "plugin:prettier/recommended"

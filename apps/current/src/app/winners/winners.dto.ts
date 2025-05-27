@@ -14,34 +14,31 @@ type WinnerType = {
 
 export const winners: WinnerType[] = [
   {
-    title: "1st",
-    name: "Fighting Fire \nwith Fire",
     details: [
       [
-        { text: "SpaceApps Athlone, also known as ", highlight: false },
-        { text: "HackAthlone", highlight: true },
+        { highlight: false, text: "SpaceApps Athlone, also known as " },
+        { highlight: true, text: "HackAthlone" },
         {
+          highlight: false,
           text: ", is one of the 300+ locations for this year's NASA SpaceApps Challenge. ",
-          highlight: false,
         },
-        { text: "Technology University of the Shannon", highlight: true },
+        { highlight: true, text: "Technology University of the Shannon" },
         {
-          text: " takes pride in hosting 200 participants on their campus for ",
           highlight: false,
+          text: " takes pride in hosting 200 participants on their campus for ",
         },
-        { text: "48 hours", highlight: true },
-        { text: " to collaborate on ", highlight: false },
-        { text: "30 problem statements", highlight: true },
-        { text: " that cater to all STEAM fields.", highlight: false },
+        { highlight: true, text: "48 hours" },
+        { highlight: false, text: " to collaborate on " },
+        { highlight: true, text: "30 problem statements" },
+        { highlight: false, text: " that cater to all STEAM fields." },
       ],
       [
         {
-          text: "\nHackAthlone stands as the sole in-person Hackathon location in Ireland for this event, offering exciting prizes, goodies, and all necessary technical components and F&B provisions.",
           highlight: false,
+          text: "\nHackAthlone stands as the sole in-person Hackathon location in Ireland for this event, offering exciting prizes, goodies, and all necessary technical components and F&B provisions.",
         },
       ],
     ],
-    prize: "€ 1500",
     image: Fwf,
     member: [
       "Robert Rafanelli",
@@ -51,36 +48,36 @@ export const winners: WinnerType[] = [
       "Ray Foysal",
       "Moaz Refaei",
     ],
+    name: "Fighting Fire \nwith Fire",
+    prize: "€ 1500",
+    title: "1st",
   },
   {
-    title: "2nd",
-    name: "IDontThink",
     details: [
       [
-        { text: "SpaceApps Athlone, also known as ", highlight: false },
-        { text: "HackAthlone", highlight: true },
+        { highlight: false, text: "SpaceApps Athlone, also known as " },
+        { highlight: true, text: "HackAthlone" },
         {
+          highlight: false,
           text: ", is one of the 300+ locations for this year's NASA SpaceApps Challenge. ",
-          highlight: false,
         },
-        { text: "Technology University of the Shannon", highlight: true },
+        { highlight: true, text: "Technology University of the Shannon" },
         {
-          text: " takes pride in hosting 200 participants on their campus for ",
           highlight: false,
+          text: " takes pride in hosting 200 participants on their campus for ",
         },
-        { text: "48 hours", highlight: true },
-        { text: " to collaborate on ", highlight: false },
-        { text: "30 problem statements", highlight: true },
-        { text: " that cater to all STEAM fields.", highlight: false },
+        { highlight: true, text: "48 hours" },
+        { highlight: false, text: " to collaborate on " },
+        { highlight: true, text: "30 problem statements" },
+        { highlight: false, text: " that cater to all STEAM fields." },
       ],
       [
         {
-          text: "\nHackAthlone stands as the sole in-person Hackathon location in Ireland for this event, offering exciting prizes, goodies, and all necessary technical components and F&B provisions.",
           highlight: false,
+          text: "\nHackAthlone stands as the sole in-person Hackathon location in Ireland for this event, offering exciting prizes, goodies, and all necessary technical components and F&B provisions.",
         },
       ],
     ],
-    prize: "€ 750",
     image: Idontthink,
     member: [
       "Piotr Warkocki",
@@ -90,37 +87,40 @@ export const winners: WinnerType[] = [
       "Dylan Lowe",
       "Sorin Stoleru",
     ],
+    name: "IDontThink",
+    prize: "€ 750",
+    title: "2nd",
   },
   {
-    title: "3rd",
-    name: "Sound \nsurfers",
     details: [
       [
-        { text: "SpaceApps Athlone, also known as ", highlight: false },
-        { text: "HackAthlone", highlight: true },
+        { highlight: false, text: "SpaceApps Athlone, also known as " },
+        { highlight: true, text: "HackAthlone" },
         {
+          highlight: false,
           text: ", is one of the 300+ locations for this year's NASA SpaceApps Challenge. ",
-          highlight: false,
         },
-        { text: "Technology University of the Shannon", highlight: true },
+        { highlight: true, text: "Technology University of the Shannon" },
         {
-          text: " takes pride in hosting 200 participants on their campus for ",
           highlight: false,
+          text: " takes pride in hosting 200 participants on their campus for ",
         },
-        { text: "48 hours", highlight: true },
-        { text: " to collaborate on ", highlight: false },
-        { text: "30 problem statements", highlight: true },
-        { text: " that cater to all STEAM fields.", highlight: false },
+        { highlight: true, text: "48 hours" },
+        { highlight: false, text: " to collaborate on " },
+        { highlight: true, text: "30 problem statements" },
+        { highlight: false, text: " that cater to all STEAM fields." },
       ],
       [
         {
-          text: "\nHackAthlone stands as the sole in-person Hackathon location in Ireland for this event, offering exciting prizes, goodies, and all necessary technical components and F&B provisions.",
           highlight: false,
+          text: "\nHackAthlone stands as the sole in-person Hackathon location in Ireland for this event, offering exciting prizes, goodies, and all necessary technical components and F&B provisions.",
         },
       ],
     ],
-    prize: "€ 250",
     image: Soundsurfers,
     member: ["Eoghan Hynes", "Dave", "Aine", "Diarmuid", "Fabrizio"],
+    name: "Sound \nsurfers",
+    prize: "€ 250",
+    title: "3rd",
   },
 ];

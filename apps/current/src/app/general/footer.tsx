@@ -17,7 +17,7 @@ const Footer = () => {
   const navigateToGlimpse = () => router.push("/glimpse");
 
   return (
-    <footer className="font-firaSans flex flex-col gap-4 py-4 text-sm text-[#F6F4F4]">
+    <footer className="flex flex-col gap-4 py-4 text-sm text-[#F6F4F4]">
       <div className="flex flex-col items-center justify-between gap-4 px-4 py-2 sm:px-[5%] lg:flex-row">
         {/* Logo and Social Icons */}
         <div className="flex w-full flex-col items-center gap-6 lg:w-auto lg:gap-12">
@@ -92,9 +92,9 @@ const Footer = () => {
         </div>
 
         {/* Links Sections */}
-        <div className="flex-cols-2 flex w-full justify-evenly gap-6 lg:flex lg:flex-row lg:items-start lg:gap-16">
+        <div className="flex w-full justify-evenly gap-6 lg:flex lg:flex-row lg:items-start lg:gap-16">
           <div className="lg:mt-4">
-            <h3 className="font-overpass mb-2 text-xl font-bold text-hackathone-font-rocket-red lg:mb-4">
+            <h3 className="mb-2 text-xl font-bold text-hackathone-font-rocket-red lg:mb-4">
               Participation Kit
             </h3>
             <ul className="list-none leading-relaxed">
@@ -174,7 +174,7 @@ const Footer = () => {
           </div>
 
           <div className="lg:mt-4">
-            <h3 className="font-overpass mb-2 text-xl font-bold text-hackathone-font-rocket-red lg:mb-4">
+            <h3 className="mb-2 text-xl font-bold text-hackathone-font-rocket-red lg:mb-4">
               HackAthlone’23
             </h3>
             <ul className="list-none leading-relaxed">
@@ -227,7 +227,7 @@ const Footer = () => {
           </div>
 
           <div className="hidden sm:block lg:mt-4">
-            <h3 className="font-overpass mb-2 text-xl font-bold text-hackathone-font-rocket-red lg:mb-4">
+            <h3 className="mb-2 text-xl font-bold text-hackathone-font-rocket-red lg:mb-4">
               Space Apps UL’21
             </h3>
             <ul className="list-none leading-relaxed">

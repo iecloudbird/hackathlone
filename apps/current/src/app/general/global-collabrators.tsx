@@ -7,7 +7,7 @@ const GlobalCollabrators = () => {
   return (
     <section className="mx-4 my-20 flex flex-col items-center gap-6 sm:mx-8 lg:mx-[8.06%] lg:flex-row lg:gap-9">
       {/* Left Section: Slider */}
-      <div className="mr-8 mt-20 mt-6 hidden w-1/2 lg:flex">
+      <div className="mr-8 mt-20 hidden w-1/2 lg:flex">
         <CollabratorsSlider />
       </div>
 

@@ -1,14 +1,7 @@
 import AppleEye from "@/assets/images/general/landing-page/apple-eye.jpg";
-import Azure from "@/assets/images/general/landing-page/collabrators/azure.png";
 import Booz from "@/assets/images/general/landing-page/collabrators/booz.png";
-import GoDaddy from "@/assets/images/general/landing-page/collabrators/goDaddy.png";
-import Google from "@/assets/images/general/landing-page/collabrators/google.png";
 import Mindgrub from "@/assets/images/general/landing-page/collabrators/mindgrub.png";
-import Miro from "@/assets/images/general/landing-page/collabrators/miro.png";
-import Ms from "@/assets/images/general/landing-page/collabrators/ms.png";
 import SecondMuse from "@/assets/images/general/landing-page/collabrators/muse.png";
-import Planet from "@/assets/images/general/landing-page/collabrators/planet.png";
-import Tableau from "@/assets/images/general/landing-page/collabrators/tableau.png";
 import GloablCollabSection from "@/assets/images/general/landing-page/gloabl_collab_section.jpg";
 import HackathloneChallenge from "@/assets/images/general/landing-page/hackathlone_challenge.jpg";
 import Machine from "@/assets/images/general/landing-page/machine.jpg";
@@ -58,61 +51,59 @@ import EnigmaPro from "@/assets/images/general/landing-page/winners/enigmapro.jp
 import ShakeItOff from "@/assets/images/general/landing-page/winners/shakeitoff.jpeg";
 
 // Get the current date in Irish time and format it
-const currentDateInIrishTime = new Date(
-  new Date().toLocaleString("en-US", {
-    timeZone: "Europe/Dublin",
-  })
-);
+// const currentDateInIrishTime = new Date(
+//   new Date().toLocaleString("en-US", {
+//     timeZone: "Europe/Dublin",
+//   })
+// );
 
 // Format the date as '27th August 2024'
-const options = {
-  day: "numeric" as const, // Use 'numeric' for the day
-  month: "long" as const, // Use 'long' for the full monthH name
-  year: "numeric" as const, // Use 'numeric' for the year
-};
-const formattedDate = currentDateInIrishTime.toLocaleString("en-IE", options);
+// const options = {
+//   day: "numeric" as const, // Use 'numeric' for the day
+//   month: "long" as const, // Use 'long' for the full monthH name
+//   year: "numeric" as const, // Use 'numeric' for the year
+// };
 
-const day = currentDateInIrishTime.getDate();
-const getOrdinalSuffix = (day: number) => {
-  if (day > 3 && day < 21) return "th";
-  switch (day % 10) {
-    case 1:
-      return "st";
-    case 2:
-      return "nd";
-    case 3:
-      return "rd";
-    default:
-      return "th";
-  }
-};
-const dayWithSuffix = day + getOrdinalSuffix(day);
-const currentDate = formattedDate.replace(day.toString(), dayWithSuffix);
+// const getOrdinalSuffix = (day: number) => {
+//   if (day > 3 && day < 21) return "th";
+//   switch (day % 10) {
+//     case 1:
+//       return "st";
+//     case 2:
+//       return "nd";
+//     case 3:
+//       return "rd";
+//     default:
+//       return "th";
+//   }
+// };
 
-export const navigationData = (Router: any) => [
+type RouterType = { push: (path: string) => void };
+
+export const navigationData = (Router: RouterType) => [
   {
-    text: "Home",
     route: () => Router.push("/"),
+    text: "Home",
   },
   {
-    text: "About Us",
     route: () => Router.push("/teams"),
+    text: "About Us",
   },
   {
-    text: "Blogs",
     route: () => Router.push("/blogs"),
+    text: "Blogs",
   },
   {
-    text: "FAQ's",
     route: () => Router.push("/faq"),
+    text: "FAQ's",
   },
   {
-    text: "Challenges",
     route: () =>
       window.open(
         "https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/",
         "_blank"
       ),
+    text: "Challenges",
   },
 ];
 
@@ -284,83 +275,83 @@ export const MapLogos = [
 
 export const Stories = [
   {
+    author: "Help Kelp, Help Ourselves",
     img: HelpKelp,
     text: `“I teamed up with people from different backgrounds, 
     but we all had the same interests, which are sharing experiences 
     and ideas. It was a good experience to hear different perspectives
     and ideas regarding our challenge 'Ocean Garden' which we focusing
     on the seaweed kelp.”`,
-    author: "Help Kelp, Help Ourselves",
   },
 
   {
+    author: "Cococrunch",
     img: Cococrunch,
     text: `“Initially, we struggled with hard coding from scratch, but a mentor's advice to focus on product design improved our teamwork. While the event was challenging, it offered valuable learning experiences, though better communication and more diverse food options could enhance future hackathons.”`,
-    author: "Cococrunch",
   },
   {
+    author: "Artemis Go",
     img: Arthemis,
     text: `“It was a wonderful experience, 3 days of brain storming, networking,
      and hacking. I would definitely want to be a part of the next one and more to come.
      The tutors and instructors were very helpful and worked hard too as well.
      Happy to be a part of it”`,
-    author: "Artemis Go",
   },
   {
+    author: "IdontThink",
     img: IDontThink,
     text: `“Great Event, run very well with lots of opportunities to gain experience
      and make connections. Great experience for similar events in the future.
      Provided food and drinks and made sure everyone was satisfied!”`,
-    author: "IdontThink",
   },
   {
+    author: "Team Antriksh",
     img: Antriksh,
     text: `“Great first hackathon. Mentors and organisers were very kind and helpful, providing key insights and suggestions to our project. I believe the lunch could’ve been improved for both the days. While dinner was great, lunch was just rolls and sandwiches. The guy who took the photographs was great as well! Shoutout to him!”`,
-    author: "Team Antriksh",
   },
 ];
 
-export const events = (Router: any) => [
+export const events = (Router: RouterType) => [
   {
-    date: "15th June 2025",
-    title: "2025 Challenges brewing",
-    subtitle: "Explore and choose the one that fits you the best!",
     content: `Register for a Local Event near you or 
     our Universal Event (please note you MUST be 
     registered for a Local Event or Universal Event to participate).`,
+    date: "15th June 2025",
     route: () =>
       window.open(
         "https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/",
         "_blank"
       ),
+    subtitle: "Explore and choose the one that fits you the best!",
+    title: "2025 Challenges brewing",
   },
   {
-    date: "4th October 2025:",
-    title: "Day 1",
-    subtitle: "Assemble at TU Shannon & Start problem-solving with your team",
     content: `Get ready for the NASA Space Apps Challenge!
      Check your Space Apps Messages, review the Participant`,
+    date: "4th October 2025:",
     route: () => Router.push("/timeline#day-1"),
+    subtitle: "Assemble at TU Shannon & Start problem-solving with your team",
+    title: "Day 1",
   },
   {
-    date: "5th October 2025:",
-    title: "Day 2",
-    subtitle:
-      "Connect with industry experts: Get tips and feedback for your project",
     content: `At 9:00 a.m. (local time) teams may begin 
     working on their hackathon projects. Project submission
     opens at 9:00 a.m.`,
+    date: "5th October 2025:",
     route: () => Router.push("/timeline#day-2"),
+    subtitle:
+      "Connect with industry experts: Get tips and feedback for your project",
+    title: "Day 2",
   },
   {
-    date: "6th October 2025:",
-    title: "Day 3",
-    subtitle:
-      "Get ready to present your project & Get a chance to win the challenge",
     content: ` The hackathon ends at 11:59 p.m. (local time). 
  All projects must be submitted to the NASA Space
  Apps Challenge website by this deadline.`,
+    date: "6th October 2025:",
     route: () => Router.push("/timeline#day-3"),
+    subtitle:
+      "Get ready to present your project & Get a chance to win the challenge",
+    title: "Day 3",
   },
 ];
 
@@ -387,21 +378,21 @@ export const shannonData = [
 
 export const winners = [
   {
-    place: "3rd",
     img: ShakeItOff,
-    name: "ShakeItOff_Space",
     link: "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/shakeitoff_space/",
+    name: "ShakeItOff_Space",
+    place: "3rd",
   },
   {
-    place: "1st",
     img: CloudFlies,
-    name: "CloudFLIES",
     link: "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/cloudflies/",
+    name: "CloudFLIES",
+    place: "1st",
   },
   {
-    place: "2nd",
     img: EnigmaPro,
-    name: "EnigmaPro",
     link: "https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/enigmapro/",
+    name: "EnigmaPro",
+    place: "2nd",
   },
 ];
