@@ -43,9 +43,13 @@ const Itinerary: React.FC = () => {
         const dayDate = new Date(startDate);
         dayDate.setDate(startDate.getDate() + dayIndex);
         return (
-          <section key={dayIndex} id={`day-${dayIndex + 1}`} className="mb-16">
+          <section
+            key={dayIndex}
+            id={`day-${dayIndex + 1}`}
+            className="mx-6 mb-16 sm:mx-0"
+          >
             {/* Day Header and Back Button */}
-            <div className="mb-4 flex flex-col sm:flex-col md:flex-row md:items-center md:justify-center lg:mb-10 lg:items-start">
+            <div className="mb-4 flex w-full items-center justify-start gap-4 lg:mb-10">
               {/* Back Button */}
               <Tooltip text="Back to Timeline">
                 <IconButton
@@ -54,34 +58,10 @@ const Itinerary: React.FC = () => {
                   onClick={() => router.push("/#timeline")}
                   className="text-white hover:text-hackathone-font-rocket-red sm:mr-4 md:mr-4 lg:mr-4"
                   sx={{
-                    fontSize: {
-                      xs: "2.5rem",
-                      sm: "2.5rem",
-                      md: "3.5rem",
-                      lg: "5rem",
-                    },
-                    height: {
-                      xs: "2.5rem",
-                      sm: "2.5rem",
-                      md: "3.5rem",
-                      lg: "4rem",
-                    },
-                    width: {
-                      xs: "2.5rem",
-                      sm: "2.5rem",
-                      md: "3.5rem",
-                      lg: "4rem",
-                    },
-                    position: {
-                      xs: "relative",
-                      sm: "relative",
-                      md: "static",
-                      lg: "static",
-                    },
-                    left: { xs: "-0.5rem", sm: "-0.5rem", md: "0", lg: "0" },
-                    "&:hover": { transform: "scale(1.2)" },
-                    transition:
-                      "transform 0.3s ease-in-out, color 0.3s ease-in-out",
+                    fontSize: "3rem",
+                    height: "3rem",
+                    width: "3rem",
+                    position: "relative",
                   }}
                   aria-label="back to timeline"
                 >
@@ -137,16 +117,16 @@ const Itinerary: React.FC = () => {
                       <TimelineConnector className="transition-all duration-500 ease-in-out" />
                     )}
                   </TimelineSeparator>
-                  <TimelineContent className="mx-4 flex flex-col items-start sm:flex-col md:flex-row lg:flex-row">
+                  <TimelineContent className="mx-4 flex flex-col items-start sm:flex-col sm:gap-4 md:flex-row lg:flex-row">
                     {/* Time Card */}
                     <Paper
                       elevation={3}
-                      className="h-10 w-full rounded-lg bg-[rgb(234_254_7)] p-2 text-center sm:h-10 sm:w-4/5 sm:text-center md:h-11 md:w-60 md:text-center lg:h-11 lg:w-60 lg:text-center"
+                      className="h-10 w-full rounded-lg bg-[rgb(234_254_7)] p-2 text-center sm:h-10 sm:w-full sm:text-center md:h-11 md:w-60 md:text-center lg:h-11 lg:w-60"
                     >
                       <Typography
                         variant="h6"
                         component="h1"
-                        className="text-center text-[14px] font-extrabold text-black sm:text-start sm:text-[14px] md:text-center md:text-[1rem] lg:text-center lg:text-[1rem]"
+                        className="text-center text-[14px] font-extrabold text-black sm:text-start md:text-center md:text-[1rem]"
                       >
                         {item.time}
                       </Typography>
@@ -155,13 +135,13 @@ const Itinerary: React.FC = () => {
                     {/* Content Card */}
                     <Paper
                       elevation={3}
-                      className="relative my-4 w-full rounded-xl bg-[#1e1e1e] p-4 transition-all duration-500 ease-in-out sm:my-6 sm:w-full md:my-4 md:w-[55%] lg:my-4 lg:w-[55%]"
+                      className="relative mb-6 w-full rounded-xl bg-[#1e1e1e] p-4 transition-all duration-500 ease-in-out sm:w-full md:w-[55%]"
                     >
                       <div className="flex items-start justify-between">
                         <Typography
                           variant="h6"
                           component="h1"
-                          className="text-center text-[18px] font-bold text-hackathone-font-rocket-red sm:text-center sm:text-[18px] md:whitespace-nowrap md:text-start md:text-xl lg:whitespace-nowrap lg:text-start lg:text-xl"
+                          className="w-full text-center text-[18px] font-bold text-hackathone-font-rocket-red md:whitespace-nowrap md:text-start md:text-xl"
                         >
                           {item.title}
                         </Typography>
@@ -193,7 +173,7 @@ const Itinerary: React.FC = () => {
                       </div>
                       {/* Content (Always Visible on Tablet/Desktop, Collapsible on Mobile) */}
                       <div
-                        className={`pt-2 text-center text-white transition-all duration-500 ease-in-out sm:text-center md:text-start lg:text-start ${expandedItems.includes(index) ? "max-h-[1000px] opacity-100" : "max-h-0 overflow-hidden opacity-0 md:max-h-[1000px] md:opacity-100 lg:max-h-[1000px] lg:opacity-100"}`}
+                        className={`pt-2 text-center text-white transition-all duration-500 ease-in-out sm:text-start ${expandedItems.includes(index) ? "max-h-[1000px] opacity-100" : "max-h-0 overflow-hidden opacity-0 md:max-h-[1000px] md:opacity-100 lg:max-h-[1000px] lg:opacity-100"}`}
                       >
                         <Typography variant="body1">{item.content}</Typography>
                       </div>
