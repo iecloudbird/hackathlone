@@ -24,7 +24,7 @@ const Teams = () => {
         <NavigationBar />
 
         {/* Content Container */}
-        <div className="mx-[1.2rem] mb-20 flex flex-col gap-9 sm:mx-[1.2rem] md:mx-[4.06%] lg:mx-[8.06%]">
+        <div className="mx-[1.2rem] mb-20 flex flex-col sm:mx-[1.2rem] md:mx-[4.06%] lg:mx-[8.06%] lg:gap-8">
           {/* Circular Icon (Desktop Only) */}
           <div className="pointer-events-none relative hidden w-full items-center justify-center lg:flex">
             <div className="absolute right-0 flex h-48 w-52 translate-y-44 items-center justify-center">
@@ -41,8 +41,8 @@ const Teams = () => {
           </div>
 
           {/* Back Button, Header, and Text */}
-          <div className="w-full">
-            <h1 className="my-2 pb-2 font-hackathoneCabinetGrotesk text-[30.99px] font-bold leading-[44.62px] text-hackathone-font-rocket-red sm:text-[30.99px] sm:leading-[44.62px] md:text-[32.99px] md:leading-[44.62px] lg:text-[42px] lg:leading-[1.8rem]">
+          <div className="mt-6 w-full sm:mt-2">
+            <h1 className="text-[30.99px] font-bold leading-[44.62px] text-hackathone-font-rocket-red sm:text-[30.99px] sm:leading-[44.62px] md:text-[32.99px] md:leading-[44.62px] lg:my-2 lg:pb-2 lg:text-[42px] lg:leading-[1.8rem]">
               Meet the team
             </h1>
             <p className="pr-[8.7%] font-hackathoneCabinetGrotesk text-[16px] leading-[30.57px] text-slate-50 sm:text-[16px] sm:leading-[30.57px] md:pr-[12.7%] md:text-[18px] md:leading-[30.57px] lg:mr-12 lg:text-[18px] lg:leading-[1.8rem]">
@@ -51,7 +51,7 @@ const Teams = () => {
           </div>
 
           {/* Card Grid */}
-          <div className="mt-6 w-full lg:mt-2">
+          <div className="mt-4 w-full">
             <CardGrid />
           </div>
         </div>

@@ -46,7 +46,7 @@ const WinnerDetails: React.FC = () => {
             size="small"
             color="primary"
             onClick={() => router.push("/")}
-            className="object-left text-white hover:text-hackathone-font-rocket-red MobileScreen:hidden TabletScreen:hidden"
+            className="hidden object-left text-white hover:text-hackathone-font-rocket-red lg:block"
             edge="start"
             sx={{
               width: "3rem",
@@ -93,14 +93,14 @@ const WinnerDetails: React.FC = () => {
             {/* Title, Name, and Prize */}
             <div className="relative z-10 w-full px-4 py-2 text-left lg:px-8 xl:px-12">
               {/* Title */}
-              <div className="text-4xl font-bold MobileScreen:text-3xl">
-                <h1 className="text-4xl text-hackathone-font-rocket-red MobileScreen:text-3xl">
+              <div className="text-3xl font-bold sm:text-4xl">
+                <h1 className="text-3xl text-hackathone-font-rocket-red sm:text-4xl">
                   {winner.title}
                 </h1>
               </div>
 
               {/* Name */}
-              <div className="mt-2 text-2xl font-bold MobileScreen:text-xl">
+              <div className="mt-2 text-xl font-bold sm:text-2xl">
                 <h2>{winner.name}</h2>
               </div>
 

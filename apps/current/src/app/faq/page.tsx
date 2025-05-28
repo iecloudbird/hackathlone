@@ -37,7 +37,7 @@ const Faq = () => {
 
         {/* Content Container */}
         <div className="mx-4 mt-4 sm:mx-4 md:mx-8 lg:mx-4">
-          <h4 className="font-hackathoneCabinetGrotesk text-xl font-semibold text-hackathone-font-rocket-red md:mt-[42px] lg:mt-12 lg:px-[6.8%] lg:text-3xl">
+          <h4 className="text-xl font-bold text-hackathone-font-rocket-red md:mt-[42px] lg:mt-12 lg:px-[6.8%] lg:text-3xl">
             Frequently Asked Questions (FAQs)
           </h4>
 
