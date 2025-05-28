@@ -1,21 +1,15 @@
 "use client";
-import { IconButton } from "@mui/material";
 import { Canvas } from "@react-three/fiber";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import React from "react";
 import CloudParticleBg from "@/app/general/cloud-particle-bg";
 import { CardGrid } from "@/app/teams/card-grid";
-import BackButton from "@/assets/images/general/landing-page/back-button.svg";
 import Rocket from "@/assets/images/general/landing-page/RocketLaunch.png";
 import BackToTopButton from "../general/back-to-top";
 import Footer from "../general/footer";
 import NavigationBar from "../general/navigation-bar";
-import Tooltip from "../general/tooltip";
 
 const Teams = () => {
-  const router = useRouter();
-
   return (
     <section className="relative min-h-screen overflow-hidden bg-black text-white">
       {/* Background Canvas */}
@@ -47,33 +41,7 @@ const Teams = () => {
           </div>
 
           {/* Back Button, Header, and Text */}
-          <div className="mt-[3%] w-full">
-            <Tooltip text="Back to Home">
-              <IconButton
-                size="small"
-                color="primary"
-                onClick={() => router.push("/")}
-                className="text-white hover:text-hackathone-font-rocket-red"
-                sx={{
-                  fontSize: "2.5rem",
-                  height: { xs: "2.5rem", md: "2.5rem", lg: "3rem" },
-                  width: { xs: "2.5rem", md: "2.5rem", lg: "3rem" },
-                  position: "relative",
-                  left: { xs: "-3px", md: "0", lg: "-0.5rem" },
-                  top: "0",
-                }}
-                aria-label="back to home"
-              >
-                <Image
-                  width={40}
-                  height={40}
-                  src={BackButton}
-                  alt="Back to Home"
-                  className="sm:size-20 md:size-20 lg:size-10"
-                />
-              </IconButton>
-            </Tooltip>
-
+          <div className="w-full">
             <h1 className="my-2 pb-2 font-hackathoneCabinetGrotesk text-[30.99px] font-bold leading-[44.62px] text-hackathone-font-rocket-red sm:text-[30.99px] sm:leading-[44.62px] md:text-[32.99px] md:leading-[44.62px] lg:text-[42px] lg:leading-[1.8rem]">
               Meet the team
             </h1>
