@@ -11,9 +11,9 @@ import { winners } from "./winners.dto";
 const WinnerDetails: React.FC = () => {
   const router = useRouter();
   return (
-    <div className="flex flex-col gap-8 overflow-x-hidden DesktopScreen:mx-[8.06%] TabletScreen:mx-[4.06%]">
+    <div className="flex flex-col gap-8 overflow-x-hidden sm:mx-[4.06%] lg:mx-[8.06%]">
       {/* Circular icon placeholder */}
-      <div className="relative flex w-full items-center justify-center MobileScreen:hidden TabletScreen:hidden">
+      <div className="relative hidden w-full items-center justify-center lg:flex">
         {/* Circular icon placeholder */}
         <div className="absolute right-0 flex h-48 w-52 translate-y-44 items-center justify-center">
           {/* Neon-like inner circular border */}
@@ -38,7 +38,7 @@ const WinnerDetails: React.FC = () => {
       </div>
 
       {/* Introductory page */}
-      <div className="flex flex-col DesktopScreen:mt-12 MobileScreen:mt-8 TabletScreen:mt-8">
+      <div className="mt-8 flex flex-col lg:mt-12">
         {/* Back Button */}
         {/* Desktop */}
         <Tooltip text="Back to Home">

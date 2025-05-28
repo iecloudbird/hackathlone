@@ -164,25 +164,7 @@ export const CardGrid = () => {
 
                 {/* Display bio or other details */}
 
-                <p className="mb-6 text-base">
-                  Check for socials media below:
-                  {/* {gridItems[selectedMember].bio ? (
-                                    gridItems[selectedMember].bio.map((bioArray, index) => (
-                                        <span key={index}>
-                                            {bioArray.map((bio, subIndex) => (
-                                                <span
-                                                    key={subIndex}
-                                                    className={bio.highlight ? "font-bold text-red-500" : ""}
-                                                >
-                                                    {bio.text}
-                                                </span>
-                                            ))}
-                                        </span>
-                                    ))
-                                ) : (
-                                    "Check for socials media below:"
-                                )} */}
-                </p>
+                <p className="mb-6 text-base">Check for socials media below:</p>
               </div>
 
               {/* Social Media Links */}
