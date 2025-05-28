@@ -43,7 +43,7 @@ const Faq = () => {
             >
               Frequently Asked Questions (FAQs)
             </Typography>
-            <section className="flex flex-row items-center justify-between">
+            <section className="flex flex-row justify-between">
               <div className="w-2/3">
                 {faqData.map((item, index) => (
                   <Accordion
@@ -80,7 +80,7 @@ const Faq = () => {
                   </Accordion>
                 ))}
               </div>
-              <div className="z-[-1] mt-[100px] w-1/3 translate-x-[5%]">
+              <div className="z-[-1] w-1/3 -translate-y-20 translate-x-[5%]">
                 <Image src={Sun} alt={"Sun Image"}></Image>
               </div>
             </section>

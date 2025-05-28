@@ -902,15 +902,13 @@ const BlogPage: React.FC = () => {
             </IconButton>
           </Tooltip>
 
-          <div className="">
-            <Image
-              src={blog.image}
-              width={1200} // Increase these values as needed
-              height={1200}
-              className="mb-10 ml-16 h-auto w-1/2 rounded-lg lg:float-right"
-              alt="Blog Image"
-            />
-          </div>
+          <Image
+            src={blog.image}
+            width={1200}
+            height={1200}
+            className="mb-10 ml-16 h-auto w-1/2 rounded-lg lg:float-right"
+            alt="Blog Image"
+          />
           <div className="font-hackathoneCabinetGrotesk">
             <h2 className="mb-4 font-hackathoneSFProDisplay text-4xl font-bold text-white md:text-5xl">
               {blog.title}
