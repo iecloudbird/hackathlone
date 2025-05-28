@@ -18,7 +18,7 @@ const Winners = () => {
             <CloudParticleBg />
           </Canvas>
         </div>
-        <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
+        <div className="relative z-10 py-[12px] sm:py-[24px]">
           <NavigationBar />
           <WinnerDetails />
           <BackToTopButton />

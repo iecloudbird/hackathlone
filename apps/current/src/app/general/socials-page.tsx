@@ -28,7 +28,7 @@ const Socials = () => {
           initial={animationComplete ? "" : "hidden"}
           whileInView="show"
           onAnimationComplete={handleAnimationComplete}
-          className="mb-4 px-12 text-center font-hackathoneCabinetGrotesk text-5xl font-extrabold tracking-tight text-white MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px]"
+          className="mb-4 px-12 text-center font-hackathoneCabinetGrotesk text-3xl font-extrabold tracking-tight text-white sm:text-5xl"
         >
           Discover more on Our{" "}
           <span className="font-extrabold text-hackathone-font-rocket-red">
@@ -36,7 +36,7 @@ const Socials = () => {
           </span>
         </motion.h1>
         <div className="mb-8">
-          <p className="font-hackathoneCabinetGrotesk text-[22px] leading-tight text-white MobileScreen:px-4">
+          <p className="px-4 font-hackathoneCabinetGrotesk text-[22px] leading-tight text-white sm:px-0">
             Keep your self updated by{" "}
             <span className="font-extrabold text-hackathone-font-rocket-red">
               following us on social media
@@ -48,7 +48,7 @@ const Socials = () => {
           initial="hidden"
           animate={animationComplete ? "show" : "hidden"}
           onAnimationComplete={handleAnimationComplete}
-          className="my-3 flex flex-row flex-wrap items-start justify-center gap-8 MobileScreen:mx-8 TabletScreen:mx-8"
+          className="mx-8 my-3 flex flex-row flex-wrap items-start justify-center gap-8"
         >
           <motion.div
             variants={fadeIn("down", "tween", 1.0, 0.5)}
@@ -61,12 +61,12 @@ const Socials = () => {
             <a
               href="https://twitter.com/hack_athlone?ref_src=twsrc%5Etfw"
               target="_blank"
-              className="my-2 me-2 inline-flex items-center rounded-lg text-center text-[18px] font-[700] text-hackathone-font-rocket-red"
+              className="my-4 me-2 inline-flex items-center rounded-lg text-center text-[18px] font-[700] text-hackathone-font-rocket-red"
               rel="noreferrer"
             >
               Follow us on
               <Image
-                className="ms-2 size-6 cursor-pointer MobileScreen:w-4"
+                className="ms-2 w-4 cursor-pointer sm:size-6"
                 src={XIcon}
                 height={80}
                 width={80}
@@ -99,7 +99,7 @@ const Socials = () => {
             >
               Follow us on
               <Image
-                className="ms-2 size-6 cursor-pointer MobileScreen:size-4"
+                className="ms-2 size-4 cursor-pointer sm:size-6"
                 src={InstaIcon}
                 height={80}
                 width={80}
@@ -123,7 +123,7 @@ const Socials = () => {
             >
               Follow us on
               <Image
-                className="ms-2 size-6 cursor-pointer MobileScreen:size-4"
+                className="ms-2 size-4 cursor-pointer sm:size-6"
                 src={InIcon}
                 height={80}
                 width={80}

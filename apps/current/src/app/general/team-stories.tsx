@@ -435,34 +435,34 @@ const TeamStories = () => {
   };
 
   return (
-    <div className="my-40 mb-8 px-4 sm:px-6 md:mx-8 lg:mx-[8.06%] lg:px-10 xl:mb-32 MobileScreen:mx-[1.2rem] MobileScreen:mb-12">
-      <h1 className="font-hackathoneCabinetGrotesk text-[42px] font-extrabold text-hackathone-font-rocket-red md:text-[32.99px] lg:text-[42px] MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px]">
+    <div className="mx-[1.2rem] my-40 mb-12 px-4 sm:mb-8 sm:px-6 md:mx-8 lg:mx-[8.06%] lg:mb-32 lg:px-10">
+      <h1 className="font-hackathoneCabinetGrotesk text-3xl font-extrabold text-hackathone-font-rocket-red lg:text-4xl">
         Hackathon Unplugged: Team Stories
       </h1>
       <p className="mt-4 font-hackathoneSFProDisplay text-base sm:text-lg lg:text-xl">
         Let&apos;s hear what the Teams have to say
       </p>
-      <div className="relative mt-8 min-h-[600px] overflow-hidden rounded-lg shadow-md md:min-h-[400px] MobileScreen:min-h-[650px]">
+      <div className="relative mt-8 min-h-[650px] overflow-hidden rounded-lg shadow-md lg:min-h-[400px]">
         <Slider {...settings}>
           {Stories.map((item, index) => (
             <div
               key={index}
               className="!flex h-auto !flex-col items-center justify-center md:!flex-row"
             >
-              <div className="!flex max-h-[560px] w-full justify-center md:w-1/2 md:items-center md:justify-start MobileScreen:mt-10 MobileScreen:justify-center TabletScreen:px-4">
+              <div className="mt-10 !flex max-h-[560px] w-full justify-center sm:mt-0 md:w-1/2 md:items-center md:justify-start">
                 <Image
-                  className="max-h-[350px] max-w-full cursor-pointer rounded-2xl MobileScreen:max-h-[320px]"
+                  className="max-h-[320px] max-w-full cursor-pointer rounded-2xl sm:max-h-[350px]"
                   src={item.img}
                   width={500}
                   height={450}
                   alt={"Team Image"}
                 />
               </div>
-              <div className="w-full pr-4 pt-8 text-center md:ml-10 md:mt-4 md:w-1/2 md:pt-0 md:text-left xl:ml-8 2xl:ml-4 MobileScreen:pr-4">
-                <p className="max-w-prose font-hackathoneCabinetGrotesk text-lg sm:pt-8 md:pt-10 MobileScreen:pb-8">
+              <div className="w-full pr-4 pt-8 text-center md:ml-10 md:mt-4 md:w-1/2 md:pt-0 md:text-left xl:ml-8 2xl:ml-4">
+                <p className="max-w-prose pb-8 font-hackathoneCabinetGrotesk text-lg sm:pt-8 md:pt-10">
                   {item.text}
                 </p>
-                <p className="pt-12 text-center text-[22px] font-bold leading-6 text-hackathone-font-rocket-red sm:pt-12 md:text-left MobileScreen:pt-8">
+                <p className="pt-8 text-center text-[22px] font-bold leading-6 text-hackathone-font-rocket-red sm:pt-12 md:text-left">
                   {item.author}
                 </p>
               </div>

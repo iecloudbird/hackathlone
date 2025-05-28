@@ -109,11 +109,11 @@ export const CardGrid = () => {
     );
   };
   return (
-    <div className="gap-4 overflow-hidden lg:gap-8 TabletScreen:gap-6">
-      <div className="mb-4 flex gap-4 lg:gap-8 MobileScreen:flex-col TabletScreen:flex-col TabletScreen:gap-6">
-        <div className="flex w-full flex-row gap-4 lg:w-2/5 lg:flex-col lg:gap-8 MobileScreen:flex-col TabletScreen:gap-6">
+    <div className="gap-4 overflow-hidden sm:gap-6 lg:gap-8">
+      <div className="mb-4 flex flex-col gap-4 sm:gap-6 lg:flex-row lg:gap-8">
+        <div className="flex w-full flex-col gap-4 sm:flex-row sm:gap-6 lg:w-2/5 lg:flex-col lg:gap-8">
           {/*Overview: Block 1 */}
-          <div className="h-fit items-start justify-start rounded-2xl border border-transparent bg-gray-800 text-start lg:w-full MobileScreen:w-full TabletScreen:w-1/2">
+          <div className="sm::w-1/2 h-fit w-full items-start justify-start rounded-2xl border border-transparent bg-gray-800 text-start lg:w-full">
             <div className="m-4 w-fit justify-center rounded-md border bg-hackathone-font-rocket-red lg:m-6">
               <motion.button
                 className="justify-center rounded-md border bg-hackathone-font-rocket-red ease-in-out"
@@ -129,7 +129,7 @@ export const CardGrid = () => {
                 </span>
               </motion.button>
             </div>
-            <div className="flex flex-wrap items-start justify-center gap-4 pb-4 md:flex-row md:flex-nowrap MobileScreen:justify-start MobileScreen:pl-4">
+            <div className="flex flex-wrap items-start justify-start gap-4 pb-4 pl-4 sm:justify-center md:flex-row md:flex-nowrap lg:pl-2">
               <div className="md:mx-4 md:w-1/3">
                 <CountUp
                   target={15}
@@ -164,7 +164,7 @@ export const CardGrid = () => {
             </div>
           </div>
           {/*Revisit: Block 2 */}
-          <div className="relative h-fit items-start justify-start overflow-hidden rounded-2xl border-4 border-black bg-gray-800 text-start lg:w-full MobileScreen:w-full TabletScreen:w-1/2">
+          <div className="relative h-fit w-full items-start justify-start overflow-hidden rounded-2xl border-4 border-black bg-gray-800 text-start sm:w-1/2 lg:w-full">
             {/* Image as background cover */}
             <Image
               src={Code}
@@ -241,12 +241,12 @@ export const CardGrid = () => {
           </div>
         </div>
         {/* Block 3: Moments to relive */}
-        <div className="relative w-full overflow-hidden rounded-2xl border-4 border-black bg-gray-800 lg:h-[500px] lg:w-3/5 MobileScreen:h-52 TabletScreen:h-[400px]">
+        <div className="relative h-52 w-full overflow-hidden rounded-2xl border-4 border-black bg-gray-800 sm:h-[400px] lg:h-[500px] lg:w-3/5">
           <Slider {...settings} className="absolute inset-0 z-0">
             {MomentsImages.map((item, index) => (
               <div key={index} className="relative size-full">
                 <Image
-                  className="size-full h-[220px] rounded-2xl object-cover lg:h-[600px] TabletScreen:h-[500px]"
+                  className="size-full h-[220px] rounded-2xl object-cover sm:h-[500px] lg:h-[600px]"
                   src={item.img}
                   alt={"Participants"}
                 ></Image>
@@ -270,14 +270,14 @@ export const CardGrid = () => {
           </div>
         </div>
       </div>
-      <div className="mt-8 flex flex-col gap-4 sm:flex-row lg:gap-8 MobileScreen:mt-4 TabletScreen:gap-6">
+      <div className="mt-4 flex flex-col gap-4 sm:mt-8 sm:flex-row sm:gap-6 lg:gap-8">
         {/* Block 4: PhotoWall */}
-        <div className="relative w-full overflow-hidden rounded-2xl border-4 border-black bg-gray-800 sm:w-1/2 lg:h-96 lg:w-3/5 MobileScreen:h-52 TabletScreen:h-72">
+        <div className="relative h-52 w-full overflow-hidden rounded-2xl border-4 border-black bg-gray-800 sm:h-72 sm:w-1/2 lg:h-96 lg:w-3/5">
           <Slider {...settings} className="absolute inset-0 z-0">
             {PhotoWallImages.map((item, index) => (
               <div key={index} className="relative size-full">
                 <Image
-                  className="size-full h-[220px] rounded-2xl object-cover lg:h-[400px] TabletScreen:h-[300px]"
+                  className="size-full h-[220px] rounded-2xl object-cover sm:h-[300px] lg:h-[400px]"
                   src={item.img}
                   alt={"Participants"}
                 ></Image>
@@ -301,13 +301,13 @@ export const CardGrid = () => {
           </div>
         </div>
         {/* Block 5 : Volunteer */}
-        <div className="relative w-full items-start justify-start overflow-hidden rounded-2xl border-4 border-black bg-gray-800 text-start sm:w-1/2 lg:h-96 lg:w-2/5 MobileScreen:h-52 TabletScreen:h-72">
+        <div className="relative h-52 w-full items-start justify-start overflow-hidden rounded-2xl border-4 border-black bg-gray-800 text-start sm:h-72 sm:w-1/2 lg:h-96 lg:w-2/5">
           {/* Image as background cover */}
           <Slider {...settings} className="absolute inset-0 z-0">
             {VolunteerImages.map((item, index) => (
               <div key={index} className="relative size-full">
                 <Image
-                  className="size-full h-[220px] rounded-2xl object-cover lg:h-[400px] TabletScreen:h-[300px]"
+                  className="size-full h-[220px] rounded-2xl object-cover sm:h-[300px] lg:h-[400px]"
                   src={item.img}
                   alt={"Volunteers"}
                 />

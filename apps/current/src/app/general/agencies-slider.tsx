@@ -34,7 +34,7 @@ export const AgenciesSlider = () => {
               style={{ transition: "transform 0.3s ease-in-out" }} // Add smooth transition
             >
               <Image
-                className={`cursor-pointer transition-transform duration-300 hover:scale-110 sm:w-[80px] lg:hover:scale-125${index === sliderItems.length - 1 ? "lg:min-w-[130px] MobileScreen:min-w-[130px]" : ""}`}
+                className={`cursor-pointer transition-transform duration-300 hover:scale-110 sm:w-[80px] lg:hover:scale-125${index === sliderItems.length - 1 ? "min-w-[130px]" : ""}`}
                 src={imgSrcs[index]}
                 width={120}
                 height={120}

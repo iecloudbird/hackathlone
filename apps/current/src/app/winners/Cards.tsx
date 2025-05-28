@@ -11,9 +11,9 @@ import { winners } from "./winners.dto";
 const WinnerDetails: React.FC = () => {
   const router = useRouter();
   return (
-    <div className="flex flex-col gap-8 overflow-x-hidden DesktopScreen:mx-[8.06%] TabletScreen:mx-[4.06%]">
+    <div className="flex flex-col gap-8 overflow-x-hidden sm:mx-[4.06%] lg:mx-[8.06%]">
       {/* Circular icon placeholder */}
-      <div className="relative flex w-full items-center justify-center MobileScreen:hidden TabletScreen:hidden">
+      <div className="relative hidden w-full items-center justify-center lg:flex">
         {/* Circular icon placeholder */}
         <div className="absolute right-0 flex h-48 w-52 translate-y-44 items-center justify-center">
           {/* Neon-like inner circular border */}
@@ -38,7 +38,7 @@ const WinnerDetails: React.FC = () => {
       </div>
 
       {/* Introductory page */}
-      <div className="flex flex-col DesktopScreen:mt-12 MobileScreen:mt-8 TabletScreen:mt-8">
+      <div className="mt-8 flex flex-col lg:mt-12">
         {/* Back Button */}
         {/* Desktop */}
         <Tooltip text="Back to Home">
@@ -46,7 +46,7 @@ const WinnerDetails: React.FC = () => {
             size="small"
             color="primary"
             onClick={() => router.push("/")}
-            className="object-left text-white hover:text-hackathone-font-rocket-red MobileScreen:hidden TabletScreen:hidden"
+            className="hidden object-left text-white hover:text-hackathone-font-rocket-red lg:block"
             edge="start"
             sx={{
               width: "3rem",
@@ -93,14 +93,14 @@ const WinnerDetails: React.FC = () => {
             {/* Title, Name, and Prize */}
             <div className="relative z-10 w-full px-4 py-2 text-left lg:px-8 xl:px-12">
               {/* Title */}
-              <div className="text-4xl font-bold MobileScreen:text-3xl">
-                <h1 className="text-4xl text-hackathone-font-rocket-red MobileScreen:text-3xl">
+              <div className="text-3xl font-bold sm:text-4xl">
+                <h1 className="text-3xl text-hackathone-font-rocket-red sm:text-4xl">
                   {winner.title}
                 </h1>
               </div>
 
               {/* Name */}
-              <div className="mt-2 text-2xl font-bold MobileScreen:text-xl">
+              <div className="mt-2 text-xl font-bold sm:text-2xl">
                 <h2>{winner.name}</h2>
               </div>
 

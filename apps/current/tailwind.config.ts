@@ -31,31 +31,6 @@ const config: Config = {
         hackathoneCabinetGrotesk: ["var(--font-cabinet-grotesk)"],
         hackathoneSFProDisplay: ["var(--font-sf-pro-display)"],
       },
-      screens: {
-        "2xl": "1536px",
-        // => @media (min-width: 1536px) { ... }
-
-        DesktopScreen: { min: "1024.5px" },
-        // => @media (min-width: 1024.5px) { ... }
-
-        MobileScreen: { max: "480.5px" },
-        // => @media (max-width: 480.5px) { ... }
-
-        TabletScreen: { max: "1024.5px", min: "480.5px" },
-        // => @media (min-width: 480.5px) and (max-width: 1024.5px) { ... }
-
-        lg: "1024.5px",
-        // => @media (min-width: 1024px) { ... }
-
-        md: "768.1px",
-        // => @media (min-width: 768px) { ... }
-
-        sm: "640px",
-        // => @media (min-width: 640px) { ... }
-
-        xl: "1280px",
-        // => @media (min-width: 1280px) { ... }
-      },
     },
   },
 };
