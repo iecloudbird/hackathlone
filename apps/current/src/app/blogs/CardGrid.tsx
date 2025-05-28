@@ -19,7 +19,7 @@ const CardGrid: React.FC = () => {
           </div>
         </div>
 
-        <div className="m-16 mx-auto flex max-w-6xl flex-col lg:hidden">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 lg:hidden">
           <h1 className="p-4 text-3xl font-bold text-hackathone-font-rocket-red">
             Blogs
           </h1>
