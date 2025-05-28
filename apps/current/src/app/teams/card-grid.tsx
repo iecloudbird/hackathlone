@@ -42,7 +42,7 @@ export const CardGrid = () => {
         {socials.twitter && (
           <a href={socials.twitter} target="_blank" rel="noopener noreferrer">
             <Image
-              className="ms-2 size-6 cursor-pointer hover:scale-110 MobileScreen:w-4"
+              className="ms-2 w-4 cursor-pointer hover:scale-110 sm:size-6"
               src={XIcon}
               height={80}
               width={80}
@@ -76,7 +76,7 @@ export const CardGrid = () => {
         {socials.instagram && (
           <a href={socials.instagram} target="_blank" rel="noopener noreferrer">
             <Image
-              className="ms-2 size-6 cursor-pointer hover:scale-110 MobileScreen:size-4"
+              className="ms-2 size-4 cursor-pointer hover:scale-110 sm:size-6"
               src={InstaIcon}
               height={80}
               width={80}
@@ -112,7 +112,7 @@ export const CardGrid = () => {
                 />
               </div>
               {/* Container for the text */}
-              <div className="w-80 py-4 pl-2 text-start font-hackathoneCabinetGrotesk text-lg text-slate-50 MobileScreen:pl-4">
+              <div className="w-80 py-4 pl-4 text-start font-hackathoneCabinetGrotesk text-lg text-slate-50 sm:pl-2">
                 <p className="font-bold">{item.name}</p>
                 <p className="text-red-400">{item.role}</p>
               </div>

@@ -863,7 +863,7 @@ const BlogPage: React.FC = () => {
           <CloudParticleBg />
         </Canvas>
       </div>
-      <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
+      <div className="relative z-10 py-[12px] sm:py-[24px]">
         <NavigationBar />
         {/* laptop view */}
         <div className="mx-24 my-16 hidden pl-2 lg:block">
@@ -872,7 +872,7 @@ const BlogPage: React.FC = () => {
               size="large"
               color="primary"
               onClick={handleBack}
-              className="mb-8 mr-4 text-white hover:text-hackathone-font-rocket-red MobileScreen:hidden TabletScreen:hidden"
+              className="mb-8 mr-4 hidden text-white hover:text-hackathone-font-rocket-red lg:block"
               edge="start"
               sx={{
                 "&:hover": {

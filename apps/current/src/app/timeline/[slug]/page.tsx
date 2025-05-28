@@ -35,17 +35,17 @@ const TimelinePage: React.FC = () => {
           <CloudParticleBg />
         </Canvas>
       </div>
-      <div className="relative z-10 py-[24px] MobileScreen:py-[12px]">
+      <div className="relative z-10 py-[12px] sm:py-[24px]">
         <NavigationBar />
         <div>
           <div
             id="timeline"
-            className="my-32 flex min-h-screen flex-col items-center justify-center py-2 text-hackathone-font-rocket-red md:my-40 lg:mx-[8.68%] TabletScreen:mx-[3.5%]"
+            className="my-32 flex min-h-screen flex-col items-center justify-center py-2 text-hackathone-font-rocket-red md:my-40 lg:mx-[8.68%]"
           >
             <Typography
               variant="h3"
               component="h1"
-              className="mb-10 text-4xl font-bold md:text-[32.99px] MobileScreen:text-center MobileScreen:text-[30.99px] MobileScreen:leading-[34.62px]"
+              className="mb-10 text-center text-3xl font-bold sm:text-4xl"
             >
               {daySchedule.title} Schedule
             </Typography>
@@ -60,15 +60,15 @@ const TimelinePage: React.FC = () => {
                     <Typography
                       variant="body2"
                       color="white"
-                      className="text-base font-normal MobileScreen:text-center"
+                      className="text-center text-base font-normal sm:text-start"
                     >
                       {item.time}
                     </Typography>
                   </TimelineOppositeContent>
                   <TimelineSeparator>
-                    <TimelineDot className="bg-hackathone-font-rocket-red MobileScreen:hidden TabletScreen:hidden" />
+                    <TimelineDot className="hidden bg-hackathone-font-rocket-red lg:block" />
                     {index < daySchedule.day.length - 1 && (
-                      <TimelineConnector className="transition-all duration-500 ease-in-out MobileScreen:hidden TabletScreen:hidden" />
+                      <TimelineConnector className="hidden transition-all duration-500 ease-in-out lg:block" />
                     )}
                   </TimelineSeparator>
                   <TimelineContent>
@@ -79,7 +79,7 @@ const TimelinePage: React.FC = () => {
                       <Typography
                         variant="h6"
                         component="h1"
-                        className="text-[14px] font-bold text-hackathone-font-rocket-red md:text-xl MobileScreen:text-center"
+                        className="text-center text-[14px] font-bold text-hackathone-font-rocket-red sm:text-start md:text-xl"
                       >
                         {item.title}
                       </Typography>
