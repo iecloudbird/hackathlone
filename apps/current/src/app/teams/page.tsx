@@ -42,7 +42,7 @@ const Teams = () => {
 
           {/* Back Button, Header, and Text */}
           <div className="mt-6 w-full sm:mt-2">
-            <h1 className="text-[30.99px] font-bold leading-[44.62px] text-hackathone-font-rocket-red sm:text-[30.99px] sm:leading-[44.62px] md:text-[32.99px] md:leading-[44.62px] lg:my-2 lg:pb-2 lg:text-[42px] lg:leading-[1.8rem]">
+            <h1 className="text-3xl font-bold text-hackathone-font-rocket-red lg:my-2">
               Meet the team
             </h1>
             <p className="pr-[8.7%] font-hackathoneCabinetGrotesk text-[16px] leading-[30.57px] text-slate-50 sm:text-[16px] sm:leading-[30.57px] md:pr-[12.7%] md:text-[18px] md:leading-[30.57px] lg:mr-12 lg:text-[18px] lg:leading-[1.8rem]">
