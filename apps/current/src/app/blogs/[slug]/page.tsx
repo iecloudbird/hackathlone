@@ -869,26 +869,21 @@ const BlogPage: React.FC = () => {
         <div className="mx-24 my-16 hidden pl-2 lg:block">
           <Tooltip text="Back to Blogs">
             <IconButton
-              size="large"
+              size="small"
               color="primary"
               onClick={handleBack}
-              className="mb-8 mr-4 hidden text-white hover:text-hackathone-font-rocket-red lg:block"
+              className="mb-4 mr-4 hidden text-white hover:text-hackathone-font-rocket-red lg:block"
               edge="start"
               sx={{
-                "&:hover": {
-                  transform: "scale(1.3)",
-                },
-                fontSize: "6rem",
-                height: "4.5rem",
-                transition:
-                  "transform 0.3s ease-in-out, color 0.3s ease-in-out",
-                width: "4.5rem",
+                fontSize: "4rem",
+                height: "3rem",
+                width: "3rem",
               }}
               aria-label="back to home"
             >
               <svg
-                width="120"
-                height="120"
+                width="40"
+                height="40"
                 viewBox="0 0 100 100"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
