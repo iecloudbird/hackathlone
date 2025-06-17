@@ -98,6 +98,10 @@ export const navigationData = (Router: RouterType) => [
     text: "FAQ's",
   },
   {
+    route: () => Router.push("/contact-us"),
+    text: "Contact Us",
+  },
+  {
     route: () =>
       window.open(
         "https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/",
