@@ -3,7 +3,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.hackathlone.app",
+      "package_name": "com.hackathlone.hackathlone_app",
       "sha256_cert_fingerprints": [
         "86:20:B1:AF:04:CA:E7:2F:3B:4B:A7:54:8F:69:79:E3:6B:08:99:14:DE:28:86:37:F2:35:DA:1F:1F:12:F2:BC"
       ]
