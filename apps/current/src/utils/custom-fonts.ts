@@ -90,4 +90,39 @@ const CabinetGrotesk = localFont({
   variable: "--font-cabinet-grotesk",
 });
 
-export { SFProDisplay, CabinetGrotesk };
+const NokaTrial = localFont({
+  src: [
+    {
+      path: "../../public/assets/fonts/NokaTrial/NokaTrial-Hairline.otf",
+      style: "thin",
+      weight: "100",
+    },
+    {
+      path: "../../public/assets/fonts/NokaTrial/NokaTrial-Light.otf",
+      style: "light",
+      weight: "300",
+    },
+    {
+      path: "../../public/assets/fonts/NokaTrial/NokaTrial-Medium.otf",
+      style: "regular",
+      weight: "400",
+    },
+    {
+      path: "../../public/assets/fonts/NokaTrial/NokaTrial-Semibold.otf",
+      style: "semi bold",
+      weight: "600",
+    },
+    {
+      path: "../../public/assets/fonts/NokaTrial/NokaTrial-Bold.otf",
+      style: "bold",
+      weight: "700",
+    },
+    {
+      path: "../../public/assets/fonts/NokaTrial/NokaTrial-Black.otf",
+      style: "black",
+      weight: "900",
+    },
+  ],
+  variable: "--font-noka-trial",
+});
+export { SFProDisplay, CabinetGrotesk, NokaTrial };

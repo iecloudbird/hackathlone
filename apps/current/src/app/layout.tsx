@@ -1,7 +1,7 @@
 import { type Metadata } from "next";
 import React from "react";
 import "./globals.css";
-import { SFProDisplay, CabinetGrotesk } from "@/utils/custom-fonts";
+import { SFProDisplay, CabinetGrotesk, NokaTrial } from "@/utils/custom-fonts";
 
 export const metadata: Metadata = {
   description:
@@ -34,7 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${SFProDisplay.variable} ${CabinetGrotesk.variable}`}>
+      <body
+        className={`${SFProDisplay.variable} ${CabinetGrotesk.variable} ${NokaTrial.variable}`}
+      >
         {children}
       </body>
     </html>

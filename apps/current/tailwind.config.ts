@@ -33,10 +33,12 @@ const config: Config = {
         maastrichtBlue: "#0C1A39",
         vividOrange: "#FF5D00",
         spiroDiscoBall: "#2DC3FF",
+        navy: "#2C3C60",
       },
       fontFamily: {
         hackathoneCabinetGrotesk: ["var(--font-cabinet-grotesk)"],
         hackathoneSFProDisplay: ["var(--font-sf-pro-display)"],
+        nokaTrial: ["var(--font-noka-trial)"],
       },
     },
   },

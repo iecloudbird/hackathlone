@@ -1,4 +1,3 @@
-// components/Marquee.tsx
 "use client";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
@@ -10,7 +9,7 @@ interface MarqueeProps {
 
 export const Marquee: React.FC<MarqueeProps> = ({
   text = "4th - 6th October 2025",
-  speed = 50,
+  speed = 250,
 }) => {
   const controls = useAnimation();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -67,24 +66,25 @@ export const Marquee: React.FC<MarqueeProps> = ({
   return (
     <div
       ref={containerRef}
-      className="flex h-[78.2px] w-[1440px] flex-row items-center overflow-hidden p-[1.87175px] [gap:23.21px]"
+      className="flex w-full flex-row items-center gap-4 overflow-hidden"
       onMouseEnter={() => setIsInteracting(true)}
       onMouseLeave={() => setIsInteracting(false)}
     >
       <motion.div
-        className="flex flex-row [gap:23.21px]"
+        className="flex flex-row gap-4"
         variants={marqueeVariants}
         animate={controls}
       >
         {items.map((item, index) => (
           <div
             key={index}
-            className="[order:${index}] flex h-[34px] w-[269.46px] flex-row items-center [flex-grow:0] [flex:none] [gap:23.21px]"
+            className="flex flex-none grow-0 flex-row items-center gap-4"
           >
-            <span className="h-[34px] w-[237px] text-center font-['Noka_Trial'] text-[24px] font-extrabold leading-[34px] tracking-[-0.546608px] text-[#2C3C60] [flex:none] [grow:0] [order:0]">
+            <span className="font-nokaTrial text-navy flex-none grow-0 text-center text-[20px] font-extrabold leading-[34px] tracking-[-0.546608px]">
+              {" "}
               {item.text}
             </span>
-            <div className="size-[9.25px] rounded-full bg-[#2C3C60] [flex:none] [grow:0] [order:1]" />
+            <div className="bg-navy order-1 size-[9.25px] flex-none grow-0 rounded-full" />
           </div>
         ))}
       </motion.div>
