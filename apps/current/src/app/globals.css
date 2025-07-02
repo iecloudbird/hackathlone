@@ -8,7 +8,8 @@
 @import "slick-carousel/slick/slick-theme.css";
 
 body {
-  background-color: black;
+  background-color: #0C1A39;
+  color: white;
 }
 
 .overflow-hidden {
