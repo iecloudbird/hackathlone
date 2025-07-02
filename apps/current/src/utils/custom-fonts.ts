@@ -90,4 +90,4 @@ const CabinetGrotesk = localFont({
   variable: "--font-cabinet-grotesk",
 });
 
-export { SFProDisplay, CabinetGrotesk, NokaTrial };
+export { SFProDisplay, CabinetGrotesk };
