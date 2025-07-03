@@ -1,6 +1,6 @@
 import { sponsorsList } from "@/data/homepage/sponsor";
-import { SponsorGrid } from "./grid";
 import { SectionContainer } from "../SectionContainer";
+import { SponsorGrid } from "./grid";
 
 export const SponsorSection = () => {
   return (
