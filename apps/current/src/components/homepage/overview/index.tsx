@@ -1,14 +1,13 @@
-import { StatsCard } from "./statsCard"; // adjust path as needed
 import { statsList } from "@/components/homepage/overview/statsList";
+import { SectionContainer } from "../SectionContainer";
+import { StatsCard } from "./statsCard";
 
 export const OverviewSection = () => {
   return (
-    <section className="mx-auto mt-[10%] flex flex-col items-center justify-center space-y-20 text-center lg:mx-[6%]">
-      {/* ... existing content ... */}
-
+    <SectionContainer>
       <div className="w-full">
         <StatsCard items={statsList} />
       </div>
-    </section>
+    </SectionContainer>
   );
 };

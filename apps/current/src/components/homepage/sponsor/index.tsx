@@ -1,9 +1,10 @@
 import { sponsorsList } from "@/data/homepage/sponsor";
 import { SponsorGrid } from "./grid";
+import { SectionContainer } from "../SectionContainer";
 
 export const SponsorSection = () => {
   return (
-    <section className="mx-auto mt-[10%] flex w-full flex-col items-center justify-center text-center">
+    <SectionContainer>
       <div className="flex flex-col gap-4">
         <h3 className="font-nokaTrial text-3xl font-bold text-brightYellow">
           Sponsors
@@ -15,6 +16,10 @@ export const SponsorSection = () => {
       <div className="mt-12 flex w-full flex-col items-center justify-center">
         <SponsorGrid items={sponsorsList} />
       </div>
-    </section>
+    </SectionContainer>
+
+    //       <section className="mx-auto mt-[10%] flex w-full flex-col items-center justify-center text-center">
+
+    // </section>
   );
 };

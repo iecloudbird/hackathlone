@@ -29,7 +29,7 @@ export const RegistrationStatus: FC<RegistrationStatusProps> = ({
   const displayItems = items.slice(0, 3);
 
   return (
-    <div className="flex max-w-[240px] items-center justify-center text-center">
+    <div className="hidden max-w-[240px] items-center justify-center text-center sm:flex">
       <div
         className="relative flex items-center"
         style={{ width: `${totalWidth}px` }}

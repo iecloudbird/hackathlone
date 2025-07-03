@@ -87,7 +87,7 @@ export const NavigationBar: FC<NavigationBarProps> = () => {
       </div>
 
       <RedirectButton
-        className=""
+        className="hidden lg:block"
         onClick={() =>
           (window.location.href = "https://www.spaceappschallenge.org/")
         }

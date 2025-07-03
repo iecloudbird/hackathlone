@@ -94,7 +94,7 @@ const Footer = () => {
         {/* Links Sections */}
         <div className="flex w-full justify-evenly gap-6 lg:flex lg:flex-row lg:items-start lg:gap-16">
           <div className="lg:mt-4">
-            <h3 className="mb-2 text-xl font-bold text-hackathone-font-rocket-red lg:mb-4">
+            <h3 className="mb-2 text-xl font-bold text-brightYellow lg:mb-4">
               Participation Kit
             </h3>
             <ul className="list-none leading-relaxed">
@@ -174,7 +174,7 @@ const Footer = () => {
           </div>
 
           <div className="lg:mt-4">
-            <h3 className="mb-2 text-xl font-bold text-hackathone-font-rocket-red lg:mb-4">
+            <h3 className="mb-2 text-xl font-bold text-brightYellow lg:mb-4">
               HackAthlone’23
             </h3>
             <ul className="list-none leading-relaxed">
@@ -227,7 +227,7 @@ const Footer = () => {
           </div>
 
           <div className="hidden sm:block lg:mt-4">
-            <h3 className="mb-2 text-xl font-bold text-hackathone-font-rocket-red lg:mb-4">
+            <h3 className="mb-2 text-xl font-bold text-brightYellow lg:mb-4">
               Space Apps UL’21
             </h3>
             <ul className="list-none leading-relaxed">

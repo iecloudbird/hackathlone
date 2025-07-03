@@ -4,7 +4,7 @@ import { type motifItem } from "@/data/homepage/brief";
 
 export const BriefCard: FC<{ items: motifItem[] }> = ({ items }) => {
   return (
-    <div className="grid grid-cols-3 justify-items-start gap-14 rounded-lg bg-white px-6 py-12">
+    <div className="grid grid-cols-1 justify-items-start gap-14 rounded-lg bg-white px-6 py-12 lg:grid-cols-3">
       {items.map((item, index) => (
         <div
           key={index}
