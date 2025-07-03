@@ -5,6 +5,7 @@ import { NavigationBar } from "@/components/common/shared/navigation-bar";
 import { BriefSection } from "@/components/homepage/brief";
 import { HeroSection } from "@/components/homepage/hero";
 import { SponsorSection } from "@/components/homepage/sponsor";
+import { OverviewSection } from "@/components/homepage/overview";
 
 export const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ export const HomePage = () => {
         <HeroSection />
         <SponsorSection />
         <BriefSection />
+        <OverviewSection />
       </main>
       <Footer />;
     </>
