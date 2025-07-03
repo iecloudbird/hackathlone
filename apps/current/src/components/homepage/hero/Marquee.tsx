@@ -1,13 +1,12 @@
-"use client";
 import { motion, useAnimation } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type FC } from "react";
 
 interface MarqueeProps {
   text?: string;
   speed?: number;
 }
 
-export const Marquee: React.FC<MarqueeProps> = ({
+export const Marquee: FC<MarqueeProps> = ({
   text = "4th - 6th October 2025",
   speed = 250,
 }) => {
@@ -80,11 +79,12 @@ export const Marquee: React.FC<MarqueeProps> = ({
             key={index}
             className="flex flex-none grow-0 flex-row items-center gap-4"
           >
-            <span className="font-nokaTrial text-navy flex-none grow-0 text-center text-[20px] font-extrabold leading-[34px] tracking-[-0.546608px]">
+            <span className="flex-none grow-0 text-center font-nokaTrial text-[20px] font-extrabold leading-[34px] tracking-[-0.546608px] text-navy">
               {" "}
               {item.text}
             </span>
-            <div className="bg-navy order-1 size-[9.25px] flex-none grow-0 rounded-full" />
+            {/* Placeholder for the dot */}
+            <div className="order-1 size-[9.25px] flex-none grow-0 rounded-full bg-navy" />{" "}
           </div>
         ))}
       </motion.div>

@@ -1,4 +1,3 @@
-// components/navigation/utils.tsx
 "use client";
 import { useRouter } from "next/navigation";
 import { useMemo, useState, useEffect } from "react";
@@ -20,16 +19,16 @@ export const navigationData = (
     text: "FAQ's",
   },
   {
+    route: () => router.push("/contact-us"),
+    text: "Contact Us",
+  },
+  {
     route: () =>
       window.open(
         "https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/",
         "_blank"
       ),
     text: "Challenges",
-  },
-  {
-    route: () => router.push("/contact-us"),
-    text: "Contact Us",
   },
 ];
 

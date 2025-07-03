@@ -1,5 +1,3 @@
-// components/navigation/SideNav.tsx
-"use client";
 import { motion } from "framer-motion";
 import { type FC } from "react";
 import { sideNavVariants, sideNavTransition } from "./utils";
