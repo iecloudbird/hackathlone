@@ -26,7 +26,7 @@ const formatDate = (date: Date) => {
 
 const Itinerary: React.FC = () => {
   const router = useRouter();
-  const startDate = new Date(2024, 9, 4);
+  const startDate = new Date(2025, 9, 3);
   const [expandedItems, setExpandedItems] = useState<number[]>([]);
 
   const handleToggleExpand = (index: number) => {

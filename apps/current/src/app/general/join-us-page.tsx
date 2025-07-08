@@ -17,7 +17,7 @@ const JoinUsPage = () => {
           <p className="mt-2 font-hackathoneSFProDisplay text-[16.72px] font-medium leading-[24.57px] text-slate-50 sm:text-[18px] sm:leading-[28.57px] lg:mt-[9.81px] lg:text-[18.72px] lg:leading-[24.57px]">
             Join us in{" "}
             <span className="text-[18px] font-bold text-hackathone-font-rocket-red">
-              October 4-6, 2025
+              October 3-5, 2025
             </span>{" "}
             for the largest annual space & sciences hackathon in the world!
           </p>
