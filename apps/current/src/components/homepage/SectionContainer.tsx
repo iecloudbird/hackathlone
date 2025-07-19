@@ -14,7 +14,7 @@ export const SectionContainer: FC<SectionContainerProps> = ({
     <section
       className={classNames(
         "mx-auto mt-12 flex w-full flex-col items-center justify-center px-4 text-left lg:text-center",
-        "sm:px-6 lg:mt-[10%] lg:px-[5%]",
+        "sm:px-6 lg:mt-[5%] lg:px-[5%]",
         className
       )}
       {...rest}

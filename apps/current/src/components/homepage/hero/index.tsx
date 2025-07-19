@@ -1,34 +1,48 @@
+import classNames from "classnames";
 import { RedirectButton } from "@/components/common/shared/RedirectButton";
+import { type HeroSectionData } from "@/data/homepage/hero";
+import { formatTitle } from "@/utils/format-title";
 import { Athlone } from "../const";
-import { Marquee } from "./Marquee";
-import { RegistrationStatus } from "./Status";
+import { SectionContainer } from "../SectionContainer";
 
-export const HeroSection = () => {
+interface HeroSectionProps {
+  heroData: HeroSectionData;
+}
+
+export const HeroSection = ({ heroData }: HeroSectionProps) => {
+  const {
+    title,
+    subtitle,
+    registerButtonText,
+    registerButtonHref,
+    backgroundImage,
+  } = heroData;
+
+  const contentShift = "lg:-mt-52 -mt-32";
+
   return (
-    <section className="mx-auto mt-16 flex w-full flex-col items-center justify-center px-4 text-center">
-      {/* <div className="relative flex h-[48.15px] w-fit flex-none grow-0 flex-row items-center justify-center overflow-hidden rounded-[38.5233px] bg-[rgba(219,219,219,0.05)] px-4 backdrop-blur-[10px]">
-        <span className="font-nokaTrial relative z-10 flex-none grow-0 text-[16px] font-semibold leading-[24px]">
-          It is that time of the year again
-        </span>
-      </div> */}
-      <div className="mb-20 flex w-full flex-col items-center gap-4 lg:gap-8">
+    <SectionContainer className="relative h-screen">
+      <div
+        className="absolute inset-0 -translate-y-32 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url('${backgroundImage}')`,
+        }}
+      />
+
+      <div
+        className={classNames(
+          "relative flex w-full flex-col items-center gap-4 lg:gap-8",
+          contentShift
+        )}
+      >
         <h1 className="font-nokaTrial text-4xl font-bold lg:text-5xl">
-          Welcome to Hack{Athlone}25
+          {formatTitle(title, "{Athlone}", Athlone)}
         </h1>
-        <p className="lg:max-w-xl lg:text-xl">
-          Support the next generation of innovators and problem-solvers. Your
-          sponsorship helps us create an unforgettable experience for
-          participants and fosters a community of space enthusiasts.
-        </p>
+        <p className="font-thin lg:max-w-xl lg:text-xl">{subtitle}</p>
         <div className="flex items-center justify-center gap-6">
-          <RedirectButton
-            href="https://www.spaceappschallenge.org"
-            text="Register now"
-          />
-          <RegistrationStatus />
+          <RedirectButton href={registerButtonHref} text={registerButtonText} />
         </div>
       </div>
-      <Marquee speed={250} />
-    </section>
+    </SectionContainer>
   );
 };

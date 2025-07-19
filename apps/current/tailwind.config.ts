@@ -34,6 +34,7 @@ const config: Config = {
         vividOrange: "#FF5D00",
         spiroDiscoBall: "#2DC3FF",
         navy: "#2C3C60",
+        battleship: "#757575",
       },
       fontFamily: {
         hackathoneCabinetGrotesk: ["var(--font-cabinet-grotesk)"],

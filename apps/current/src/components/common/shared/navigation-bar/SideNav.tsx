@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { motion } from "framer-motion";
 import { type FC } from "react";
 import { sideNavVariants, sideNavTransition } from "./utils";
@@ -17,15 +18,29 @@ export const SideNav: FC<SideNavProps> = ({ items, isOpen, onClose }) => (
     variants={sideNavVariants}
     transition={sideNavTransition}
   >
-    <div className="absolute right-5 cursor-pointer text-2xl" onClick={onClose}>
-      X
+    <div
+      className="absolute right-5 top-5 cursor-pointer text-2xl text-white"
+      onClick={onClose}
+    >
+      ×
     </div>
-    <div className="mt-4 flex flex-col gap-4">
+
+    {/* Navigation Items */}
+    <div className="mt-12 flex flex-col gap-6">
       {items.map((item, index) => (
         <div
           key={index}
-          className="cursor-pointer font-hackathoneSFProDisplay hover:text-hackathone-font-rocket-red"
-          onClick={item.route}
+          className={classNames(
+            "cursor-pointer font-hackathoneSFProDisplay text-lg transition-colors duration-200",
+            {
+              "text-white": item.isActive,
+              "text-battleship": !item.isActive,
+            }
+          )}
+          onClick={() => {
+            item.route();
+            onClose();
+          }}
         >
           {item.text}
         </div>

@@ -1,26 +1,35 @@
 "use client";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { useMemo, useState, useEffect } from "react";
 import { type NavigationItem } from "./index";
 
 export const navigationData = (
-  router: ReturnType<typeof useRouter>
+  router: ReturnType<typeof useRouter>,
+  currentPath: string
 ): NavigationItem[] => [
   {
     route: () => router.push("/"),
     text: "Home",
+    path: "/",
+    isActive: currentPath === "/",
   },
   {
     route: () => router.push("/blogs"),
     text: "Blogs",
+    path: "/blogs",
+    isActive: currentPath.startsWith("/blogs"),
   },
   {
     route: () => router.push("/faq"),
     text: "FAQ's",
+    path: "/faq",
+    isActive: currentPath.startsWith("/faq"),
   },
   {
     route: () => router.push("/contact-us"),
     text: "Contact Us",
+    path: "/contact-us",
+    isActive: currentPath.startsWith("/contact-us"),
   },
   {
     route: () =>
@@ -29,12 +38,16 @@ export const navigationData = (
         "_blank"
       ),
     text: "Challenges",
+    path: "/challenges",
+    isActive: false, // External link, never active
   },
 ];
 
 export const useNavigation = (): NavigationItem[] => {
   const router = useRouter();
-  return useMemo(() => navigationData(router), [router]);
+  const pathname = usePathname();
+
+  return useMemo(() => navigationData(router, pathname), [router, pathname]);
 };
 
 export const useSidebar = () => {

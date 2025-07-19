@@ -14,8 +14,7 @@ export const RedirectButton: FC<Props> = ({
   variant = "primary",
   ...rest
 }) => {
-  const buttonTransition =
-    "hover:bg-spiroDiscoBall/90 transition-colors duration-300";
+  const buttonTransition = "hover:bg-white/85 transition-colors duration-300";
 
   const variantStyles = {
     primary: "",
@@ -26,7 +25,7 @@ export const RedirectButton: FC<Props> = ({
     <a
       href={href}
       className={classNames(
-        "block cursor-pointer rounded-lg bg-spiroDiscoBall px-8 py-3 text-sm font-bold text-black",
+        "block cursor-pointer rounded-lg bg-white px-8 py-3 text-sm font-bold text-black",
         buttonTransition,
         variantStyles[variant],
         className

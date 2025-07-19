@@ -9,13 +9,14 @@ import { OverviewSection } from "@/components/homepage/overview";
 import PerksSection from "@/components/homepage/perks";
 import { SponsorSection } from "@/components/homepage/sponsor";
 import { TimelineSection } from "@/components/homepage/timeline";
+import { heroData } from "@/data/homepage/hero";
 
 export const HomePage = () => {
   return (
     <>
       <NavigationBar />
       <main>
-        <HeroSection />
+        <HeroSection heroData={heroData} />
         <SponsorSection />
         <BriefSection />
         <OverviewSection />
