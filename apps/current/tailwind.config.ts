@@ -27,6 +27,8 @@ const config: Config = {
         "hackathone-font-martin-red": "#07173F",
         "hackathone-font-rocket-red": "#eafe07",
 
+        deepSpace: "#030309",
+
         // remove above colors after complete migration
         brightYellow: "#FFA220",
         pineTree: "#2B2828",

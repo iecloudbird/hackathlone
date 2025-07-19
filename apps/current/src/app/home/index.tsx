@@ -3,13 +3,11 @@ import React from "react";
 import Footer from "@/app/general/footer";
 import { NavigationBar } from "@/components/common/shared/navigation-bar";
 import { BriefSection } from "@/components/homepage/brief";
-import { ContactSection } from "@/components/homepage/contact-us";
 import { HeroSection } from "@/components/homepage/hero";
-import { OverviewSection } from "@/components/homepage/overview";
-import PerksSection from "@/components/homepage/perks";
-import { SponsorSection } from "@/components/homepage/sponsor";
-import { TimelineSection } from "@/components/homepage/timeline";
+import { SpaceAgenciesSection } from "@/components/homepage/space-agencies";
+import { briefData } from "@/data/homepage/brief";
 import { heroData } from "@/data/homepage/hero";
+import { spaceAgenciesData } from "@/data/homepage/space-agencies";
 
 export const HomePage = () => {
   return (
@@ -17,12 +15,8 @@ export const HomePage = () => {
       <NavigationBar />
       <main>
         <HeroSection heroData={heroData} />
-        <SponsorSection />
-        <BriefSection />
-        <OverviewSection />
-        <TimelineSection />
-        <PerksSection />
-        <ContactSection />
+        <BriefSection briefData={briefData} />
+        <SpaceAgenciesSection spaceAgenciesData={spaceAgenciesData} />
       </main>
       <Footer />;
     </>
