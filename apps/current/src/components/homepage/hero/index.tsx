@@ -18,7 +18,7 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
   } = heroData;
 
   return (
-    <SectionContainer className="relative h-screen">
+    <SectionContainer className="relative h-screen" marginTop="lg:mt-[5%]">
       <div
         className="absolute inset-0 -translate-y-12 bg-cover bg-center bg-no-repeat"
         style={{
