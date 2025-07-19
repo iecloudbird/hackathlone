@@ -3,7 +3,6 @@ export interface HeroSectionData {
   subtitle: string;
   registerButtonText: string;
   registerButtonHref: string;
-  showRegistrationStatus: boolean;
   backgroundImage: string;
 }
 
@@ -12,7 +11,7 @@ export const heroData: HeroSectionData = {
   subtitle:
     "Support the next generation of innovators and problem-solvers. Your sponsorship helps us create an unforgettable experience for participants and fosters a community of space enthusiasts.",
   registerButtonText: "Register now",
-  registerButtonHref: "https://www.spaceappschallenge.org",
-  showRegistrationStatus: true,
+  registerButtonHref:
+    "https://www.spaceappschallenge.org/2025/local-events/athlone/",
   backgroundImage: "/assets/images/horizon.png",
 };

@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import { RedirectButton } from "@/components/common/shared/RedirectButton";
 import { type HeroSectionData } from "@/data/homepage/hero";
 import { formatTitle } from "@/utils/format-title";
@@ -18,23 +17,16 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
     backgroundImage,
   } = heroData;
 
-  const contentShift = "lg:-mt-52 -mt-32";
-
   return (
     <SectionContainer className="relative h-screen">
       <div
-        className="absolute inset-0 -translate-y-32 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 -translate-y-12 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url('${backgroundImage}')`,
         }}
       />
 
-      <div
-        className={classNames(
-          "relative flex w-full flex-col items-center gap-4 lg:gap-8",
-          contentShift
-        )}
-      >
+      <div className="relative flex w-full flex-col items-center gap-4 lg:gap-8">
         <h1 className="font-nokaTrial text-4xl font-bold lg:text-5xl">
           {formatTitle(title, "{Athlone}", Athlone)}
         </h1>

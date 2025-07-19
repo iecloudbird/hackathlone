@@ -29,8 +29,6 @@ export const NavigationBar: FC<NavigationBarProps> = () => {
   const { isSideNavOpen, toggleSideNav } = useSidebar();
   const [isTooltipVisible, setIsTooltipVisible] = useState(false);
 
-  const pageMargin = "mx-[3%] mt-8 lg:mx-[5.5%]";
-
   const getNavItemStyles = (item: NavigationItem) => {
     return classNames(
       "relative cursor-pointer font-hackathoneSFProDisplay transition-colors duration-200",
@@ -86,11 +84,10 @@ export const NavigationBar: FC<NavigationBarProps> = () => {
   return (
     <nav
       className={classNames(
-        "sticky top-0 z-50 mx-4 flex h-[60px] items-center justify-between bg-transparent",
-        pageMargin
+        "relative top-8 z-50 mx-4 flex h-[60px] items-center justify-between bg-transparent",
+        "mx-[3%] lg:mx-[5.5%]"
       )}
     >
-      {/* Logo */}
       <div onClick={navigationInfo[0]?.route} className="px-2 py-1">
         <Image
           src={HackAthlone}
@@ -102,28 +99,24 @@ export const NavigationBar: FC<NavigationBarProps> = () => {
         />
       </div>
 
-      {/* Navigation Items Container */}
       <div className="flex items-center">
-        {/* Desktop Navigation Links */}
         <div className="hidden flex-row gap-12 lg:flex">
           {renderDesktopNavigationItems()}
         </div>
 
-        {/* Mobile Hamburger Menu */}
         {renderHamburgerMenu()}
       </div>
 
-      {/* Register Button */}
       <RedirectButton
         className="hidden lg:block"
         onClick={() =>
-          (window.location.href = "https://www.spaceappschallenge.org/")
+          (window.location.href =
+            "https://www.spaceappschallenge.org/2025/local-events/athlone/")
         }
       >
         Register Now
       </RedirectButton>
 
-      {/* Mobile Sidebar */}
       <SideNav
         items={navigationInfo}
         isOpen={isSideNavOpen}
