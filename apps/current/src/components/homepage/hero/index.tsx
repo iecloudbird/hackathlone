@@ -26,11 +26,13 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
         }}
       />
 
-      <div className="relative flex w-full flex-col items-center gap-4 lg:gap-8">
+      <div className="relative flex w-full flex-col items-center gap-4 text-center lg:gap-8">
         <h1 className="font-nokaTrial text-4xl font-bold lg:text-5xl">
           {formatTitle(title, "{Athlone}", Athlone)}
         </h1>
-        <p className="font-thin lg:max-w-xl lg:text-xl">{subtitle}</p>
+        <p className="font-thin sm:max-w-md lg:max-w-xl lg:text-xl">
+          {subtitle}
+        </p>
         <div className="flex items-center justify-center gap-6">
           <RedirectButton href={registerButtonHref} text={registerButtonText} />
         </div>

@@ -3,10 +3,10 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
-import HeroImage from "@/assets/images/general/landing-page/hero_icon.png";
 import InstaIcon from "@/assets/images/general/landing-page/instagram.png";
 import InIcon from "@/assets/images/general/landing-page/linkedin.png";
 import XIcon from "@/assets/images/general/landing-page/x_logo.svg";
+import HackAthlone from "@/assets/svgs/hackathlone-logo.svg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -18,18 +18,24 @@ const Footer = () => {
 
   return (
     <footer className="flex flex-col gap-4 py-4 text-sm text-[#F6F4F4]">
-      <div className="flex flex-col items-center justify-between gap-4 px-4 py-2 sm:px-[5%] lg:flex-row">
+      <div className="flex flex-col items-start justify-between gap-4 px-4 py-2 sm:px-[5%] lg:flex-row">
         {/* Logo and Social Icons */}
-        <div className="flex w-full flex-col items-center gap-6 lg:w-auto lg:gap-12">
+        <div className="flex w-full flex-col items-center gap-6 lg:mt-4 lg:w-auto lg:gap-12">
           <a href="/" className="cursor-pointer">
             <Image
-              src={HeroImage}
-              alt="Hero Image"
+              src={HackAthlone}
+              alt="HackAthlone Logo"
+              width={240}
+              className="hidden md:block"
+            />
+            <Image
+              src={HackAthlone}
+              alt="HackAthlone Logo"
               width={180}
-              className="sm:w-[300px] lg:w-[400px]"
+              className="block md:hidden"
             />
           </a>
-          <div className="flex items-center gap-3 lg:gap-4">
+          <div className="flex w-full justify-center gap-3 lg:gap-4">
             <a
               href="https://twitter.com/hack_athlone?ref_src=twsrc%5Etfw"
               target="_blank"
