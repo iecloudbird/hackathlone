@@ -13,5 +13,5 @@ export const heroData: HeroSectionData = {
   registerButtonText: "Register now",
   registerButtonHref:
     "https://www.spaceappschallenge.org/2025/local-events/athlone/",
-  backgroundImage: "/assets/images/horizon.png",
+  backgroundImage: "/assets/images/horizon.jpg",
 };
