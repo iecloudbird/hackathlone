@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Footer from "@/app/general/footer";
+import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
 import { NavigationBar } from "@/components/common/shared/navigation-bar";
 import { BriefSection } from "@/components/homepage/brief";
 import { CollaboratorsSection } from "@/components/homepage/collaborators";
@@ -20,7 +21,8 @@ import { venueSectionData } from "@/data/homepage/venue";
 export const HomePage = () => {
   return (
     <>
-      <NavigationBar />
+      <NavbarDemo />
+      {/* <NavigationBar /> */}
       <main>
         <HeroSection heroData={heroData} />
         <BriefSection briefData={briefData} />

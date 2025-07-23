@@ -4,14 +4,12 @@ import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import Typography from "@mui/material/Typography";
-import { Canvas } from "@react-three/fiber";
 import Image from "next/image";
 import React, { useState } from "react";
-import CloudParticleBg from "@/app/general/cloud-particle-bg";
 import Sun from "@/assets/images/faq-page/sun - Copy.png";
+import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
 import BackToTopButton from "../general/back-to-top";
 import Footer from "../general/footer";
-import NavigationBar from "../general/navigation-bar";
 import { faqData } from "./components/faq.dto";
 
 const Faq = () => {
@@ -24,16 +22,9 @@ const Faq = () => {
 
   return (
     <section className="relative min-h-screen bg-black text-white">
-      {/* Background Canvas */}
-      <div className="fixed inset-0 z-0">
-        <Canvas camera={{ position: [0, 0, 1] }}>
-          <CloudParticleBg />
-        </Canvas>
-      </div>
-
       {/* Main Content */}
       <div className="relative z-10 py-3 sm:py-3 md:py-6 lg:py-6">
-        <NavigationBar />
+        <NavbarDemo />
 
         {/* Content Container */}
         <div className="mx-4 mt-4 sm:mx-4 md:mx-8 lg:mx-4">
