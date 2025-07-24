@@ -33,7 +33,7 @@ export const venueSectionData: VenueSectionData = {
     {
       content: {
         description:
-          "The NASA SpaceApps Challenge 2024 is happening in the heart of Ireland, Athlone, with the Technological University of the Shannon proudly hosting this massive in-person hackathon. Renowned for its innovation and technological excellence, the university educates and inspires over 7,000 students, making it the perfect venue for this prestigious event.",
+          "The NASA SpaceApps Challenge 2025 is happening in the heart of Ireland, Athlone, with the Technological University of the Shannon proudly hosting this massive in-person hackathon. Renowned for its innovation and technological excellence, the university educates and inspires over 7,000 students, making it the perfect venue for this prestigious event.",
         resources: {
           title: "As the venue partner, the university also offers resources:",
           items: [
