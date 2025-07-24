@@ -17,7 +17,7 @@ export function NavbarDemo() {
   const navigationInfo = useNavigation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
-    <div className="fixed left-0 top-0 z-50 w-full">
+    <div className="fixed left-0 top-0 z-50 my-2 w-full">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>

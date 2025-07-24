@@ -1,23 +1,25 @@
 "use client";
 import { IconButton } from "@mui/material";
 import { Canvas } from "@react-three/fiber";
+import { motion } from "framer-motion";
 import Image, { type StaticImageData } from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import React from "react";
-import CloudParticleBg from "@/app/general/cloud-particle-bg";
 import Space1 from "@/assets/images/blogs/space1.png";
-import Space10 from "@/assets/images/blogs/space10.png";
+import Space10 from "@/assets/images/blogs/space10.jpg";
 import Space2 from "@/assets/images/blogs/space2.png";
 //Lazy and Dynamic import TODO
 import Space3 from "@/assets/images/blogs/space3.png";
 import Space4 from "@/assets/images/blogs/space4.png";
-import Space5 from "@/assets/images/blogs/space5.png";
-import Space6 from "@/assets/images/blogs/space6.png";
+import Space5 from "@/assets/images/blogs/space5.jpg";
+import Space6 from "@/assets/images/blogs/space6.jpg";
 import Space7 from "@/assets/images/blogs/space7.png";
-import Space8 from "@/assets/images/blogs/space8.png";
-import Space9 from "@/assets/images/blogs/space9.png";
+import Space8 from "@/assets/images/blogs/space8.jpg";
+import Space9 from "@/assets/images/blogs/space9.jpg";
+import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
+import { ShootingStars } from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
 import Footer from "../../general/footer";
-import NavigationBar from "../../general/navigation-bar";
 import Tooltip from "../../general/tooltip";
 import { cards } from "../blogs.dto";
 
@@ -852,66 +854,104 @@ const BlogPage: React.FC = () => {
     },
   ];
   const blog = blogs.find((b) => b.slug === slug);
+  const currentIndex = blogs.findIndex((b) => b.slug === slug);
+  const prevIndex = (currentIndex - 1 + blogs.length) % blogs.length;
+  const nextIndex = (currentIndex + 1) % blogs.length;
+
+  const prevBlog = blogs[prevIndex];
+  const nextBlog = blogs[nextIndex];
 
   if (!blog) {
     return <div>Blog not found</div>;
   }
   return (
     <div className="relative min-h-screen bg-black text-slate-50">
-      <div className="fixed inset-0 z-0">
-        <Canvas camera={{ position: [0, 0, 1] }}>
-          <CloudParticleBg />
-        </Canvas>
-      </div>
+      <ShootingStars />
+      <StarsBackground />
       <div className="relative z-10 py-[12px] sm:py-[24px]">
-        <NavigationBar />
+        <NavbarDemo />
         {/* laptop view */}
-        <div className="mx-24 my-16 hidden pl-2 lg:block">
-          <Tooltip text="Back to Blogs">
-            <IconButton
-              size="small"
-              color="primary"
-              onClick={handleBack}
-              className="mb-4 mr-4 hidden text-white hover:text-hackathone-font-rocket-red lg:block"
-              edge="start"
-              sx={{
-                fontSize: "4rem",
-                height: "3rem",
-                width: "3rem",
-              }}
-              aria-label="back to home"
+        <div className="mx-24 my-16 hidden lg:block">
+          <div className="flex flex-row items-start justify-start gap-10 pt-12">
+            {/* Back to Blogs tooltip - slides in from left */}
+            <motion.div
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
             >
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 100 100"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="50" cy="50" r="50" fill="#EAFE07" />
-                <path
-                  d="M50 76L54.5825 71.4175L36.4475 53.25L76 53.25L76 46.75L36.4475 46.75L54.5825 28.5825L50 24L24 50L50 76Z"
-                  fill="black"
-                />
-              </svg>
-            </IconButton>
-          </Tooltip>
+              <Tooltip text="Back">
+                <IconButton
+                  size="small"
+                  color="primary"
+                  onClick={handleBack}
+                  className="mb-4 mr-4 hidden text-white hover:text-hackathone-font-rocket-red lg:block"
+                  edge="start"
+                  sx={{
+                    fontSize: "4rem",
+                    height: "3rem",
+                    width: "3rem",
+                  }}
+                  aria-label="back to home"
+                >
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 100 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="50" cy="50" r="50" fill="#EAFE07" />
+                    <path
+                      d="M50 76L54.5825 71.4175L36.4475 53.25L76 53.25L76 46.75L36.4475 46.75L54.5825 28.5825L50 24L24 50L50 76Z"
+                      fill="black"
+                    />
+                  </svg>
+                </IconButton>
+              </Tooltip>
+            </motion.div>
 
-          <Image
-            src={blog.image}
-            width={1200}
-            height={1200}
-            className="mb-10 ml-16 h-auto w-1/2 rounded-lg lg:float-right"
-            alt="Blog Image"
-          />
+            <div>
+              {/* Blog title - fades in from top */}
+              <motion.h2
+                initial={{ y: -50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+                className="mb-4 font-hackathoneSFProDisplay text-4xl font-bold text-white md:text-5xl"
+              >
+                {blog.title}
+              </motion.h2>
+
+              {/* Blog author - fades in from top */}
+              <motion.p
+                initial={{ y: -50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
+                className="mb-10 mt-2 font-hackathoneSFProDisplay text-hackathone-font-rocket-red"
+              >
+                {blog.author} - {blog.date}
+              </motion.p>
+            </div>
+          </div>
+
+          {/* Blog image - fades in */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="relative h-[500px] w-full overflow-hidden rounded-lg"
+          >
+            <Image
+              src={blog.image}
+              alt="Blog Image"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="top"
+              className="rounded-lg"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70" />
+          </motion.div>
           <div className="font-hackathoneCabinetGrotesk">
-            <h2 className="mb-4 font-hackathoneSFProDisplay text-4xl font-bold text-white md:text-5xl">
-              {blog.title}
-            </h2>
-            <p className="mb-10 mt-2 text-base text-hackathone-font-rocket-red md:text-2xl">
-              {blog.author} - {blog.date}
-            </p>
-            <p className="mt-8 text-xl text-slate-50 md:text-xl">
+            <p className="mt-8 text-justify text-lg text-slate-50 md:text-xl">
               {blog.summary}
             </p>
             <br />
@@ -919,9 +959,9 @@ const BlogPage: React.FC = () => {
               {blog.points.map((point, index) => (
                 <li
                   key={`event-point-${index}`}
-                  className="text-xl text-slate-50 md:text-xl"
+                  className="text-justify text-lg text-slate-50"
                 >
-                  {point}
+                  {typeof point === "string" ? point.trim() : point}
                 </li>
               ))}
             </ul>
@@ -930,69 +970,135 @@ const BlogPage: React.FC = () => {
 
         {/* Mobile view */}
         <div className="mx-8 my-12 flex flex-col lg:hidden">
-          <Tooltip text="Back to Blogs">
-            <IconButton
-              size="large"
-              color="primary"
-              onClick={handleBack}
-              className="mb-8 mr-4 text-white hover:text-hackathone-font-rocket-red"
-              edge="start"
-              sx={{
-                fontSize: "4rem",
-                height: "3.5rem",
-                transition:
-                  "transform 0.3s ease-in-out, color 0.3s ease-in-out",
-                width: "3.5rem",
-                "&:hover": {
-                  transform: "scale(1.2)",
-                },
-              }}
-              aria-label="back to home"
-            >
-              <svg
-                width="120"
-                height="120"
-                viewBox="0 0 100 100"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
+            <Tooltip text="Back">
+              <IconButton
+                size="large"
+                color="primary"
+                onClick={handleBack}
+                className="mb-8 mr-4 text-white hover:text-hackathone-font-rocket-red"
+                edge="start"
+                sx={{
+                  fontSize: "4rem",
+                  height: "3.5rem",
+                  transition:
+                    "transform 0.3s ease-in-out, color 0.3s ease-in-out",
+                  width: "3.5rem",
+                  "&:hover": {
+                    transform: "scale(1.2)",
+                  },
+                }}
+                aria-label="back to home"
               >
-                <circle cx="50" cy="50" r="50" fill="#EAFE07" />
-                <path
-                  d="M50 76L54.5825 71.4175L36.4475 53.25L76 53.25L76 46.75L36.4475 46.75L54.5825 28.5825L50 24L24 50L50 76Z"
-                  fill="black"
-                />
-              </svg>
-            </IconButton>
-          </Tooltip>
-          <Image
-            src={blog.image}
-            width={1200} // Increase these values as needed
-            height={1200}
-            className="mb-8 size-auto rounded-lg"
-            alt="Blog Image"
-          />
+                <svg
+                  width="120"
+                  height="120"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="50" cy="50" r="50" fill="#EAFE07" />
+                  <path
+                    d="M50 76L54.5825 71.4175L36.4475 53.25L76 53.25L76 46.75L36.4475 46.75L54.5825 28.5825L50 24L24 50L50 76Z"
+                    fill="black"
+                  />
+                </svg>
+              </IconButton>
+            </Tooltip>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <Image
+              src={blog.image}
+              width={1200}
+              height={1200}
+              className="mb-8 size-auto rounded-lg"
+              alt="Blog Image"
+            />
+          </motion.div>
 
           <div className="font-hackathoneCabinetGrotesk">
-            <h2 className="mb-4 text-4xl font-semibold text-slate-50 md:text-5xl">
+            <motion.h2
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+              className="mb-4 text-4xl font-semibold text-slate-50 md:text-5xl"
+            >
               {blog.title}
-            </h2>
-            <p className="mb-10 mt-2 text-base text-hackathone-font-rocket-red md:text-2xl">
+            </motion.h2>
+
+            <motion.p
+              initial={{ y: -50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
+              className="mb-10 mt-2 text-base text-hackathone-font-rocket-red md:text-2xl"
+            >
               {blog.author} - {blog.date}
-            </p>
-            <p className="mt-8 text-base text-slate-50 md:text-lg">
+            </motion.p>
+
+            <p className="mt-8 text-justify text-base text-slate-50 md:text-lg">
               {blog.summary}
             </p>
             <br />
-            <ul className="list-none space-y-4">
+            <ul className="list-none space-y-8">
               {blog.points.map((point, index) => (
                 <li
                   key={`event-point-${index}`}
-                  className="text-base text-slate-50 md:text-lg"
+                  className="text-justify text-slate-50"
                 >
-                  {typeof point === "string" ? point : <>{point}</>}
+                  {typeof point === "string" ? point.trim() : point}
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+        <div className="mx-24 my-12 grid grid-cols-2 gap-8 max-md:mx-8">
+          {/* Previous Blog */}
+          <div
+            className="flex cursor-pointer flex-row items-center gap-4 rounded-lg pr-10 transition-all duration-500 ease-in-out hover:translate-x-2 max-md:flex-col max-md:pr-0 lg:hover:shadow-[-4px_0px_2px_-2px_rgba(255,255,255,1)]"
+            onClick={() => router.push(`/blogs/${prevBlog.slug}`)}
+          >
+            <Image
+              src={prevBlog.image}
+              width={300}
+              height={200}
+              className="rounded-lg"
+              alt={prevBlog.title}
+            />
+            <div>
+              <h1 className="text-sm text-gray-400 max-md:text-xs">Previous</h1>
+              <p className="text-lg font-semibold max-md:text-sm">
+                {prevBlog.title}
+              </p>
+            </div>
+          </div>
+
+          {/* Next Blog */}
+          <div
+            className="flex cursor-pointer flex-row-reverse items-center gap-4 rounded-lg pr-10 text-right transition-all duration-500 ease-in-out hover:-translate-x-2 max-md:flex-col max-md:pr-0 max-md:text-right lg:hover:shadow-[4px_0px_2px_-2px_rgba(255,255,255,1)]"
+            onClick={() => router.push(`/blogs/${nextBlog.slug}`)}
+          >
+            <Image
+              src={nextBlog.image}
+              width={300}
+              height={200}
+              className="rounded-lg"
+              alt={nextBlog.title}
+            />
+            <div>
+              <h1 className="text-sm text-gray-400 max-md:text-xs">Next</h1>
+              <p className="text-lg font-semibold max-md:text-sm">
+                {nextBlog.title}
+              </p>
+            </div>
           </div>
         </div>
 

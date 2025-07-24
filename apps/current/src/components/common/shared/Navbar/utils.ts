@@ -1,6 +1,11 @@
 import { useRouter, usePathname } from "next/navigation";
 import { useMemo } from "react";
-import { type NavigationItem } from "./Navbar";
+export type NavigationItem = {
+  route: () => void;
+  text: string;
+  path: string;
+  isActive: boolean;
+};
 
 export const navigationData = (
   router: ReturnType<typeof useRouter>,
