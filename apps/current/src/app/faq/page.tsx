@@ -44,7 +44,7 @@ const Faq = () => {
               }}
               className="mt-10 bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text p-4 text-center text-5xl font-bold text-transparent"
             >
-              FAQ's
+              FAQ&apos;s
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: -50 }}
@@ -95,6 +95,10 @@ const Faq = () => {
                     sx={{
                       "&.MuiAccordion-root": {
                         borderRadius: "15px",
+                        transformOrigin: "top",
+                        "& .MuiCollapse-root": {
+                          transformOrigin: "top",
+                        },
                       },
                       "& .MuiAccordionSummary-root": {
                         borderRadius: "15px",

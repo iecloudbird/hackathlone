@@ -1,57 +1,100 @@
 "use client";
-
-import { Canvas } from "@react-three/fiber";
-import mentorImage from "@/assets/images/general/contact-us/mentor.svg";
-import participantImage from "@/assets/images/general/contact-us/participant.svg";
-import sponsorImage from "@/assets/images/general/contact-us/sponsor.svg";
+import { useState } from "react";
+import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
+import { ShootingStars } from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
 import BackToTopButton from "../general/back-to-top";
-import CloudParticleBg from "../general/cloud-particle-bg";
 import Footer from "../general/footer";
-import NavigationBar from "../general/navigation-bar";
-import ContactCard from "./contact-card";
 
 const ContactUs: React.FunctionComponent = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Form Submitted:", formData);
+  };
+
   return (
     <div className="relative min-h-screen bg-black text-white">
-      <div className="fixed inset-0 z-0">
-        <Canvas camera={{ position: [0, 0, 1] }}>
-          <CloudParticleBg />
-        </Canvas>
-      </div>
-      <div className="relative z-10 py-[12px] sm:py-[24px]">
-        <NavigationBar />
-        <div className="container mx-auto px-4 pb-24 pt-12 md:pt-20">
-          <div className="text-center">
-            <h1 className="text-5xl font-bold lg:text-6xl">
-              Got{" "}
-              <span className="text-hackathone-font-rocket-red">Questions</span>
-              ? Let&apos;s Connect.
+      <ShootingStars />
+      <StarsBackground />
+      <div className="relative z-20 py-[12px] sm:py-[24px]">
+        <NavbarDemo />
+        <div className="my-8 flex min-h-screen flex-col items-center justify-center px-4">
+          <form
+            onSubmit={handleSubmit}
+            className="relative z-30 w-full max-w-lg space-y-6 bg-transparent p-8"
+          >
+            <h1 className="mb-2 text-center text-4xl font-bold text-white">
+              Let’s Get In Touch
             </h1>
-            <p className="mx-auto mt-10 text-xl md:text-3xl">
-              Reach out based on how you&apos;d like to get involved in the
-              mission.
+            <p className="mb-8 text-center text-gray-300">
+              We are excited to hear from you!
             </p>
-          </div>
-          <div className="mx-auto mt-20 flex flex-col gap-8 lg:flex-row">
-            <ContactCard
-              title="Want to be a Sponsor?"
-              description="Support breakthrough ideas using NASA’s open data and gain visibility in a global innovation movement. Partner with us to power bold solutions for Earth and space."
-              href="mailto:spaceappsathlone@gmail.com?subject=Interested%20in%20Sponsoring"
-              image={sponsorImage}
-            />
-            <ContactCard
-              title="Want to be a Mentor?"
-              description="Share your expertise with future changemakers. Guide teams tackling real-world challenges and expand your impact across a global community."
-              href="mailto:spaceappsathlone@gmail.com?subject=Interested%20in%20Mentoring"
-              image={mentorImage}
-            />
-            <ContactCard
-              title="Want to be a Participant?"
-              description="Join a global hackathon where innovation meets purpose. Collaborate, code, and create solutions using NASA data—on Earth, and beyond."
-              href="mailto:spaceappsathlone@gmail.com?subject=Interested%20in%20Participating"
-              image={participantImage}
-            />
-          </div>
+            <div>
+              <label htmlFor="name" className="mb-2 block text-sm font-medium">
+                Name <span className="text-red-500">*</span>
+              </label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                value={formData.name}
+                onChange={(e) =>
+                  setFormData({ ...formData, name: e.target.value })
+                }
+                className="w-full rounded-md border border-gray-700 bg-transparent px-4 py-2 text-white placeholder-gray-400 autofill:!bg-gray-800 focus:border-white focus:ring-1 focus:ring-white"
+                placeholder="John Doe"
+              />
+            </div>
+            <div>
+              <label htmlFor="email" className="mb-2 block text-sm font-medium">
+                Email <span className="text-red-500">*</span>
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                value={formData.email}
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
+                className="w-full rounded-md border border-gray-700 bg-transparent px-4 py-2 text-white placeholder-gray-400 autofill:!bg-gray-800 focus:border-white focus:ring-1 focus:ring-white"
+                placeholder="you@example.com"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="message"
+                className="mb-2 block text-sm font-medium"
+              >
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows={4}
+                value={formData.message}
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
+                className="w-full rounded-md border border-gray-700 bg-transparent px-4 py-2 text-white placeholder:text-gray-400 autofill:!bg-gray-800 focus:border-white focus:ring-1 focus:ring-white"
+                placeholder="Type your message here..."
+              />
+            </div>
+            <button
+              type="submit"
+              className="mx-auto flex items-center justify-center rounded-full bg-[#FF5D00] px-4 py-2 font-semibold text-white hover:bg-[#ff4b00]"
+            >
+              Submit
+            </button>
+          </form>
         </div>
         <BackToTopButton />
         <Footer />

@@ -49,7 +49,7 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
               <CardTitle>{item.title}</CardTitle>
               <CardDescription>{item.description}</CardDescription>
               <div className="mt-4">
-                <span className="inline-block rounded-full px-3 py-1 text-xs font-semibold text-white underline decoration-white/50 underline-offset-4 hover:decoration-white">
+                <span className="inline-block rounded-full py-1 text-xs font-semibold text-white underline decoration-white/50 underline-offset-4 hover:decoration-white">
                   Read more
                 </span>
               </div>
