@@ -47,7 +47,7 @@ const ContactUs: React.FunctionComponent = () => {
                 onChange={(e) =>
                   setFormData({ ...formData, name: e.target.value })
                 }
-                className="w-full rounded-md border border-gray-700 bg-transparent px-4 py-2 text-white placeholder-gray-400 autofill:!bg-gray-800 focus:border-white focus:ring-1 focus:ring-white"
+                className="w-full rounded-md border border-gray-700 bg-transparent px-4 py-2 text-white placeholder:text-gray-400 autofill:!bg-gray-800 focus:border-white focus:ring-1 focus:ring-white"
                 placeholder="John Doe"
               />
             </div>
@@ -64,7 +64,7 @@ const ContactUs: React.FunctionComponent = () => {
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
                 }
-                className="w-full rounded-md border border-gray-700 bg-transparent px-4 py-2 text-white placeholder-gray-400 autofill:!bg-gray-800 focus:border-white focus:ring-1 focus:ring-white"
+                className="w-full rounded-md border border-gray-700 bg-transparent px-4 py-2 text-white placeholder:text-gray-400 autofill:!bg-gray-800 focus:border-white focus:ring-1 focus:ring-white"
                 placeholder="you@example.com"
               />
             </div>
@@ -89,7 +89,7 @@ const ContactUs: React.FunctionComponent = () => {
             </div>
             <button
               type="submit"
-              className="mx-auto flex items-center justify-center rounded-full bg-[#FF5D00] px-4 py-2 font-semibold text-white hover:bg-[#ff4b00]"
+              className="mx-auto flex items-center justify-center rounded-full bg-vividOrange px-4 py-2 font-semibold text-white hover:bg-[#ff4b00]"
             >
               Submit
             </button>

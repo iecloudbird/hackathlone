@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { motion } from "motion/react";
 import Image, { type StaticImageData } from "next/image";
 import { cn } from "@/lib/utils";
@@ -32,17 +31,14 @@ export const HoverEffect = ({ items, className }: HoverEffectProps) => {
             ease: [0.21, 1.11, 0.81, 0.99],
           }}
         >
-          <a
-            href={item.link}
-            className="group relative block h-full w-full p-2"
-          >
+          <a href={item.link} className="group relative block size-full p-2">
             <Card>
               <div className="relative mb-4 h-48 w-full overflow-hidden rounded-xl">
                 <Image
                   src={item.imageSrc}
                   alt={item.title}
                   fill
-                  className="transform object-cover transition-transform duration-200 ease-in-out group-hover:scale-105"
+                  className="object-cover transition-transform duration-200 ease-in-out group-hover:scale-105"
                   priority
                 />
               </div>

@@ -1,17 +1,15 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable import/order */
 "use client";
-import { cn } from "@/lib/utils";
+
 import { IconMenu2, IconX } from "@tabler/icons-react";
-// eslint-disable-next-line import/no-extraneous-dependencies
 import {
   motion,
   AnimatePresence,
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
-
-import React, { useRef, useState } from "react";
+import Image from "next/image";
+import React, { useState, useRef } from "react";
+import { cn } from "@/lib/utils";
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -137,7 +135,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
-              className="absolute inset-0 h-full w-full rounded-full bg-gray-100 dark:bg-neutral-800"
+              className="absolute inset-0 size-full rounded-full bg-gray-100 dark:bg-neutral-800"
             />
           )}
           <span className="relative z-20">{item.name}</span>
@@ -238,7 +236,7 @@ export const NavbarLogo = () => {
       href="#"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
-      <img
+      <Image
         src="https://assets.aceternity.com/logo-dark.png"
         alt="logo"
         width={30}

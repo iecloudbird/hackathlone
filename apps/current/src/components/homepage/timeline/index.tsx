@@ -146,21 +146,19 @@ const TimelineItem = ({
             tabIndex={0}
             role="button"
           >
-            {/* Background pattern */}
             <div className="absolute inset-0 opacity-5">
-              <div className="absolute right-4 top-4 h-8 w-8 rounded-full bg-spiroDiscoBall" />
-              <div className="absolute bottom-4 left-4 h-4 w-4 rounded-full bg-navy" />
-              <div className="absolute left-1/3 top-1/2 h-2 w-2 rounded-full bg-battleship" />
+              <div className="absolute right-4 top-4 size-8 rounded-full bg-spiroDiscoBall" />
+              <div className="absolute bottom-4 left-4 size-4 rounded-full bg-navy" />
+              <div className="absolute left-1/3 top-1/2 size-2 rounded-full bg-battleship" />
             </div>
 
-            {/* Hover overlay */}
             <div
               className={classNames(
                 "absolute inset-0 opacity-0 transition-opacity duration-300",
                 isHovered && "opacity-100"
               )}
             >
-              <div className="to-navy/8 absolute inset-0 bg-gradient-to-r from-spiroDiscoBall/5" />
+              <div className="absolute inset-0 bg-gradient-to-r from-spiroDiscoBall/5 to-navy/10" />
             </div>
 
             <div className="relative">
@@ -219,7 +217,7 @@ const TimelineItem = ({
                     <>
                       <span>Learn more</span>
                       <svg
-                        className="ml-1 h-4 w-4 transition-transform duration-300 group-hover/card:translate-x-1"
+                        className="ml-1 size-4 transition-transform duration-300 group-hover/card:translate-x-1"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -272,7 +270,7 @@ export const TimelineSection = ({ timelineData }: TimelineSectionProps) => {
 
       <div className="relative mx-auto max-w-6xl">
         <div className="absolute inset-0 opacity-5">
-          <div className="h-full w-full bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.15)_1px,transparent_0)] bg-[length:20px_20px]" />
+          <div className="size-full bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.15)_1px,transparent_0)] bg-[length:20px_20px]" />
         </div>
 
         <div className="relative flex flex-col gap-12 md:gap-0">
