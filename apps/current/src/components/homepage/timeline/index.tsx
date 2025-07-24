@@ -254,8 +254,8 @@ export const TimelineSection = ({ timelineData }: TimelineSectionProps) => {
   }, [hoveredIndex]);
 
   return (
-    <SectionContainer className="bg-deepSpace text-white" id="timeline">
-      <div className="relative mb-20 text-center">
+    <SectionContainer className="mb-20" id="timeline">
+      <div className="relative mb-12 text-center">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-10 left-1/4 h-1 w-20 bg-gradient-to-r from-transparent via-spiroDiscoBall to-transparent opacity-20" />
           <div className="absolute -bottom-10 right-1/4 h-1 w-16 bg-gradient-to-r from-transparent via-navy to-transparent opacity-20" />

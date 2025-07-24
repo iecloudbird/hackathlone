@@ -11,7 +11,7 @@ export const GallerySection: FC<GallerySectionProps> = ({ galleryData }) => {
   const { title, subtitle, carousels } = galleryData;
 
   return (
-    <SectionContainer>
+    <SectionContainer className="hidden md:block">
       <div className="w-full">
         <div className="mb-4 text-center">
           <h2 className="text-3xl font-bold text-white lg:text-4xl">{title}</h2>

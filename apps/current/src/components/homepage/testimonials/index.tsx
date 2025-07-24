@@ -56,7 +56,7 @@ export const TestimonialsSection: FC<TestimonialsSectionProps> = ({
   const visibleCards = getVisibleCards();
 
   return (
-    <SectionContainer>
+    <SectionContainer className="hidden lg:block">
       <div className="w-full">
         <h2 className={titleClass}>{title}</h2>
 

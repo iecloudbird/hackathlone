@@ -19,7 +19,7 @@ const cardBaseClass =
   "absolute cursor-pointer p-20 will-change-transform border border-[#000000]";
 const cardSizeClass =
   "h-[260px] w-[320px] sm:h-[280px] sm:w-[380px] md:w-[460px] lg:w-[680px]";
-const cardPositionClass = "left-1/4";
+const cardPositionClass = "left-[25%]";
 const fallbackBackgroundClass = "opacity-70";
 const textClass = "mb-6 text-white text-justify md:text-center";
 const teamNameClass = "text-xl font-bold text-white text-center";
