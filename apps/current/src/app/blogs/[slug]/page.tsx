@@ -1,6 +1,5 @@
 "use client";
 import { IconButton } from "@mui/material";
-import { Canvas } from "@react-three/fiber";
 import { motion } from "framer-motion";
 import Image, { type StaticImageData } from "next/image";
 import { useParams, useRouter } from "next/navigation";
@@ -992,7 +991,7 @@ const BlogPage: React.FC = () => {
                     transform: "scale(1.2)",
                   },
                 }}
-                aria-label="back to home"
+                aria-label="Back"
               >
                 <svg
                   width="120"

@@ -1,7 +1,7 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { motion } from "motion/react";
+import Image, { type StaticImageData } from "next/image";
 import { cn } from "@/lib/utils";
-import { AnimatePresence, motion } from "motion/react";
-import Image, { StaticImageData } from "next/image";
-import { useState } from "react";
 
 interface HoverEffectProps {
   items: {
