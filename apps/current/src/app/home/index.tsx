@@ -16,6 +16,8 @@ import { heroData } from "@/data/homepage/hero";
 import { spaceAgenciesData } from "@/data/homepage/space-agencies";
 import { testimonialData } from "@/data/homepage/testimonials";
 import { venueSectionData } from "@/data/homepage/venue";
+import { timelineData } from "@/data/homepage/timeline";
+import { TimelineSection } from "@/components/homepage/timeline";
 
 export const HomePage = () => {
   return (
@@ -30,6 +32,7 @@ export const HomePage = () => {
         <VenueSection venueData={venueSectionData} />
         <GallerySection galleryData={gallerySectionData} />
         <TestimonialsSection testimonialData={testimonialData} />
+        <TimelineSection timelineData={timelineData} />
       </main>
       <Footer />
     </>
