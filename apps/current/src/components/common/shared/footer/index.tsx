@@ -133,14 +133,9 @@ export const Footer: React.FC<FooterProps> = ({ data = footerData }) => {
         </div>
 
         {/* Links Sections */}
-        <div className="flex w-full justify-evenly gap-6 lg:flex lg:flex-row lg:items-start lg:gap-16">
+        <div className="flex w-full flex-col items-start gap-6 lg:flex-row lg:items-start lg:justify-evenly lg:gap-16">
           {data.sections.map((section, sectionIndex) => (
-            <div
-              key={sectionIndex}
-              className={
-                sectionIndex === 1 ? "hidden sm:block lg:mt-4" : "lg:mt-4"
-              }
-            >
+            <div key={sectionIndex} className="lg:mt-4">
               <h3 className="mb-2 text-xl font-bold text-brightYellow lg:mb-4">
                 {section.title}
               </h3>
