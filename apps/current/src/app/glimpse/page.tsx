@@ -7,8 +7,8 @@ import React from "react";
 import CloudParticleBg from "@/app/general/cloud-particle-bg";
 import { CardGrid } from "@/app/glimpse/card-grid";
 import BackButton from "@/assets/images/general/landing-page/back-button.svg";
+import { Footer } from "@/components/common/shared/footer";
 import BackToTopButton from "../general/back-to-top";
-import Footer from "../general/footer";
 import NavigationBar from "../general/navigation-bar";
 import Tooltip from "../general/tooltip";
 

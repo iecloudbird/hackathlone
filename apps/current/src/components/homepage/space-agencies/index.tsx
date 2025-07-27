@@ -21,8 +21,12 @@ export const SpaceAgenciesSection: FC<SpaceAgenciesSectionProps> = ({
 
         <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-            {agencies.map((agency) => (
-              <AgencyCard key={agency.id} agency={agency} />
+            {agencies.map((agency, index) => (
+              <AgencyCard
+                key={agency.id}
+                agency={agency}
+                isLast={index === agencies.length - 1}
+              />
             ))}
           </div>
         </div>

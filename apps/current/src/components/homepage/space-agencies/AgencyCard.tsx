@@ -4,9 +4,10 @@ import { type SpaceAgency } from "@/data/homepage/space-agencies";
 
 interface AgencyCardProps {
   agency: SpaceAgency;
+  isLast?: boolean;
 }
 
-export const AgencyCard: FC<AgencyCardProps> = ({ agency }) => {
+export const AgencyCard: FC<AgencyCardProps> = ({ agency, isLast = false }) => {
   const handleClick = () => {
     window.open(agency.url, "_blank", "noopener,noreferrer");
   };
@@ -21,7 +22,9 @@ export const AgencyCard: FC<AgencyCardProps> = ({ agency }) => {
         alt={agency.name}
         width={80}
         height={80}
-        className="h-auto w-full max-w-[80px] object-contain transition-opacity duration-200"
+        className={`h-auto w-full object-contain transition-opacity duration-200 ${
+          isLast ? "max-w-[240px]" : "max-w-[100px]"
+        }`}
         priority={false}
       />
     </div>

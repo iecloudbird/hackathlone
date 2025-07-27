@@ -1,19 +1,19 @@
 import { type StaticImageData } from "next/image";
-import Aeb_O from "@/assets/images/general/landing-page/space-agencies/aeb_round.png";
-import Aem_O from "@/assets/images/general/landing-page/space-agencies/aem_round.png";
-import Aep_O from "@/assets/images/general/landing-page/space-agencies/aep_round.png";
-import Asi_O from "@/assets/images/general/landing-page/space-agencies/asi_round.png";
-import Australia_O from "@/assets/images/general/landing-page/space-agencies/australia_round.png";
-import Canada_O from "@/assets/images/general/landing-page/space-agencies/canada_round.png";
-import Conae_O from "@/assets/images/general/landing-page/space-agencies/conae_round.png";
-import Cst_O from "@/assets/images/general/landing-page/space-agencies/cst_round.png";
-import Eesa_O from "@/assets/images/general/landing-page/space-agencies/eesa_round.png";
-import Isro_O from "@/assets/images/general/landing-page/space-agencies/isro_round.png";
-import Jaxa_O from "@/assets/images/general/landing-page/space-agencies/jaxa_round.png";
-import Nssa_O from "@/assets/images/general/landing-page/space-agencies/nssa_round.png";
-import Sansa_O from "@/assets/images/general/landing-page/space-agencies/sansa_round.png";
-import Ssa_O from "@/assets/images/general/landing-page/space-agencies/spanish.jpg";
-import Turkey_O from "@/assets/images/general/landing-page/space-agencies/turkish_round.png";
+import Aeb from "@/assets/images/general/landing-page/space-agencies/aeb.png";
+import Aem from "@/assets/images/general/landing-page/space-agencies/aem.png";
+import Aep_O from "@/assets/images/general/landing-page/space-agencies/aep.png";
+import Asi from "@/assets/images/general/landing-page/space-agencies/asi.png";
+import Australia from "@/assets/images/general/landing-page/space-agencies/australia.png";
+import Canada from "@/assets/images/general/landing-page/space-agencies/canada.png";
+import Conae from "@/assets/images/general/landing-page/space-agencies/conae.png";
+import Cst from "@/assets/images/general/landing-page/space-agencies/cst_round.png";
+import Eesa from "@/assets/images/general/landing-page/space-agencies/eesa.png";
+import Isro from "@/assets/images/general/landing-page/space-agencies/isro.png";
+import Jaxa from "@/assets/images/general/landing-page/space-agencies/jaxa.png";
+import Nssa from "@/assets/images/general/landing-page/space-agencies/nssa.png";
+import Sansa from "@/assets/images/general/landing-page/space-agencies/sansa.png";
+import Ssa from "@/assets/images/general/landing-page/space-agencies/spanish.png";
+import Turkey from "@/assets/images/general/landing-page/space-agencies/tsa.png";
 
 export interface SpaceAgency {
   id: string;
@@ -33,13 +33,13 @@ export const spaceAgenciesData: SpaceAgenciesSectionData = {
     {
       id: "asi",
       name: "Italian Space Agency",
-      logo: Asi_O,
+      logo: Asi,
       url: "https://www.asi.it/en/",
     },
     {
       id: "aem",
       name: "Mexican Space Agency",
-      logo: Aem_O,
+      logo: Aem,
       url: "https://www.iafastro.org/membership/all-members/agencia-espacial-mexicana-aem.html",
     },
     {
@@ -51,73 +51,73 @@ export const spaceAgenciesData: SpaceAgenciesSectionData = {
     {
       id: "australia",
       name: "Australian Space Agency",
-      logo: Australia_O,
+      logo: Australia,
       url: "https://www.industry.gov.au/australian-space-agency",
     },
     {
       id: "canada",
       name: "Canadian Space Agency",
-      logo: Canada_O,
+      logo: Canada,
       url: "https://www.asc-csa.gc.ca/eng/",
     },
     {
       id: "aeb",
       name: "Brazilian Space Agency",
-      logo: Aeb_O,
+      logo: Aeb,
       url: "https://www.iafastro.org/membership/all-members/brazilian-space-agency-aeb.html",
     },
     {
       id: "conae",
       name: "Argentine Space Agency",
-      logo: Conae_O,
+      logo: Conae,
       url: "https://www.argentina.gob.ar/ciencia/conae",
     },
     {
       id: "esa",
       name: "European Space Agency",
-      logo: Eesa_O,
+      logo: Eesa,
       url: "https://www.esa.int/",
     },
     {
       id: "isro",
       name: "Indian Space Research Organisation",
-      logo: Isro_O,
+      logo: Isro,
       url: "https://www.isro.gov.in/",
     },
     {
       id: "jaxa",
       name: "Japan Aerospace Exploration Agency",
-      logo: Jaxa_O,
+      logo: Jaxa,
       url: "https://global.jaxa.jp/",
     },
     {
       id: "nssa",
       name: "National Space Science Agency",
-      logo: Nssa_O,
+      logo: Nssa,
       url: "https://www.iafastro.org/membership/all-members/national-space-science-agency-nssa.html",
     },
     {
       id: "sansa",
       name: "South African National Space Agency",
-      logo: Sansa_O,
+      logo: Sansa,
       url: "https://www.sansa.org.za/",
     },
     {
       id: "turkey",
       name: "Turkish Space Agency",
-      logo: Turkey_O,
+      logo: Turkey,
       url: "https://tua.gov.tr/en",
     },
     {
       id: "cst",
       name: "Saudi Space Agency",
-      logo: Cst_O,
+      logo: Cst,
       url: "https://www.cst.gov.sa",
     },
     {
       id: "ssa",
       name: "Spanish Space Agency",
-      logo: Ssa_O,
+      logo: Ssa,
       url: "https://www.aee.gob.es/",
     },
   ],

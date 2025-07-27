@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
+import { Footer } from "@/components/common/shared/footer";
 import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import BackToTopButton from "../general/back-to-top";
-import Footer from "../general/footer";
 
 const ContactUs: React.FunctionComponent = () => {
   const [formData, setFormData] = useState({

@@ -3,9 +3,8 @@
 import { Canvas } from "@react-three/fiber";
 import React from "react";
 import CloudParticleBg from "@/app/general/cloud-particle-bg";
-// import CardGrid from "./CardGrid";
+import { Footer } from "@/components/common/shared/footer";
 import BackToTopButton from "../general/back-to-top";
-import Footer from "../general/footer";
 import NavigationBar from "../general/navigation-bar";
 import ItineraryPage from "./itinerary";
 

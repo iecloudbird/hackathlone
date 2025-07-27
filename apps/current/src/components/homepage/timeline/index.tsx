@@ -40,7 +40,7 @@ const TimelineItem = ({
           isHovered && "opacity-100"
         )}
       >
-        <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-spiroDiscoBall/10 to-maastrichtBlue/15 blur-xl" />
+        <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-brightYellow/10 to-maastrichtBlue/15 blur-xl" />
       </div>
 
       <div className="relative flex w-full items-center">
@@ -54,7 +54,7 @@ const TimelineItem = ({
             className={classNames(
               "relative rounded-lg border px-4 py-2 text-center backdrop-blur-sm transition-all duration-300",
               isHovered
-                ? "border-spiroDiscoBall bg-navy/20 text-spiroDiscoBall shadow-lg shadow-spiroDiscoBall/15"
+                ? "border-brightYellow bg-navy/20 text-brightYellow shadow-lg shadow-brightYellow/15"
                 : "border-battleship bg-pineTree/50 text-gray-300 hover:border-gray-500"
             )}
           >
@@ -67,7 +67,7 @@ const TimelineItem = ({
             <div
               className={classNames(
                 "w-0.5 transition-all duration-500",
-                isHovered ? "bg-spiroDiscoBall shadow-md" : "bg-battleship"
+                isHovered ? "bg-brightYellow shadow-md" : "bg-battleship"
               )}
               style={{
                 height: isHovered ? contentHeight + 60 : contentHeight + 20,
@@ -80,22 +80,22 @@ const TimelineItem = ({
               className={classNames(
                 "size-5 rounded-full border-2 transition-all duration-300",
                 isHovered
-                  ? "border-spiroDiscoBall bg-navy shadow-lg shadow-spiroDiscoBall/30"
+                  ? "border-brightYellow bg-navy shadow-lg shadow-brightYellow/30"
                   : "border-battleship bg-pineTree"
               )}
             >
               <div
                 className={classNames(
                   "absolute inset-1 rounded-full transition-all duration-300",
-                  isHovered && "bg-spiroDiscoBall/20"
+                  isHovered && "bg-brightYellow/20"
                 )}
               />
             </div>
 
             {isHovered && (
               <>
-                <div className="absolute inset-0 animate-ping rounded-full border border-spiroDiscoBall/20" />
-                <div className="absolute -inset-2 animate-pulse rounded-full border border-spiroDiscoBall/15" />
+                <div className="absolute inset-0 animate-ping rounded-full border border-brightYellow/20" />
+                <div className="absolute -inset-2 animate-pulse rounded-full border border-brightYellow/15" />
               </>
             )}
           </div>
@@ -103,7 +103,7 @@ const TimelineItem = ({
             <div
               className={classNames(
                 "w-0.5 transition-all duration-500",
-                isHovered ? "bg-spiroDiscoBall shadow-md" : "bg-battleship"
+                isHovered ? "bg-brightYellow shadow-md" : "bg-battleship"
               )}
               style={{
                 height: isHovered ? contentHeight + 60 : contentHeight + 20,
@@ -123,7 +123,7 @@ const TimelineItem = ({
               className={classNames(
                 "inline-block rounded-lg border px-3 py-1 text-sm font-semibold backdrop-blur-sm transition-all duration-300",
                 isHovered
-                  ? "border-spiroDiscoBall bg-navy/20 text-spiroDiscoBall"
+                  ? "border-brightYellow bg-navy/20 text-brightYellow"
                   : "border-battleship bg-pineTree/50 text-gray-300"
               )}
             >
@@ -135,7 +135,7 @@ const TimelineItem = ({
             className={classNames(
               "group/card relative cursor-pointer overflow-hidden rounded-xl border-2 p-6 backdrop-blur-sm transition-all duration-300",
               isHovered
-                ? "scale-[1.02] transform border-spiroDiscoBall bg-gradient-to-br from-deepSpace/95 to-navy/30 shadow-2xl shadow-spiroDiscoBall/10"
+                ? "scale-[1.02] transform border-brightYellow bg-gradient-to-br from-deepSpace/95 to-navy/30 shadow-2xl shadow-brightYellow/10"
                 : "border-battleship bg-deepSpace/80 hover:border-gray-600 hover:bg-deepSpace/90"
             )}
             onMouseEnter={() => onHover(index)}
@@ -147,7 +147,7 @@ const TimelineItem = ({
             role="button"
           >
             <div className="absolute inset-0 opacity-5">
-              <div className="absolute right-4 top-4 size-8 rounded-full bg-spiroDiscoBall" />
+              <div className="absolute right-4 top-4 size-8 rounded-full bg-brightYellow" />
               <div className="absolute bottom-4 left-4 size-4 rounded-full bg-navy" />
               <div className="absolute left-1/3 top-1/2 size-2 rounded-full bg-battleship" />
             </div>
@@ -158,14 +158,13 @@ const TimelineItem = ({
                 isHovered && "opacity-100"
               )}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-spiroDiscoBall/5 to-navy/10" />
+              <div className="absolute inset-0 bg-gradient-to-r from-brightYellow/5 to-navy/10" />
             </div>
 
             <div className="relative">
               <div
                 className={classNames(
                   "mb-3 text-xl font-bold transition-colors duration-300",
-                  isHovered ? "text-spiroDiscoBall" : "text-white",
                   isOdd ? "text-left md:text-left" : "text-left md:text-right"
                 )}
               >
@@ -209,7 +208,7 @@ const TimelineItem = ({
                   className={classNames(
                     "flex items-center text-sm font-medium transition-all duration-300",
                     isHovered
-                      ? "translate-x-1 text-spiroDiscoBall"
+                      ? "translate-x-1 text-brightYellow"
                       : "text-battleship"
                   )}
                 >
@@ -255,7 +254,7 @@ export const TimelineSection = ({ timelineData }: TimelineSectionProps) => {
     <SectionContainer className="mb-20" id="timeline">
       <div className="relative mb-12 text-center">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-10 left-1/4 h-1 w-20 bg-gradient-to-r from-transparent via-spiroDiscoBall to-transparent opacity-20" />
+          <div className="absolute -top-10 left-1/4 h-1 w-20 bg-gradient-to-r from-transparent via-brightYellow to-transparent opacity-20" />
           <div className="absolute -bottom-10 right-1/4 h-1 w-16 bg-gradient-to-r from-transparent via-navy to-transparent opacity-20" />
         </div>
 
@@ -264,7 +263,7 @@ export const TimelineSection = ({ timelineData }: TimelineSectionProps) => {
             {timelineData.title}
           </h2>
 
-          <div className="mx-auto mt-6 h-px w-24 bg-gradient-to-r from-transparent via-spiroDiscoBall to-transparent opacity-50" />
+          <div className="mx-auto mt-6 h-px w-24 bg-gradient-to-r from-transparent via-brightYellow to-transparent opacity-50" />
         </div>
       </div>
 
