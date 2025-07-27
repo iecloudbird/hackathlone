@@ -1,6 +1,6 @@
 "use client";
-
 import classNames from "classnames";
+import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 import {
   type TimelineSectionData,
@@ -58,7 +58,9 @@ const TimelineItem = ({
                 : "border-battleship bg-pineTree/50 text-gray-300 hover:border-gray-500"
             )}
           >
-            <div className="text-sm font-semibold">{event.date}</div>
+            <div className="font-hackathoneCabinetGrotesk text-sm font-semibold tracking-wide">
+              {event.date}
+            </div>
           </div>
         </div>
 
@@ -121,7 +123,7 @@ const TimelineItem = ({
           <div className="mb-3 block md:hidden">
             <div
               className={classNames(
-                "inline-block rounded-lg border px-3 py-1 text-sm font-semibold backdrop-blur-sm transition-all duration-300",
+                "inline-block rounded-lg border px-3 py-1 font-hackathoneCabinetGrotesk text-sm font-semibold backdrop-blur-sm transition-all duration-300",
                 isHovered
                   ? "border-brightYellow bg-navy/20 text-brightYellow"
                   : "border-battleship bg-pineTree/50 text-gray-300"
@@ -174,7 +176,7 @@ const TimelineItem = ({
               <div
                 ref={contentRef}
                 className={classNames(
-                  "text-gray-300 transition-all duration-300",
+                  "font-hackathoneCabinetGrotesk text-gray-300 transition-all duration-300",
                   isOdd ? "text-left md:text-left" : "text-left md:text-right",
                   isHovered && "text-gray-200"
                 )}
@@ -185,7 +187,7 @@ const TimelineItem = ({
               {event.content && (
                 <div
                   className={classNames(
-                    "mt-4 overflow-hidden whitespace-pre-line text-sm text-gray-400 transition-all duration-500",
+                    "mt-4 overflow-hidden whitespace-pre-line font-hackathoneCabinetGrotesk text-sm text-gray-400 transition-all duration-500",
                     isOdd ? "text-justify" : "text-justify md:text-right",
                     isHovered
                       ? "max-h-40 text-gray-300 opacity-100"
@@ -214,7 +216,9 @@ const TimelineItem = ({
                 >
                   {event.route && (
                     <>
-                      <span>Learn more</span>
+                      <span className="font-hackathoneCabinetGrotesk">
+                        Learn more
+                      </span>
                       <svg
                         className="ml-1 size-4 transition-transform duration-300 group-hover/card:translate-x-1"
                         fill="none"
@@ -259,11 +263,15 @@ export const TimelineSection = ({ timelineData }: TimelineSectionProps) => {
         </div>
 
         <div className="relative">
-          <h2 className="text-3xl font-bold text-white lg:text-4xl">
+          <motion.h2
+            className="font-nokaTrial text-3xl font-bold text-white lg:text-4xl"
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             {timelineData.title}
-          </h2>
-
-          <div className="mx-auto mt-6 h-px w-24 bg-gradient-to-r from-transparent via-brightYellow to-transparent opacity-50" />
+          </motion.h2>
         </div>
       </div>
 

@@ -1,4 +1,5 @@
 import { type FC } from "react";
+import { ShootingStars } from "@/components/ui/shooting-stars";
 import { type SpaceAgenciesSectionData } from "@/data/homepage/space-agencies";
 import { SectionContainer } from "../SectionContainer";
 import { AgencyCard } from "./AgencyCard";
@@ -14,8 +15,9 @@ export const SpaceAgenciesSection: FC<SpaceAgenciesSectionProps> = ({
 
   return (
     <SectionContainer className="text-white">
+      <ShootingStars />
       <div className="flex w-full flex-col gap-8">
-        <h2 className="font-nokaTrial text-3xl font-bold lg:text-4xl">
+        <h2 className="font-nokaTrial text-[28px] font-bold max-md:text-center lg:text-4xl">
           {title}
         </h2>
 

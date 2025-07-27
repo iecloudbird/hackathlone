@@ -38,7 +38,7 @@ export function NavbarDemo() {
               <button
                 key={idx}
                 onClick={item.route}
-                className={`relative rounded-full px-4 py-2 font-hackathoneSFProDisplay transition-colors duration-200 hover:bg-black/30 ${
+                className={`relative rounded-full px-4 py-2 font-hackathoneCabinetGrotesk transition-colors duration-200 hover:bg-black/30 ${
                   item.isActive
                     ? "text-white hover:text-white/90"
                     : "text-battleship hover:text-white/70"
@@ -49,7 +49,7 @@ export function NavbarDemo() {
             ))}
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 font-hackathoneCabinetGrotesk">
             <NavbarButton
               variant="primary"
               href="https://www.spaceappschallenge.org/2025/local-events/athlone/"
