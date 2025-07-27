@@ -8,11 +8,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { useState } from "react";
 import Mars from "@/assets/images/faq-page/mars.png";
+import { Footer } from "@/components/common/shared/footer";
 import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import BackToTopButton from "../general/back-to-top";
-import Footer from "../general/footer";
 import { faqData } from "./components/faq.dto";
 
 const Faq = () => {

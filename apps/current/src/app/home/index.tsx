@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Footer from "@/app/general/footer";
+import { Footer } from "@/components/common/shared/footer";
 import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
 import { BriefSection } from "@/components/homepage/brief";
 import { CollaboratorsSection } from "@/components/homepage/collaborators";

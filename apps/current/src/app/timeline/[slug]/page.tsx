@@ -16,7 +16,7 @@ import { Canvas } from "@react-three/fiber";
 import { useParams } from "next/navigation";
 import React from "react";
 import CloudParticleBg from "@/app/general/cloud-particle-bg";
-import Footer from "../../general/footer";
+import { Footer } from "@/components/common/shared/footer";
 import NavigationBar from "../../general/navigation-bar";
 import { schedule } from "../timeline.dto";
 

@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 import Sun from "@/assets/images/faq-page/sun - Copy.png";
+import { Footer } from "@/components/common/shared/footer";
 import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
 import BackToTopButton from "../general/back-to-top";
-import Footer from "../general/footer";
 import { CardGrid } from "./CardGrid";
 
 const Blogs = () => {

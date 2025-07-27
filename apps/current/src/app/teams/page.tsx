@@ -5,8 +5,8 @@ import React from "react";
 import CloudParticleBg from "@/app/general/cloud-particle-bg";
 import { CardGrid } from "@/app/teams/card-grid";
 import Rocket from "@/assets/images/general/landing-page/RocketLaunch.png";
+import { Footer } from "@/components/common/shared/footer";
 import BackToTopButton from "../general/back-to-top";
-import Footer from "../general/footer";
 import NavigationBar from "../general/navigation-bar";
 
 const Teams = () => {

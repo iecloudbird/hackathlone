@@ -18,23 +18,19 @@ export const timelineData: TimelineSectionData = {
     {
       date: "17th July 2025",
       title: "2025 Challenges brewing",
-      subtitle: "Explore and choose the one that fits you the best!",
+      subtitle: "Registration opens now, get ready!",
       content: `Get ready for the NASA Space Apps Challenge! \n Challenges will be release soon, so stay tuned!`,
       route: () =>
-        window.open(
-          "https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/",
-          "_blank"
-        ),
+        window.open("https://www.spaceappschallenge.org/2025/", "_blank"),
+    },
+    {
+      date: "3th October 2025",
+      title: "Day 1",
+      subtitle: "Assemble at TU Shannon & Start problem-solving with your team",
+      content: `Check your Space Apps Messages, review the Participant`,
     },
     {
       date: "4th October 2025",
-      title: "Day 1",
-      subtitle: "Assemble at TU Shannon & Start problem-solving with your team",
-      content: `Get ready for the NASA Space Apps Challenge!
-       Check your Space Apps Messages, review the Participant`,
-    },
-    {
-      date: "5th October 2025",
       title: "Day 2",
       subtitle:
         "Connect with industry experts: Get tips and feedback for your project",
@@ -42,7 +38,7 @@ export const timelineData: TimelineSectionData = {
       working on their hackathon projects.`,
     },
     {
-      date: "6th October 2025",
+      date: "5th October 2025",
       title: "Day 3",
       subtitle:
         "Get ready to present your project & Get a chance to win the challenge",

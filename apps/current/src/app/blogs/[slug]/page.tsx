@@ -15,10 +15,10 @@ import Space6 from "@/assets/images/blogs/space6.jpg";
 import Space7 from "@/assets/images/blogs/space7.png";
 import Space8 from "@/assets/images/blogs/space8.jpg";
 import Space9 from "@/assets/images/blogs/space9.jpg";
+import { Footer } from "@/components/common/shared/footer";
 import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
-import Footer from "../../general/footer";
 import Tooltip from "../../general/tooltip";
 import { cards } from "../blogs.dto";
 
