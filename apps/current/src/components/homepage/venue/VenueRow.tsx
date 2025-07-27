@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { type FC } from "react";
 
@@ -48,30 +49,52 @@ export const Venue: FC<VenueProps> = ({
     <div className="space-y-6 text-left">
       {isFirstRow && eventVenue && title && (
         <>
-          <h5 className="text-lg font-semibold text-brightYellow lg:text-xl">
+          <motion.h5
+            className="font-hackathoneCabinetGrotesk text-lg font-semibold text-brightYellow lg:text-xl"
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             {eventVenue}
-          </h5>
-          <h2 className="max-w-md text-3xl font-bold text-white lg:text-4xl">
+          </motion.h5>
+
+          <motion.h2
+            className="max-w-md font-nokaTrial text-[28px] font-bold text-white max-md:text-center lg:text-4xl"
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          >
             {title}
-          </h2>
+          </motion.h2>
         </>
       )}
 
       {content.description && (
-        <p className="text-gray-300 lg:text-lg">{content.description}</p>
+        <p className="text-justify font-hackathoneCabinetGrotesk text-gray-300 lg:text-lg">
+          {content.description}
+        </p>
       )}
 
       {content.resources && (
         <div className="space-y-3">
-          <p className="text-gray-300 lg:text-lg">{content.resources.title}</p>
+          <p className="font-hackathoneCabinetGrotesk text-gray-300 lg:text-lg">
+            {content.resources.title}
+          </p>
           <ul className="list-disc space-y-2 pl-6">
             {content.resources.items.map((item, index) => (
-              <li key={index} className="text-gray-300 lg:text-lg">
+              <li
+                key={index}
+                className="font-hackathoneCabinetGrotesk text-gray-300 lg:text-lg"
+              >
                 {item}
               </li>
             ))}
           </ul>
-          <p className="text-gray-300 lg:text-lg">{content.resources.footer}</p>
+          <p className="font-hackathoneCabinetGrotesk text-gray-300 lg:text-lg">
+            {content.resources.footer}
+          </p>
         </div>
       )}
     </div>

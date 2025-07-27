@@ -1,4 +1,5 @@
 import { RedirectButton } from "@/components/common/shared/RedirectButton";
+import { ShootingStars } from "@/components/ui/shooting-stars";
 import { type HeroSectionData } from "@/data/homepage/hero";
 import { formatTitle } from "@/utils/format-title";
 import { Athlone } from "../const";
@@ -30,13 +31,14 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
         <h1 className="font-nokaTrial text-4xl font-bold lg:text-5xl">
           {formatTitle(title, "{Athlone}", Athlone)}
         </h1>
-        <p className="font-thin sm:max-w-md lg:max-w-xl lg:text-xl">
+        <p className="font-hackathoneCabinetGrotesk sm:max-w-md lg:max-w-xl lg:text-xl">
           {subtitle}
         </p>
-        <div className="flex items-center justify-center gap-6">
+        <div className="flex items-center justify-center gap-6 font-hackathoneCabinetGrotesk">
           <RedirectButton href={registerButtonHref} text={registerButtonText} />
         </div>
       </div>
+      <ShootingStars />
     </SectionContainer>
   );
 };

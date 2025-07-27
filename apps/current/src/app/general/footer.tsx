@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <footer className="flex flex-col gap-4 py-4 text-sm text-[#F6F4F4]">
-      <div className="flex flex-col items-start justify-between gap-4 px-4 py-2 sm:px-[5%] lg:flex-row">
+      <div className="flex flex-col items-start justify-around gap-4 px-4 py-2 sm:px-[5%] lg:flex-row">
         {/* Logo and Social Icons */}
         <div className="flex w-full flex-col items-center gap-6 lg:mt-4 lg:w-auto lg:gap-12">
           <a href="/" className="cursor-pointer">
@@ -97,16 +97,16 @@ const Footer = () => {
           <hr className="my-6 w-full lg:hidden" />
         </div>
 
-        {/* Links Sections */}
-        <div className="flex w-full justify-evenly gap-6 lg:flex lg:flex-row lg:items-start lg:gap-16">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-2 lg:flex lg:flex-row lg:gap-12">
+          {/* Section 1: Participation Kit */}
           <div className="lg:mt-4">
-            <h3 className="mb-2 text-xl font-bold text-brightYellow lg:mb-4">
+            <h3 className="mb-2 font-nokaTrial text-lg font-bold text-brightYellow lg:mb-4">
               Participation Kit
             </h3>
             <ul className="list-none leading-relaxed">
               <li className="my-2">
                 <a
-                  className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
                   href="/teams"
                   onClick={(e) => {
                     e.preventDefault();
@@ -118,7 +118,7 @@ const Footer = () => {
               </li>
               <li className="my-2">
                 <a
-                  className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
                   href="https://www.spaceappschallenge.org/nasa-space-apps-2025/challenges/"
                   target="_blank"
                   rel="noreferrer"
@@ -128,7 +128,7 @@ const Footer = () => {
               </li>
               <li className="my-2">
                 <a
-                  className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
                   href="https://www.youtube.com/watch?v=y3LxNcd1jsk"
                   target="_blank"
                   rel="noreferrer"
@@ -138,7 +138,7 @@ const Footer = () => {
               </li>
               <li className="my-2">
                 <a
-                  className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
                   href="https://www.youtube.com/watch?v=37dqOg2ljMw"
                   target="_blank"
                   rel="noreferrer"
@@ -148,7 +148,7 @@ const Footer = () => {
               </li>
               <li className="my-2">
                 <a
-                  className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
                   href="https://www.youtube.com/watch?v=37dqOg2ljMw"
                   target="_blank"
                   rel="noreferrer"
@@ -158,7 +158,7 @@ const Footer = () => {
               </li>
               <li className="my-2">
                 <a
-                  className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
                   href="https://www.youtube.com/watch?v=lQpLzNgRl8k"
                   target="_blank"
                   rel="noreferrer"
@@ -168,7 +168,7 @@ const Footer = () => {
               </li>
               <li className="my-2">
                 <a
-                  className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
                   href="https://www.youtube.com/watch?v=_wJP0GLNdf8"
                   target="_blank"
                   rel="noreferrer"
@@ -179,14 +179,14 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="lg:mt-4">
-            <h3 className="mb-2 text-xl font-bold text-brightYellow lg:mb-4">
-              HackAthlone’23
+          <div className="max-md:items-end lg:mt-4">
+            <h3 className="mb-2 font-nokaTrial text-lg font-bold text-brightYellow max-md:text-right lg:mb-4">
+              Archives
             </h3>
-            <ul className="list-none leading-relaxed">
+            <ul className="list-none leading-relaxed max-md:text-right">
               <li className="my-2">
                 <a
-                  className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
                   href="/glimpse"
                   onClick={(e) => {
                     e.preventDefault();
@@ -199,7 +199,7 @@ const Footer = () => {
               </li>
               <li className="my-2">
                 <a
-                  className="text-[#f6f4f4] no-underline hover:text-hackathone-font-rocket-red"
+                  className="text-[#f6f4f4] no-underline hover:text-brightYellow"
                   href="#"
                   rel="noreferrer"
                 >
@@ -208,7 +208,7 @@ const Footer = () => {
               </li>
               <li className="my-2">
                 <a
-                  className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
                   href="https://www.youtube.com/watch?v=W3y2qN2spO4"
                   target="_blank"
                   rel="noreferrer"
@@ -218,7 +218,7 @@ const Footer = () => {
               </li>
               <li className="my-2">
                 <a
-                  className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
                   href="/winners"
                   onClick={(e) => {
                     e.preventDefault();
@@ -232,14 +232,14 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="hidden sm:block lg:mt-4">
-            <h3 className="mb-2 text-xl font-bold text-brightYellow lg:mb-4">
-              Space Apps UL’21
+          <div className="lg:mt-4">
+            <h3 className="mb-2 font-nokaTrial text-lg font-bold text-brightYellow lg:mb-4">
+              Space Apps UL 21
             </h3>
             <ul className="list-none leading-relaxed">
               <li className="my-2">
                 <a
-                  className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
                   href="https://www.youtube.com/watch?v=n_KqGdnlOcU"
                   target="_blank"
                   rel="noreferrer"
@@ -249,7 +249,7 @@ const Footer = () => {
               </li>
               <li className="my-2">
                 <a
-                  className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
                   href="https://www.youtube.com/watch?v=zFdhwgOyqho"
                   target="_blank"
                   rel="noreferrer"
@@ -259,7 +259,7 @@ const Footer = () => {
               </li>
               <li className="my-2">
                 <a
-                  className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
                   href="https://www.youtube.com/watch?v=EjbDhhmpgEk"
                   target="_blank"
                   rel="noreferrer"
@@ -269,12 +269,60 @@ const Footer = () => {
               </li>
               <li className="my-2">
                 <a
-                  className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
                   href="https://www.youtube.com/watch?v=CFN7ewwBYT0"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Closing Ceremony
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="max-md:items-end lg:mt-4">
+            <h3 className="mb-2 font-nokaTrial text-lg font-bold text-brightYellow max-md:text-right lg:mb-4">
+              Resources and Legal
+            </h3>
+            <ul className="list-none leading-relaxed max-md:text-right">
+              <li className="my-2">
+                <a
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
+                  href="https://www.youtube.com/watch?v=n_KqGdnlOcU"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li className="my-2">
+                <a
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
+                  href="https://www.youtube.com/watch?v=zFdhwgOyqho"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Legal
+                </a>
+              </li>
+              <li className="my-2">
+                <a
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
+                  href="https://www.youtube.com/watch?v=EjbDhhmpgEk"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Contact
+                </a>
+              </li>
+              <li className="my-2">
+                <a
+                  className="font-hackathoneCabinetGrotesk text-[#f6f4f4] hover:text-brightYellow"
+                  href="https://www.youtube.com/watch?v=CFN7ewwBYT0"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Resources
                 </a>
               </li>
             </ul>
@@ -285,46 +333,9 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="w-full">
         <hr className="mx-auto w-[92%]" />
-        <div className="flex flex-col items-center justify-between px-4 py-3 sm:flex-row sm:px-[5%]">
-          <p className="text-center">
-            Copyright ©{currentYear} HackAthlone |{" "}
-            <a
-              className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
-              href="https://www.nasa.gov/about/highlights/HP_Privacy.html"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Privacy Policy
-            </a>{" "}
-            |{" "}
-            <a
-              className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
-              href="https://www.spaceappschallenge.org/legal/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Legal
-            </a>{" "}
-            |{" "}
-            <a
-              className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
-              href="mailto:spaceappsathlone@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Contact
-            </a>{" "}
-            |{" "}
-            <a
-              className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
-              href="https://www.spaceappschallenge.org/resources/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Resources
-            </a>
-          </p>
-        </div>
+        <p className="py-4 text-center">
+          Copyright ©{currentYear} HackAthlone
+        </p>
       </div>
     </footer>
   );

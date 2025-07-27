@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { type FC } from "react";
 import { type GallerySectionData } from "@/data/homepage/gallery";
 import { SectionContainer } from "../SectionContainer";
@@ -14,9 +15,26 @@ export const GallerySection: FC<GallerySectionProps> = ({ galleryData }) => {
     <SectionContainer className="hidden md:block">
       <div className="w-full">
         <div className="mb-4 text-center">
-          <h2 className="text-3xl font-bold text-white lg:text-4xl">{title}</h2>
+          <motion.h2
+            className="font-nokaTrial text-3xl font-bold text-white lg:text-4xl"
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            {title}
+          </motion.h2>
+
           {subtitle && (
-            <p className="mt-4 text-gray-300 lg:text-lg">{subtitle}</p>
+            <motion.p
+              className="mt-4 font-hackathoneCabinetGrotesk text-gray-300 lg:text-lg"
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            >
+              {subtitle}
+            </motion.p>
           )}
         </div>
 

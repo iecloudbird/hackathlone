@@ -21,8 +21,10 @@ const cardSizeClass =
   "h-[260px] w-[320px] sm:h-[280px] sm:w-[380px] md:w-[460px] lg:w-[680px]";
 const cardPositionClass = "left-[25%]";
 const fallbackBackgroundClass = "opacity-70";
-const textClass = "mb-6 text-white text-justify md:text-center";
-const teamNameClass = "text-xl font-bold text-white text-center";
+const textClass =
+  "mb-6 text-white text-justify md:text-center font-hackathoneCabinetGrotesk";
+const teamNameClass =
+  "text-xl font-bold text-white text-center font-hackathoneCabinetGrotesk";
 
 const getCardVariants = (position: "left" | "center" | "right") => {
   const cardOffset = 200;

@@ -28,10 +28,10 @@ const dotInactiveClass = "bg-white/40 hover:bg-white/60";
 
 export const DualCarousel: FC<DualCarouselProps> = ({ carousels }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
   const touchStartX = useRef<number>(0);
   const touchEndX = useRef<number>(0);
 
-  // Calculate the maximum number of slides based on the longest carousel
   const maxSlides = Math.max(
     ...carousels.map((carousel) => carousel.images.length)
   );
@@ -48,74 +48,56 @@ export const DualCarousel: FC<DualCarouselProps> = ({ carousels }) => {
     setCurrentSlide(index);
   }, []);
 
+  // Auto-slide
+  useEffect(() => {
+    if (isPaused) return;
+    const interval = setInterval(handleNext, 4000);
+    return () => clearInterval(interval);
+  }, [handleNext, isPaused]);
+
+  // Pause on hover
+  const handleMouseEnter = () => setIsPaused(true);
+  const handleMouseLeave = () => setIsPaused(false);
+
   // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "ArrowLeft") {
-        handlePrevious();
-      } else if (event.key === "ArrowRight") {
-        handleNext();
-      }
+      if (event.key === "ArrowLeft") handlePrevious();
+      else if (event.key === "ArrowRight") handleNext();
     };
-
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [handlePrevious, handleNext]);
 
   // Touch/Swipe handlers
-  const handleTouchStart = useCallback((e: React.TouchEvent) => {
-    touchStartX.current = e.targetTouches[0].clientX;
-  }, []);
-
-  const handleTouchMove = useCallback((e: React.TouchEvent) => {
-    touchEndX.current = e.targetTouches[0].clientX;
-  }, []);
-
-  const handleTouchEnd = useCallback(() => {
+  const handleTouchStart = (e: React.TouchEvent) =>
+    (touchStartX.current = e.targetTouches[0].clientX);
+  const handleTouchMove = (e: React.TouchEvent) =>
+    (touchEndX.current = e.targetTouches[0].clientX);
+  const handleTouchEnd = () => {
     if (!touchStartX.current || !touchEndX.current) return;
-
     const distance = touchStartX.current - touchEndX.current;
-    const isLeftSwipe = distance > 50;
-    const isRightSwipe = distance < -50;
-
-    if (isLeftSwipe) {
-      handleNext();
-    } else if (isRightSwipe) {
-      handlePrevious();
-    }
-
-    // Reset touch positions
+    if (distance > 50) handleNext();
+    else if (distance < -50) handlePrevious();
     touchStartX.current = 0;
     touchEndX.current = 0;
-  }, [handleNext, handlePrevious]);
+  };
 
-  // Mouse drag handlers for desktop
-  const handleMouseDown = useCallback((e: React.MouseEvent) => {
-    touchStartX.current = e.clientX;
-  }, []);
-
-  const handleMouseMove = useCallback((e: React.MouseEvent) => {
+  // Mouse drag handlers (desktop)
+  const handleMouseDown = (e: React.MouseEvent) =>
+    (touchStartX.current = e.clientX);
+  const handleMouseMove = (e: React.MouseEvent) => {
     if (touchStartX.current === 0) return;
     touchEndX.current = e.clientX;
-  }, []);
-
-  const handleMouseUp = useCallback(() => {
+  };
+  const handleMouseUp = () => {
     if (!touchStartX.current || !touchEndX.current) return;
-
     const distance = touchStartX.current - touchEndX.current;
-    const isLeftDrag = distance > 50;
-    const isRightDrag = distance < -50;
-
-    if (isLeftDrag) {
-      handleNext();
-    } else if (isRightDrag) {
-      handlePrevious();
-    }
-
-    // Reset mouse positions
+    if (distance > 50) handleNext();
+    else if (distance < -50) handlePrevious();
     touchStartX.current = 0;
     touchEndX.current = 0;
-  }, [handleNext, handlePrevious]);
+  };
 
   if (carousels.length !== 2) {
     return <div>Error: DualCarousel requires exactly 2 carousels</div>;
@@ -127,7 +109,11 @@ export const DualCarousel: FC<DualCarouselProps> = ({ carousels }) => {
     carousels[1].images[currentSlide % carousels[1].images.length];
 
   return (
-    <div className={containerClass}>
+    <div
+      className={containerClass}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <div className={wrapperClass}>
         <CarouselArrow direction="prev" onClick={handlePrevious} />
         <CarouselArrow direction="next" onClick={handleNext} />
@@ -142,9 +128,8 @@ export const DualCarousel: FC<DualCarouselProps> = ({ carousels }) => {
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUp}
           style={{ cursor: "grab" }}
-          role="presentation"
         >
-          {/* Left Column - Moments to Relive */}
+          {/* Left Column */}
           <div className={imageContainerClass}>
             <Image
               key={`left-${currentSlide}`}
@@ -159,7 +144,7 @@ export const DualCarousel: FC<DualCarouselProps> = ({ carousels }) => {
             <div className={overlayClass} />
           </div>
 
-          {/* Right Column - Photo Wall Highlights */}
+          {/* Right Column */}
           <div className={imageContainerClass}>
             <Image
               key={`right-${currentSlide}`}
