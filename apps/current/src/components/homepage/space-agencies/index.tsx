@@ -16,7 +16,7 @@ export const SpaceAgenciesSection: FC<SpaceAgenciesSectionProps> = ({
 
   return (
     <SectionContainer className="text-white">
-      <ShootingStars />
+      <ShootingStars className="z-[-1]" />
       <div className="flex w-full flex-col">
         <motion.h2
           className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-nokaTrial text-[28px] font-semibold text-transparent max-md:text-center lg:text-4xl"

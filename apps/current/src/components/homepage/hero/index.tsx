@@ -100,7 +100,7 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
           <RedirectButton href={registerButtonHref} text={registerButtonText} />
         </motion.div>
       </div>
-      <ShootingStars />
+      <ShootingStars className="z-[-1]" />
     </SectionContainer>
   );
 };
