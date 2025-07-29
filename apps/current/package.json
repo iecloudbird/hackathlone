@@ -19,9 +19,14 @@
     "@react-pdf-viewer/core": "^3.12.0",
     "@react-three/drei": "^9.108.3",
     "@react-three/fiber": "^8.16.8",
+    "@tabler/icons-react": "^3.34.1",
     "@types/react-pdf": "^7.0.0",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
     "framer-motion": "^11.3.2",
     "leaflet": "^1.9.4",
+    "lucide-react": "^0.533.0",
+    "motion": "^12.23.6",
     "next": "^14.2.29",
     "react": "^18",
     "react-dom": "^18",
@@ -35,17 +40,20 @@
     "slick-carousel": "^1.8.1",
     "sonner": "^1.5.0",
     "styled-components": "^6.1.12",
+    "tailwind-merge": "^3.3.1",
     "three": "^0.166.1",
     "toast": "^0.5.4"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/leaflet": "^1.9.12",
     "@types/node": "^20",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@types/react-slick": "^0.23.13",
     "@types/react-vertical-timeline-component": "^3.3.6",
-    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "eslint-config-prettier": "^10.1.5",
@@ -58,6 +66,7 @@
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "url-loader": "^4.1.1"
   }
 }

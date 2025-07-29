@@ -1,37 +1,49 @@
-"use client";
-import React from "react";
+import { motion } from "framer-motion";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
+import { ShootingStars } from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
 import { cards } from "./blogs.dto";
-import Card from "./Card";
-import CardM from "./CardM";
-
-const CardGrid: React.FC = () => {
+export function CardGrid() {
   return (
-    <>
-      <div className="p-4">
-        <div className="m-4 mx-auto hidden max-w-6xl md:block">
-          <h1 className="p-4 text-3xl font-bold text-hackathone-font-rocket-red">
-            Blogs
-          </h1>
-          <div className="flex flex-col gap-6">
-            {cards.map((card, index) => (
-              <Card key={index} {...card} />
-            ))}
-          </div>
-        </div>
-
-        <div className="mx-auto flex max-w-6xl flex-col gap-4 lg:hidden">
-          <h1 className="p-4 text-3xl font-bold text-hackathone-font-rocket-red">
-            Blogs
-          </h1>
-          <div className="flex flex-col gap-6">
-            {cards.map((card, index) => (
-              <CardM key={index} {...card} />
-            ))}
-          </div>
-        </div>
+    <div className="mx-auto max-w-6xl px-8">
+      <ShootingStars />
+      <StarsBackground />
+      <div className="mx-auto my-10 flex flex-col items-center justify-center gap-3 text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.5,
+            delay: 0.1,
+            ease: "easeOut",
+          }}
+          className="mt-10 bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text p-4 text-center font-nokaTrial text-5xl font-semibold text-transparent"
+        >
+          Blogs
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.5,
+            delay: 0.3,
+            ease: "easeOut",
+          }}
+          className="font-hackathoneCabinetGrotesk text-gray-300"
+        >
+          Support the next generation of innovators and problem-solvers. <br />{" "}
+          Your sponsorship helps us create an unforgettable experience for
+          participants
+        </motion.p>
       </div>
-    </>
+      <HoverEffect
+        items={cards.map((card) => ({
+          title: card.title,
+          description: card.description,
+          link: `/blogs/${card.slug}`,
+          imageSrc: card.imageSrc,
+        }))}
+      />
+    </div>
   );
-};
-
-export default CardGrid;
+}

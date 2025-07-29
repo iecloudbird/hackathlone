@@ -1,28 +1,33 @@
 "use client";
 
-import { Canvas } from "@react-three/fiber";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import React from "react";
-import CloudParticleBg from "@/app/general/cloud-particle-bg";
+import Sun from "@/assets/images/faq-page/sun - Copy.png";
+import { Footer } from "@/components/common/shared/footer";
+import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
 import BackToTopButton from "../general/back-to-top";
-import Footer from "../general/footer";
-import NavigationBar from "../general/navigation-bar";
-import CardGrid from "./CardGrid";
+import { CardGrid } from "./CardGrid";
 
 const Blogs = () => {
-  /** Desktop View */
-
   return (
     <>
-      <div className="relative min-h-screen bg-black text-white">
-        <div className="fixed inset-0 z-0">
-          <Canvas camera={{ position: [0, 0, 1] }}>
-            <CloudParticleBg />
-          </Canvas>
-        </div>
-
+      <div className="relative min-h-screen overflow-x-hidden bg-black text-white">
         <div className="relative z-10 py-[12px] sm:py-[24px]">
-          <NavigationBar />
+          <NavbarDemo />
           <CardGrid />
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 0.6,
+              delay: 1.7,
+              ease: "easeOut",
+            }}
+            className="absolute right-0 top-60 hidden -translate-y-20 translate-x-[5%] lg:block lg:w-1/3"
+          >
+            <Image src={Sun} alt="Sun Image" />
+          </motion.div>
           <BackToTopButton />
           <Footer />
         </div>

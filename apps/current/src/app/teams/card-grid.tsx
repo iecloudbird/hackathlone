@@ -96,12 +96,12 @@ export const CardGrid = () => {
           return (
             <div
               key={index}
-              className={`start-[4rem] flex flex-col items-start justify-center text-center`}
+              className={`start-[4rem] flex flex-col items-center justify-center text-center`}
               style={{ transition: "transform 0.3s ease-in-out" }} // Smooth transition
               onClick={() => handleCardClick(index)}
             >
               {/* Container for the image */}
-              <div className="relative max-h-[280px] w-auto max-w-[300px] overflow-hidden rounded-2xl sm:w-80">
+              <div className="relative max-h-[280px] w-auto max-w-[300px] overflow-hidden rounded-full sm:w-80">
                 <Image
                   className="h-auto w-full cursor-pointer rounded-2xl object-cover"
                   src={item.image}
@@ -112,7 +112,7 @@ export const CardGrid = () => {
                 />
               </div>
               {/* Container for the text */}
-              <div className="w-80 py-4 pl-4 text-start font-hackathoneCabinetGrotesk text-lg text-slate-50 sm:pl-2">
+              <div className="w-80 py-4 pl-4 text-center font-hackathoneCabinetGrotesk text-lg text-slate-50 sm:pl-2">
                 <p className="font-bold">{item.name}</p>
                 <p className="text-red-400">{item.role}</p>
               </div>

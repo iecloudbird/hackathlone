@@ -1,13 +1,13 @@
 import Space1 from "@/assets/images/blogs/space1.png";
-import Space10 from "@/assets/images/blogs/space10.png";
+import Space10 from "@/assets/images/blogs/space10.jpg";
 import Space2 from "@/assets/images/blogs/space2.png";
 import Space3 from "@/assets/images/blogs/space3.png";
 import Space4 from "@/assets/images/blogs/space4.png";
-import Space5 from "@/assets/images/blogs/space5.png";
-import Space6 from "@/assets/images/blogs/space6.png";
+import Space5 from "@/assets/images/blogs/space5.jpg";
+import Space6 from "@/assets/images/blogs/space6.jpg";
 import Space7 from "@/assets/images/blogs/space7.png";
-import Space8 from "@/assets/images/blogs/space8.png";
-import Space9 from "@/assets/images/blogs/space9.png";
+import Space8 from "@/assets/images/blogs/space8.jpg";
+import Space9 from "@/assets/images/blogs/space9.jpg";
 
 export const cards = [
   {

@@ -26,10 +26,22 @@ const config: Config = {
         "hackathone-font-light-grey": "#52525B",
         "hackathone-font-martin-red": "#07173F",
         "hackathone-font-rocket-red": "#eafe07",
+
+        deepSpace: "#030309",
+
+        // remove above colors after complete migration
+        brightYellow: "#FFA220",
+        pineTree: "#2B2828",
+        maastrichtBlue: "#0C1A39",
+        vividOrange: "#FF5D00",
+        spiroDiscoBall: "#2DC3FF",
+        navy: "#2C3C60",
+        battleship: "#757575",
       },
       fontFamily: {
         hackathoneCabinetGrotesk: ["var(--font-cabinet-grotesk)"],
         hackathoneSFProDisplay: ["var(--font-sf-pro-display)"],
+        nokaTrial: ["var(--font-noka-trial)"],
       },
     },
   },

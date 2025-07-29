@@ -8,7 +8,8 @@
 @import "slick-carousel/slick/slick-theme.css";
 
 body {
-  background-color: black;
+  background-color: #030309;
+  color: white;
 }
 
 .overflow-hidden {
@@ -18,4 +19,31 @@ body {
 .slick-dots li.slick-active div {
   background-color: rgb(234 254 7) !important;
   /* White fill for active dot */
+}
+
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+  scrollbar-width: thin;
+  scrollbar-color: #FFFFFF #000000;
+}*/
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 3px;
+  width: 3px;
+}
+*::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #000000;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #b8c0c2;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
 }

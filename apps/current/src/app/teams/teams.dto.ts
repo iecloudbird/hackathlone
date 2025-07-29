@@ -1,28 +1,16 @@
 import Arjun from "@/assets/images/general/landing-page/teams/Arjun.png";
 import Catherine from "@/assets/images/general/landing-page/teams/Catherine Pulickan.jpg";
-import Gagan from "@/assets/images/general/landing-page/teams/Gagan.jpg";
-import Ishita from "@/assets/images/general/landing-page/teams/Ishita Malik.jpg";
-import Josh from "@/assets/images/general/landing-page/teams/Josh Quirke.jpeg";
 import Ken from "@/assets/images/general/landing-page/teams/ken.jpg";
 import Khayati from "@/assets/images/general/landing-page/teams/Khayati Arora.jpg";
 import Khushi from "@/assets/images/general/landing-page/teams/Khushi Mehta.png";
 import Kkwaish from "@/assets/images/general/landing-page/teams/Kkhawaish Gulati.jpeg";
-import Kshitij from "@/assets/images/general/landing-page/teams/Kshitij Motke.jpg";
 import Manav from "@/assets/images/general/landing-page/teams/Manav_Shah.jpg";
-import Yagnik from "@/assets/images/general/landing-page/teams/Manav_Yagnik.jpg";
-import Mavis from "@/assets/images/general/landing-page/teams/Mavis Hye Xuan Chia.jpg";
-import Nora from "@/assets/images/general/landing-page/teams/Nguyen Phung (Nora).jpg";
 import Nitish from "@/assets/images/general/landing-page/teams/Nitish.jpg";
 import Nnajiofor from "@/assets/images/general/landing-page/teams/Nnajiofor Uchenna Franklin.jpg";
 import AB from "@/assets/images/general/landing-page/teams/Raj_Bhalla.jpg";
-import Rochelle from "@/assets/images/general/landing-page/teams/Rochelle Carvalho.jpeg";
 import Sahir from "@/assets/images/general/landing-page/teams/Sahir Sharma.jpg";
-import Shaiv from "@/assets/images/general/landing-page/teams/Shaiv Mehrotra.jpg";
 import Shean from "@/assets/images/general/landing-page/teams/Shean Hans Teoh.jpg";
-import Sudhanshu from "@/assets/images/general/landing-page/teams/Sudhanshu Bhamburkar.jpg";
-import Tvisha from "@/assets/images/general/landing-page/teams/Tvisha Mehta.jpg";
-import Victor from "@/assets/images/general/landing-page/teams/Victor Costello.jpeg";
-import YuJing from "@/assets/images/general/landing-page/teams/Yujing Zhang.png";
+import Shantanu from "@/assets/images/general/landing-page/teams/sk.jpg";
 
 export const teamMembers = [
   {
@@ -76,12 +64,12 @@ export const teamMembers = [
   },
   {
     bio: null,
-    image: Sudhanshu,
-    name: "Sudhanshu Bhamburkar",
-    role: "QA & Backend Developer",
+    image: Shantanu,
+    name: "Shantanu Khosla",
+    role: "Senior Web Developer",
     socials: {
       github: null,
-      linkedin: "https://www.linkedin.com/in/sudhanshu-bhamburkar-061612168/",
+      linkedin: "https://www.linkedin.com/in/shantanu-khosla-48b8ba21b/",
       twitter: null,
     },
   },
@@ -149,17 +137,7 @@ export const teamMembers = [
       twitter: null,
     },
   },
-  {
-    bio: null,
-    image: Rochelle,
-    name: "⁠Rochelle Carvalho",
-    role: "Operations & Communications",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/rochelle-carvalho-1501251b/",
-      twitter: null,
-    },
-  },
+
   {
     bio: null,
     image: Khayati,
@@ -182,28 +160,7 @@ export const teamMembers = [
       twitter: null,
     },
   },
-  {
-    bio: null,
-    image: Yagnik,
-    name: "Manav Yagnik",
-    role: "Full Stack Developer",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/manav-yagnik-328535241/",
-      twitter: null,
-    },
-  },
-  {
-    bio: null,
-    image: Mavis,
-    name: "Mavis Hye Xuan Chia",
-    role: "Frontend Developer",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/mavis-hye-xuan-chia-a763a2237/",
-      twitter: null,
-    },
-  },
+
   {
     bio: null,
     image: Ken,
@@ -216,17 +173,7 @@ export const teamMembers = [
       twitter: null,
     },
   },
-  {
-    bio: null,
-    image: Nora,
-    name: "Nguyen Phung",
-    role: "Video Editor",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/mainguyenphung/",
-      twitter: null,
-    },
-  },
+
   {
     bio: null,
     image: AB,
@@ -235,95 +182,6 @@ export const teamMembers = [
     socials: {
       github: null,
       linkedin: "https://www.linkedin.com/in/aradhya-bhalla/",
-      twitter: null,
-    },
-  },
-  {
-    bio: null,
-    image: Tvisha,
-    name: "Tvisha Mehta",
-    role: "Event Space Physical Design",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/tvisha-mehta-10b993207/",
-      twitter: null,
-    },
-  },
-  {
-    bio: null,
-    image: Ishita,
-    name: "Ishita Malik",
-    role: "Content Writing & Social Media",
-    socials: {
-      github: null,
-      linkedin:
-        "https://www.linkedin.com/in/ishita-malik07/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      twitter: null,
-    },
-  },
-  {
-    bio: null,
-    image: Gagan,
-    name: "Gagan Manchanda",
-    role: "On-Ground Support",
-    socials: {
-      github: null,
-      linkedin: null,
-      twitter: null,
-    },
-  },
-  {
-    bio: null,
-    image: Kshitij,
-    name: "Kshitij Motke",
-    role: "On- Ground Support",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/kshitij-motke/",
-      twitter: null,
-    },
-  },
-  {
-    bio: null,
-    image: YuJing,
-    name: "Yujing Zhang",
-    role: "On Ground Support",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/yujingzhang/",
-      twitter: null,
-    },
-  },
-  {
-    bio: null,
-    image: Josh,
-    name: "Josh Quirke",
-    role: "On Ground Support",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/josh-quirke-22068028b/",
-      twitter: null,
-    },
-  },
-  {
-    bio: null,
-    image: Victor,
-    name: "Victor Costello",
-    role: "On Ground Support",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/victor-costello/",
-      twitter: null,
-    },
-  },
-  {
-    bio: null,
-    image: Shaiv,
-    name: "Shaiv Mehrotra",
-    role: "Content Writer",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/shaiv-mehrotra-2a3135177/",
       twitter: null,
     },
   },
