@@ -1,8 +1,9 @@
+"use client";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { RedirectButton } from "@/components/common/shared/RedirectButton";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { type HeroSectionData } from "@/data/homepage/hero";
-import { formatTitle } from "@/utils/format-title";
-import { Athlone } from "../const";
 import { SectionContainer } from "../SectionContainer";
 
 interface HeroSectionProps {
@@ -10,33 +11,94 @@ interface HeroSectionProps {
 }
 
 export const HeroSection = ({ heroData }: HeroSectionProps) => {
-  const {
-    title,
-    subtitle,
-    registerButtonText,
-    registerButtonHref,
-    backgroundImage,
-  } = heroData;
+  const { registerButtonText, registerButtonHref, backgroundImage } = heroData;
+
+  const [showSecond, setShowSecond] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowSecond((prev) => !prev);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <SectionContainer className="relative h-screen" marginTop="lg:mt-[5%]">
       <div
         className="absolute inset-0 -translate-y-20 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('${backgroundImage}')`,
-        }}
+        style={{ backgroundImage: `url('${backgroundImage}')` }}
       />
 
-      <div className="relative flex w-full flex-col items-center gap-4 text-center lg:gap-8">
-        <h1 className="font-nokaTrial text-4xl font-bold lg:text-5xl">
-          {formatTitle(title, "{Athlone}", Athlone)}
-        </h1>
-        <p className="font-hackathoneCabinetGrotesk sm:max-w-md lg:max-w-xl lg:text-xl">
-          {subtitle}
-        </p>
-        <div className="flex items-center justify-center gap-6 font-hackathoneCabinetGrotesk">
+      <div className="relative flex w-full flex-col items-center text-center">
+        <motion.h1
+          className="text-center font-hackathoneCabinetGrotesk text-lg font-semibold text-hackathone-background-white"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0 }}
+          viewport={{ once: true }}
+        >
+          Welcome to
+        </motion.h1>
+
+        <motion.h1
+          className="font-nokaTrial text-6xl font-bold max-md:py-1 max-md:text-5xl"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
+          <span className="text-brightYellow">HackAth</span>l
+          <span className="text-brightYellow">on</span>e 25
+        </motion.h1>
+
+        <motion.div
+          className="w-full py-6 lg:w-[30%]"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <AnimatePresence mode="wait">
+            {!showSecond ? (
+              <motion.p
+                key="subtitle1"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.4 }}
+                className="font-hackathoneCabinetGrotesk text-lg"
+              >
+                This October, join the world’s largest space hackathon in{" "}
+                <span className="font-bold text-brightYellow">Ireland</span> and
+                tackle real NASA challenges using their data.
+              </motion.p>
+            ) : (
+              <motion.p
+                key="subtitle2"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.4 }}
+                className="font-hackathoneCabinetGrotesk text-lg"
+              >
+                We're one of{" "}
+                <span className="font-bold text-brightYellow">450+</span>{" "}
+                locations worldwide, but the only one in Ireland offering the
+                full 48-hour overnight experience.
+              </motion.p>
+            )}
+          </AnimatePresence>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          viewport={{ once: true }}
+          className="flex items-center justify-center gap-6 font-hackathoneCabinetGrotesk"
+        >
           <RedirectButton href={registerButtonHref} text={registerButtonText} />
-        </div>
+        </motion.div>
       </div>
       <ShootingStars />
     </SectionContainer>

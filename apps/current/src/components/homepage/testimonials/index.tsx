@@ -2,6 +2,7 @@ import { type FC, useState, useCallback } from "react";
 import { type TestimonialData } from "@/data/homepage/testimonials";
 import { SectionContainer } from "../SectionContainer";
 import { TestimonialCard } from "./card";
+import { motion } from "framer-motion";
 
 interface TestimonialsSectionProps {
   testimonialData: TestimonialData;
@@ -58,7 +59,15 @@ export const TestimonialsSection: FC<TestimonialsSectionProps> = ({
   return (
     <SectionContainer className="hidden lg:block">
       <div className="w-full">
-        <h2 className={titleClass}>{title}</h2>
+        <motion.h2
+          className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-nokaTrial text-[28px] font-semibold text-transparent max-md:text-center lg:text-4xl"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0 }}
+          viewport={{ once: true }}
+        >
+          {title}
+        </motion.h2>
 
         <div className={containerClass}>
           {visibleCards.map((card) => (

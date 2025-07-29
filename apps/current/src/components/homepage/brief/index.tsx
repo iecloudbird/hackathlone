@@ -20,19 +20,36 @@ export const BriefSection: FC<BriefSectionProps> = ({ briefData }) => {
       <ShootingStars />
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
         <div className="flex flex-col gap-6 text-left">
-          <h2 className="font-nokaTrial text-[28px] font-semibold max-md:text-center lg:text-4xl">
+          <motion.h2
+            className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-nokaTrial text-[28px] font-semibold text-transparent max-md:text-center lg:text-4xl"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             {title}
-          </h2>
+          </motion.h2>
 
-          <div className="flex flex-col gap-4 text-justify font-hackathoneCabinetGrotesk">
-            {paragraphs.map((paragraph: string, index: number) => (
-              <p key={index} className="text-gray-300 lg:text-lg">
-                {paragraph}
-              </p>
-            ))}
+          <div className="flex flex-col gap-4 text-justify font-hackathoneCabinetGrotesk text-gray-300 lg:text-lg">
+            <p>
+              Every year, NASA opens up its data and challenges the world to
+              help solve problems in space and on Earth. This year's mission:{" "}
+              <span className="font-bold text-brightYellow">
+                Learn, Launch, Lead
+              </span>{" "}
+              - where you'll learn new skills to succeed in STEM fields, launch
+              ideas that transform NASA's open data into actionable tools, and
+              lead your communities in driving technological innovation.
+            </p>
+            <p>
+              You'll have 48 hours to dig into real NASA datasets, form a team,
+              and build something that matters. Whether you're a developer,
+              designer, researcher, or just someone who loves solving problems,
+              there's a place for you here.
+            </p>
           </div>
 
-          <div className="mt-6 font-hackathoneCabinetGrotesk">
+          <div className="mt-2 font-hackathoneCabinetGrotesk">
             <CountdownTimer targetDate={eventDate} label={countdownLabel} />
           </div>
         </div>

@@ -42,9 +42,9 @@ const Faq = () => {
                 delay: 0.1,
                 ease: "easeOut",
               }}
-              className="mt-10 bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text p-4 text-center text-5xl font-bold text-transparent"
+              className="mt-10 bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text p-4 text-center font-nokaTrial text-5xl font-bold text-transparent"
             >
-              FAQ&apos;s
+              FAQs
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: -50 }}
@@ -54,7 +54,7 @@ const Faq = () => {
                 delay: 0.3,
                 ease: "easeOut",
               }}
-              className="text-gray-300"
+              className="font-hackathoneCabinetGrotesk text-gray-300"
             >
               Support the next generation of innovators and problem-solvers.{" "}
               <br /> Your sponsorship helps us create an unforgettable
@@ -64,7 +64,7 @@ const Faq = () => {
 
           {/* FAQ Section */}
           <div className="z-10 mx-auto flex flex-col items-center justify-center">
-            {/* Mars Image with fade in */}
+            {/* Mars Image */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -90,18 +90,20 @@ const Faq = () => {
                   <Accordion
                     expanded={expanded === index}
                     onChange={handleChange(index)}
-                    className="mx-10 my-4 overflow-hidden rounded-[30px] bg-white/5 p-1 text-white backdrop-blur-md"
+                    className="mx-10 my-4 overflow-hidden rounded-[30px] border border-gray-700 bg-black/40 text-white backdrop-blur-xl"
                     disableGutters
                     sx={{
+                      backgroundColor: "transparent",
                       "&.MuiAccordion-root": {
                         borderRadius: "15px",
-                        transformOrigin: "top",
-                        "& .MuiCollapse-root": {
-                          transformOrigin: "top",
-                        },
+                        background: "rgba(0,0,0,0.6)",
+                        boxShadow: "0 0 10px rgba(0,0,0,0.5)",
                       },
                       "& .MuiAccordionSummary-root": {
-                        borderRadius: "15px",
+                        backgroundColor: "transparent",
+                      },
+                      "& .MuiAccordionDetails-root": {
+                        backgroundColor: "transparent",
                       },
                     }}
                   >
@@ -110,12 +112,12 @@ const Faq = () => {
                       aria-controls={`panel${index}-content`}
                       id={`panel${index}-header`}
                     >
-                      <h1 className="font-hackathoneSFProDisplay text-lg">
+                      <h1 className="font-hackathoneCabinetGrotesk text-lg text-white">
                         {item.header}
                       </h1>
                     </AccordionSummary>
                     <AccordionDetails className="pr-8 sm:pr-8 md:pr-8 lg:pr-12">
-                      <Typography className="text-justify text-sm font-thin leading-relaxed text-white">
+                      <Typography className="text-justify font-hackathoneCabinetGrotesk text-sm font-thin leading-relaxed text-gray-300">
                         {item.text}
                       </Typography>
                     </AccordionDetails>

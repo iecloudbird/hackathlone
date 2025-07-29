@@ -16,7 +16,7 @@ export const GallerySection: FC<GallerySectionProps> = ({ galleryData }) => {
       <div className="w-full">
         <div className="mb-4 text-center">
           <motion.h2
-            className="font-nokaTrial text-3xl font-bold text-white lg:text-4xl"
+            className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-2 font-nokaTrial text-[28px] font-semibold text-transparent max-md:text-center lg:text-4xl"
             initial={{ opacity: 0, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

@@ -18,6 +18,13 @@ export const navigationData = (
     isActive: currentPath === "/",
   },
   {
+    route: () => router.push("/about"),
+    text: "About",
+    path: "/about",
+    isActive: currentPath.startsWith("/about"),
+  },
+
+  {
     route: () => router.push("/blogs"),
     text: "Blogs",
     path: "/blogs",

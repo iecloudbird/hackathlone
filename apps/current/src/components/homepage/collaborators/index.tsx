@@ -38,7 +38,7 @@ export const CollaboratorsSection: FC<CollaboratorsSectionProps> = ({
       <div className="relative overflow-hidden rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
         <div className="grid grid-cols-1 gap-8 text-left lg:grid-cols-3 lg:gap-12">
           <div className="flex flex-col gap-6 lg:col-span-2">
-            <h2 className="font-nokaTrial text-[28px] font-bold text-white max-md:text-center lg:text-4xl">
+            <h2 className="font-nokaTrial text-[28px] font-semibold text-white max-md:text-center lg:text-4xl">
               {title}
             </h2>
 

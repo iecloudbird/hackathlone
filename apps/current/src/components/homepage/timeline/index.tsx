@@ -1,7 +1,7 @@
 "use client";
 import classNames from "classnames";
 import { motion } from "framer-motion";
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   type TimelineSectionData,
   type TimelineEvent,
@@ -21,6 +21,12 @@ interface TimelineItemProps {
   totalItems: number;
 }
 
+const highlightTimes = (text: string) =>
+  text.replace(
+    /\b(\d{1,2}:\d{2}\s?(?:AM|PM|am|pm)?)\b/g,
+    "<strong>$1</strong>"
+  );
+
 const TimelineItem = ({
   event,
   index,
@@ -30,10 +36,15 @@ const TimelineItem = ({
   totalItems,
 }: TimelineItemProps) => {
   const isOdd = index % 2 !== 0;
-  const contentRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="group relative">
+    <motion.div
+      className="group relative"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: index * 0.2 }}
+      viewport={{ once: true }}
+    >
       <div
         className={classNames(
           "absolute inset-0 opacity-0 transition-opacity duration-500",
@@ -44,6 +55,7 @@ const TimelineItem = ({
       </div>
 
       <div className="relative flex w-full items-center">
+        {/* Desktop side date pill */}
         <div
           className={classNames(
             "hidden w-1/2 px-6 md:flex",
@@ -64,6 +76,7 @@ const TimelineItem = ({
           </div>
         </div>
 
+        {/* Timeline line + dot */}
         <div className="order-2 hidden flex-col items-center px-4 md:flex">
           {index === totalItems - 1 && (
             <div
@@ -85,22 +98,9 @@ const TimelineItem = ({
                   ? "border-brightYellow bg-navy shadow-lg shadow-brightYellow/30"
                   : "border-battleship bg-pineTree"
               )}
-            >
-              <div
-                className={classNames(
-                  "absolute inset-1 rounded-full transition-all duration-300",
-                  isHovered && "bg-brightYellow/20"
-                )}
-              />
-            </div>
-
-            {isHovered && (
-              <>
-                <div className="absolute inset-0 animate-ping rounded-full border border-brightYellow/20" />
-                <div className="absolute -inset-2 animate-pulse rounded-full border border-brightYellow/15" />
-              </>
-            )}
+            />
           </div>
+
           {index < totalItems - 1 && (
             <div
               className={classNames(
@@ -114,25 +114,13 @@ const TimelineItem = ({
           )}
         </div>
 
+        {/* Card */}
         <div
           className={classNames(
             "w-full px-6 md:w-1/2",
             isOdd ? "order-1" : "order-3"
           )}
         >
-          <div className="mb-3 block md:hidden">
-            <div
-              className={classNames(
-                "inline-block rounded-lg border px-3 py-1 font-hackathoneCabinetGrotesk text-sm font-semibold backdrop-blur-sm transition-all duration-300",
-                isHovered
-                  ? "border-brightYellow bg-navy/20 text-brightYellow"
-                  : "border-battleship bg-pineTree/50 text-gray-300"
-              )}
-            >
-              {event.date}
-            </div>
-          </div>
-
           <div
             className={classNames(
               "group/card relative cursor-pointer overflow-hidden rounded-xl border-2 p-6 backdrop-blur-sm transition-all duration-300",
@@ -148,19 +136,18 @@ const TimelineItem = ({
             tabIndex={0}
             role="button"
           >
-            <div className="absolute inset-0 opacity-5">
-              <div className="absolute right-4 top-4 size-8 rounded-full bg-brightYellow" />
-              <div className="absolute bottom-4 left-4 size-4 rounded-full bg-navy" />
-              <div className="absolute left-1/3 top-1/2 size-2 rounded-full bg-battleship" />
-            </div>
-
-            <div
-              className={classNames(
-                "absolute inset-0 opacity-0 transition-opacity duration-300",
-                isHovered && "opacity-100"
-              )}
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-brightYellow/5 to-navy/10" />
+            {/* Mobile date pill */}
+            <div className="mb-3 block md:hidden">
+              <div
+                className={classNames(
+                  "inline-block rounded-lg border px-3 py-1 font-hackathoneCabinetGrotesk text-sm font-semibold backdrop-blur-sm transition-all duration-300",
+                  isHovered
+                    ? "border-brightYellow bg-navy/20 text-brightYellow"
+                    : "border-battleship bg-pineTree/50 text-gray-300"
+                )}
+              >
+                {event.date}
+              </div>
             </div>
 
             <div className="relative">
@@ -174,7 +161,6 @@ const TimelineItem = ({
               </div>
 
               <div
-                ref={contentRef}
                 className={classNames(
                   "font-hackathoneCabinetGrotesk text-gray-300 transition-all duration-300",
                   isOdd ? "text-left md:text-left" : "text-left md:text-right",
@@ -187,60 +173,21 @@ const TimelineItem = ({
               {event.content && (
                 <div
                   className={classNames(
-                    "mt-4 overflow-hidden whitespace-pre-line font-hackathoneCabinetGrotesk text-sm text-gray-400 transition-all duration-500",
-                    isOdd ? "text-justify" : "text-justify md:text-right",
+                    "prose prose-invert mt-4 overflow-hidden whitespace-pre-line font-hackathoneCabinetGrotesk text-sm text-gray-400 transition-all duration-500",
                     isHovered
                       ? "max-h-40 text-gray-300 opacity-100"
                       : "max-h-0 opacity-0"
                   )}
-                >
-                  {event.content}
-                </div>
+                  dangerouslySetInnerHTML={{
+                    __html: highlightTimes(event.content),
+                  }}
+                />
               )}
-
-              <div
-                className={classNames(
-                  "mt-4 flex transition-all duration-300",
-                  isOdd
-                    ? "justify-start md:justify-start"
-                    : "justify-start md:justify-end"
-                )}
-              >
-                <div
-                  className={classNames(
-                    "flex items-center text-sm font-medium transition-all duration-300",
-                    isHovered
-                      ? "translate-x-1 text-brightYellow"
-                      : "text-battleship"
-                  )}
-                >
-                  {event.route && (
-                    <>
-                      <span className="font-hackathoneCabinetGrotesk">
-                        Learn more
-                      </span>
-                      <svg
-                        className="ml-1 size-4 transition-transform duration-300 group-hover/card:translate-x-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </>
-                  )}
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -257,43 +204,43 @@ export const TimelineSection = ({ timelineData }: TimelineSectionProps) => {
   return (
     <SectionContainer className="mb-20" id="timeline">
       <div className="relative mb-12 text-center">
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-10 left-1/4 h-1 w-20 bg-gradient-to-r from-transparent via-brightYellow to-transparent opacity-20" />
-          <div className="absolute -bottom-10 right-1/4 h-1 w-16 bg-gradient-to-r from-transparent via-navy to-transparent opacity-20" />
-        </div>
-
-        <div className="relative">
-          <motion.h2
-            className="font-nokaTrial text-3xl font-bold text-white lg:text-4xl"
-            initial={{ opacity: 0, y: -30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            {timelineData.title}
-          </motion.h2>
-        </div>
+        <motion.h2
+          className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-nokaTrial text-[28px] font-semibold text-transparent max-md:text-center lg:text-4xl"
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          {timelineData.title}
+        </motion.h2>
       </div>
 
-      <div className="relative mx-auto max-w-6xl">
-        <div className="absolute inset-0 opacity-5">
-          <div className="size-full bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.15)_1px,transparent_0)] bg-[length:20px_20px]" />
-        </div>
-
-        <div className="relative flex flex-col gap-12 md:gap-0">
-          {timelineData.events.map((event, index) => (
-            <TimelineItem
-              key={index}
-              event={event}
-              index={index}
-              isHovered={hoveredIndex === index}
-              onHover={setHoveredIndex}
-              contentHeight={contentHeight}
-              totalItems={timelineData.events.length}
-            />
-          ))}
-        </div>
-      </div>
+      <motion.div
+        className="relative mx-auto flex max-w-6xl flex-col gap-12 md:gap-0"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        variants={{
+          hidden: {},
+          show: {
+            transition: {
+              staggerChildren: 0.2,
+            },
+          },
+        }}
+      >
+        {timelineData.events.map((event, index) => (
+          <TimelineItem
+            key={index}
+            event={event}
+            index={index}
+            isHovered={hoveredIndex === index}
+            onHover={setHoveredIndex}
+            contentHeight={contentHeight}
+            totalItems={timelineData.events.length}
+          />
+        ))}
+      </motion.div>
     </SectionContainer>
   );
 };

@@ -17,33 +17,41 @@ export const timelineData: TimelineSectionData = {
   events: [
     {
       date: "17th July 2025",
-      title: "2025 Challenges brewing",
-      subtitle: "Registration opens now, get ready!",
-      content: `Get ready for the NASA Space Apps Challenge! \n Challenges will be release soon, so stay tuned!`,
+      title: "Register for the Hackathon",
+      subtitle: "Registrations are open!",
+      content: `HackAthlone spots fill up quickly - we hosted 150+ participants last year and expect even more this time.
+`,
       route: () =>
         window.open("https://www.spaceappschallenge.org/2025/", "_blank"),
     },
     {
-      date: "3th October 2025",
-      title: "Day 1",
-      subtitle: "Assemble at TU Shannon & Start problem-solving with your team",
-      content: `Check your Space Apps Messages, review the Participant`,
+      date: "Friday, October 3rd",
+      title: "Registration and Opening Ceremony",
+      subtitle: "Kickstart the hackathon and meet your fellow innovators",
+      content: `6:00 PM: Registration and opening ceremony
+6:30 PM: Challenge presentations
+7:15 PM: Individual pitches (30 seconds to share your idea)
+8:00 PM: Team formation and project planning
+11:00 PM: Late dinner (the real work is just beginning)`,
     },
     {
-      date: "4th October 2025",
-      title: "Day 2",
-      subtitle:
-        "Connect with industry experts: Get tips and feedback for your project",
-      content: `At 9:00 a.m. (local time) teams may begin 
-      working on their hackathon projects.`,
+      date: "Saturday, October 4th",
+      title: "Hack, Learn & Get Guidance",
+      subtitle: "Full day of building with mentorship and workshops",
+      content: `8:00 AM: Breakfast and team check-ins
+10:00 AM: Mentor office hours begin
+All day: Build, test, iterate
+7:00 PM: Presentation workshop
+9:00 PM: Dinner break`,
     },
     {
-      date: "5th October 2025",
-      title: "Day 3",
-      subtitle:
-        "Get ready to present your project & Get a chance to win the challenge",
-      content: ` The hackathon ends at 11:59 p.m. (local time). 
-   All projects must be submitted to the NASA Space Apps Challenge website by this deadline.`,
+      date: "Sunday, October 5th",
+      title: "Final Sprint & Presentations",
+      subtitle: "Push your project to the finish and showcase to judges",
+      content: `7:00 AM: Final sprint begins
+10:00 AM: Practice presentations with feedback
+2:00 PM: Final presentations to judges
+6:00 PM: Results and closing ceremony`,
     },
   ],
 };

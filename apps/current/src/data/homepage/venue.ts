@@ -37,12 +37,14 @@ export const venueSectionData: VenueSectionData = {
         resources: {
           title: "As the venue partner, the university also offers resources:",
           items: [
-            "Hack Shops",
-            "Hack Labs equipped with hardware and software tools",
-            "3D printers",
-            "VR headsets",
+            "Professional labs with software and hardware access",
+            "3D printing for rapid prototyping",
+            "VR/AR equipment for immersive solutions",
+            "Dedicated workspace for the full 48 hours",
+            "Academic and industry mentors on-site to help",
           ],
-          footer: "and more to support your creative projects.",
+          footer:
+            "Plus all meals, snacks, and the coffee you'll need to power through those late-night coding sessions.",
         },
       },
       image: {

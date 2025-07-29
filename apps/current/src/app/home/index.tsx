@@ -18,6 +18,7 @@ import { spaceAgenciesData } from "@/data/homepage/space-agencies";
 import { testimonialData } from "@/data/homepage/testimonials";
 import { timelineData } from "@/data/homepage/timeline";
 import { venueSectionData } from "@/data/homepage/venue";
+import { BentoSection } from "@/components/homepage/bento-section";
 
 export const HomePage = () => {
   return (
@@ -27,12 +28,13 @@ export const HomePage = () => {
       <main>
         <HeroSection heroData={heroData} />
         <BriefSection briefData={briefData} />
+        <BentoSection />
         <SpaceAgenciesSection spaceAgenciesData={spaceAgenciesData} />
         <CollaboratorsSection collaboratorsData={collaboratorsData} />
         <VenueSection venueData={venueSectionData} />
         <GallerySection galleryData={gallerySectionData} />
-        <TestimonialsSection testimonialData={testimonialData} />
         <TimelineSection timelineData={timelineData} />
+        <TestimonialsSection testimonialData={testimonialData} />
       </main>
       <Footer />
     </>

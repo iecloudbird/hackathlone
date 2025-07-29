@@ -24,11 +24,14 @@ export interface SpaceAgency {
 
 export interface SpaceAgenciesSectionData {
   title: string;
+  subtitle: string;
   agencies: SpaceAgency[];
 }
 
 export const spaceAgenciesData: SpaceAgenciesSectionData = {
-  title: "Space Agencies World Wide",
+  title: "Global Space Agency Partners",
+  subtitle:
+    "This isn't just a NASA event anymore. Space agencies from around the world contribute challenges and datasets",
   agencies: [
     {
       id: "asi",
