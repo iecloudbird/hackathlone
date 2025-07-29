@@ -1,8 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { motion } from "framer-motion";
-import { GlowingEffect } from "@/components/ui/glowing-effect";
-import { SectionContainer } from "../SectionContainer";
 import {
   Globe2,
   FlaskConical,
@@ -11,22 +10,15 @@ import {
   Network,
 } from "lucide-react";
 
-import overNightHackathon from "@/assets/images/bento/overnightHack.jpg";
 import fnb from "@/assets/images/bento/fnb.png";
-import mentors from "@/assets/images/bento/mentors.jpg";
 import globalCommunity from "@/assets/images/bento/globalCommunity.jpg";
+import mentors from "@/assets/images/bento/mentors.jpg";
+import overNightHackathon from "@/assets/images/bento/overnightHack.jpg";
 import stateOfTheArt from "@/assets/images/bento/stateOfTheArt.jpg";
+import { GlowingEffect } from "@/components/ui/glowing-effect";
+import { SectionContainer } from "../SectionContainer";
 
 export function BentoSection() {
-  const containerVariants = {
-    hidden: {},
-    show: {
-      transition: {
-        staggerChildren: 0.15,
-      },
-    },
-  };
-
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
@@ -48,7 +40,7 @@ export function BentoSection() {
       <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
         <GridItem
           area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
-          icon={<Globe2 className="h-4 w-4 text-white" />}
+          icon={<Globe2 className="size-4 text-white" />}
           title="Ireland’s Only Space Hackathon"
           description="48-hour overnight challenge like no other in Ireland"
           bgImage={overNightHackathon.src}
@@ -56,7 +48,7 @@ export function BentoSection() {
         />
         <GridItem
           area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
-          icon={<FlaskConical className="h-4 w-4 text-white" />}
+          icon={<FlaskConical className="size-4 text-white" />}
           title="Full Access to TU Shannon Labs"
           description="State‑of‑the‑art tools and equipment at your fingertips"
           bgImage={stateOfTheArt.src}
@@ -64,7 +56,7 @@ export function BentoSection() {
         />
         <GridItem
           area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
-          icon={<Users className="h-4 w-4 text-white" />}
+          icon={<Users className="size-4 text-white" />}
           title="Expert Mentorship"
           description="Guidance from academia and industry leaders"
           bgImage={mentors.src}
@@ -72,7 +64,7 @@ export function BentoSection() {
         />
         <GridItem
           area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
-          icon={<UtensilsCrossed className="h-4 w-4 text-white" />}
+          icon={<UtensilsCrossed className="size-4 text-white" />}
           title="All-Inclusive Experience"
           description="Meals, resources, and everything you need covered"
           bgImage={fnb.src}
@@ -80,7 +72,7 @@ export function BentoSection() {
         />
         <GridItem
           area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
-          icon={<Network className="h-4 w-4 text-white" />}
+          icon={<Network className="size-4 text-white" />}
           title="Global NASA Network"
           description="Be part of a worldwide innovation community"
           bgImage={globalCommunity.src}
@@ -109,10 +101,7 @@ const GridItem = ({
   variants,
 }: GridItemProps) => {
   return (
-    <motion.li
-      className={`min-h-[14rem] list-none ${area}`}
-      variants={variants}
-    >
+    <motion.li className={`min-h-56 list-none ${area}`} variants={variants}>
       <div className="relative h-full overflow-hidden rounded-2xl border md:rounded-3xl">
         <div
           className="absolute inset-0 z-0 bg-cover bg-center"
@@ -137,7 +126,7 @@ const GridItem = ({
               {icon}
             </div>
             <div className="space-y-3">
-              <h3 className="-tracking-4 text-balance pt-0.5 font-hackathoneCabinetGrotesk text-xl/[1.375rem] font-semibold text-white md:text-2xl/[1.875rem]">
+              <h3 className="text-balance pt-0.5 font-hackathoneCabinetGrotesk text-xl/[1.375rem] font-semibold text-white md:text-2xl/[1.875rem]">
                 {title}
               </h3>
               <h2 className="font-hackathoneCabinetGrotesk text-sm/[1.125rem] text-neutral-200 md:text-base/[1.375rem]">

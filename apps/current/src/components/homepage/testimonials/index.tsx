@@ -1,15 +1,13 @@
+import { motion } from "framer-motion";
 import { type FC, useState, useCallback } from "react";
 import { type TestimonialData } from "@/data/homepage/testimonials";
 import { SectionContainer } from "../SectionContainer";
 import { TestimonialCard } from "./card";
-import { motion } from "framer-motion";
 
 interface TestimonialsSectionProps {
   testimonialData: TestimonialData;
 }
 
-const titleClass =
-  "mb-12 text-center text-3xl font-bold text-white lg:text-4xl font-nokaTrial";
 const containerClass = "mx-auto h-96 max-w-7xl overflow-hidden";
 
 export const TestimonialsSection: FC<TestimonialsSectionProps> = ({

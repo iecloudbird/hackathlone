@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { type FC } from "react";
@@ -12,8 +13,7 @@ interface BriefSectionProps {
 }
 
 export const BriefSection: FC<BriefSectionProps> = ({ briefData }) => {
-  const { title, paragraphs, countdownLabel, eventDate, imageUrl, imageAlt } =
-    briefData;
+  const { title, countdownLabel, eventDate, imageUrl, imageAlt } = briefData;
 
   return (
     <SectionContainer className="relative bg-deepSpace p-0 text-white">

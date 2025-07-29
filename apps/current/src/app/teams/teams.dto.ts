@@ -8,9 +8,9 @@ import Manav from "@/assets/images/general/landing-page/teams/Manav_Shah.jpg";
 import Nitish from "@/assets/images/general/landing-page/teams/Nitish.jpg";
 import Nnajiofor from "@/assets/images/general/landing-page/teams/Nnajiofor Uchenna Franklin.jpg";
 import AB from "@/assets/images/general/landing-page/teams/Raj_Bhalla.jpg";
+import Sahir from "@/assets/images/general/landing-page/teams/Sahir Sharma.jpg";
 import Shean from "@/assets/images/general/landing-page/teams/Shean Hans Teoh.jpg";
 import Shantanu from "@/assets/images/general/landing-page/teams/sk.jpg";
-import Sahir from "@/assets/images/general/landing-page/teams/Sahir Sharma.jpg";
 
 export const teamMembers = [
   {

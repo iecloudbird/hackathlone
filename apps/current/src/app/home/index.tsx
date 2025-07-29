@@ -2,6 +2,7 @@
 import React from "react";
 import { Footer } from "@/components/common/shared/footer";
 import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
+import { BentoSection } from "@/components/homepage/bento-section";
 import { BriefSection } from "@/components/homepage/brief";
 import { CollaboratorsSection } from "@/components/homepage/collaborators";
 import { GallerySection } from "@/components/homepage/gallery";
@@ -18,7 +19,6 @@ import { spaceAgenciesData } from "@/data/homepage/space-agencies";
 import { testimonialData } from "@/data/homepage/testimonials";
 import { timelineData } from "@/data/homepage/timeline";
 import { venueSectionData } from "@/data/homepage/venue";
-import { BentoSection } from "@/components/homepage/bento-section";
 
 export const HomePage = () => {
   return (

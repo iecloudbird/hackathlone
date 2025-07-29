@@ -1,13 +1,13 @@
 "use client";
+import { motion } from "framer-motion";
 import React from "react";
 import { CardGrid } from "@/app/teams/card-grid";
-import { motion } from "framer-motion";
 import { Footer } from "@/components/common/shared/footer";
-import BackToTopButton from "../general/back-to-top";
 import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
+import { SectionContainer } from "@/components/homepage/SectionContainer";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
-import { SectionContainer } from "@/components/homepage/SectionContainer";
+import BackToTopButton from "../general/back-to-top";
 
 const Teams = () => {
   return (

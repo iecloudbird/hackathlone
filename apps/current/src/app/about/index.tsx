@@ -1,12 +1,13 @@
+/* eslint-disable react/no-unescaped-entities */
+import Image from "next/image";
 import React from "react";
-import { Timeline } from "@/components/ui/timeline";
 import J23_1 from "@/assets/images/journey/23-1-min.png";
 import J23_2 from "@/assets/images/journey/23-2-min.jpg";
 import J23_3 from "@/assets/images/journey/23-3-min.png";
 import J23_4 from "@/assets/images/journey/23-4-min.png";
 import J24_1 from "@/assets/images/journey/24-1-min.jpeg";
 import J24_2 from "@/assets/images/journey/24-2-min.jpg";
-import Image from "next/image";
+import { Timeline } from "@/components/ui/timeline";
 
 export function TimelineDemo() {
   const data = [
@@ -123,7 +124,7 @@ export function TimelineDemo() {
     },
   ];
   return (
-    <div className="relative w-full overflow-clip">
+    <div className="relative w-full text-clip">
       <Timeline data={data} />
     </div>
   );

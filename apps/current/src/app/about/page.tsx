@@ -1,8 +1,8 @@
+import { Footer } from "@/components/common/shared/footer";
 import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import { TimelineDemo } from ".";
-import Footer from "@/components/common/shared/footer";
 
 const About = () => {
   return (

@@ -1,5 +1,5 @@
-import { type FC } from "react";
 import { motion } from "framer-motion";
+import { type FC } from "react";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { type SpaceAgenciesSectionData } from "@/data/homepage/space-agencies";
 import { SectionContainer } from "../SectionContainer";

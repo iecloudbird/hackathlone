@@ -1,6 +1,6 @@
 "use client";
-import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 import { RedirectButton } from "@/components/common/shared/RedirectButton";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { type HeroSectionData } from "@/data/homepage/hero";
@@ -81,7 +81,7 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
                 transition={{ duration: 0.4 }}
                 className="font-hackathoneCabinetGrotesk text-lg"
               >
-                We're one of{" "}
+                We&apos;re one of{" "}
                 <span className="font-bold text-brightYellow">450+</span>{" "}
                 locations worldwide, but the only one in Ireland offering the
                 full 48-hour overnight experience.
