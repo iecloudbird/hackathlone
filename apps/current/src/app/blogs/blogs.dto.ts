@@ -86,4 +86,41 @@ export const cards = [
     title:
       "Mastering SpaceApps Athlone: Tips for a Stellar Hackathon Experience",
   },
+  {
+    description:
+      "Why the world's largest space hackathon needs storytellers, designers, and big-picture thinkers just as much as programmers",
+    imageSrc: Space5,
+    slug: "11",
+    title: "You Don't Need to Code to Win at Space Apps (And Here's Proof)",
+  },
+  {
+    description:
+      "The honest guide to making the most of your 48 hours at HackAthlone",
+    imageSrc: Space2,
+    slug: "12",
+    title: "Your First Space Hackathon: What Nobody Tells You (But Should)",
+  },
+  {
+    description:
+      "Seven reasons why this space hackathon is worth your time (and might change your career)",
+    imageSrc: Space1,
+    slug: "13",
+    title: "Why HackAthlone Should Be Your Next Weekend Plan",
+  },
+  {
+    description:
+      "Why NASA's new theme isn't just marketing, it's how space innovation actually works",
+    imageSrc: Space4,
+    slug: "14",
+    title:
+      "The Science Behind 'Learn, Launch, Lead': What NASA's 2025 Theme Really Means",
+  },
+  {
+    description:
+      "What really happens when you spend 48 hours solving problems that matter",
+    imageSrc: Space3,
+    slug: "15",
+    title:
+      "Why Your First Hackathon Will Change How You Think About Everything",
+  },
 ];

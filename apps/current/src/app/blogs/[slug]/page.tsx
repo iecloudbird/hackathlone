@@ -851,6 +851,370 @@ const BlogPage: React.FC = () => {
       date: "Sep 13, 2023",
       slug: "10",
     },
+    // Add this to the blogs array
+    {
+      image: Space3, // You'll need to import an appropriate image
+      tags: [{ name: "Technology" }],
+      title:
+        "Why Your First Hackathon Will Change How You Think About Everything",
+      summary:
+        "Most people think hackathons are just about coding fast and winning prizes. The reality is much more interesting. Discover how 48 hours of problem-solving can transform your approach to challenges, collaboration, and innovation.",
+      points: [
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Most people think hackathons are just about coding fast and winning prizes. The reality is much more interesting. Sure, you'll build something cool in 48 hours. But the real transformation happens in ways you don't expect.",
+
+        <strong
+          className="text-hackathone-font-rocket-red"
+          key="learn-pressure"
+        >
+          You Learn to Think Under Pressure
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Hackathons flip normal learning completely. You have 48 hours to understand a problem, learn new tools, work with strangers, and build something that works. When you successfully solve a climate monitoring challenge using NASA satellite data you'd never seen before, you realize your brain is more capable than you thought. Tight deadlines suddenly don't feel impossible anymore.",
+
+        <strong
+          className="text-hackathone-font-rocket-red"
+          key="real-collaboration"
+        >
+          You Discover Real Collaboration
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0At HackAthlone, you might team up with a climate scientist, a graphic designer, and a policy student to tackle agricultural challenges. None of you could solve the problem alone, but together you create something none of you imagined individually. This changes how you approach every future team project. You start looking for diverse perspectives instead of similar skillsets.",
+
+        <strong className="text-hackathone-font-rocket-red" key="stop-fearing">
+          You Stop Fearing the Unknown
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Most hackathon success comes from figuring things out as you go. You'll learn APIs you've never used, work with unfamiliar datasets, and build interfaces for users you're just starting to understand. This teaches you that not knowing something isn't a problem—it's just temporary. You stop saying 'I don't know how to do that' and start saying 'I don't know how to do that yet.'",
+
+        <strong
+          className="text-hackathone-font-rocket-red"
+          key="problems-differently"
+        >
+          You See Problems Differently
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0After experiencing how teams break down challenges like space debris tracking into manageable pieces, you apply the same approach everywhere. That intimidating research project becomes a collection of smaller, solvable questions.",
+
+        <strong
+          className="text-hackathone-font-rocket-red"
+          key="build-resilience"
+        >
+          You Build Resilience
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Your first attempt at analyzing satellite data will probably fail. Your presentation might have technical difficulties. This is normal. What's surprising is how quickly you bounce back. When everyone's experiencing failure and iteration, you develop resilience. You learn to fail fast, learn quickly, and try again.",
+
+        <strong
+          className="text-hackathone-font-rocket-red"
+          key="real-innovation"
+        >
+          You Understand Real Innovation
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Media shows innovation as sudden breakthroughs by isolated geniuses. Hackathons reveal it's actually messy collaboration, lots of iteration, and smart combinations of existing tools. At HackAthlone, innovation might mean connecting agricultural satellite data with weather APIs to help farmers make irrigation decisions. Not revolutionary technology—just practical problem-solving.",
+
+        <strong className="text-hackathone-font-rocket-red" key="ambiguity">
+          You Get Comfortable With Ambiguity
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'Design a tool to help farmers adapt to climate change' could mean dozens of things. Part of the challenge is figuring out what problem to solve, not just how to solve it. This comfort with unclear requirements becomes incredibly valuable in professional settings.",
+
+        <strong className="text-hackathone-font-rocket-red" key="communicate">
+          You Learn to Communicate Simply
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Hackathons force you to present complex projects in just a few minutes. You learn to start with the problem, not the technology. You practice explaining technical concepts to non-technical people. These communication skills help everywhere you need to convince someone your idea matters.",
+
+        <strong className="text-hackathone-font-rocket-red" key="connections">
+          The Long-Term Impact
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0The real value isn't what you build in 48 hours—it's how the experience changes your approach to everything after. You become confident tackling unfamiliar challenges. You get better at diverse teamwork. You develop resilience. You communicate complex ideas clearly. These skills compound over time. Every challenging project becomes easier because you've proven you can figure things out.",
+
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Stop overthinking it. You don't need to be an expert programmer or have the perfect team. You just need curiosity about solving problems and willingness to learn quickly. The confidence you gain from succeeding under pressure will change how you approach every future challenge.",
+
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0HackAthlone 2025 takes place October 3-5. Registration is open now.",
+      ],
+      author: "Shaiv Mehrotra",
+      date: "Aug 31, 2023",
+      slug: "15",
+    },
+    // Add this to the blogs array
+    {
+      image: Space5, // You'll need to choose an appropriate image
+      tags: [{ name: "Technology" }],
+      title: "You Don't Need to Code to Win at Space Apps (And Here's Proof)",
+      summary:
+        "Think NASA's hackathon is only for programmers? Think again! Discover why storytellers, designers, and big-picture thinkers are essential for creating solutions that truly matter. Learn how non-technical skills can be the key to hackathon success.",
+      points: [
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\"I can't join Space Apps. I'm not technical enough.\" We hear this every year at HackAthlone. People think NASA's hackathon is only for computer science students and engineers. They assume you need years of programming experience to contribute. They're completely wrong.",
+
+        <strong
+          className="text-hackathone-font-rocket-red"
+          key="real-challenge"
+        >
+          The Real Challenge Isn't Coding
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Here's what most people don't understand: the hardest part of space challenges usually isn't the programming. It's figuring out what problem to solve, how to present the solution, and why it matters. Take climate monitoring. Sure, you need someone who can work with satellite data. But you also need someone who understands which climate impacts matter to farmers, how to design interfaces that scientists will actually use, and how to explain findings to policymakers. The coding might take 6 hours. Everything else takes the other 42 hours.",
+
+        <strong className="text-hackathone-font-rocket-red" key="team-needs">
+          What Teams Actually Need
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0If you're smart enough to be interested in space challenges, you're technical enough for Space Apps. The question is what other skills you bring that programmers desperately need:",
+        "• User Research: Understanding who will use the solution and what they need",
+        "• Design: Making complex data understandable and actionable",
+        "• Communication: Explaining why the solution matters",
+        "• Project Management: Keeping teams focused under pressure",
+        "• Domain Knowledge: Understanding agriculture, climate, policy, or other areas",
+        "• Strategy: Figuring out how solutions could actually be implemented",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0These skills are often more valuable than programming ability in a 48-hour hackathon.",
+
+        <strong
+          className="text-hackathone-font-rocket-red"
+          key="successful-projects"
+        >
+          What Successful Projects Look Like
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Based on successful Space Apps projects:",
+        "• Agricultural Solutions: Win because teams understand farmers' real challenges and design interfaces that work for people with limited tech access.",
+        "• Climate Tools: Succeed when someone knows which climate data matters to different users and how to visualize it clearly.",
+        "• Space Debris Solutions: Need people who understand policy implications and can design interfaces for mission controllers.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0The pattern? Technical skills get you a working prototype. Everything else determines whether it actually solves a problem people care about.",
+
+        <strong
+          className="text-hackathone-font-rocket-red"
+          key="how-contribute"
+        >
+          How to Contribute Without Coding
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0During the weekend:",
+        "• Research the problem while developers set up infrastructure",
+        "• Design user interfaces and experience flows",
+        "• Create compelling presentations",
+        "• Handle project management and coordination",
+        "• Develop implementation strategies",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Technical contribution without coding:",
+        "• Use tools like Figma for design or Airtable for data management",
+        "• Work with NASA datasets using Excel or Google Sheets",
+        "• Handle documentation, testing, and user research",
+
+        <strong className="text-hackathone-font-rocket-red" key="diverse-teams">
+          Why Diverse Teams Win
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Here's what experienced participants know: diverse teams consistently outperform all-technical teams. When everyone has the same background, they tend to build technically impressive solutions that no one actually needs. Mixed teams ask different questions, catch usability issues early, and present their work more compellingly.",
+
+        <strong className="text-hackathone-font-rocket-red" key="getting-ready">
+          Getting Ready
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0If you're joining HackAthlone without programming experience:",
+        "• Learn the landscape: Read about space challenges and NASA priorities",
+        "• Develop basic tech literacy: Understand what's possible with data and modern tools",
+        "• Practice rapid prototyping: Learn Figma, Canva, or PowerPoint for quick mockups",
+        "• Study successful projects: Analyze what made them compelling beyond technical implementation",
+        "• Know your value: Be confident about your unique perspective",
+
+        <strong className="text-hackathone-font-rocket-red" key="bottom-line">
+          The Bottom Line
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space Apps isn't really about space. It's about using space data to solve problems that affect people on Earth. That requires understanding people, not just technology. If you can research user needs, design clear interfaces, manage projects, or think strategically about implementation, you have skills that every serious team needs.",
+
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0HackAthlone registration opens soon. Check our social media for exact dates.",
+      ],
+      author: "Shaiv Mehrotra",
+      date: "Aug 31, 2023",
+      slug: "11",
+    },
+    // Add this to the blogs array in page.tsx
+    {
+      image: Space2, // Choose appropriate space image
+      tags: [{ name: "Technology" }],
+      title: "Your First Space Hackathon: What Nobody Tells You (But Should)",
+      summary:
+        "The honest guide to making the most of your 48 hours at HackAthlone. Discover the insider tips, real challenges, and crucial preparation steps that no one talks about but every participant should know.",
+      points: [
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0So you've decided to register for HackAthlone. You're probably excited, maybe a little nervous, and definitely wondering what you've gotten yourself into. Good news: you're about to have one of the most intense and rewarding weekends of your life. Here's what you actually need to know.",
+
+        <strong className="text-hackathone-font-rocket-red" key="before-arrive">
+          Before You Arrive
+        </strong>,
+        "• Pack like you're camping. Bring a sleeping bag, pillow, and comfortable clothes for 48 hours. Yes, people actually sleep there during the overnight format.",
+        "• Download everything beforehand. Get your software, accounts, and tools set up before arriving. The wifi will be packed with participants downloading datasets.",
+        "• Eat well. TU Shannon provides F&B throughout, but your eating schedule is about to become random. Start the weekend well-nourished.",
+
+        <strong
+          className="text-hackathone-font-rocket-red"
+          key="team-formation"
+        >
+          Team Formation Reality
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Team formation is organized chaos, and that's normal.",
+        "• Don't overthink your pitch. Just say what interests you and what skills you bring. The real connections happen in conversations afterward.",
+        "• Look for enthusiasm over credentials. Someone genuinely excited about climate monitoring but new to satellite data might be better than a bored expert.",
+        "• Teams of 4-5 work best based on past HackAthlone experience.",
+
+        <strong
+          className="text-hackathone-font-rocket-red"
+          key="choosing-challenge"
+        >
+          Choosing Your Challenge
+        </strong>,
+        "• Pick problems you care about. You'll spend 48 hours on this challenge. If it doesn't fascinate you, those hours will drag.",
+        '• Remember the theme: "Learn, Launch, Lead." Focus on developing skills, transforming NASA data into solutions, and leading innovation.',
+
+        <strong className="text-hackathone-font-rocket-red" key="reality">
+          The 48-Hour Reality
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Expect energy waves: high enthusiasm initially, fatigue mid-way, then final-push adrenaline. Use the early energy for planning. Support each other during the grind. Be amazed at what you accomplish in the final hours.",
+
+        <strong className="text-hackathone-font-rocket-red" key="nasa-data">
+          Working with NASA Data
+        </strong>,
+        "• Start simple. NASA datasets are overwhelming. Basic analysis beats complex processing you don't understand.",
+        "• Document everything. Sleep-deprived you will forget decisions. Keep notes on your approach and reasoning.",
+        "• Use TU Shannon's resources. Professional labs, 3D printers, and VR/AR headsets are available. Plan how they could enhance your solution.",
+
+        <strong className="text-hackathone-font-rocket-red" key="presentation">
+          Presentation Tips
+        </strong>,
+        "• Practice your pitch. You have limited time to explain 48 hours of work.",
+        "• Tell a story. Problem → why it matters → your solution → impact. Save technical details for questions.",
+        "• Prepare for tech failures. Have screenshots and backup plans when demos break.",
+
+        <strong className="text-hackathone-font-rocket-red" key="success">
+          What Success Looks Like
+        </strong>,
+        "• Winning isn't everything. The best experiences come from solving interesting problems, learning skills, and making connections.",
+        "• Focus on real impact. NASA experts judge for solutions that could make a difference. Simple tools addressing important problems beat complex systems solving nothing.",
+        "• Document your journey. Photos, notes, and code help you remember and build on the experience.",
+
+        <strong className="text-hackathone-font-rocket-red" key="after-weekend">
+          After the Weekend
+        </strong>,
+        "• Follow up with your team. Some of the best outcomes happen weeks after the event.",
+        "• Submit properly. Projects get judged by NASA and space agency experts for 10 global awards.",
+        "• Apply what you learned. Rapid prototyping, leadership, and problem-solving skills transfer everywhere.",
+
+        <strong className="text-hackathone-font-rocket-red" key="why-matters">
+          Why This Matters
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space hackathons aren't really about space. They're about discovering what you're capable of when constraints are tight, stakes are real, and everyone around you is pushing limits.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0You'll leave knowing you can learn under pressure, lead technical projects, and contribute to solutions that matter to humanity. That confidence is worth more than any prize.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Registrations are opening soon..",
+      ],
+      author: "Shaiv Mehrotra",
+      date: "Aug 31, 2023",
+      slug: "12",
+    },
+    // Add this to the blogs array in page.tsx
+    {
+      image: Space1, // Choose appropriate space image
+      tags: [{ name: "Technology" }],
+      title: "Why HackAthlone Should Be Your Next Weekend Plan",
+      summary:
+        "Seven reasons why this space hackathon is worth your time (and might change your career). Get exclusive access to NASA data, professional equipment, expert mentorship, and career-changing opportunities all in one transformative weekend.",
+      points: [
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Thinking about joining HackAthlone 2025? Here's what you actually get when you spend a weekend solving space challenges with NASA data.",
+
+        <strong className="text-hackathone-font-rocket-red" key="real-data">
+          1. Real NASA Data, Not Practice Problems
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0You'll work with the same satellite imagery, climate data, and space observations that NASA scientists use for actual missions. Want to analyze solar storms or track deforestation? The data's there. Most people pay thousands for courses with less comprehensive datasets than what you'll use in a weekend.",
+
+        <strong
+          className="text-hackathone-font-rocket-red"
+          key="expert-network"
+        >
+          2. People Who Actually Know What They're Talking About
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Forget awkward networking events. You'll naturally connect with climate scientists, aerospace engineers, and space industry professionals while solving real problems together. When you're stuck on satellite data processing at 2 AM, having an actual NASA researcher available to help is pretty valuable.",
+
+        <strong className="text-hackathone-font-rocket-red" key="pro-equipment">
+          3. Professional Equipment You Can't Access Elsewhere
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0TU Shannon provides professional labs, 3D printers, and VR/AR equipment like Meta Quest and HoloLens headsets. Building climate visualizations? Use the VR setup. Need prototypes? The 3D printers and electronics lab are available. Most makerspaces charge membership fees for equipment this advanced.",
+
+        <strong className="text-hackathone-font-rocket-red" key="real-support">
+          4. Support That Actually Helps
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Mentorship comes from people who've built similar solutions professionally. Academic mentors understand research. Industry mentors know real applications. Plus, meals, beverages, workspace, and technical resources are provided for 48 hours.",
+
+        <strong
+          className="text-hackathone-font-rocket-red"
+          key="worthy-problems"
+        >
+          5. Problems Worth Solving
+        </strong>,
+        '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Instead of building another social media app, you\'re tackling climate change, space exploration, and agricultural sustainability. The 2025 theme "Learn, Launch, Lead" connects to real NASA priorities. Past Space Apps projects have been adopted by governments and used in actual space missions.',
+
+        <strong className="text-hackathone-font-rocket-red" key="recognition">
+          6. Recognition That Opens Doors
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Global winners get invited to NASA facilities for rocket launches. But even participating gives you portfolio material that stands out. Employers notice NASA data experience. Graduate schools value interdisciplinary team experience. All projects become open-source contributions to global research.",
+
+        <strong className="text-hackathone-font-rocket-red" key="unique-skills">
+          7. Skills You Can't Learn in Classrooms
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0HackAthlone teaches working under pressure, learning rapidly, leading diverse teams, and communicating complex ideas simply. You'll master new technical tools in hours and coordinate with people from different backgrounds. After leading a technical project from concept to presentation in 48 hours, regular deadlines feel manageable.",
+
+        <strong className="text-hackathone-font-rocket-red" key="reality-check">
+          The Reality Check
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0It's an intense 48 hours. You'll be tired and occasionally frustrated around hour 30. But that's where growth happens. The teams that have the most fun balance ambition with realistic goals. You're not going to revolutionize space exploration, but you might build something genuinely useful.",
+
+        <strong className="text-hackathone-font-rocket-red" key="value-prop">
+          What This Actually Gets You
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Investment: One weekend\nValue: Premium datasets, professional equipment, expert mentorship, space industry networking, portfolio enhancement, skill development",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Most bootcamps charging thousands don't provide this level of real-world experience.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Don't overthink whether you're \"qualified enough.\" Diverse teams consistently outperform homogeneous technical teams. Whether you're interested in coding, design, research, or just curious about space challenges, there's a valuable role for you.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0HackAthlone 2025: October 3-5. Registration opens soon..",
+      ],
+      author: "Shaiv Mehrotra",
+      date: "Aug 31, 2023",
+      slug: "13",
+    },
+    // Add this to the blogs array
+    {
+      image: Space4,
+      tags: [{ name: "Technology" }],
+      title:
+        "The Science Behind 'Learn, Launch, Lead': What NASA's 2025 Theme Really Means",
+      summary:
+        "When NASA announced 'Learn, Launch, Lead' as their 2025 Space Apps Challenge theme, it wasn't just placing cool sounding words together. This theme reflects how breakthrough space technology gets developed and why the old way isn't working.",
+      points: [
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0When NASA announced \"Learn, Launch, Lead\" as their 2025 Space Apps Challenge theme, it wasn't just placing cool sounding words together. This theme reflects how breakthrough space technology gets developed and why the old way isn't working.",
+
+        <strong className="text-hackathone-font-rocket-red" key="learn-means">
+          What "Learn" Really Means
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Forget everything you know about learning from textbooks and lectures. NASA noticed something interesting about how astronauts pick up complex skills. They don't spend years studying theory before touching real equipment. They learn by working on actual problems where mistakes have consequences.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space Apps follows this approach. You won't learn Python from a tutorial and then wonder what to do with it. Instead, you'll learn Python because you need to analyze real satellite data this weekend to solve a climate monitoring challenge.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0At HackAthlone, people consistently tell us they learned more in 48 hours than in entire university courses. Why? Because you're not learning for a test. You're learning to solve something that matters.",
+
+        <strong className="text-hackathone-font-rocket-red" key="launch-means">
+          What "Launch" Actually Looks Like
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0This isn't about rockets (though that would be cool). It's about getting from idea to working solution incredibly fast.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Here's how it works: You have an idea Friday evening. By Sunday afternoon, you have a working prototype that uses real NASA data and could actually help solve the problem you chose.",
+        '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Sounds impossible? SpaceX proved that "fast and good enough" often beats "slow and perfect." They didn\'t build better rockets than NASA. They built adequate rockets much faster. At HackAthlone, you\'ll use the same approach with TU Shannon\'s professional equipment and real NASA datasets.',
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0The goal isn't perfection. It's building something that works and could make a difference.",
+
+        <strong className="text-hackathone-font-rocket-red" key="lead-means">
+          What "Lead" Means for You
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0This might be the most important part. NASA realizes that waiting for people to get 20 years of experience before leading projects doesn't work anymore. Space challenges are too urgent.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0So they're flipping the script. At Space Apps, you can lead technical decisions on your first day. You can propose solutions to problems that NASA scientists are actually working on. You can coordinate a diverse team under pressure.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Many people leave having made more complex technical decisions than their day jobs involve. HackAthlone's 48-hour format gives you even more leadership opportunities than standard weekend events.",
+
+        <strong className="text-hackathone-font-rocket-red" key="why-works">
+          Why This Approach Works
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Traditional aerospace moves slowly because it has to get everything right the first time. But most innovation problems don't require that level of perfection initially. They need good solutions quickly, then iteration.",
+        '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0The "Learn, Launch, Lead" cycle builds on itself. You learn new skills to tackle a challenge. You launch a solution that creates real impact. You lead a team to tackle bigger problems. Then you learn from that experience and launch even more ambitious projects.',
+
+        <strong className="text-hackathone-font-rocket-red" key="october-means">
+          What This Means for October
+        </strong>,
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0If you join HackAthlone this year, you won't just be participating in a hackathon. You'll be experiencing NASA's new approach to innovation firsthand.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0You'll learn skills you need in real-time. You'll launch solutions using professional equipment and real space data. You'll lead technical decisions that could influence actual space missions.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0The question isn't whether you're qualified. It's whether you're ready to jump in and start solving problems that matter.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Registration are open..",
+      ],
+      author: "Shaiv Mehrotra",
+      date: "Aug 31, 2023",
+      slug: "14",
+    },
   ];
   const blog = blogs.find((b) => b.slug === slug);
   const currentIndex = blogs.findIndex((b) => b.slug === slug);
