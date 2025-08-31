@@ -1,7 +1,9 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { RedirectButton } from "@/components/common/shared/RedirectButton";
+import RegistrationHelp from "@/components/common/shared/RegistrationHelp";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { type HeroSectionData } from "@/data/homepage/hero";
 import { SectionContainer } from "../SectionContainer";
@@ -101,6 +103,7 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
         </motion.div>
       </div>
       <ShootingStars className="z-[-1]" />
+      <RegistrationHelp />
     </SectionContainer>
   );
 };

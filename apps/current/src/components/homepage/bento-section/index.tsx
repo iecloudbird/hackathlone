@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
@@ -41,8 +42,8 @@ export function BentoSection() {
         <GridItem
           area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
           icon={<Globe2 className="size-4 text-white" />}
-          title="Ireland’s Only Space Hackathon"
-          description="48-hour overnight challenge like no other in Ireland"
+          title="Ireland’s Biggest Space Hackathon"
+          description="An intense 48-hour overnight challenge pushing creativity and innovation"
           bgImage={overNightHackathon.src}
           variants={itemVariants}
         />
