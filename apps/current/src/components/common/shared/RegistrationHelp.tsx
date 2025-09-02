@@ -1,7 +1,9 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
 import { HelpCircle } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
@@ -38,7 +40,6 @@ export default function RegistrationHelp() {
               }}
             />
 
-            {/* 🎯 Animate width directly */}
             <motion.div
               animate={{
                 width: hovered ? 240 : 56, // <- smooth expand/shrink
@@ -76,7 +77,7 @@ export default function RegistrationHelp() {
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.15 }}
                       >
-                        <HelpCircle className="h-6 w-6" />
+                        <HelpCircle className="size-6" />
                       </motion.span>
                     )}
                   </AnimatePresence>
@@ -86,17 +87,32 @@ export default function RegistrationHelp() {
           </motion.div>
         </DialogTrigger>
 
-        <DialogContent className="max-w-3xl">
-          <DialogHeader>
-            <DialogTitle>How to Register</DialogTitle>
-          </DialogHeader>
-          <div className="flex justify-center">
-            <img
-              src="E:\Onedrive\Desktop\hackathlone\apps\current\public\assets\images\general\landing-page\register.gif"
-              alt="Registration walkthrough"
-              className="max-h-[70vh] rounded-lg border object-contain shadow-md"
-            />
-          </div>
+        <DialogContent className="max-w-3xl border-none bg-black/30 backdrop-blur-lg">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+          >
+            <DialogHeader className="mb-4">
+              <DialogTitle className="font-hackathloneCabinetGrotesk text-2xl font-bold text-white">
+                How to Register
+              </DialogTitle>
+            </DialogHeader>
+            <div className="flex justify-center">
+              <Image
+                src="/assets/images/general/landing-page/register.gif"
+                alt="Registration walkthrough"
+                width={800} // Add appropriate width
+                height={600} // Add appropriate height
+                className="max-h-[70vh] rounded-lg border object-contain shadow-md"
+              />
+            </div>
+            <div className="mt-4 text-center font-hackathoneCabinetGrotesk text-sm text-gray-600">
+              Follow these steps to complete your registration for HackAthlone
+              2025
+            </div>
+          </motion.div>
         </DialogContent>
       </Dialog>
     </div>

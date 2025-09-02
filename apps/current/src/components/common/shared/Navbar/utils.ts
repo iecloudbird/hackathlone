@@ -45,7 +45,7 @@ export const navigationData = (
   {
     route: () =>
       window.open(
-        "https://www.spaceappschallenge.org/nasa-space-apps-2024/challenges/",
+        "https://www.spaceappschallenge.org/2025/challenges/",
         "_blank"
       ),
     text: "Challenges",

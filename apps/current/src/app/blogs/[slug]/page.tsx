@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import { IconButton } from "@mui/material";
 import { motion } from "framer-motion";
@@ -1096,7 +1097,7 @@ const BlogPage: React.FC = () => {
       date: "Aug 31, 2023",
       slug: "12",
     },
-    // Add this to the blogs array in page.tsx
+    // Add this to the blogs array
     {
       image: Space1, // Choose appropriate space image
       tags: [{ name: "Technology" }],
@@ -1183,7 +1184,7 @@ const BlogPage: React.FC = () => {
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0At HackAthlone, people consistently tell us they learned more in 48 hours than in entire university courses. Why? Because you're not learning for a test. You're learning to solve something that matters.",
 
         <strong className="text-hackathone-font-rocket-red" key="launch-means">
-          What "Launch" Actually Looks Like
+          What "Launch&quot; Actually Looks Like
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0This isn't about rockets (though that would be cool). It's about getting from idea to working solution incredibly fast.",
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Here's how it works: You have an idea Friday evening. By Sunday afternoon, you have a working prototype that uses real NASA data and could actually help solve the problem you chose.",

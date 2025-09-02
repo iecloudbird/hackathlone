@@ -36,7 +36,7 @@ const FooterLink: React.FC<{
   if (link.isExternal) {
     return (
       <a
-        className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+        className="font-nokaTrial text-[#f6f4f4]"
         href={link.href}
         target="_blank"
         rel="noreferrer"
@@ -48,7 +48,7 @@ const FooterLink: React.FC<{
 
   return (
     <a
-      className="text-[#f6f4f4] underline hover:text-hackathone-font-rocket-red"
+      className="text-[#f6f4f4]"
       href={link.href}
       onClick={(e) => {
         if (onClick) {
@@ -136,10 +136,10 @@ export const Footer: React.FC<FooterProps> = ({ data = footerData }) => {
         <div className="flex w-full flex-col items-start gap-6 lg:flex-row lg:items-start lg:justify-evenly lg:gap-16">
           {data.sections.map((section, sectionIndex) => (
             <div key={sectionIndex} className="lg:mt-4">
-              <h3 className="mb-2 text-xl font-bold text-brightYellow lg:mb-4">
+              <h3 className="mb-2 font-nokaTrial text-xl text-brightYellow lg:mb-4">
                 {section.title}
               </h3>
-              <ul className="list-none leading-relaxed">
+              <ul className="list-none leading-relaxed no-underline">
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex} className="my-2">
                     <FooterLink

@@ -12,19 +12,20 @@ import { Timeline } from "@/components/ui/timeline";
 export function TimelineDemo() {
   const data = [
     {
+      link: "https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/",
       title: "HackAthlone 2023",
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
             Our beginning
           </p>
-          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
             First-ever 48-hour space hackathon in Ireland
           </div>
-          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
             100+ participants from across Ireland
           </div>
-          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
             Groundbreaking inaugural event
           </div>
           <div className="mt-3 grid grid-cols-2 gap-4">
@@ -61,22 +62,23 @@ export function TimelineDemo() {
       ),
     },
     {
+      link: "https://nasa-spaceapps.vercel.app/",
       title: "HackAthlone 2024",
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
             Growing stronger
           </p>
-          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
             210+ participants with 22 global submissions
           </div>
-          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
             3 global nominations to NASA
           </div>
-          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
             Expanded international participation
           </div>
-          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
             Theme: "The Sun Touches Everything"
           </div>
           <div className="mt-3 grid grid-cols-2 gap-4">
@@ -99,6 +101,7 @@ export function TimelineDemo() {
       ),
     },
     {
+      link: "/",
       title: "HackAthlone 2025",
       content: (
         <div>
@@ -106,16 +109,16 @@ export function TimelineDemo() {
             Our moment
           </p>
           <div className="mb-8">
-            <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
               220+ participants expected
             </div>
-            <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
               Enhanced facilities and resources
             </div>
-            <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
               New theme: "Learn, Launch, Lead"
             </div>
-            <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
+            <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
               Biggest year yet with improved everything
             </div>
           </div>

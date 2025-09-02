@@ -25,7 +25,7 @@ export const HomePage = () => {
     <>
       <NavbarDemo />
       {/* <NavigationBar /> */}
-      <main>
+      <main className="overflow-x-hidden">
         <HeroSection heroData={heroData} />
         <BriefSection briefData={briefData} />
         <BentoSection />

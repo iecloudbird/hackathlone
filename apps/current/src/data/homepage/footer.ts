@@ -95,7 +95,7 @@ export const footerData: FooterData = {
           isExternal: true,
         },
         {
-          text: "Tips & Tricks",
+          text: "Tips and Tricks",
           href: "https://www.youtube.com/watch?v=_wJP0GLNdf8",
           isExternal: true,
         },
@@ -105,32 +105,32 @@ export const footerData: FooterData = {
       title: "Archive",
       links: [
         {
-          text: "Glimpse'24",
-          href: "/glimpse",
+          text: "Glimpse 24",
+          href: "https://nasa-spaceapps.vercel.app/",
           isExternal: false,
         },
         {
-          text: "Winners'24",
-          href: "/winners",
+          text: "Glimpse 23",
+          href: "https://66b8783ce930a118fc45939c--voluble-conkies-fba672.netlify.app/",
           isExternal: false,
         },
         {
-          text: "UL'21 Opening Ceremony",
+          text: "UL 21 Opening Ceremony",
           href: "https://www.youtube.com/watch?v=n_KqGdnlOcU",
           isExternal: true,
         },
         {
-          text: "UL'21 Mentor Sessions",
+          text: "UL 21 Mentor Sessions",
           href: "https://www.youtube.com/watch?v=zFdhwgOyqho",
           isExternal: true,
         },
         {
-          text: "UL'21 Practice Presentations",
+          text: "UL 21 Practice Presentations",
           href: "https://www.youtube.com/watch?v=EjbDhhmpgEk",
           isExternal: true,
         },
         {
-          text: "UL'21 Closing Ceremony",
+          text: "UL 21 Closing Ceremony",
           href: "https://www.youtube.com/watch?v=CFN7ewwBYT0",
           isExternal: true,
         },
