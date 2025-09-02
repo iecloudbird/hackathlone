@@ -465,7 +465,7 @@ const BlogPage: React.FC = () => {
       title:
         "Navigating Your Way to NASA SpaceApps Challenge at TU Shannon in Athlone",
       summary:
-        "Ready to embark on an exciting journey of innovation and exploration? The NASA SpaceApps Challenge is coming to TU Shannon in Athlone, and it’s an event you won’t want to miss. This year’s challenge offers participants the option to join in person or remotely, but we highly recommend attending in person to fully immerse yourself in the hackathon experience. Imagine brainstorming with your team, coding through the night, and collaborating with like-minded space enthusiasts—all under one roof. To help you get there, we’ve put together a handy guide on how to reach TU Shannon’s engineering building from major cities like Dublin, Limerick, Cork, and Galway.",
+        "Ready to embark on an exciting journey of innovation and exploration? The NASA SpaceApps Challenge is coming to TU Shannon in Athlone, and it is an event you won’t want to miss. This year’s challenge offers participants the option to join in person or remotely, but we highly recommend attending in person to fully immerse yourself in the hackathon experience. Imagine brainstorming with your team, coding through the night, and collaborating with like-minded space enthusiasts—all under one roof. To help you get there, we’ve put together a handy guide on how to reach TU Shannon’s engineering building from major cities like Dublin, Limerick, Cork, and Galway.",
       points: [
         <strong
           className="text-hackathone-font-rocket-red"
