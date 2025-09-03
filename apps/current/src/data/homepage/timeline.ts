@@ -4,11 +4,13 @@ export interface TimelineEvent {
   subtitle: string;
   content?: string;
   route?: () => void;
+  link?: string;
 }
 
 export interface TimelineSectionData {
   title: string;
   events: TimelineEvent[];
+  link?: string;
 }
 
 // `Register for a Local Event near you or Universal Event \n(please note you MUST be registered for a Local Event or Universal Event to participate).`,
@@ -25,6 +27,7 @@ export const timelineData: TimelineSectionData = {
         window.open("https://www.spaceappschallenge.org/2025/", "_blank"),
     },
     {
+      link: "/day1",
       date: "Friday, October 3rd",
       title: "Registration and Opening Ceremony",
       subtitle: "Kickstart the hackathon and meet your fellow innovators",
@@ -35,6 +38,7 @@ export const timelineData: TimelineSectionData = {
 11:00 PM: Late dinner (the real work is just beginning)`,
     },
     {
+      link: "/day2",
       date: "Saturday, October 4th",
       title: "Hack, Learn & Get Guidance",
       subtitle: "Full day of building with mentorship and workshops",
@@ -45,6 +49,7 @@ All day: Build, test, iterate
 9:00 PM: Dinner break`,
     },
     {
+      link: "/day3",
       date: "Sunday, October 5th",
       title: "Final Sprint & Presentations",
       subtitle: "Push your project to the finish and showcase to judges",

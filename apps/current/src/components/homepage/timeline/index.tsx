@@ -1,6 +1,7 @@
 "use client";
 import classNames from "classnames";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import {
   type TimelineSectionData,
@@ -121,70 +122,144 @@ const TimelineItem = ({
             isOdd ? "order-1" : "order-3"
           )}
         >
-          <div
-            className={classNames(
-              "group/card relative cursor-pointer overflow-hidden rounded-xl border-2 p-6 backdrop-blur-sm transition-all duration-300",
-              isHovered
-                ? "scale-[1.02] transform border-brightYellow bg-gradient-to-br from-deepSpace/95 to-navy/30 shadow-2xl shadow-brightYellow/10"
-                : "border-battleship bg-deepSpace/80 hover:border-gray-600 hover:bg-deepSpace/90"
-            )}
-            onMouseEnter={() => onHover(index)}
-            onMouseLeave={() => onHover(null)}
-            onFocus={() => onHover(index)}
-            onBlur={() => onHover(null)}
-            onClick={event.route}
-            tabIndex={0}
-            role="button"
-          >
-            {/* Mobile date pill */}
-            <div className="mb-3 block md:hidden">
+          {event.link ? (
+            <Link href={event.link}>
               <div
                 className={classNames(
-                  "inline-block rounded-lg border px-3 py-1 font-hackathoneCabinetGrotesk text-sm font-semibold backdrop-blur-sm transition-all duration-300",
+                  "group/card relative cursor-pointer overflow-hidden rounded-xl border-2 p-6 backdrop-blur-sm transition-all duration-300",
                   isHovered
-                    ? "border-brightYellow bg-navy/20 text-brightYellow"
-                    : "border-battleship bg-pineTree/50 text-gray-300"
+                    ? "scale-[1.02] transform border-brightYellow bg-gradient-to-br from-deepSpace/95 to-navy/30 shadow-2xl shadow-brightYellow/10"
+                    : "border-battleship bg-deepSpace/80 hover:border-gray-600 hover:bg-deepSpace/90"
                 )}
+                onMouseEnter={() => onHover(index)}
+                onMouseLeave={() => onHover(null)}
+                onFocus={() => onHover(index)}
+                onBlur={() => onHover(null)}
+                tabIndex={0}
+                role="button"
               >
-                {event.date}
-              </div>
-            </div>
+                {/* Mobile date pill */}
+                <div className="mb-3 block md:hidden">
+                  <div
+                    className={classNames(
+                      "inline-block rounded-lg border px-3 py-1 font-hackathoneCabinetGrotesk text-sm font-semibold backdrop-blur-sm transition-all duration-300",
+                      isHovered
+                        ? "border-brightYellow bg-navy/20 text-brightYellow"
+                        : "border-battleship bg-pineTree/50 text-gray-300"
+                    )}
+                  >
+                    {event.date}
+                  </div>
+                </div>
 
-            <div className="relative">
-              <div
-                className={classNames(
-                  "mb-3 text-xl font-bold transition-colors duration-300",
-                  isOdd ? "text-left md:text-left" : "text-left md:text-right"
-                )}
-              >
-                {event.title}
-              </div>
+                <div className="relative">
+                  <div
+                    className={classNames(
+                      "mb-3 text-xl font-bold transition-colors duration-300",
+                      isOdd
+                        ? "text-left md:text-left"
+                        : "text-left md:text-right"
+                    )}
+                  >
+                    {event.title}
+                  </div>
 
-              <div
-                className={classNames(
-                  "font-hackathoneCabinetGrotesk text-gray-300 transition-all duration-300",
-                  isOdd ? "text-left md:text-left" : "text-left md:text-right",
-                  isHovered && "text-gray-200"
-                )}
-              >
-                {event.subtitle}
-              </div>
+                  <div
+                    className={classNames(
+                      "font-hackathoneCabinetGrotesk text-gray-300 transition-all duration-300",
+                      isOdd
+                        ? "text-left md:text-left"
+                        : "text-left md:text-right",
+                      isHovered && "text-gray-200"
+                    )}
+                  >
+                    {event.subtitle}
+                  </div>
 
-              {event.content && (
+                  {event.content && (
+                    <div
+                      className={classNames(
+                        "prose prose-invert mt-4 overflow-hidden whitespace-pre-line font-hackathoneCabinetGrotesk text-sm text-gray-400 transition-all duration-500",
+                        isHovered
+                          ? "max-h-40 text-gray-300 opacity-100"
+                          : "max-h-0 opacity-0"
+                      )}
+                      dangerouslySetInnerHTML={{
+                        __html: highlightTimes(event.content),
+                      }}
+                    />
+                  )}
+                </div>
+              </div>
+            </Link>
+          ) : (
+            <div
+              className={classNames(
+                "group/card relative cursor-pointer overflow-hidden rounded-xl border-2 p-6 backdrop-blur-sm transition-all duration-300",
+                isHovered
+                  ? "scale-[1.02] transform border-brightYellow bg-gradient-to-br from-deepSpace/95 to-navy/30 shadow-2xl shadow-brightYellow/10"
+                  : "border-battleship bg-deepSpace/80 hover:border-gray-600 hover:bg-deepSpace/90"
+              )}
+              onMouseEnter={() => onHover(index)}
+              onMouseLeave={() => onHover(null)}
+              onFocus={() => onHover(index)}
+              onBlur={() => onHover(null)}
+              onClick={event.route}
+              tabIndex={0}
+              role="button"
+            >
+              {/* Mobile date pill */}
+              <div className="mb-3 block md:hidden">
                 <div
                   className={classNames(
-                    "prose prose-invert mt-4 overflow-hidden whitespace-pre-line font-hackathoneCabinetGrotesk text-sm text-gray-400 transition-all duration-500",
+                    "inline-block rounded-lg border px-3 py-1 font-hackathoneCabinetGrotesk text-sm font-semibold backdrop-blur-sm transition-all duration-300",
                     isHovered
-                      ? "max-h-40 text-gray-300 opacity-100"
-                      : "max-h-0 opacity-0"
+                      ? "border-brightYellow bg-navy/20 text-brightYellow"
+                      : "border-battleship bg-pineTree/50 text-gray-300"
                   )}
-                  dangerouslySetInnerHTML={{
-                    __html: highlightTimes(event.content),
-                  }}
-                />
-              )}
+                >
+                  {event.date}
+                </div>
+              </div>
+
+              <div className="relative">
+                <div
+                  className={classNames(
+                    "mb-3 text-xl font-bold transition-colors duration-300",
+                    isOdd ? "text-left md:text-left" : "text-left md:text-right"
+                  )}
+                >
+                  {event.title}
+                </div>
+
+                <div
+                  className={classNames(
+                    "font-hackathoneCabinetGrotesk text-gray-300 transition-all duration-300",
+                    isOdd
+                      ? "text-left md:text-left"
+                      : "text-left md:text-right",
+                    isHovered && "text-gray-200"
+                  )}
+                >
+                  {event.subtitle}
+                </div>
+
+                {event.content && (
+                  <div
+                    className={classNames(
+                      "prose prose-invert mt-4 overflow-hidden whitespace-pre-line font-hackathoneCabinetGrotesk text-sm text-gray-400 transition-all duration-500",
+                      isHovered
+                        ? "max-h-40 text-gray-300 opacity-100"
+                        : "max-h-0 opacity-0"
+                    )}
+                    dangerouslySetInnerHTML={{
+                      __html: highlightTimes(event.content),
+                    }}
+                  />
+                )}
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </motion.div>
