@@ -47,8 +47,8 @@ const Teams = () => {
         </SectionContainer>
 
         <BackToTopButton />
-        <Footer />
       </div>
+      <Footer />
     </section>
   );
 };

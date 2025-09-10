@@ -58,6 +58,12 @@ export const footerData: FooterData = {
       ariaLabel: "Connect with us on LinkedIn",
     },
     {
+      href: "https://www.tiktok.com/@spaceapps.athlone?_t=ZN-8zRSryywoZa&_r=1",
+      icon: "/assets/images/general/landing-page/tiktok.svg",
+      alt: "TikTok Icon",
+      ariaLabel: "Follow us on TikTok",
+    },
+    {
       href: "mailto:spaceappsathlone@gmail.com",
       icon: "email", // Special case for SVG email icon
       alt: "Email",

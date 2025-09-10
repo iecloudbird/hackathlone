@@ -75,17 +75,17 @@ const BlogPage: React.FC = () => {
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Here are some specific examples of how diversity has helped advance space exploration: In the early days of the space program, women were excluded from many important roles. However, many women, such as Catherine Johnson and Margaret Hamilton, were able to make important contributions. Their work contributed to the success of the Apollo mission. In recent years, there has been a growing movement to increase the number of people of color in the space program. This group has been able to bring more diversity to the program, as well as help inspire young people of color to pursue careers in STEM fields. There is also a growing movement to increase the number of people with disabilities in the space program. This movement is important because it shows that people with disabilities can be as successful as anyone else in the space. These are just a few examples of how diversity has helped advance space exploration. As we explore the universe, it is important to continuously increase the diversity of the spatial system. This will help us reach our full potential in the space, and help create an inclusive and equitable society.",
       ],
       author: "Mitrashi Das",
-      date: "Aug 04, 2023",
+      date: "Aug 04, 2025",
       slug: "card-grid-layout-1",
     },
     {
       image: Space2,
       tags: [{ name: "Technology" }],
-      title: "Here's How to Register for SpaceApps 2023!",
+      title: "Here's How to Register for SpaceApps 2025!",
       summary:
-        "Register for NASA's SpaceApps Challenge 2023 at TU Shannon, Ireland. Explore the website, find the local event (HackAthlone), choose individual or team registration, access resources, and prepare for an exciting cosmic adventure in space exploration.",
+        "Register for NASA's SpaceApps Challenge 2025 at TU Shannon, Ireland. Explore the website, find the local event (HackAthlone), choose individual or team registration, access resources, and prepare for an exciting cosmic adventure in space exploration.",
       points: [
-        "The NASA SpaceApps Challenge 2023 is gearing up for an exciting cosmic adventure, and you're invited! Whether you're an aspiring space scientist, a data wizard, a game developer, or a creative storyteller, this year's hackathon has something for everyone. If you're ready to join the global SpaceApps community and make your mark in space exploration, follow these simple steps to register for the event.",
+        "The NASA SpaceApps Challenge 2025 is gearing up for an exciting cosmic adventure, and you're invited! Whether you're an aspiring space scientist, a data wizard, a game developer, or a creative storyteller, this year's hackathon has something for everyone. If you're ready to join the global SpaceApps community and make your mark in space exploration, follow these simple steps to register for the event.",
         <strong
           className="text-hackathone-font-rocket-red"
           key={"item-${index}"}
@@ -112,14 +112,14 @@ const BlogPage: React.FC = () => {
         >
           Step 2: Explore the Local Events{" "}
         </strong>,
-        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Once you're on the SpaceApps website, take a moment to explore the available options. You'll find a variety of resources, including information about past challenges, inspirational stories, and more. But right now, we're here for SpaceApps 2023, so let's dive in!",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Once you're on the SpaceApps website, take a moment to explore the available options. You'll find a variety of resources, including information about past challenges, inspirational stories, and more. But right now, we're here for SpaceApps 2025, so let's dive in!",
         <strong
           className="text-hackathone-font-rocket-red"
           key={"item-${index}"}
         >
-          Step 3: Search for 2023 Local Events
+          Step 3: Search for 2025 Local Events
         </strong>,
-        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0To participate in SpaceApps 2023, you'll want to find a local event near you. These events serve as the launchpad for your SpaceApps journey. Click on the 'Find a Local Event' or similar link to begin your search.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0To participate in SpaceApps 2025, you'll want to find a local event near you. These events serve as the launchpad for your SpaceApps journey. Click on the 'Find a Local Event' or similar link to begin your search.",
         <strong
           className="text-hackathone-font-rocket-red"
           key={"item-${index}"}
@@ -147,7 +147,7 @@ const BlogPage: React.FC = () => {
         >
           Step 7: Access Resources and Challenges{" "}
         </strong>,
-        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Congratulations! You're now officially registered for SpaceApps 2023, Athlone. This means you'll have access to a wealth of resources, including datasets, tools, mentorship, and more to help you prepare for the hackathon. Additionally, you can explore the list of exciting challenges that await your innovation and problem-solving skills.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Congratulations! You're now officially registered for SpaceApps 2025, Athlone. This means you'll have access to a wealth of resources, including datasets, tools, mentorship, and more to help you prepare for the hackathon. Additionally, you can explore the list of exciting challenges that await your innovation and problem-solving skills.",
         <strong
           className="text-hackathone-font-rocket-red"
           key={"item-${index}"}
@@ -155,10 +155,10 @@ const BlogPage: React.FC = () => {
           Step 8: Get Ready for the Cosmic Adventure{" "}
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0With your registration complete, you're one step closer to an incredible cosmic adventure. Stay tuned for updates from the Athlone event organizers, connect with fellow participants, and start brainstorming your hackathon ideas. Remember, SpaceApps is not just a competition; it's an opportunity to learn, collaborate, and contribute to space science and exploration.",
-        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0So, whether you're a seasoned space enthusiast or a newcomer with a passion for discovery, SpaceApps 2023 is your chance to shine. Register today, and get ready to reach for the stars at TU Shannon's HackAthlone event. The cosmos is waiting for your brilliant ideas and solutions!",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0So, whether you're a seasoned space enthusiast or a newcomer with a passion for discovery, SpaceApps 2025 is your chance to shine. Register today, and get ready to reach for the stars at TU Shannon's HackAthlone event. The cosmos is waiting for your brilliant ideas and solutions!",
       ],
       author: "Shaiv Mehrotra",
-      date: "Aug 24, 2023",
+      date: "Aug 24, 2025",
       slug: "2",
     },
     {
@@ -166,9 +166,9 @@ const BlogPage: React.FC = () => {
       tags: [{ name: "Technology" }],
       title: "Navigating the SpaceApps Hackathon Challenges",
       summary:
-        "Explore NASA's SpaceApps Challenge 2023 with 31 unique challenges across four domains: Space Exploration, Creative, Data Science, and Game Development. Tailor your cosmic journey by selecting challenges based on difficulty and your passion.",
+        "Explore NASA's SpaceApps Challenge 2025 with 31 unique challenges across four domains: Space Exploration, Creative, Data Science, and Game Development. Tailor your cosmic journey by selecting challenges based on difficulty and your passion.",
       points: [
-        "Are you gearing up for SpaceApps Athlone 2024 and wondering how to find the perfect team to tackle NASA's latest cosmic challenges?",
+        "Are you gearing up for SpaceApps Athlone 2025 and wondering how to find the perfect team to tackle NASA's latest cosmic challenges?",
         "You’re in the right place!",
         "This guide will walk you through strategies and support available at the hackathon to help you form your dream team, join an existing one, or even embark on a solo space adventure.",
         <strong
@@ -248,14 +248,14 @@ const BlogPage: React.FC = () => {
         >
           11. Color-Coded ID Cards
         </strong>,
-        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0To make team formation even easier, participants will receive color-coded ID cards. These stickers will represent your domain or expertise, helping others quickly identify your skills and interests. In SpaceApps Athlone 2024, forming teams, joining forces, and networking are key to your cosmic journey. Whether you’re a seasoned participant or a first-timer, there are countless opportunities to connect, collaborate, and embark on this extraordinary adventure together.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0To make team formation even easier, participants will receive color-coded ID cards. These stickers will represent your domain or expertise, helping others quickly identify your skills and interests. In SpaceApps Athlone 2025, forming teams, joining forces, and networking are key to your cosmic journey. Whether you’re a seasoned participant or a first-timer, there are countless opportunities to connect, collaborate, and embark on this extraordinary adventure together.",
         "Get ready to meet your cosmic crew and take on the universe!",
-        "Join us from October 4th to 6th, 2024, at TU Shannon.",
+        "Join us from October 4th to 6th, 2025, at TU Shannon.",
         "Ignite your creativity, innovate with technology, and explore the cosmos.",
-        "See you there! 🚀🌌 #SpaceApps2024 #TeamFormation #CosmicCrew #HackAthlone",
+        "See you there! 🚀🌌 #SpaceApps2025 #TeamFormation #CosmicCrew #HackAthlone",
       ],
       author: "Shaiv Mehrotra",
-      date: "Aug 24, 2023",
+      date: "Aug 24, 2025",
       slug: "3",
     },
     {
@@ -263,7 +263,7 @@ const BlogPage: React.FC = () => {
       tags: [{ name: "Technology" }],
       title: "Seven Reasons to Choose Space Apps Athlone",
       summary:
-        "Are you ready to embark on an incredible journey of innovation and discovery at Space Apps Athlone 2024? The countdown has started, and we’re excited to reveal the amazing opportunities waiting for you at this year’s hackathon. From access to NASA’s Open Data to the chance to win a trip to witness a rocket launch, Space Apps Athlone is packed with possibilities to ignite your creativity and take your career to new heights.",
+        "Are you ready to embark on an incredible journey of innovation and discovery at Space Apps Athlone 2025? The countdown has started, and we’re excited to reveal the amazing opportunities waiting for you at this year’s hackathon. From access to NASA’s Open Data to the chance to win a trip to witness a rocket launch, Space Apps Athlone is packed with possibilities to ignite your creativity and take your career to new heights.",
       points: [
         <strong
           className="text-hackathone-font-rocket-red"
@@ -321,19 +321,19 @@ const BlogPage: React.FC = () => {
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Participating in Space Apps Athlone is not just about the competition; it’s about gaining valuable experience that can set you apart in the job market. Add this prestigious hackathon to your portfolio and showcase your skills, teamwork, and problem-solving abilities to future employers and collaborators.",
 
-        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space Apps Athlone is more than just an event—it’s a launchpad for your dreams and aspirations. With NASA’s Open Data, top-notch facilities, mentorship, and incredible prizes, you have everything you need to succeed. Join us in exploring the cosmos, pushing the boundaries of technology, and making history at Space Apps Athlone 2024. Your journey to the stars begins here!",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space Apps Athlone is more than just an event—it’s a launchpad for your dreams and aspirations. With NASA’s Open Data, top-notch facilities, mentorship, and incredible prizes, you have everything you need to succeed. Join us in exploring the cosmos, pushing the boundaries of technology, and making history at Space Apps Athlone 2025. Your journey to the stars begins here!",
       ],
       author: "Shaiv Mehrotra & Sneha",
-      date: "Sep 13, 2023",
+      date: "Sep 3, 2025",
       slug: "4",
     },
     {
       image: Space5,
       tags: [{ name: "Technology" }],
       title:
-        "Hacking the Night Away: Unveiling the Thrills of SpaceApps Athlone 2024",
+        "Hacking the Night Away: Unveiling the Thrills of SpaceApps Athlone 2025",
       summary:
-        "Are you ready to embark on a journey of innovation, sleepless nights, and boundless camaraderie? Look no further than SpaceApps Athlone 2024, a hackathon experience that will leave you exhilarated and inspired. Picture a weekend filled with coding, problem-solving, and networking with like-minded individuals from around the globe, all set against the backdrop of NASA’s International Space Apps Challenge.",
+        "Are you ready to embark on a journey of innovation, sleepless nights, and boundless camaraderie? Look no further than SpaceApps Athlone 2025, a hackathon experience that will leave you exhilarated and inspired. Picture a weekend filled with coding, problem-solving, and networking with like-minded individuals from around the globe, all set against the backdrop of NASA’s International Space Apps Challenge.",
       points: [
         <strong
           className="text-hackathone-font-rocket-red"
@@ -391,21 +391,21 @@ const BlogPage: React.FC = () => {
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0SpaceApps Athlone shares the spirit of innovation with renowned hackathons like PennApps and HackMIT. It’s a hub of creativity, learning, and collaboration. Participants don’t just code; they shape the future.",
 
-        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0As the countdown to SpaceApps Athlone 2024 begins, get ready to immerse yourself in an unforgettable hackathon experience. It’s a whirlwind of creativity, camaraderie, and project development that you won’t want to miss. So, mark your calendars, pack your bags (don’t forget that sleeping bag!), and get set to hack the night away. Join us from October 5th and 6th, 2024, at TU Shannon. Let’s reach for the stars together! 🚀🌌",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0As the countdown to SpaceApps Athlone 2025 begins, get ready to immerse yourself in an unforgettable hackathon experience. It’s a whirlwind of creativity, camaraderie, and project development that you won’t want to miss. So, mark your calendars, pack your bags (don’t forget that sleeping bag!), and get set to hack the night away. Join us from October 5th and 6th, 2025, at TU Shannon. Let’s reach for the stars together! 🚀🌌",
 
-        "#SpaceApps2024 #HackAthlone #InnovationUnleashed",
+        "#SpaceApps2025 #HackAthlone #InnovationUnleashed",
       ],
       author: "Shaiv Mehrotra",
-      date: "Sep 13, 2023",
+      date: "Sep 3, 2025",
       slug: "5",
     },
     {
       image: Space6,
       tags: [{ name: "Technology" }],
       title:
-        "Decoding the SpaceApps Challenge 2023: How Projects Soar to Victory",
+        "Decoding the SpaceApps Challenge 2025: How Projects Soar to Victory",
       summary:
-        "As you gear up for the exhilarating journey of SpaceApps Athlone 2024, you might be curious about how your project will be judged and what criteria will guide the selection of the winners. We’ve established a transparent and comprehensive judging process to ensure that every participant understands what it takes to achieve stellar success.",
+        "As you gear up for the exhilarating journey of SpaceApps Athlone 2025, you might be curious about how your project will be judged and what criteria will guide the selection of the winners. We’ve established a transparent and comprehensive judging process to ensure that every participant understands what it takes to achieve stellar success.",
       points: [
         <strong
           className="text-hackathone-font-rocket-red"
@@ -449,14 +449,14 @@ const BlogPage: React.FC = () => {
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0SpaceApps Athlone is all about celebrating diversity and innovation in all its forms. Our judging criteria are crafted to provide an inclusive platform where every team can shine. Whether you’re engineering cutting-edge software, crafting inspiring artwork, or devising ingenious solutions, our criteria ensure that your project is evaluated fairly and comprehensively.",
 
-        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Whether you’re a technical genius, a creative visionary, or a blend of both, know that these criteria are designed to assess projects in their entirety. The SpaceApps Challenge 2024 is about pushing boundaries, unleashing creativity, and embracing the spirit of exploration. Your journey to the stars begins here, and our judging process is your roadmap to cosmic recognition.",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Whether you’re a technical genius, a creative visionary, or a blend of both, know that these criteria are designed to assess projects in their entirety. The SpaceApps Challenge 2025 is about pushing boundaries, unleashing creativity, and embracing the spirit of exploration. Your journey to the stars begins here, and our judging process is your roadmap to cosmic recognition.",
 
-        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0As we approach the event, stay tuned for more updates. In the meantime, keep fueling your imagination, sharpening your skills, and preparing to launch your project into the cosmic arena of SpaceApps Athlone 2024. This is a journey like no other, and together, we’ll make it truly stellar! 🚀🌌",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0As we approach the event, stay tuned for more updates. In the meantime, keep fueling your imagination, sharpening your skills, and preparing to launch your project into the cosmic arena of SpaceApps Athlone 2025. This is a journey like no other, and together, we’ll make it truly stellar! 🚀🌌",
 
-        "At SpaceApps Athlone, every idea has the potential to change the world, and our judging process ensures that every spark of genius is acknowledged and celebrated! 🌟🌠 #SpaceApps2024 #CosmicRecognition #JudgingCriteria #HackAthlone",
+        "At SpaceApps Athlone, every idea has the potential to change the world, and our judging process ensures that every spark of genius is acknowledged and celebrated! 🌟🌠 #SpaceApps2025 #CosmicRecognition #JudgingCriteria #HackAthlone",
       ],
       author: "Shaiv Mehrotra",
-      date: "Sep 13, 2023",
+      date: "Sep 4, 2025",
       slug: "6",
     },
     {
@@ -597,11 +597,11 @@ const BlogPage: React.FC = () => {
         </strong>,
         "Remember, you’re not alone in this journey! Volunteers will be on hand to assist you if you face any issues. The NASA SpaceApps Challenge at TU Shannon in Athlone promises to be an unforgettable experience. Whether you’re traveling from Dublin, Limerick, Cork, Galway, or any other city, you have several convenient transportation options at your disposal. Plan ahead, book your tickets in advance, and get ready to embark on a journey of innovation, collaboration, and exploration. We can’t wait to see you there!",
 
-        "Join us from October 5th and 6th, 2024, at TU Shannon. Let’s reach for the stars together! 🚀🌌",
-        "#SpaceApps2024 #HackAthlone",
+        "Join us from October 5th and 6th, 2025, at TU Shannon. Let’s reach for the stars together! 🚀🌌",
+        "#SpaceApps2025 #HackAthlone",
       ],
       author: "Shaiv Mehrotra",
-      date: "Sep 13, 2023",
+      date: "Sep 5, 2025",
       slug: "7",
     },
     {
@@ -610,7 +610,7 @@ const BlogPage: React.FC = () => {
       title:
         "Navigating the SpaceApps Hackathon Challenges: A Guide to Choosing Your Path",
       summary:
-        "Are you prepared to embark on a stellar journey of creativity, data analysis, game development, and space exploration? The NASA SpaceApps Challenge 2024 has arrived, bringing with it a constellation of exciting challenges. With 31 unique challenges across four diverse domains, it’s time to plot your course among the stars. In this blog, we’ll guide you on how to select the perfect challenge for your adventure.",
+        "Are you prepared to embark on a stellar journey of creativity, data analysis, game development, and space exploration? The NASA SpaceApps Challenge 2025 has arrived, bringing with it a constellation of exciting challenges. With 31 unique challenges across four diverse domains, it’s time to plot your course among the stars. In this blog, we’ll guide you on how to select the perfect challenge for your adventure.",
       points: [
         "A Universe of Domains: Diverse Challenges Await",
 
@@ -618,7 +618,7 @@ const BlogPage: React.FC = () => {
           className="text-hackathone-font-rocket-red"
           key={"item-${index}"}
         >
-          The SpaceApps Hackathon 2024 presents a wide array of challenges
+          The SpaceApps Hackathon 2025 presents a wide array of challenges
           spread across various domains:
         </strong>,
 
@@ -662,10 +662,10 @@ const BlogPage: React.FC = () => {
 
         "By following these steps, you’ll be well-equipped to select a challenge that aligns with your skills, passions, and goals. Remember, the SpaceApps Hackathon isn’t just a competition—it’s an opportunity to learn, collaborate, and contribute to space science and exploration.",
 
-        "Whether you’re a budding astronomer or a seasoned space enthusiast, there’s a challenge waiting for you. Gear up for your cosmic journey at the SpaceApps Hackathon 2024, and may the stars guide your path.",
+        "Whether you’re a budding astronomer or a seasoned space enthusiast, there’s a challenge waiting for you. Gear up for your cosmic journey at the SpaceApps Hackathon 2025, and may the stars guide your path.",
       ],
       author: "Shaiv Mehrotra",
-      date: "Sep 13, 2023",
+      date: "Sep 6, 2025",
       slug: "8",
     },
     {
@@ -740,7 +740,7 @@ const BlogPage: React.FC = () => {
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Participating in a hackathon like SpaceApps Athlone is not just about coding—it's about embracing challenges, collaborating with diverse teams, innovating rapidly, and growing personally and professionally. The skills and experiences gained from hackathons prepare individuals to navigate the complexities of the modern world, equipping them with resilience, creativity, and a passion for continuous improvement.",
       ],
       author: "Shaiv Mehrotra",
-      date: "Sep 13, 2023",
+      date: "Sep 8, 2025",
       slug: "9",
     },
     {
@@ -846,10 +846,10 @@ const BlogPage: React.FC = () => {
         "• Uphold Ethical Standards: ",
         " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Remember to maintain ethical standards throughout the hackathon. Respect your teammates, mentors, and fellow participants. Be inclusive, collaborative, and always prioritize the integrity of your work.",
 
-        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0As you embark on your hackathon journey at SpaceApps Athlone 2024, keep these tips in mind. They’ll not only enhance your experience but also elevate the impact of your projects. Get ready to ignite your creativity, innovate with technology, and explore new horizons. We can’t wait to see your aspirations come to life!",
+        "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0As you embark on your hackathon journey at SpaceApps Athlone 2025, keep these tips in mind. They’ll not only enhance your experience but also elevate the impact of your projects. Get ready to ignite your creativity, innovate with technology, and explore new horizons. We can’t wait to see your aspirations come to life!",
       ],
       author: "Shaiv Mehrotra",
-      date: "Sep 13, 2023",
+      date: "Sep 9, 2025",
       slug: "10",
     },
     // Add this to the blogs array
@@ -928,7 +928,7 @@ const BlogPage: React.FC = () => {
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0HackAthlone 2025 takes place October 3-5. Registration is open now.",
       ],
       author: "Shaiv Mehrotra",
-      date: "Aug 31, 2023",
+      date: "Aug 31, 2025",
       slug: "15",
     },
     // Add this to the blogs array
@@ -1013,7 +1013,7 @@ const BlogPage: React.FC = () => {
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0HackAthlone registration opens soon. Check our social media for exact dates.",
       ],
       author: "Shaiv Mehrotra",
-      date: "Aug 31, 2023",
+      date: "Aug 31, 2025",
       slug: "11",
     },
     // Add this to the blogs array in page.tsx
@@ -1094,7 +1094,7 @@ const BlogPage: React.FC = () => {
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Registrations are opening soon..",
       ],
       author: "Shaiv Mehrotra",
-      date: "Aug 31, 2023",
+      date: "Aug 31, 2025",
       slug: "12",
     },
     // Add this to the blogs array
@@ -1162,7 +1162,7 @@ const BlogPage: React.FC = () => {
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0HackAthlone 2025: October 3-5. Registration opens soon..",
       ],
       author: "Shaiv Mehrotra",
-      date: "Aug 31, 2023",
+      date: "Aug 31, 2025",
       slug: "13",
     },
     // Add this to the blogs array
@@ -1213,7 +1213,7 @@ const BlogPage: React.FC = () => {
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Registration are open..",
       ],
       author: "Shaiv Mehrotra",
-      date: "Aug 31, 2023",
+      date: "Aug 31, 2025",
       slug: "14",
     },
   ];

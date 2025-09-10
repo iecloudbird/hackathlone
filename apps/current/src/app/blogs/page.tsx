@@ -29,8 +29,8 @@ const Blogs = () => {
             <Image src={Sun} alt="Sun Image" />
           </motion.div>
           <BackToTopButton />
-          <Footer />
         </div>
+        <Footer />
       </div>
     </>
   );

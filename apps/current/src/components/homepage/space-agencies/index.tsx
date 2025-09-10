@@ -45,7 +45,7 @@ export const SpaceAgenciesSection: FC<SpaceAgenciesSectionProps> = ({
           transition={{ duration: 0.5, delay: 0.6 }}
           viewport={{ once: true }}
         >
-          <div className="grid grid-cols-5 gap-4 max-md:grid-cols-3">
+          <div className="grid grid-cols-7 gap-4 max-md:grid-cols-2">
             {agencies.map((agency, index) => (
               <AgencyCard
                 key={agency.id}

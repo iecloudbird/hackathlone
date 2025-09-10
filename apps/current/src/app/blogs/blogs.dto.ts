@@ -19,64 +19,40 @@ export const cards = [
   },
   {
     description:
-      "Register for NASA's SpaceApps Challenge 2023 at TU Shannon, Ireland. Explore the website, find the local event (HackAthlone), choose individual or team registration, access resources, and prepare for an exciting cosmic adventure in space exploration.",
-    imageSrc: Space2,
-    slug: "2",
-    title: "Here's How to Register for SpaceApps 2023!",
-  },
-  {
-    description:
-      "Explore NASA's SpaceApps Challenge 2023 with 31 unique challenges across four domains: Space Exploration, Creative, Data Science, and Game Development. Tailor your cosmic journey by selecting challenges based on difficulty and your passion.",
+      "Why Your First Hackathon Will Change How You Think About Everything",
     imageSrc: Space3,
-    slug: "3",
-    title: "Navigating the SpaceApps Hackathon Challenges",
+    slug: "15",
+    title:
+      "What really happens when you spend 48 hours solving problems that matter",
   },
   {
     description:
-      "Space Apps Athlone promises NASA's Open Data, expert networking, 48-hour innovation in top-notch facilities, a hardware toolkit, sustained meals, and exciting prizes, including a NASA trip—an opportunity to elevate your career. Join the space exploration!",
+      "The Science Behind 'Learn, Launch, Lead': What NASA's 2025 Theme Really Means",
     imageSrc: Space4,
-    slug: "4",
-    title: "Seven Reasons to Choose Space Apps Athlone",
+    slug: "14",
+    title:
+      "Why NASA's new theme isn't just marketing, it's how space innovation actually works",
   },
   {
     description:
-      "Are you ready to embark on a journey of innovation, sleepless nights, and boundless camaraderie? Look no further than SpaceApps Athlone 2024, a hackathon experience that will leave you exhilarated and inspired. Picture a weekend filled with coding, problem-solving, and networking with like-minded individuals from around the globe, all set against the backdrop of NASA’s International Space Apps Challenge.",
+      "Seven reasons why this space hackathon is worth your time (and might change your career)",
+    imageSrc: Space1,
+    slug: "13",
+    title: "Why HackAthlone Should Be Your Next Weekend Plan",
+  },
+  {
+    description:
+      "The honest guide to making the most of your 48 hours at HackAthlone",
+    imageSrc: Space2,
+    slug: "12",
+    title: "Your First Space Hackathon: What Nobody Tells You (But Should)",
+  },
+  {
+    description:
+      "Why the world's largest space hackathon needs storytellers, designers, and big-picture thinkers just as much as programmers",
     imageSrc: Space5,
-    slug: "5",
-    title:
-      "Hacking the Night Away: Unveiling the Thrills of SpaceApps Athlone 2024",
-  },
-  {
-    description:
-      "As you gear up for the exhilarating journey of SpaceApps Athlone 2024, you might be curious about how your project will be judged and what criteria will guide the selection of the winners. We’ve established a transparent and comprehensive judging process to ensure that every participant understands what it takes to achieve stellar success.",
-    imageSrc: Space6,
-    slug: "6",
-    title:
-      "Decoding the SpaceApps Challenge 2023: How Projects Soar to Victory",
-  },
-  {
-    description:
-      "To help you get there, we’ve put together a handy guide on how to reach TU Shannon’s engineering building from major cities like Dublin, Limerick, Cork, and Galway.",
-    imageSrc: Space7,
-    slug: "7",
-    title:
-      "Navigating Your Way to NASA SpaceApps Challenge at TU Shannon in Athlone",
-  },
-  {
-    description:
-      "Are you prepared to embark on a stellar journey of creativity, data analysis, game development, and space exploration? The NASA SpaceApps Challenge 2024 has arrived, bringing with it a constellation of exciting challenges. With 31 unique challenges across four diverse domains, it’s time to plot your course among the stars. In this blog, we’ll guide you on how to select the perfect challenge for your adventure.",
-    imageSrc: Space8,
-    slug: "8",
-    title:
-      "Navigating the SpaceApps Hackathon Challenges: A Guide to Choosing Your Path",
-  },
-  {
-    description:
-      "Hackathons are not just about coding and competition; they are transformative experiences that mold individuals into resilient, innovative thinkers ready to tackle real-world challenges. Whether you're a seasoned developer or a newcomer to the tech scene, participating in a hackathon like SpaceApps Athlone can significantly impact your personal growth and readiness for future endeavors.",
-    imageSrc: Space9,
-    slug: "9",
-    title:
-      "How Hackathons Fuel Personal Growth and Prepare You for Life's Challenges",
+    slug: "11",
+    title: "You Don't Need to Code to Win at Space Apps (And Here's Proof)",
   },
   {
     description:
@@ -88,39 +64,63 @@ export const cards = [
   },
   {
     description:
-      "Why the world's largest space hackathon needs storytellers, designers, and big-picture thinkers just as much as programmers",
+      "Hackathons are not just about coding and competition; they are transformative experiences that mold individuals into resilient, innovative thinkers ready to tackle real-world challenges. Whether you're a seasoned developer or a newcomer to the tech scene, participating in a hackathon like SpaceApps Athlone can significantly impact your personal growth and readiness for future endeavors.",
+    imageSrc: Space9,
+    slug: "9",
+    title:
+      "How Hackathons Fuel Personal Growth and Prepare You for Life's Challenges",
+  },
+  {
+    description:
+      "Are you prepared to embark on a stellar journey of creativity, data analysis, game development, and space exploration? The NASA SpaceApps Challenge 2024 has arrived, bringing with it a constellation of exciting challenges. With 31 unique challenges across four diverse domains, it's time to plot your course among the stars. In this blog, we'll guide you on how to select the perfect challenge for your adventure.",
+    imageSrc: Space8,
+    slug: "8",
+    title:
+      "Navigating the SpaceApps Hackathon Challenges: A Guide to Choosing Your Path",
+  },
+  {
+    description:
+      "To help you get there, we've put together a handy guide on how to reach TU Shannon's engineering building from major cities like Dublin, Limerick, Cork, and Galway.",
+    imageSrc: Space7,
+    slug: "7",
+    title:
+      "Navigating Your Way to NASA SpaceApps Challenge at TU Shannon in Athlone",
+  },
+  {
+    description:
+      "As you gear up for the exhilarating journey of SpaceApps Athlone 2024, you might be curious about how your project will be judged and what criteria will guide the selection of the winners. We've established a transparent and comprehensive judging process to ensure that every participant understands what it takes to achieve stellar success.",
+    imageSrc: Space6,
+    slug: "6",
+    title:
+      "Decoding the SpaceApps Challenge 2023: How Projects Soar to Victory",
+  },
+  {
+    description:
+      "Are you ready to embark on a journey of innovation, sleepless nights, and boundless camaraderie? Look no further than SpaceApps Athlone 2024, a hackathon experience that will leave you exhilarated and inspired. Picture a weekend filled with coding, problem-solving, and networking with like-minded individuals from around the globe, all set against the backdrop of NASA's International Space Apps Challenge.",
     imageSrc: Space5,
-    slug: "11",
-    title: "You Don't Need to Code to Win at Space Apps (And Here's Proof)",
+    slug: "5",
+    title:
+      "Hacking the Night Away: Unveiling the Thrills of SpaceApps Athlone 2024",
   },
   {
     description:
-      "The honest guide to making the most of your 48 hours at HackAthlone",
-    imageSrc: Space2,
-    slug: "12",
-    title: "Your First Space Hackathon: What Nobody Tells You (But Should)",
-  },
-  {
-    description:
-      "Seven reasons why this space hackathon is worth your time (and might change your career)",
-    imageSrc: Space1,
-    slug: "13",
-    title: "Why HackAthlone Should Be Your Next Weekend Plan",
-  },
-  {
-    description:
-      "Why NASA's new theme isn't just marketing, it's how space innovation actually works",
+      "Space Apps Athlone promises NASA's Open Data, expert networking, 48-hour innovation in top-notch facilities, a hardware toolkit, sustained meals, and exciting prizes, including a NASA trip—an opportunity to elevate your career. Join the space exploration!",
     imageSrc: Space4,
-    slug: "14",
-    title:
-      "The Science Behind 'Learn, Launch, Lead': What NASA's 2025 Theme Really Means",
+    slug: "4",
+    title: "Seven Reasons to Choose Space Apps Athlone",
   },
   {
     description:
-      "What really happens when you spend 48 hours solving problems that matter",
+      "Explore NASA's SpaceApps Challenge 2025 with 31 unique challenges across four domains: Space Exploration, Creative, Data Science, and Game Development. Tailor your cosmic journey by selecting challenges based on difficulty and your passion.",
     imageSrc: Space3,
-    slug: "15",
-    title:
-      "Why Your First Hackathon Will Change How You Think About Everything",
+    slug: "3",
+    title: "Navigating the SpaceApps Hackathon Challenges",
+  },
+  {
+    description:
+      "Register for NASA's SpaceApps Challenge 2025at TU Shannon, Ireland. Explore the website, find the local event (HackAthlone), choose individual or team registration, access resources, and prepare for an exciting cosmic adventure in space exploration.",
+    imageSrc: Space2,
+    slug: "2",
+    title: "Here's How to Register for SpaceApps 2023!",
   },
 ];

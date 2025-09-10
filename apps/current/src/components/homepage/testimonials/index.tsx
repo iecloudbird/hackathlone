@@ -8,8 +8,6 @@ interface TestimonialsSectionProps {
   testimonialData: TestimonialData;
 }
 
-const containerClass = "mx-auto h-96 max-w-7xl overflow-hidden";
-
 export const TestimonialsSection: FC<TestimonialsSectionProps> = ({
   testimonialData,
 }) => {
@@ -67,17 +65,19 @@ export const TestimonialsSection: FC<TestimonialsSectionProps> = ({
           {title}
         </motion.h2>
 
-        <div className={containerClass}>
-          {visibleCards.map((card) => (
-            <TestimonialCard
-              key={card.id}
-              text={card.text}
-              teamName={card.teamName}
-              position={card.position}
-              isActive={card.position === "center"}
-              onClick={() => handleCardClick(card.index)}
-            />
-          ))}
+        <div className="relative mx-auto h-96 w-full">
+          <div className="relative mx-auto mt-48 flex items-center justify-center">
+            {visibleCards.map((card) => (
+              <TestimonialCard
+                key={card.id}
+                text={card.text}
+                teamName={card.teamName}
+                position={card.position}
+                isActive={card.position === "center"}
+                onClick={() => handleCardClick(card.index)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </SectionContainer>

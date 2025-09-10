@@ -1,19 +1,18 @@
 import { type StaticImageData } from "next/image";
 import Aeb from "@/assets/images/general/landing-page/space-agencies/aeb.png";
+import AEE from "@/assets/images/general/landing-page/space-agencies/AEE.png";
 import Aem from "@/assets/images/general/landing-page/space-agencies/aem.png";
 import Aep_O from "@/assets/images/general/landing-page/space-agencies/aep.png";
 import Asi from "@/assets/images/general/landing-page/space-agencies/asi.png";
-import Australia from "@/assets/images/general/landing-page/space-agencies/australia.png";
+import Bahrain from "@/assets/images/general/landing-page/space-agencies/BSA.png";
 import Canada from "@/assets/images/general/landing-page/space-agencies/canada.png";
 import Conae from "@/assets/images/general/landing-page/space-agencies/conae.png";
-import Cst from "@/assets/images/general/landing-page/space-agencies/cst_round.png";
 import Eesa from "@/assets/images/general/landing-page/space-agencies/eesa.png";
 import Isro from "@/assets/images/general/landing-page/space-agencies/isro.png";
 import Jaxa from "@/assets/images/general/landing-page/space-agencies/jaxa.png";
-import Nssa from "@/assets/images/general/landing-page/space-agencies/nssa.png";
+import MBRSC from "@/assets/images/general/landing-page/space-agencies/MBRSC.png";
 import Sansa from "@/assets/images/general/landing-page/space-agencies/sansa.png";
-import Ssa from "@/assets/images/general/landing-page/space-agencies/spanish.png";
-import Turkey from "@/assets/images/general/landing-page/space-agencies/tsa.png";
+import UKSA from "@/assets/images/general/landing-page/space-agencies/UKSA.png";
 
 export interface SpaceAgency {
   id: string;
@@ -52,12 +51,6 @@ export const spaceAgenciesData: SpaceAgenciesSectionData = {
       url: "https://aep.gov.py/",
     },
     {
-      id: "australia",
-      name: "Australian Space Agency",
-      logo: Australia,
-      url: "https://www.industry.gov.au/australian-space-agency",
-    },
-    {
       id: "canada",
       name: "Canadian Space Agency",
       logo: Canada,
@@ -94,34 +87,34 @@ export const spaceAgenciesData: SpaceAgenciesSectionData = {
       url: "https://global.jaxa.jp/",
     },
     {
-      id: "nssa",
-      name: "National Space Science Agency",
-      logo: Nssa,
-      url: "https://www.iafastro.org/membership/all-members/national-space-science-agency-nssa.html",
-    },
-    {
       id: "sansa",
       name: "South African National Space Agency",
       logo: Sansa,
       url: "https://www.sansa.org.za/",
     },
     {
-      id: "turkey",
-      name: "Turkish Space Agency",
-      logo: Turkey,
-      url: "https://tua.gov.tr/en",
+      id: "bahrain",
+      name: "Bahrain Space Agency",
+      logo: Bahrain,
+      url: "https://bsa.gov.bh/",
     },
     {
-      id: "cst",
-      name: "Saudi Space Agency",
-      logo: Cst,
-      url: "https://www.cst.gov.sa",
-    },
-    {
-      id: "ssa",
+      id: "aee",
       name: "Spanish Space Agency",
-      logo: Ssa,
+      logo: AEE,
       url: "https://www.aee.gob.es/",
+    },
+    {
+      id: "mbrsc",
+      name: "Mohammed Bin Rashid Space Centre",
+      logo: MBRSC,
+      url: "http://www.mbrsc.ae/",
+    },
+    {
+      id: "uksa",
+      name: "UK Space Agency",
+      logo: UKSA,
+      url: "https://www.gov.uk/government/organisations/uk-space-agency",
     },
   ],
 };

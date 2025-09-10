@@ -1,12 +1,7 @@
-import Arjun from "@/assets/images/general/landing-page/teams/Arjun.png";
-import Catherine from "@/assets/images/general/landing-page/teams/Catherine Pulickan.jpg";
 import Ken from "@/assets/images/general/landing-page/teams/ken.jpg";
-import Khayati from "@/assets/images/general/landing-page/teams/Khayati Arora.jpg";
-import Khushi from "@/assets/images/general/landing-page/teams/Khushi Mehta.png";
 import Kkwaish from "@/assets/images/general/landing-page/teams/Kkhawaish Gulati.jpeg";
 import Manav from "@/assets/images/general/landing-page/teams/Manav_Shah.jpg";
 import Nitish from "@/assets/images/general/landing-page/teams/Nitish.jpg";
-import Nnajiofor from "@/assets/images/general/landing-page/teams/Nnajiofor Uchenna Franklin.jpg";
 import AB from "@/assets/images/general/landing-page/teams/Raj_Bhalla.jpg";
 import Sahir from "@/assets/images/general/landing-page/teams/Sahir Sharma.jpg";
 import Shean from "@/assets/images/general/landing-page/teams/Shean Hans Teoh.jpg";
@@ -74,48 +69,6 @@ export const teamMembers = [
     },
   },
   {
-    bio: [
-      [
-        { highlight: false, text: "Hey there! I am Arjun, a passionate " },
-        { highlight: true, text: "designer " },
-        {
-          highlight: false,
-          text: "who focuses on giving good experience to users. Making life easy for everyone!",
-        },
-      ],
-    ],
-    image: Arjun,
-    name: "Arjun Narayanan",
-    role: "UI/UX Designer",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/arjun-s-narayanan-006018185/",
-      twitter: null,
-    },
-  },
-  {
-    bio: [
-      [
-        {
-          highlight: false,
-          text: "Im Catherine Pulickan and I'm a master’s student in Human-Computer Interaction at UCD. ",
-        },
-        {
-          highlight: false,
-          text: "I specialise in user-centered design and research, with a passion for solving complex problems and creating accessible digital experiences.",
-        },
-      ],
-    ],
-    image: Catherine,
-    name: "Catherine Pulickan",
-    role: "Operations & Communications",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/catherine-pulickan-731342159/",
-      twitter: null,
-    },
-  },
-  {
     bio: null,
     image: Kkwaish,
     name: "Kkhawaish Gulati",
@@ -128,41 +81,6 @@ export const teamMembers = [
   },
   {
     bio: null,
-    image: Khushi,
-    name: "Khushi Mehta",
-    role: "Social Media Content Designer",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/khushi-mehta-9905101bb/",
-      twitter: null,
-    },
-  },
-
-  {
-    bio: null,
-    image: Khayati,
-    name: "Khayati Arora",
-    role: "Operations & Communications",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/khayati-arora-99b025205/",
-      twitter: null,
-    },
-  },
-  {
-    bio: null,
-    image: Nnajiofor,
-    name: "Uchenna Nnajiofor",
-    role: "Web Developer",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/nnajiofor-uchenna-746a1b256/",
-      twitter: null,
-    },
-  },
-
-  {
-    bio: null,
     image: Ken,
     name: "Liew Zi Ken",
     role: "Event Photographer",
@@ -173,7 +91,6 @@ export const teamMembers = [
       twitter: null,
     },
   },
-
   {
     bio: null,
     image: AB,

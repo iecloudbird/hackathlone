@@ -129,8 +129,8 @@ const Faq = () => {
         </div>
 
         <BackToTopButton />
-        <Footer />
       </div>
+      <Footer />
     </section>
   );
 };
