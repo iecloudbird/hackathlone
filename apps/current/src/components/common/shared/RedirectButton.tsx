@@ -25,7 +25,7 @@ export const RedirectButton: FC<Props> = ({
     <a
       href={href}
       className={classNames(
-        "block cursor-pointer rounded-lg bg-white px-8 py-3 text-sm font-bold text-black",
+        "block cursor-pointer rounded-lg bg-white px-8 py-2.5 text-sm font-bold text-black",
         buttonTransition,
         variantStyles[variant],
         className

@@ -2,7 +2,6 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { HelpCircle } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -19,7 +18,7 @@ export default function RegistrationHelp() {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div>
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
           <motion.div
@@ -42,14 +41,14 @@ export default function RegistrationHelp() {
 
             <motion.div
               animate={{
-                width: hovered ? 240 : 56, // <- smooth expand/shrink
+                width: hovered ? 140 : 140, // Reduced width for shorter text
               }}
               transition={{ type: "spring", stiffness: 300, damping: 25 }}
               className="overflow-hidden"
             >
               <Button
                 size="lg"
-                className="relative w-full overflow-hidden rounded-full bg-orange-500 px-6 py-4 shadow-xl hover:bg-orange-600"
+                className="relative w-full overflow-hidden rounded-lg bg-orange-500 p-5 shadow-xl hover:bg-orange-600"
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
               >
@@ -67,7 +66,7 @@ export default function RegistrationHelp() {
                         }}
                         className="whitespace-nowrap"
                       >
-                        Need Help Registering?
+                        Get Help
                       </motion.span>
                     ) : (
                       <motion.span
@@ -77,7 +76,7 @@ export default function RegistrationHelp() {
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.15 }}
                       >
-                        <HelpCircle className="size-6" />
+                        Need Help?
                       </motion.span>
                     )}
                   </AnimatePresence>

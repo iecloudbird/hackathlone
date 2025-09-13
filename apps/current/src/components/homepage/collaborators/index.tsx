@@ -54,14 +54,6 @@ export const CollaboratorsSection: FC<CollaboratorsSectionProps> = ({
                 >
                   <strong className="text-white">{point.title}</strong>{" "}
                   {point.description}{" "}
-                  <a
-                    href={point.link}
-                    className="text-blue-400 underline hover:text-blue-300"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {point.linkText}
-                  </a>
                 </li>
               ))}
             </ul>

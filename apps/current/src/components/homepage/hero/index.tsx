@@ -97,13 +97,13 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
           viewport={{ once: true }}
-          className="flex items-center justify-center gap-6 font-hackathoneCabinetGrotesk"
+          className="flex items-center justify-center gap-6 font-hackathoneCabinetGrotesk max-md:flex-col"
         >
           <RedirectButton href={registerButtonHref} text={registerButtonText} />
+          <RegistrationHelp />
         </motion.div>
       </div>
       <ShootingStars className="z-[-1]" />
-      <RegistrationHelp />
     </SectionContainer>
   );
 };

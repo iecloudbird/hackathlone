@@ -16,8 +16,6 @@ export interface CollaboratorsSectionData {
   bulletPoints: {
     title: string;
     description: string;
-    link: string;
-    linkText: string;
   }[];
   collaborators: Collaborator[];
 }
@@ -25,21 +23,22 @@ export interface CollaboratorsSectionData {
 export const collaboratorsData: CollaboratorsSectionData = {
   title: "NASA Space Apps",
   description:
-    "The NASA Space Apps Challenge 2025 is backed by NASA's Earth Science Division through collaborations with Booz Allen Hamilton, Mindgrub, and SecondMuse. This year's hackathon theme is funded by NASA's Heliophysics Division in celebration of the Helio Big Year.",
+    "The NASA Space Apps Challenge 2025 is backed by NASA's Earth Science Division through collaborations with Booz Allen Hamilton, Mindgrub, and SecondMuse. This year's hackathon theme is funded by NASA's Heliophysics Division in celebration of the Helio Big Year.This year’s hackathon theme is Learn, Launch, Lead which inspires participants to grow their skills, put bold ideas into motion, and lead innovation in their communities:",
   bulletPoints: [
     {
-      title: "NASA's Heliophysics Division",
+      title: "Learn:",
       description:
-        "studies the Sun's impact on space, Earth, and technology, using a fleet of spacecraft to understand solar wind and space weather. This research protects technology and astronauts while revealing how stars influence planetary habitability.",
-      link: "https://science.nasa.gov/heliophysics/",
-      linkText: "(Know more)",
+        "Build new skills in STEM, coding, design, storytelling, and research by engaging with NASA’s missions and open data. Whether student or professional, this is learning by doing.",
     },
     {
-      title: "NASA's Earth Science Division (ESD)",
+      title: "Launch:",
       description:
-        "uses cutting-edge technology to study Earth's systems, like the atmosphere and oceans, providing free data on climate and environmental changes. By collaborating globally and supporting education, ESD empowers students to explore and understand our planet.",
-      link: "https://science.nasa.gov/earth-science",
-      linkText: "(Know more)",
+        "Turn ideas into action using NASA’s datasets and tools to tackle real challenges on Earth and in space, like climate, solar weather, resilience, or creative storytelling.",
+    },
+    {
+      title: "Lead:",
+      description:
+        "Inspire others by collaborating, mentoring, and sharing knowledge. Leadership here is about sparking innovation and guiding impact in your community and beyond.",
     },
   ],
   collaborators: [
