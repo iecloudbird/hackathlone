@@ -1,12 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import React from "react";
+import M01 from "@/assets/images/general/landing-page/hackthlone24/24_1.jpg";
+import M10 from "@/assets/images/general/landing-page/hackthlone24/24_10.jpg";
+import M02 from "@/assets/images/general/landing-page/hackthlone24/24_2.jpg";
+import M03 from "@/assets/images/general/landing-page/hackthlone24/24_3.jpg";
 import J23_1 from "@/assets/images/journey/23-1-min.png";
 import J23_2 from "@/assets/images/journey/23-2-min.jpg";
 import J23_3 from "@/assets/images/journey/23-3-min.png";
 import J23_4 from "@/assets/images/journey/23-4-min.png";
-import J24_1 from "@/assets/images/journey/24-1-min.jpeg";
-import J24_2 from "@/assets/images/journey/24-2-min.jpg";
 import { Timeline } from "@/components/ui/timeline";
 
 export function TimelineDemo() {
@@ -83,14 +85,28 @@ export function TimelineDemo() {
           </div>
           <div className="mt-3 grid grid-cols-2 gap-4">
             <Image
-              src={J24_1}
+              src={M01}
               alt="hero template"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <Image
-              src={J24_2}
+              src={M02}
+              alt="feature template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <Image
+              src={M03}
+              alt="feature template"
+              width={500}
+              height={500}
+              className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+            />
+            <Image
+              src={M10}
               alt="feature template"
               width={500}
               height={500}

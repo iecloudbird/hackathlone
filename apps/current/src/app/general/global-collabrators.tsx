@@ -46,8 +46,6 @@ const GlobalCollabrators = () => {
             >
               SecondMuse
             </a>
-            . This year’s hackathon theme is funded by NASA’s Heliophysics
-            Division in celebration of the Helio Big Year.
           </p>
           <ul className="list-disc pl-6 pr-4 pt-8 sm:pl-12 sm:pr-8">
             <li>

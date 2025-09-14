@@ -23,7 +23,7 @@ export interface CollaboratorsSectionData {
 export const collaboratorsData: CollaboratorsSectionData = {
   title: "NASA Space Apps",
   description:
-    "The NASA Space Apps Challenge 2025 is backed by NASA's Earth Science Division through collaborations with Booz Allen Hamilton, Mindgrub, and SecondMuse. This year's hackathon theme is funded by NASA's Heliophysics Division in celebration of the Helio Big Year.This year’s hackathon theme is Learn, Launch, Lead which inspires participants to grow their skills, put bold ideas into motion, and lead innovation in their communities:",
+    "The NASA Space Apps Challenge 2025 is backed by NASA's Earth Science Division through collaborations with Booz Allen Hamilton, Mindgrub, and SecondMuse. This year’s hackathon theme is Learn, Launch, Lead which inspires participants to grow their skills, put bold ideas into motion, and lead innovation in their communities:",
   bulletPoints: [
     {
       title: "Learn:",

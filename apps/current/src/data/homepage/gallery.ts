@@ -1,17 +1,5 @@
 import { type StaticImageData } from "next/image";
 
-// Gallery image imports - Moments to Relive
-import M01 from "@/assets/images/general/landing-page/glimpse/moments-to-relive/010.png";
-import M02 from "@/assets/images/general/landing-page/glimpse/moments-to-relive/017.png";
-import M03 from "@/assets/images/general/landing-page/glimpse/moments-to-relive/023.png";
-import M04 from "@/assets/images/general/landing-page/glimpse/moments-to-relive/046.png";
-import M05 from "@/assets/images/general/landing-page/glimpse/moments-to-relive/057.png";
-import M06 from "@/assets/images/general/landing-page/glimpse/moments-to-relive/106.png";
-import M07 from "@/assets/images/general/landing-page/glimpse/moments-to-relive/229.png";
-import M08 from "@/assets/images/general/landing-page/glimpse/moments-to-relive/248.png";
-import M09 from "@/assets/images/general/landing-page/glimpse/moments-to-relive/263.png";
-
-// Gallery image imports - Photo Wall
 import P01 from "@/assets/images/general/landing-page/glimpse/photo_wall/033.png";
 import P02 from "@/assets/images/general/landing-page/glimpse/photo_wall/041.png";
 import P03 from "@/assets/images/general/landing-page/glimpse/photo_wall/105.png";
@@ -23,6 +11,16 @@ import P08 from "@/assets/images/general/landing-page/glimpse/photo_wall/256.png
 import P09 from "@/assets/images/general/landing-page/glimpse/photo_wall/261.png";
 import P10 from "@/assets/images/general/landing-page/glimpse/photo_wall/265.png";
 import P11 from "@/assets/images/general/landing-page/glimpse/photo_wall/340.png";
+import M01 from "@/assets/images/general/landing-page/hackthlone24/24_1.jpg";
+import M10 from "@/assets/images/general/landing-page/hackthlone24/24_10.jpg";
+import M02 from "@/assets/images/general/landing-page/hackthlone24/24_2.jpg";
+import M03 from "@/assets/images/general/landing-page/hackthlone24/24_3.jpg";
+import M04 from "@/assets/images/general/landing-page/hackthlone24/24_4.jpg";
+import M05 from "@/assets/images/general/landing-page/hackthlone24/24_5.jpg";
+import M06 from "@/assets/images/general/landing-page/hackthlone24/24_6.jpg";
+import M07 from "@/assets/images/general/landing-page/hackthlone24/24_7.jpg";
+import M08 from "@/assets/images/general/landing-page/hackthlone24/24_8.jpg";
+import M09 from "@/assets/images/general/landing-page/hackthlone24/24_9.jpg";
 
 export interface GalleryImage {
   src: StaticImageData | string;
@@ -58,6 +56,7 @@ export const gallerySectionData: GallerySectionData = {
         { src: M07, alt: "HackAthlone moment 7", id: "m07" },
         { src: M08, alt: "HackAthlone moment 8", id: "m08" },
         { src: M09, alt: "HackAthlone moment 9", id: "m09" },
+        { src: M10, alt: "HackAthlone moment 9", id: "m10" },
       ],
     },
     {

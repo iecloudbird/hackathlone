@@ -1,5 +1,7 @@
+/* eslint-disable import/no-extraneous-dependencies */
 "use client";
 import { useState } from "react";
+import { Toaster, toast } from "react-hot-toast";
 import { Footer } from "@/components/common/shared/footer";
 import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
 import { ShootingStars } from "@/components/ui/shooting-stars";
@@ -13,12 +15,38 @@ const ContactUs: React.FunctionComponent = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) {
+        // try parse json error, fallback to text
+        let errMsg = "";
+        try {
+          const j = await res.json();
+          errMsg = j?.error || res.statusText;
+        } catch {
+          errMsg = await res.text().catch(() => res.statusText);
+        }
+        toast.error(`Error: ${errMsg}`);
+        return;
+      }
+
+      toast.success("Message sent — thank you!");
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      toast.error("Network error — please try again.");
+    }
   };
 
   return (
     <div className="relative min-h-screen bg-black text-white">
+      <Toaster position="bottom-right" />
       <ShootingStars />
       <StarsBackground />
       <div className="relative z-20 py-[12px] sm:py-[24px]">
