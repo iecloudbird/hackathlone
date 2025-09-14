@@ -22,7 +22,7 @@ export function TimelineDemo() {
             Our beginning
           </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            First-ever 48-hour space hackathon in Ireland
+            First-ever 48 hour space hackathon in Ireland
           </div>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
             100+ participants from across Ireland
