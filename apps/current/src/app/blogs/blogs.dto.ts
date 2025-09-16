@@ -72,7 +72,7 @@ export const cards = [
   },
   {
     description:
-      "Are you prepared to embark on a stellar journey of creativity, data analysis, game development, and space exploration? The NASA SpaceApps Challenge 2024 has arrived, bringing with it a constellation of exciting challenges. With 31 unique challenges across four diverse domains, it's time to plot your course among the stars. In this blog, we'll guide you on how to select the perfect challenge for your adventure.",
+      "Are you prepared to embark on a stellar journey of creativity, data analysis, game development, and space exploration? The NASA SpaceApps Challenge 2025 has arrived, bringing with it a constellation of exciting challenges. With 31 unique challenges across four diverse domains, it's time to plot your course among the stars. In this blog, we'll guide you on how to select the perfect challenge for your adventure.",
     imageSrc: Space8,
     slug: "8",
     title:
@@ -88,19 +88,19 @@ export const cards = [
   },
   {
     description:
-      "As you gear up for the exhilarating journey of SpaceApps Athlone 2024, you might be curious about how your project will be judged and what criteria will guide the selection of the winners. We've established a transparent and comprehensive judging process to ensure that every participant understands what it takes to achieve stellar success.",
+      "As you gear up for the exhilarating journey of SpaceApps Athlone 2025, you might be curious about how your project will be judged and what criteria will guide the selection of the winners. We've established a transparent and comprehensive judging process to ensure that every participant understands what it takes to achieve stellar success.",
     imageSrc: Space6,
     slug: "6",
     title:
-      "Decoding the SpaceApps Challenge 2023: How Projects Soar to Victory",
+      "Decoding the SpaceApps Challenge 2025: How Projects Soar to Victory",
   },
   {
     description:
-      "Are you ready to embark on a journey of innovation, sleepless nights, and boundless camaraderie? Look no further than SpaceApps Athlone 2024, a hackathon experience that will leave you exhilarated and inspired. Picture a weekend filled with coding, problem-solving, and networking with like-minded individuals from around the globe, all set against the backdrop of NASA's International Space Apps Challenge.",
+      "Are you ready to embark on a journey of innovation, sleepless nights, and boundless camaraderie? Look no further than SpaceApps Athlone 2025, a hackathon experience that will leave you exhilarated and inspired. Picture a weekend filled with coding, problem-solving, and networking with like-minded individuals from around the globe, all set against the backdrop of NASA's International Space Apps Challenge.",
     imageSrc: Space5,
     slug: "5",
     title:
-      "Hacking the Night Away: Unveiling the Thrills of SpaceApps Athlone 2024",
+      "Hacking the Night Away: Unveiling the Thrills of SpaceApps Athlone 2025",
   },
   {
     description:
@@ -121,6 +121,6 @@ export const cards = [
       "Register for NASA's SpaceApps Challenge 2025at TU Shannon, Ireland. Explore the website, find the local event (HackAthlone), choose individual or team registration, access resources, and prepare for an exciting cosmic adventure in space exploration.",
     imageSrc: Space2,
     slug: "2",
-    title: "Here's How to Register for SpaceApps 2023!",
+    title: "Here's How to Register for SpaceApps 2025!",
   },
 ];

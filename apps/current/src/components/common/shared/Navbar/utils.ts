@@ -12,18 +12,28 @@ export const navigationData = (
   currentPath: string
 ): NavigationItem[] => [
   {
-    route: () => router.push("/"),
-    text: "Home",
-    path: "/",
-    isActive: currentPath === "/",
-  },
-  {
     route: () => router.push("/about"),
     text: "About",
     path: "/about",
     isActive: currentPath.startsWith("/about"),
   },
+  {
+    route: () => router.push("/teams"),
+    text: "Team",
+    path: "/teams",
+    isActive: currentPath.startsWith("/teams"),
+  },
 
+  {
+    route: () =>
+      window.open(
+        "https://www.spaceappschallenge.org/2025/challenges/",
+        "_blank"
+      ),
+    text: "Challenges",
+    path: "/challenges",
+    isActive: false, // External link, never active
+  },
   {
     route: () => router.push("/blogs"),
     text: "Blogs",
@@ -41,16 +51,6 @@ export const navigationData = (
     text: "Contact Us",
     path: "/contact-us",
     isActive: currentPath.startsWith("/contact-us"),
-  },
-  {
-    route: () =>
-      window.open(
-        "https://www.spaceappschallenge.org/2025/challenges/",
-        "_blank"
-      ),
-    text: "Challenges",
-    path: "/challenges",
-    isActive: false, // External link, never active
   },
 ];
 

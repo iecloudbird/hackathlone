@@ -8,7 +8,7 @@ export interface TestimonialData {
 }
 
 export const testimonialData: TestimonialData = {
-  title: "Stories Unfolded at Hackathlone",
+  title: "Stories Unfolded at HackAthlone",
   testimonials: [
     {
       id: "Spartans",

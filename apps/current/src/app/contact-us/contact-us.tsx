@@ -5,7 +5,6 @@ import { Toaster, toast } from "react-hot-toast";
 import { Footer } from "@/components/common/shared/footer";
 import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
 import { ShootingStars } from "@/components/ui/shooting-stars";
-import { StarsBackground } from "@/components/ui/stars-background";
 import BackToTopButton from "../general/back-to-top";
 
 const ContactUs: React.FunctionComponent = () => {
@@ -45,10 +44,9 @@ const ContactUs: React.FunctionComponent = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-black text-white">
+    <div className="relative min-h-screen bg-deepSpace text-white">
       <Toaster position="bottom-right" />
       <ShootingStars />
-      <StarsBackground />
       <div className="relative z-20 py-[12px] sm:py-[24px]">
         <NavbarDemo />
         <div className="my-8 flex min-h-screen flex-col items-center justify-center px-4">

@@ -6,18 +6,16 @@ import { Footer } from "@/components/common/shared/footer";
 import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
 import { SectionContainer } from "@/components/homepage/SectionContainer";
 import { ShootingStars } from "@/components/ui/shooting-stars";
-import { StarsBackground } from "@/components/ui/stars-background";
 import BackToTopButton from "../general/back-to-top";
 
 const Teams = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-black text-white">
+    <section className="relative min-h-screen overflow-hidden bg-deepSpace text-white">
       {/* Main Content */}
       <div className="relative z-10 py-3 sm:py-3 md:py-6">
         <NavbarDemo />
         <SectionContainer>
           <ShootingStars />
-          <StarsBackground />
           {/* Content Container */}
           <div className="mx-auto flex flex-col items-center justify-center">
             <motion.h2

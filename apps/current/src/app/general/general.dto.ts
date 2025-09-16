@@ -3,7 +3,7 @@ import Booz from "@/assets/images/general/landing-page/collabrators/booz.png";
 import Mindgrub from "@/assets/images/general/landing-page/collabrators/mindgrub.png";
 import SecondMuse from "@/assets/images/general/landing-page/collabrators/muse.png";
 import GloablCollabSection from "@/assets/images/general/landing-page/gloabl_collab_section.jpg";
-import HackathloneChallenge from "@/assets/images/general/landing-page/hackathlone_challenge.jpg";
+import HackAthloneChallenge from "@/assets/images/general/landing-page/hackathlone_challenge.jpg";
 import Machine from "@/assets/images/general/landing-page/machine.jpg";
 import Tus1 from "@/assets/images/general/landing-page/mapping-images/tus1.jpg";
 import Tus2 from "@/assets/images/general/landing-page/mapping-images/tus2.jpg";
@@ -361,7 +361,7 @@ export const events = (Router: RouterType) => [
 
 export const shannonData = [
   {
-    img: HackathloneChallenge,
+    img: HackAthloneChallenge,
   },
   {
     img: Machine,

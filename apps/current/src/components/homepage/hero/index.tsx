@@ -1,7 +1,6 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 "use client";
-import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { RedirectButton } from "@/components/common/shared/RedirectButton";
 import RegistrationHelp from "@/components/common/shared/RegistrationHelp";
 import { ShootingStars } from "@/components/ui/shooting-stars";
@@ -14,15 +13,6 @@ interface HeroSectionProps {
 
 export const HeroSection = ({ heroData }: HeroSectionProps) => {
   const { registerButtonText, registerButtonHref, backgroundImage } = heroData;
-
-  const [showSecond, setShowSecond] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShowSecond((prev) => !prev);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <SectionContainer className="relative h-screen" marginTop="lg:mt-[5%]">
@@ -53,44 +43,19 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
           <span className="text-brightYellow">on</span>e 25
         </motion.h1>
 
-        <motion.div
-          className="w-full py-6 lg:w-[30%]"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: 0.6 }}
-          viewport={{ once: true }}
+        <motion.p
+          key="subtitle1"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.4 }}
+          className="w-[50%] py-6 font-hackathoneCabinetGrotesk text-sm"
         >
-          <AnimatePresence mode="wait">
-            {!showSecond ? (
-              <motion.p
-                key="subtitle1"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.4 }}
-                className="font-hackathoneCabinetGrotesk text-lg"
-              >
-                This October, join the world’s largest space hackathon in{" "}
-                <span className="font-bold text-brightYellow">Ireland</span> and
-                tackle real NASA challenges using their data.
-              </motion.p>
-            ) : (
-              <motion.p
-                key="subtitle2"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.4 }}
-                className="font-hackathoneCabinetGrotesk text-lg"
-              >
-                We&apos;re one of{" "}
-                <span className="font-bold text-brightYellow">450+</span>{" "}
-                locations worldwide, but the only one in Ireland offering the
-                full 48-hour overnight experience.
-              </motion.p>
-            )}
-          </AnimatePresence>
-        </motion.div>
+          We&apos;re one of 450+ locations worldwide, but the only one in
+          Ireland offering the full 48-hour overnight experience. This October,
+          join the world’s largest space hackathon in Ireland and tackle real
+          NASA challenges using their data.
+        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: -20 }}

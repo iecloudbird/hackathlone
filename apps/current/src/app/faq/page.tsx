@@ -11,7 +11,6 @@ import Mars from "@/assets/images/faq-page/mars.png";
 import { Footer } from "@/components/common/shared/footer";
 import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
 import { ShootingStars } from "@/components/ui/shooting-stars";
-import { StarsBackground } from "@/components/ui/stars-background";
 import BackToTopButton from "../general/back-to-top";
 import { faqData } from "./components/faq.dto";
 
@@ -24,7 +23,7 @@ const Faq = () => {
     };
 
   return (
-    <section className="relative min-h-screen bg-black text-white">
+    <section className="relative min-h-screen bg-deepSpace text-white">
       {/* Main Content */}
       <div className="relative z-10 py-3 sm:py-3 md:py-6 lg:py-6">
         <NavbarDemo />
@@ -32,7 +31,6 @@ const Faq = () => {
         {/* Content Container */}
         <div className="mx-4 mt-4 sm:mx-4 md:mx-8 lg:mx-4">
           <ShootingStars />
-          <StarsBackground />
           <div className="mx-auto my-10 flex flex-col items-center justify-center gap-3 text-center">
             <motion.h1
               initial={{ opacity: 0, y: -50 }}

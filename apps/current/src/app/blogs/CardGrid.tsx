@@ -1,13 +1,11 @@
 import { motion } from "framer-motion";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { ShootingStars } from "@/components/ui/shooting-stars";
-import { StarsBackground } from "@/components/ui/stars-background";
 import { cards } from "./blogs.dto";
 export function CardGrid() {
   return (
-    <div className="mx-auto max-w-6xl px-8">
+    <div className="mx-auto max-w-6xl bg-deepSpace px-8">
       <ShootingStars />
-      <StarsBackground />
       <div className="mx-auto my-10 flex flex-col items-center justify-center gap-3 text-center">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}

@@ -83,7 +83,7 @@ const HeroPage = () => {
             className="flex h-[44.31px] w-full items-center justify-center rounded-[6.54px] border-2 border-hackathone-font-rocket-red bg-transparent px-4 py-3 transition-colors duration-300 ease-in-out sm:w-[30%] xl:w-1/5"
           >
             <p className="font-hackathoneCabinetGrotesk text-[16px] font-extrabold leading-[18.28px] text-hackathone-font-rocket-red transition-all duration-500 ease-in-out">
-              Hackathlone 2024
+              HackAthlone 2024
             </p>
           </motion.button>
         </div>

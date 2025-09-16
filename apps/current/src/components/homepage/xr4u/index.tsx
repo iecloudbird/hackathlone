@@ -1,8 +1,9 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
-import HMD from "@/assets/images/hmd_xr4u.svg";
+// import HMD from "@/assets/images/hmd_xr4u.svg";
 import XR4U from "@/assets/images/xr4uLogo.svg";
 
 const Xr4uSection = () => {
@@ -11,7 +12,7 @@ const Xr4uSection = () => {
       {/* Left Text */}
       <div className="md:w-[45%]">
         <h2 className="mb-6 font-hackathoneCabinetGrotesk text-3xl font-bold text-white max-md:text-center md:text-4xl">
-          Be a Part of <span className="text-lime-400">XR4U</span>
+          <span className="text-lime-400">XR4U</span>
         </h2>
         <p className="mb-4 text-justify font-hackathoneCabinetGrotesk text-sm leading-relaxed text-neutral-300 max-md:text-center md:text-base">
           XR is a{" "}
@@ -24,12 +25,20 @@ const Xr4uSection = () => {
           <span className="font-semibold text-lime-400">task enhancements</span>
           .
         </p>
-        <p className="text-justify font-hackathoneCabinetGrotesk text-sm leading-relaxed text-neutral-300 max-md:text-center md:text-base">
+        <p className="mb-6 text-justify font-hackathoneCabinetGrotesk text-sm leading-relaxed text-neutral-300 max-md:text-center md:text-base">
           At XR4U, our passion lies in driving process transformations across
           diverse industries. Guided by a data-driven R&amp;D philosophy, we
           focus on optimizing key operational metrics to enhance efficiency and
           performance within companies.
         </p>
+        <Link
+          href="https://www.xr4u.tech/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="my-3 rounded-md bg-lime-400 px-5 py-2 font-semibold text-black transition-all duration-300 ease-in-out hover:-translate-y-1 max-md:mx-auto max-md:flex max-md:w-fit max-md:items-center max-md:justify-center"
+        >
+          Know More
+        </Link>
       </div>
 
       {/* Right Content */}
@@ -50,12 +59,12 @@ const Xr4uSection = () => {
           </span>
         </p>
 
-        {/* Floating headset image in corner */}
+        {/* Floating headset image in corner
         <Image
           src={HMD}
           alt="XR Headset"
           className="absolute -top-12 right-0 w-24 max-md:hidden md:w-32"
-        />
+        /> */}
       </div>
     </section>
   );

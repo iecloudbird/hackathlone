@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import HackAthlone from "@/assets/svgs/hackathlone-logo.svg";
 import {
@@ -21,7 +22,7 @@ export function NavbarDemo() {
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
-          <div onClick={() => navigationInfo[0].route()} className="px-5 py-2">
+          <Link href="/">
             <Image
               className="cursor-pointer"
               src={HackAthlone}
@@ -30,7 +31,7 @@ export function NavbarDemo() {
               alt="HackAthlone logo"
               priority
             />
-          </div>
+          </Link>
 
           {/* Navigation Links */}
           <div className="flex flex-1 items-center justify-center">
