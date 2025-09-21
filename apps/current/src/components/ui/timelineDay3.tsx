@@ -30,73 +30,92 @@ export const TimelineDay3 = ({ data }: { data: TimelineEntry[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div className="w-full bg-transparent pb-80 md:px-10" ref={containerRef}>
-      <div className="mx-auto flex flex-col items-center justify-center gap-1 pt-20">
-        <motion.h2
-          className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-nokaTrial text-[28px] font-semibold text-transparent max-md:text-center lg:text-4xl"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0 }}
-          viewport={{ once: true }}
-        >
-          Day 3
-        </motion.h2>
-        <motion.p
-          className="pb-8 text-center font-hackathoneCabinetGrotesk text-lg font-light max-md:px-4"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
-          viewport={{ once: true }}
-        >
-          5th October, 2025
-        </motion.p>
-      </div>
-
-      <div ref={ref} className="relative mx-auto max-w-7xl pb-20">
-        {data.map((item, index) => (
-          <div
-            key={index}
-            className="flex justify-start pt-10 md:gap-10 md:pt-40"
+    <>
+      <div
+        className="w-full bg-transparent pb-20 max-md:pb-80 md:px-10"
+        ref={containerRef}
+      >
+        <div className="mx-auto flex flex-col items-center justify-center gap-1 pt-20">
+          <motion.h2
+            className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-nokaTrial text-[28px] font-semibold text-transparent max-md:text-center lg:text-4xl"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0 }}
+            viewport={{ once: true }}
           >
-            <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-sm">
-              <div className="absolute left-3 flex size-10 items-center justify-center rounded-full bg-white dark:bg-black md:left-3">
-                <div className="size-4 rounded-full border border-neutral-300 bg-neutral-200 p-2 dark:border-neutral-700 dark:bg-neutral-800" />
+            Day 3
+          </motion.h2>
+          <motion.p
+            className="pb-8 text-center font-hackathoneCabinetGrotesk text-lg font-light max-md:px-4"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            5th October, 2025
+          </motion.p>
+        </div>
+
+        <div ref={ref} className="relative mx-auto max-w-7xl pb-20">
+          {data.map((item, index) => (
+            <div
+              key={index}
+              className="flex justify-start pt-10 md:gap-10 md:pt-40"
+            >
+              <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-sm">
+                <div className="absolute left-3 flex size-10 items-center justify-center rounded-full bg-white dark:bg-black md:left-3">
+                  <div className="size-4 rounded-full border border-neutral-300 bg-neutral-200 p-2 dark:border-neutral-700 dark:bg-neutral-800" />
+                </div>
+                <Link
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group transition-colors duration-200"
+                >
+                  <h3 className="hidden text-xl font-bold text-neutral-500 group-hover:text-white dark:text-neutral-500 md:block md:pl-20 md:text-5xl">
+                    {item.title}
+                  </h3>
+                </Link>
               </div>
-              <Link
-                href={item.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group transition-colors duration-200"
-              >
-                <h3 className="hidden text-xl font-bold text-neutral-500 group-hover:text-white dark:text-neutral-500 md:block md:pl-20 md:text-5xl">
+
+              <div className="relative w-full pl-20 pr-4 md:pl-4">
+                <h3 className="mb-4 block text-left text-2xl font-bold text-neutral-500 dark:text-neutral-500 md:hidden">
                   {item.title}
                 </h3>
-              </Link>
+                {item.content}{" "}
+              </div>
             </div>
-
-            <div className="relative w-full pl-20 pr-4 md:pl-4">
-              <h3 className="mb-4 block text-left text-2xl font-bold text-neutral-500 dark:text-neutral-500 md:hidden">
-                {item.title}
-              </h3>
-              {item.content}{" "}
-            </div>
-          </div>
-        ))}
-        <div
-          style={{
-            height: height + "px",
-          }}
-          className="absolute left-8 top-0 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-0% via-neutral-200 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] dark:via-neutral-700 md:left-8"
-        >
-          <motion.div
+          ))}
+          <div
             style={{
-              height: heightTransform,
-              opacity: opacityTransform,
+              height: height + "px",
             }}
-            className="absolute inset-x-0 top-0 w-[2px] rounded-full bg-gradient-to-t from-purple-500 from-0% via-blue-500 via-10% to-transparent"
-          />
+            className="absolute left-8 top-0 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-0% via-neutral-200 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] dark:via-neutral-700 md:left-8"
+          >
+            <motion.div
+              style={{
+                height: heightTransform,
+                opacity: opacityTransform,
+              }}
+              className="absolute inset-x-0 top-0 w-[2px] rounded-full bg-gradient-to-t from-purple-500 from-0% via-blue-500 via-10% to-transparent"
+            />
+          </div>
         </div>
       </div>
-    </div>
+      <div className="z-50 mt-6 flex flex-row items-center justify-between gap-3 md:px-20">
+        <Link
+          href="/day1"
+          className="inline-flex h-10 items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+        >
+          Day 1
+        </Link>
+        <Link
+          href={"/day2"}
+          className="inline-flex h-10 items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+        >
+          Day 2
+        </Link>
+      </div>
+    </>
   );
 };

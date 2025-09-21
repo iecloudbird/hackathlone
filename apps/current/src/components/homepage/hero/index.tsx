@@ -49,12 +49,12 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.4 }}
-          className="w-[50%] py-6 font-hackathoneCabinetGrotesk text-sm"
+          className="w-[90%] py-6 font-hackathoneCabinetGrotesk text-sm"
         >
           We&apos;re one of 450+ locations worldwide, but the only one in
-          Ireland offering the full 48-hour overnight experience. This October,
-          join the world’s largest space hackathon in Ireland and tackle real
-          NASA challenges using their data.
+          Ireland offering the full 48-hour overnight experience. <br />
+          This October, join the world’s largest space hackathon in Ireland and
+          tackle real NASA challenges using their data.
         </motion.p>
 
         <motion.div

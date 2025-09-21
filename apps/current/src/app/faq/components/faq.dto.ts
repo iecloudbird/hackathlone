@@ -6,7 +6,7 @@ export const faqData = [
   },
   {
     header: "Is there parking available at TU Shannon for participants?",
-    text: "Yes, you can park behind the engineering building at TU Shannon. However, parking is limited, so make sure to email the SpaceApps Athlone team in advance to secure your spot.",
+    text: "Yes, you can park behind the engineering building at TU Shannon. However, parking is limited, so make sure to email the Space Apps Athlone team in advance to secure your spot.",
   },
   {
     header:

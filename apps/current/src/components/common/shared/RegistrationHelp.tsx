@@ -1,7 +1,7 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -15,75 +15,20 @@ import {
 
 export default function RegistrationHelp() {
   const [open, setOpen] = useState(false);
-  const [hovered, setHovered] = useState(false);
 
   return (
     <div>
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className="relative"
+          {/* simplified / plain RedirectButton-like styling moved here */}
+          <Button
+            size="lg"
+            className="relative w-full overflow-hidden rounded-lg bg-white px-8 py-2.5 text-sm font-bold text-black transition-colors duration-300 hover:bg-white/85"
           >
-            <motion.div
-              className="absolute inset-0 rounded-full bg-orange-400 opacity-40 blur-xl"
-              animate={{
-                scale: [1, 1.4, 1],
-                opacity: [0.4, 0, 0.4],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            />
-
-            <motion.div
-              animate={{
-                width: hovered ? 140 : 140, // Reduced width for shorter text
-              }}
-              transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              className="overflow-hidden"
-            >
-              <Button
-                size="lg"
-                className="relative w-full overflow-hidden rounded-lg bg-orange-500 p-5 shadow-xl hover:bg-orange-600"
-                onMouseEnter={() => setHovered(true)}
-                onMouseLeave={() => setHovered(false)}
-              >
-                <div className="flex items-center justify-center text-white">
-                  <AnimatePresence mode="wait">
-                    {hovered ? (
-                      <motion.span
-                        key="text"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{
-                          duration: 0.25,
-                          delay: 0.15, // wait till button stretches
-                        }}
-                        className="whitespace-nowrap"
-                      >
-                        Get Help
-                      </motion.span>
-                    ) : (
-                      <motion.span
-                        key="icon"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 0.15 }}
-                      >
-                        Need Help?
-                      </motion.span>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </Button>
-            </motion.div>
-          </motion.div>
+            <div className="flex items-center justify-center text-black">
+              Need Help?
+            </div>
+          </Button>
         </DialogTrigger>
 
         <DialogContent className="max-w-3xl border-none bg-black/30 backdrop-blur-lg">

@@ -1,3 +1,4 @@
+"use client";
 import { Footer } from "@/components/common/shared/footer";
 import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
 import { ShootingStars } from "@/components/ui/shooting-stars";
@@ -22,3 +23,7 @@ const Day1 = () => {
 };
 
 export default Day1;
+
+// Button code
+
+// tailwind.config.js code

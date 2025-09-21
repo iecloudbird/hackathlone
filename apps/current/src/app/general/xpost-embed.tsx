@@ -27,20 +27,20 @@ const TweetEmbed = () => {
           <a href="https://twitter.com/hashtag/NASA?src=hash&amp;ref_src=twsrc%5Etfw">
             #NASA
           </a>{" "}
-          <a href="https://twitter.com/hashtag/NASASpaceApps?src=hash&amp;ref_src=twsrc%5Etfw">
-            #NASASpaceApps
+          <a href="https://twitter.com/hashtag/NASASpace Apps?src=hash&amp;ref_src=twsrc%5Etfw">
+            #NASASpace Apps
           </a>{" "}
-          <a href="https://twitter.com/hashtag/NASASpaceAppsChallenge?src=hash&amp;ref_src=twsrc%5Etfw">
-            #NASASpaceAppsChallenge
+          <a href="https://twitter.com/hashtag/NASASpace AppsChallenge?src=hash&amp;ref_src=twsrc%5Etfw">
+            #NASASpace AppsChallenge
           </a>{" "}
-          <a href="https://twitter.com/hashtag/NASASpaceApps2024?src=hash&amp;ref_src=twsrc%5Etfw">
-            #NASASpaceApps2024
+          <a href="https://twitter.com/hashtag/NASASpace Apps2024?src=hash&amp;ref_src=twsrc%5Etfw">
+            #NASASpace Apps2024
           </a>{" "}
-          <a href="https://twitter.com/hashtag/NASASpaceAppsChallenge24?src=hash&amp;ref_src=twsrc%5Etfw">
-            #NASASpaceAppsChallenge24
+          <a href="https://twitter.com/hashtag/NASASpace AppsChallenge24?src=hash&amp;ref_src=twsrc%5Etfw">
+            #NASASpace AppsChallenge24
           </a>
         </p>
-        &mdash; SpaceApps Athlone (@hack_athlone){" "}
+        &mdash; Space Apps Athlone (@hack_athlone){" "}
         <a href="https://twitter.com/hack_athlone/status/1823394223351050614?ref_src=twsrc%5Etfw">
           August 13, 2024
         </a>

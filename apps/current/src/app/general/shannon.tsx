@@ -74,7 +74,7 @@ const Shannon = () => {
                 onAnimationComplete={handleAnimationComplete}
                 className="my-4 pr-4 font-hackathoneCabinetGrotesk text-base font-medium leading-[30.57px] text-slate-50 sm:mb-4 sm:pr-[20%] sm:text-lg"
               >
-                The NASA SpaceApps Challenge 2025 is happening in the heart of
+                The NASA Space Apps Challenge 2025 is happening in the heart of
                 Ireland, Athlone, with the Technological University of the
                 Shannon hosting this in-person hackathon. Renowned for its
                 innovation and technological excellence, the university educates

@@ -56,15 +56,15 @@ export const cards = [
   },
   {
     description:
-      "Hackathons are not just about coding and competition; they are transformative experiences that mold individuals into resilient, innovative thinkers ready to tackle real-world challenges. Whether you're a seasoned developer or a newcomer to the tech scene, participating in a hackathon like SpaceApps Athlone can significantly impact your personal growth and readiness for future endeavors.",
+      "Hackathons are not just about coding and competition; they are transformative experiences that mold individuals into resilient, innovative thinkers ready to tackle real-world challenges. Whether you're a seasoned developer or a newcomer to the tech scene, participating in a hackathon like Space Apps Athlone can significantly impact your personal growth and readiness for future endeavors.",
     imageSrc: Space10,
     slug: "10",
     title:
-      "Mastering SpaceApps Athlone: Tips for a Stellar Hackathon Experience",
+      "Mastering Space Apps Athlone: Tips for a Stellar Hackathon Experience",
   },
   {
     description:
-      "Hackathons are not just about coding and competition; they are transformative experiences that mold individuals into resilient, innovative thinkers ready to tackle real-world challenges. Whether you're a seasoned developer or a newcomer to the tech scene, participating in a hackathon like SpaceApps Athlone can significantly impact your personal growth and readiness for future endeavors.",
+      "Hackathons are not just about coding and competition; they are transformative experiences that mold individuals into resilient, innovative thinkers ready to tackle real-world challenges. Whether you're a seasoned developer or a newcomer to the tech scene, participating in a hackathon like Space Apps Athlone can significantly impact your personal growth and readiness for future endeavors.",
     imageSrc: Space9,
     slug: "9",
     title:
@@ -72,11 +72,11 @@ export const cards = [
   },
   {
     description:
-      "Are you prepared to embark on a stellar journey of creativity, data analysis, game development, and space exploration? The NASA SpaceApps Challenge 2025 has arrived, bringing with it a constellation of exciting challenges. With 31 unique challenges across four diverse domains, it's time to plot your course among the stars. In this blog, we'll guide you on how to select the perfect challenge for your adventure.",
+      "Are you prepared to embark on a stellar journey of creativity, data analysis, game development, and space exploration? The NASA Space Apps Challenge 2025 has arrived, bringing with it a constellation of exciting challenges. With 31 unique challenges across four diverse domains, it's time to plot your course among the stars. In this blog, we'll guide you on how to select the perfect challenge for your adventure.",
     imageSrc: Space8,
     slug: "8",
     title:
-      "Navigating the SpaceApps Hackathon Challenges: A Guide to Choosing Your Path",
+      "Navigating the Space Apps Hackathon Challenges: A Guide to Choosing Your Path",
   },
   {
     description:
@@ -84,23 +84,23 @@ export const cards = [
     imageSrc: Space7,
     slug: "7",
     title:
-      "Navigating Your Way to NASA SpaceApps Challenge at TU Shannon in Athlone",
+      "Navigating Your Way to NASA Space Apps Challenge at TU Shannon in Athlone",
   },
   {
     description:
-      "As you gear up for the exhilarating journey of SpaceApps Athlone 2025, you might be curious about how your project will be judged and what criteria will guide the selection of the winners. We've established a transparent and comprehensive judging process to ensure that every participant understands what it takes to achieve stellar success.",
+      "As you gear up for the exhilarating journey of Space Apps Athlone 2025, you might be curious about how your project will be judged and what criteria will guide the selection of the winners. We've established a transparent and comprehensive judging process to ensure that every participant understands what it takes to achieve stellar success.",
     imageSrc: Space6,
     slug: "6",
     title:
-      "Decoding the SpaceApps Challenge 2025: How Projects Soar to Victory",
+      "Decoding the Space Apps Challenge 2025: How Projects Soar to Victory",
   },
   {
     description:
-      "Are you ready to embark on a journey of innovation, sleepless nights, and boundless camaraderie? Look no further than SpaceApps Athlone 2025, a hackathon experience that will leave you exhilarated and inspired. Picture a weekend filled with coding, problem-solving, and networking with like-minded individuals from around the globe, all set against the backdrop of NASA's International Space Apps Challenge.",
+      "Are you ready to embark on a journey of innovation, sleepless nights, and boundless camaraderie? Look no further than Space Apps Athlone 2025, a hackathon experience that will leave you exhilarated and inspired. Picture a weekend filled with coding, problem-solving, and networking with like-minded individuals from around the globe, all set against the backdrop of NASA's International Space Apps Challenge.",
     imageSrc: Space5,
     slug: "5",
     title:
-      "Hacking the Night Away: Unveiling the Thrills of SpaceApps Athlone 2025",
+      "Hacking the Night Away: Unveiling the Thrills of Space Apps Athlone 2025",
   },
   {
     description:
@@ -111,16 +111,16 @@ export const cards = [
   },
   {
     description:
-      "Explore NASA's SpaceApps Challenge 2025 with 31 unique challenges across four domains: Space Exploration, Creative, Data Science, and Game Development. Tailor your cosmic journey by selecting challenges based on difficulty and your passion.",
+      "Explore NASA's Space Apps Challenge 2025 with 31 unique challenges across four domains: Space Exploration, Creative, Data Science, and Game Development. Tailor your cosmic journey by selecting challenges based on difficulty and your passion.",
     imageSrc: Space3,
     slug: "3",
-    title: "Navigating the SpaceApps Hackathon Challenges",
+    title: "Navigating the Space Apps Hackathon Challenges",
   },
   {
     description:
-      "Register for NASA's SpaceApps Challenge 2025at TU Shannon, Ireland. Explore the website, find the local event (HackAthlone), choose individual or team registration, access resources, and prepare for an exciting cosmic adventure in space exploration.",
+      "Register for NASA's Space Apps Challenge 2025at TU Shannon, Ireland. Explore the website, find the local event (HackAthlone), choose individual or team registration, access resources, and prepare for an exciting cosmic adventure in space exploration.",
     imageSrc: Space2,
     slug: "2",
-    title: "Here's How to Register for SpaceApps 2025!",
+    title: "Here's How to Register for Space Apps 2025!",
   },
 ];

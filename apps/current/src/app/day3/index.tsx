@@ -80,7 +80,7 @@ export function TimelineDemo() {
           </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
             The time for the participants to show off their hard work done
-            during the SpaceApps Challenge!
+            during the Space Apps Challenge!
           </div>
         </div>
       ),

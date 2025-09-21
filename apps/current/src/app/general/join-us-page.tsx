@@ -42,7 +42,7 @@ const JoinUsPage = () => {
               Technological University of the Shannon
             </span>
             . HackAthlone is one of over 400 global locations participating in
-            this year’s NASA SpaceApps Challenge. Leveraging NASA’s data,
+            this year’s NASA Space Apps Challenge. Leveraging NASA’s data,
             HackAthlone exemplifies the values and ambitions of the competition
             by promoting diversity in the next generation of scientists,
             engineers, technologists, and designers.

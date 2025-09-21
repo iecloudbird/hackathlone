@@ -64,7 +64,7 @@ export function NavbarDemo() {
         {/* Mobile Navigation */}
         <MobileNav>
           <MobileNavHeader>
-            <div onClick={() => navigationInfo[0].route()} className="px-2">
+            <Link href="/">
               <Image
                 className="cursor-pointer"
                 src={HackAthlone}
@@ -73,7 +73,7 @@ export function NavbarDemo() {
                 alt="HackAthlone logo"
                 priority
               />
-            </div>
+            </Link>
             <MobileNavToggle
               isOpen={isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

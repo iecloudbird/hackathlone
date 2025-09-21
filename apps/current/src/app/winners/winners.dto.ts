@@ -16,11 +16,11 @@ export const winners: WinnerType[] = [
   {
     details: [
       [
-        { highlight: false, text: "SpaceApps Athlone, also known as " },
+        { highlight: false, text: "Space Apps Athlone, also known as " },
         { highlight: true, text: "HackAthlone" },
         {
           highlight: false,
-          text: ", is one of the 300+ locations for this year's NASA SpaceApps Challenge. ",
+          text: ", is one of the 300+ locations for this year's NASA Space Apps Challenge. ",
         },
         { highlight: true, text: "Technology University of the Shannon" },
         {
@@ -55,11 +55,11 @@ export const winners: WinnerType[] = [
   {
     details: [
       [
-        { highlight: false, text: "SpaceApps Athlone, also known as " },
+        { highlight: false, text: "Space Apps Athlone, also known as " },
         { highlight: true, text: "HackAthlone" },
         {
           highlight: false,
-          text: ", is one of the 300+ locations for this year's NASA SpaceApps Challenge. ",
+          text: ", is one of the 300+ locations for this year's NASA Space Apps Challenge. ",
         },
         { highlight: true, text: "Technology University of the Shannon" },
         {
@@ -94,11 +94,11 @@ export const winners: WinnerType[] = [
   {
     details: [
       [
-        { highlight: false, text: "SpaceApps Athlone, also known as " },
+        { highlight: false, text: "Space Apps Athlone, also known as " },
         { highlight: true, text: "HackAthlone" },
         {
           highlight: false,
-          text: ", is one of the 300+ locations for this year's NASA SpaceApps Challenge. ",
+          text: ", is one of the 300+ locations for this year's NASA Space Apps Challenge. ",
         },
         { highlight: true, text: "Technology University of the Shannon" },
         {
