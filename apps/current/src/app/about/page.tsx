@@ -12,7 +12,7 @@ const About = () => {
     <section className="relative min-h-screen overflow-x-hidden bg-deepSpace text-white">
       <div className="relative z-10 py-3 sm:py-3 md:py-6 lg:py-6">
         <NavbarDemo />
-        <div className="absolute right-0 top-60 hidden w-full -translate-y-20 translate-x-1/2 lg:block">
+        <div className="absolute right-0 top-10 hidden w-2/3 -translate-y-20 translate-x-1/2 lg:block">
           <Image src={Earth} alt="Earth Image" />
         </div>
 

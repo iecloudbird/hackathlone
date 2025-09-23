@@ -19,6 +19,22 @@ export const cards = [
   },
   {
     description:
+      "If you registered with a personal email (Gmail/Yahoo/etc.) and want to switch to your university email for HackAthlone, follow these simple steps to update your account so registration and communications are tied to your academic institution.",
+    imageSrc: Space9,
+    slug: "17",
+    title:
+      "Changing Your Email if You Registered with a Non-University Email for NASA Space Apps Challenge Athlone",
+  },
+  {
+    description:
+      "If you accidentally registered as a minor on spaceappschallenge.org but are over 18, follow these steps to change your registration to a major so you can attend without restrictions.",
+    imageSrc: Space6,
+    slug: "16",
+    title:
+      "Steps to Change Your Registration from Minor to Major in NASA Space Apps Athlone",
+  },
+  {
+    description:
       "Why Your First Hackathon Will Change How You Think About Everything",
     imageSrc: Space3,
     slug: "15",

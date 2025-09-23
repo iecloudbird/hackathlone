@@ -30,7 +30,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div className="w-full bg-transparent pb-80 md:px-10" ref={containerRef}>
+    <div className="w-full bg-transparent md:px-10" ref={containerRef}>
       <div className="mx-auto flex flex-col items-center justify-center gap-1 pt-20">
         <motion.h2
           className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-nokaTrial text-[28px] font-semibold text-transparent max-md:text-center lg:text-4xl"

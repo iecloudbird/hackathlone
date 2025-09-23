@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { type FC } from "react";
 import { type CollaboratorsSectionData } from "@/data/homepage/collaborators";
 import { SectionContainer } from "../SectionContainer";
@@ -16,7 +15,7 @@ export const CollaboratorsSection: FC<CollaboratorsSectionProps> = ({
   return (
     <SectionContainer>
       {/* Top decorative */}
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <div className="flex rotate-180 flex-col items-center">
           <motion.div
             initial={{ scaleY: 0, opacity: 0 }}
@@ -33,7 +32,7 @@ export const CollaboratorsSection: FC<CollaboratorsSectionProps> = ({
             className="size-3 rounded-full bg-white"
           />
         </div>
-      </div>
+      </div> */}
 
       <div className="relative overflow-hidden rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
         <div className="grid grid-cols-1 gap-8 text-left lg:grid-cols-3 lg:gap-12">
@@ -77,7 +76,7 @@ export const CollaboratorsSection: FC<CollaboratorsSectionProps> = ({
       </div>
 
       {/* Bottom decorative */}
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <div className="flex rotate-180 flex-col items-center">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -94,7 +93,7 @@ export const CollaboratorsSection: FC<CollaboratorsSectionProps> = ({
             className="h-16 w-px origin-bottom bg-white"
           />
         </div>
-      </div>
+      </div> */}
     </SectionContainer>
   );
 };

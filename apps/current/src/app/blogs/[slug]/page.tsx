@@ -86,10 +86,7 @@ const BlogPage: React.FC = () => {
         "Register for NASA's Space Apps Challenge 2025 at TU Shannon, Ireland. Explore the website, find the local event (HackAthlone), choose individual or team registration, access resources, and prepare for an exciting cosmic adventure in space exploration.",
       points: [
         "The NASA Space Apps Challenge 2025 is gearing up for an exciting cosmic adventure, and you're invited! Whether you're an aspiring space scientist, a data wizard, a game developer, or a creative storyteller, this year's hackathon has something for everyone. If you're ready to join the global Space Apps community and make your mark in space exploration, follow these simple steps to register for the event.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Step 1: Visit the Space Apps Website{" "}
         </strong>,
         <span key={"item-${index}"}>
@@ -106,52 +103,31 @@ const BlogPage: React.FC = () => {
             https://www.spaceappschallenge.org/
           </a>
         </span>,
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Step 2: Explore the Local Events{" "}
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Once you're on the Space Apps website, take a moment to explore the available options. You'll find a variety of resources, including information about past challenges, inspirational stories, and more. But right now, we're here for Space Apps 2025, so let's dive in!",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Step 3: Search for 2025 Local Events
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0To participate in Space Apps 2025, you'll want to find a local event near you. These events serve as the launchpad for your Space Apps journey. Click on the 'Find a Local Event' or similar link to begin your search.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Step 4: Choose HackAthlone (TU Shannon, Ireland){" "}
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0As you search for local events, you'll come across various locations around the world. However, if you're looking for the Athlone event in Ireland, you're in the right place! Look for 'HackAthlone, or simply 'Athlone' in the list of events. This event is hosted at TU Shannon (Technological University Shannon) and promises an exciting experience in space innovation and collaboration.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Step 5: Sign Up{" "}
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Once you've found the Athlone event, it's time to secure your spot. Click on the event to access its dedicated page. There, you'll find all the details you need about Athlone's Space Apps event, including dates, schedules, and more.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Step 6: Register as an Individual or Team{" "}
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Now, it's registration time! Choose whether you want to participate as an individual or as part of a team. If you're planning to collaborate with friends or fellow enthusiasts, team registration is the way to go. Otherwise, you can register as an individual and join or form a team later.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Step 7: Access Resources and Challenges{" "}
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Congratulations! You're now officially registered for Space Apps 2025, Athlone. This means you'll have access to a wealth of resources, including datasets, tools, mentorship, and more to help you prepare for the hackathon. Additionally, you can explore the list of exciting challenges that await your innovation and problem-solving skills.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Step 8: Get Ready for the Cosmic Adventure{" "}
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0With your registration complete, you're one step closer to an incredible cosmic adventure. Stay tuned for updates from the Athlone event organizers, connect with fellow participants, and start brainstorming your hackathon ideas. Remember, Space Apps is not just a competition; it's an opportunity to learn, collaborate, and contribute to space science and exploration.",
@@ -171,81 +147,48 @@ const BlogPage: React.FC = () => {
         "Are you gearing up for Space Apps Athlone 2025 and wondering how to find the perfect team to tackle NASA's latest cosmic challenges?",
         "You’re in the right place!",
         "This guide will walk you through strategies and support available at the hackathon to help you form your dream team, join an existing one, or even embark on a solo space adventure.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           1. Team Size Flexibility
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0One of the great aspects of Space Apps Athlone is the flexibility in team sizes. Whether you’re flying solo or collaborating with up to five others, the hackathon encourages diverse teams with fresh ideas.",
         "You can form a team of 1 to 6 participants, allowing for a wide range of collaborations.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           2. Solo or Team Participation
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0At Space Apps Athlone, you have the freedom to choose how you want to participate. Dive into the challenges on your own, or team up with fellow space enthusiasts to combine skills and ideas.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           3. Registering Your Team
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0If you decide to form a team, the team leader will need to register it on the Space Apps platform. This step will create a hub for your collective efforts, making it easier to stay organized and focused.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           4. Team Joining Opportunities
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Not up for leading a team? No problem! Team joining typically starts in late September, when registered teams become visible on the Space Apps platform. Browse through the teams and join one that aligns with your interests and goals.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           5. Dedicated Chat Platform
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space Apps Athlone offers a designated chat platform, making it easy to connect with other participants. Whether you’re building a team, discussing challenges, or forming alliances, this platform is an essential resource.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           6. Seek Organizers’ Assistance
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0If you’re feeling uncertain about how to find or create a team, don’t hesitate to reach out to the organizing team. They’re there to help you navigate the hackathon’s landscape and ensure you have a stellar experience.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           7. Cross-College Collaboration
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space Apps encourages diverse teams! Collaborate with participants from different colleges and universities, fostering cross-institutional cooperation and bringing a variety of perspectives to your team.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           8. Inclusion of Online Participants
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space knows no boundaries, and neither does Space Apps Athlone! Online participants are welcome to form or join teams, ensuring the hackathon transcends geographical limitations and brings together talent from all over the world.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           9. Engage in Pitchfest
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0At the start of the hackathon, don’t miss the Pitchfest event. Team leaders will take the stage to share their challenge goals, project ideas, and the kind of talent they’re looking for. It’s the perfect opportunity to find like-minded individuals to join your team.",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           10. Icebreaking Sessions
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Immediately following the Pitchfest, get ready for the icebreaking session. This is your chance to socialize, network, and meet potential teammates. Your cosmic crew could be just a conversation away!",
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           11. Color-Coded ID Cards
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0To make team formation even easier, participants will receive color-coded ID cards. These stickers will represent your domain or expertise, helping others quickly identify your skills and interests. In Space Apps Athlone 2025, forming teams, joining forces, and networking are key to your cosmic journey. Whether you’re a seasoned participant or a first-timer, there are countless opportunities to connect, collaborate, and embark on this extraordinary adventure together.",
@@ -265,58 +208,37 @@ const BlogPage: React.FC = () => {
       summary:
         "Are you ready to embark on an incredible journey of innovation and discovery at Space Apps Athlone 2025? The countdown has started, and we’re excited to reveal the amazing opportunities waiting for you at this year’s hackathon. From access to NASA’s Open Data to the chance to win a trip to witness a rocket launch, Space Apps Athlone is packed with possibilities to ignite your creativity and take your career to new heights.",
       points: [
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           1. NASA’s Open Data: Fuel Your Imagination
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space Apps Athlone gives participants exclusive access to NASA’s Open Data. Imagine having the vast resources of NASA—satellite imagery, astronomical data, and a treasure trove of cosmic information—right at your fingertips. With this wealth of data, the possibilities are as limitless as the universe itself. Whether you’re creating a cutting-edge app or conducting groundbreaking research, NASA’s Open Data is your launchpad to success.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           2. Networking and Collaboration: Connect with the Best
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0One of the biggest advantages of participating in Space Apps Athlone is the chance to network and collaborate with industry leaders, experts, and researchers. You’ll have the opportunity to connect with some of the brightest minds in aerospace and technology, forging valuable connections that could open doors to exciting future opportunities.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           3. State-of-the-Art Facilities: 48 Hours of Innovation
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0For 48 exhilarating hours, you’ll have access to the TU Shannon Engineering Building—a hub of innovation and creativity. Here, you can work closely with your team in an environment designed to spark inspiration and innovation. It’s the perfect setting for brainstorming, prototyping, and turning your visionary ideas into reality.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           4. Hackshop, Hacklab, and Mentorship: Your Toolkit for Success
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0At Space Apps Athlone, we’re committed to helping you succeed. Our Hackshop is stocked with a variety of hardware, electronics, and materials to bring your projects to life. The Hacklab offers space to tackle challenges related to hardware, electronics, mechanical engineering, and material science. Plus, you’ll have access to mentorship from experienced professionals who will guide you every step of the way.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           5. Meals & Beverages: Stay Energized
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0We know that innovation requires fuel, so we provide meals and beverages throughout the 48-hour hackathon. Stay energized and focused as you work towards your goals. Whether it’s a midnight snack or a quick coffee break, we’ve got you covered.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           6. Prizes, Awards, and More: Reach for the Stars
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space Apps Athlone offers participants the chance to win cash prizes, awards, and exclusive hackathon merchandise. But the excitement doesn’t stop there. The grand prize is a fully funded trip to NASA to witness a rocket launch in person—an experience that’s truly out of this world!",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           7. Portfolio Boost: Elevate Your Career
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Participating in Space Apps Athlone is not just about the competition; it’s about gaining valuable experience that can set you apart in the job market. Add this prestigious hackathon to your portfolio and showcase your skills, teamwork, and problem-solving abilities to future employers and collaborators.",
@@ -335,58 +257,37 @@ const BlogPage: React.FC = () => {
       summary:
         "Are you ready to embark on a journey of innovation, sleepless nights, and boundless camaraderie? Look no further than Space Apps Athlone 2025, a hackathon experience that will leave you exhilarated and inspired. Picture a weekend filled with coding, problem-solving, and networking with like-minded individuals from around the globe, all set against the backdrop of NASA’s International Space Apps Challenge.",
       points: [
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Hackathon Fever: More Than Just Coding
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Hackathons like Space Apps Athlone are a breed of their own, where participants, fondly called hackers, gather to create, innovate, and push their limits. It’s an electrifying atmosphere where ideas come to life, and dreams turn into projects. Whether you’re engrossed in lines of code or passionately crafting innovative solutions, this hackathon is for you.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           The All-Nighter
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Imagine this: it’s midnight, and you’re deep into your project, surrounded by fellow hackers intensely working on their own. Cups of coffee and energy drinks are scattered across the tables, fueling the night’s creativity. Sleep may become a distant memory, but the adrenaline keeps you going, whether you’re coding or applying your unique skills to other aspects of the project.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Teamwork Makes the Dream Work
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Hackathons are as much about collaboration as they are about competition. You’ll find yourself part of a diverse team, each member bringing unique skills to the table. Together, you’ll tackle challenges, brainstorm solutions, and create something incredible. It’s a bonding experience like no other, where coding and non-coding talents unite to achieve common goals.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Global Connections
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0In the world of hackathons, geographical borders fade away. Space Apps Athlone is your chance to connect with fellow hackers from different corners of the world. Discuss ideas, share experiences, and make lifelong friends. This hackathon’s global reach mirrors the likes of PennApps and HackMIT, making it one of the most significant and prestigious hackathons worldwide, proudly hosted by NASA.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Eating, Sleeping, and Hacking
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0At Space Apps Athlone, the line between work and leisure blurs. You’ll see hackers working with laptops perched on makeshift desks, cozy corners occupied by brainstorming teams, and maybe even a hackathon-inspired pillow fort. Seasoned hackers often come prepared with sleeping bags, ensuring they can grab a few hours of rest before diving back into their code or project tasks.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           The Space Apps Experience
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Imagine all of this taking place against the backdrop of NASA’s International Space Apps Challenge, the biggest hackathon in the world. Space Apps Athlone is a global event that challenges participants to solve real-world problems with the help of NASA’s open data. It’s an opportunity to make a tangible impact on issues ranging from space exploration to climate change.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Why Space Apps Athlone?
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space Apps Athlone shares the spirit of innovation with renowned hackathons like PennApps and HackMIT. It’s a hub of creativity, learning, and collaboration. Participants don’t just code; they shape the future.",
@@ -407,10 +308,7 @@ const BlogPage: React.FC = () => {
       summary:
         "As you gear up for the exhilarating journey of Space Apps Athlone 2025, you might be curious about how your project will be judged and what criteria will guide the selection of the winners. We’ve established a transparent and comprehensive judging process to ensure that every participant understands what it takes to achieve stellar success.",
       points: [
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Understanding the Judging Process
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Before diving into the specific criteria, let’s clarify the overall judging process. At Space Apps Athlone, fairness and equity are at the core of how we recognize the brilliance of each project. Here’s a breakdown of how the judging unfolds:",
@@ -422,10 +320,7 @@ const BlogPage: React.FC = () => {
         <strong key={"item-${index}"}>3. Choosing the Winners</strong>,
         " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0From the top teams within each challenge domain, the ultimate winners are chosen. This careful process ensures that excellence is recognized within each domain, offering a level playing field for all teams.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           The Core Judging Criteria
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Now, let’s delve into the heart of the matter—the judging criteria. While we won’t reveal the exact scoring details, these criteria offer a clear roadmap for your project’s evaluation. They are designed to provide a holistic assessment, covering various dimensions to recognize technical expertise, creativity, and innovation.",
@@ -441,10 +336,7 @@ const BlogPage: React.FC = () => {
         <strong key={"item-${index}"}>• Presentation</strong>,
         " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Communication is key. We evaluate how effectively your team tells the story of your project. Can you clearly and persuasively explain the challenge, the solution, and its importance?",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Celebrating Diversity and Inclusion
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space Apps Athlone is all about celebrating diversity and innovation in all its forms. Our judging criteria are crafted to provide an inclusive platform where every team can shine. Whether you’re engineering cutting-edge software, crafting inspiring artwork, or devising ingenious solutions, our criteria ensure that your project is evaluated fairly and comprehensively.",
@@ -467,18 +359,12 @@ const BlogPage: React.FC = () => {
       summary:
         "Ready to embark on an exciting journey of innovation and exploration? The NASA Space Apps Challenge is coming to TU Shannon in Athlone, and it is an event you won’t want to miss. This year’s challenge offers participants the option to join in person or remotely, but we highly recommend attending in person to fully immerse yourself in the hackathon experience. Imagine brainstorming with your team, coding through the night, and collaborating with like-minded space enthusiasts—all under one roof. To help you get there, we’ve put together a handy guide on how to reach TU Shannon’s engineering building from major cities like Dublin, Limerick, Cork, and Galway.",
       points: [
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Getting There: Your Options
         </strong>,
         "There are three major ways to reach TU Shannon: by bus, train, or driving. Let’s explore these options to make your journey as smooth as possible.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           1. Taking the Bus: Your Best Bet
         </strong>,
         "From Dublin, Limerick, Cork, or Galway: Several bus services connect these cities to Athlone, including Citylink, Aircoach, and Bus Éireann.",
@@ -531,10 +417,7 @@ const BlogPage: React.FC = () => {
         "Final Steps: Buses drop you off at a central location in Athlone. From there, follow signs leading to TU Shannon’s engineering building.",
         "Pro tip: Book your bus tickets in advance to save both time and money, especially since it’s a weekend event!",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           2. Opt for the Train: Comfortable and Budget-Friendly
         </strong>,
         <table
@@ -580,19 +463,13 @@ const BlogPage: React.FC = () => {
           </tbody>
         </table>,
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           3. Driving: Flexibility and Convenience
         </strong>,
         "• Travel by Car: Enjoy the flexibility of driving to Athlone, with ample parking available at TU Shannon’s engineering building.",
         "• Navigation: Use Google Maps to find the best route to TU Shannon.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           In Conclusion
         </strong>,
         "Remember, you’re not alone in this journey! Volunteers will be on hand to assist you if you face any issues. The NASA Space Apps Challenge at TU Shannon in Athlone promises to be an unforgettable experience. Whether you’re traveling from Dublin, Limerick, Cork, Galway, or any other city, you have several convenient transportation options at your disposal. Plan ahead, book your tickets in advance, and get ready to embark on a journey of innovation, collaboration, and exploration. We can’t wait to see you there!",
@@ -614,10 +491,7 @@ const BlogPage: React.FC = () => {
       points: [
         "A Universe of Domains: Diverse Challenges Await",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           The Space Apps Hackathon 2025 presents a wide array of challenges
           spread across various domains:
         </strong>,
@@ -630,10 +504,7 @@ const BlogPage: React.FC = () => {
         "• Art: Combine science and creativity by taking on challenges that encourage artistic expressions inspired by space and scientific concepts.",
         "• Open Science: Dive into open science projects, contributing to collaborative research and discoveries.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Difficulty Levels: Tailored to Your Experience
         </strong>,
 
@@ -643,10 +514,7 @@ const BlogPage: React.FC = () => {
         "• Intermediate: For participants with some experience who seek a moderate challenge that requires a bit more expertise.",
         "• Advanced: Designed for seasoned experts, these challenges pose complex problems that demand deep knowledge and innovative solutions.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           How to Choose Your Challenge
         </strong>,
 
@@ -676,64 +544,43 @@ const BlogPage: React.FC = () => {
       summary:
         "Hackathons are not just about coding and competition; they are transformative experiences that mold individuals into resilient, innovative thinkers ready to tackle real-world challenges. Whether you're a seasoned developer or a newcomer to the tech scene, participating in a hackathon like Space Apps Athlone can significantly impact your personal growth and readiness for future endeavors.",
       points: [
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Embracing the Challenge
         </strong>,
 
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Hackathons immerse participants in an intensive, fast-paced environment where creativity and problem-solving skills are put to the test. The challenges presented often require thinking outside the box, collaborating effectively within a team, and managing time under pressure. These experiences nurture adaptability and the ability to thrive in dynamic situations—essential qualities in both professional and personal life.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Learning through Collaboration
         </strong>,
 
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0One of the most valuable aspects of hackathons is the opportunity to collaborate with diverse individuals—engineers, designers, domain experts, and more—who bring unique perspectives to the table. Teamwork not only enhances technical skills but also fosters interpersonal communication, empathy, and leadership qualities. These collaborative efforts mirror real-world project dynamics, where success hinges on collective innovation and mutual support.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Rapid Prototyping and Innovation
         </strong>,
 
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0At hackathons, participants often move swiftly from ideation to prototype development. This rapid iteration cycle cultivates a mindset of experimentation and risk-taking. Iterative problem-solving teaches resilience in the face of setbacks and the importance of persistence—a trait crucial for navigating challenges in any professional field.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Networking and Mentorship
         </strong>,
 
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Hackathons provide unparalleled networking opportunities with industry professionals, mentors, and potential employers. Engaging with experienced mentors not only enhances technical skills but also offers insights into career pathways and industry trends. Building a network of peers and mentors can open doors to future collaborations, job opportunities, and continued learning beyond the hackathon.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Confidence and Presentation Skills
         </strong>,
 
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Presenting a project to judges and peers at the culmination of a hackathon requires clear communication and the ability to articulate complex ideas concisely. This experience boosts confidence in public speaking and enhances presentation skills—valuable assets in job interviews, client meetings, and professional conferences.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Personal Reflection and Growth
         </strong>,
 
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Beyond technical skills and career benefits, hackathons encourage personal reflection and growth. Participants often discover new passions, expand their horizons, and gain a deeper understanding of their strengths and areas for development. These self-discoveries foster a growth mindset and a lifelong commitment to learning and innovation.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Conclusion
         </strong>,
 
@@ -751,10 +598,7 @@ const BlogPage: React.FC = () => {
       summary:
         "Hackathons are not just about coding and competition; they are transformative experiences that mold individuals into resilient, innovative thinkers ready to tackle real-world challenges. Whether you're a seasoned developer or a newcomer to the tech scene, participating in a hackathon like Space Apps Athlone can significantly impact your personal growth and readiness for future endeavors.",
       points: [
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Team Up: Collaborate for Galactic Success
         </strong>,
 
@@ -767,10 +611,7 @@ const BlogPage: React.FC = () => {
         "• Leverage Your Proficiencies: ",
         " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Once in a team, identify your strengths and contribute accordingly. Whether it’s coding, design, research, or presentation skills, take on a role that aligns with your talents.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Network: Forge Cosmic Connections
         </strong>,
 
@@ -783,10 +624,7 @@ const BlogPage: React.FC = () => {
         "• Expand Your LinkedIn Universe: ",
         " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Don’t miss the chance to grow your professional network. During the hackathon, connect with people on LinkedIn, and send personalized messages sharing your experiences and the connections you’ve forged.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Solution Demo: Shine with Your Innovation
         </strong>,
 
@@ -796,50 +634,35 @@ const BlogPage: React.FC = () => {
         "• Proof of Concept:",
         "  \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Aim to develop a proof of concept. Having an institution validate the value of your proposed solution can add credibility and impact to your project.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Time Management: Hackathon Hours Are Precious
         </strong>,
 
         "• Manage Your Time Effectively: ",
         " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Time flies during a hackathon. Prioritize tasks, set realistic goals, and allocate time wisely. Stay organized to ensure you make the most of every coding minute.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Final Presentations: Shine Bright on Stage
         </strong>,
 
         "• Perfect Your Pitch:",
         "  \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0As the hackathon concludes, practice your pitch rigorously. Plan the timing of your presentation carefully, and remember that not everyone on your team needs to speak. Use a structured approach to organize your thoughts early in the hack.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Seek SME Validation: Tap into Mentor Resources
         </strong>,
 
         "• Utilize Mentor Hours: ",
         " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Don’t hesitate to leverage mentor hours to consult with experts in your project’s field. Their feedback and guidance can be instrumental in refining your solution.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Hackshop: Secure Your Components Early
         </strong>,
 
         "• Battling for Resources:",
         "  \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0In a hackathon where electronic components are limited, especially those in high demand, it’s essential to secure them as soon as possible. Visit the Hackshop early to avoid potential bottlenecks.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key={"item-${index}"}
-        >
+        <strong className="text-brightYellow" key={"item-${index}"}>
           Ethical Considerations: The Universal Code of Conduct
         </strong>,
 
@@ -863,62 +686,47 @@ const BlogPage: React.FC = () => {
       points: [
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Most people think hackathons are just about coding fast and winning prizes. The reality is much more interesting. Sure, you'll build something cool in 48 hours. But the real transformation happens in ways you don't expect.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key="learn-pressure"
-        >
+        <strong className="text-brightYellow" key="learn-pressure">
           You Learn to Think Under Pressure
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Hackathons flip normal learning completely. You have 48 hours to understand a problem, learn new tools, work with strangers, and build something that works. When you successfully solve a climate monitoring challenge using NASA satellite data you'd never seen before, you realize your brain is more capable than you thought. Tight deadlines suddenly don't feel impossible anymore.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key="real-collaboration"
-        >
+        <strong className="text-brightYellow" key="real-collaboration">
           You Discover Real Collaboration
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0At HackAthlone, you might team up with a climate scientist, a graphic designer, and a policy student to tackle agricultural challenges. None of you could solve the problem alone, but together you create something none of you imagined individually. This changes how you approach every future team project. You start looking for diverse perspectives instead of similar skillsets.",
 
-        <strong className="text-hackathone-font-rocket-red" key="stop-fearing">
+        <strong className="text-brightYellow" key="stop-fearing">
           You Stop Fearing the Unknown
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Most hackathon success comes from figuring things out as you go. You'll learn APIs you've never used, work with unfamiliar datasets, and build interfaces for users you're just starting to understand. This teaches you that not knowing something isn't a problem—it's just temporary. You stop saying 'I don't know how to do that' and start saying 'I don't know how to do that yet.'",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key="problems-differently"
-        >
+        <strong className="text-brightYellow" key="problems-differently">
           You See Problems Differently
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0After experiencing how teams break down challenges like space debris tracking into manageable pieces, you apply the same approach everywhere. That intimidating research project becomes a collection of smaller, solvable questions.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key="build-resilience"
-        >
+        <strong className="text-brightYellow" key="build-resilience">
           You Build Resilience
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Your first attempt at analyzing satellite data will probably fail. Your presentation might have technical difficulties. This is normal. What's surprising is how quickly you bounce back. When everyone's experiencing failure and iteration, you develop resilience. You learn to fail fast, learn quickly, and try again.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key="real-innovation"
-        >
+        <strong className="text-brightYellow" key="real-innovation">
           You Understand Real Innovation
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Media shows innovation as sudden breakthroughs by isolated geniuses. Hackathons reveal it's actually messy collaboration, lots of iteration, and smart combinations of existing tools. At HackAthlone, innovation might mean connecting agricultural satellite data with weather APIs to help farmers make irrigation decisions. Not revolutionary technology—just practical problem-solving.",
 
-        <strong className="text-hackathone-font-rocket-red" key="ambiguity">
+        <strong className="text-brightYellow" key="ambiguity">
           You Get Comfortable With Ambiguity
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'Design a tool to help farmers adapt to climate change' could mean dozens of things. Part of the challenge is figuring out what problem to solve, not just how to solve it. This comfort with unclear requirements becomes incredibly valuable in professional settings.",
 
-        <strong className="text-hackathone-font-rocket-red" key="communicate">
+        <strong className="text-brightYellow" key="communicate">
           You Learn to Communicate Simply
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Hackathons force you to present complex projects in just a few minutes. You learn to start with the problem, not the technology. You practice explaining technical concepts to non-technical people. These communication skills help everywhere you need to convince someone your idea matters.",
 
-        <strong className="text-hackathone-font-rocket-red" key="connections">
+        <strong className="text-brightYellow" key="connections">
           The Long-Term Impact
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0The real value isn't what you build in 48 hours—it's how the experience changes your approach to everything after. You become confident tackling unfamiliar challenges. You get better at diverse teamwork. You develop resilience. You communicate complex ideas clearly. These skills compound over time. Every challenging project becomes easier because you've proven you can figure things out.",
@@ -941,15 +749,12 @@ const BlogPage: React.FC = () => {
       points: [
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\"I can't join Space Apps. I'm not technical enough.\" We hear this every year at HackAthlone. People think NASA's hackathon is only for computer science students and engineers. They assume you need years of programming experience to contribute. They're completely wrong.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key="real-challenge"
-        >
+        <strong className="text-brightYellow" key="real-challenge">
           The Real Challenge Isn't Coding
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Here's what most people don't understand: the hardest part of space challenges usually isn't the programming. It's figuring out what problem to solve, how to present the solution, and why it matters. Take climate monitoring. Sure, you need someone who can work with satellite data. But you also need someone who understands which climate impacts matter to farmers, how to design interfaces that scientists will actually use, and how to explain findings to policymakers. The coding might take 6 hours. Everything else takes the other 42 hours.",
 
-        <strong className="text-hackathone-font-rocket-red" key="team-needs">
+        <strong className="text-brightYellow" key="team-needs">
           What Teams Actually Need
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0If you're smart enough to be interested in space challenges, you're technical enough for Space Apps. The question is what other skills you bring that programmers desperately need:",
@@ -961,10 +766,7 @@ const BlogPage: React.FC = () => {
         "• Strategy: Figuring out how solutions could actually be implemented",
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0These skills are often more valuable than programming ability in a 48-hour hackathon.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key="successful-projects"
-        >
+        <strong className="text-brightYellow" key="successful-projects">
           What Successful Projects Look Like
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Based on successful Space Apps projects:",
@@ -973,10 +775,7 @@ const BlogPage: React.FC = () => {
         "• Space Debris Solutions: Need people who understand policy implications and can design interfaces for mission controllers.",
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0The pattern? Technical skills get you a working prototype. Everything else determines whether it actually solves a problem people care about.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key="how-contribute"
-        >
+        <strong className="text-brightYellow" key="how-contribute">
           How to Contribute Without Coding
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0During the weekend:",
@@ -990,12 +789,12 @@ const BlogPage: React.FC = () => {
         "• Work with NASA datasets using Excel or Google Sheets",
         "• Handle documentation, testing, and user research",
 
-        <strong className="text-hackathone-font-rocket-red" key="diverse-teams">
+        <strong className="text-brightYellow" key="diverse-teams">
           Why Diverse Teams Win
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Here's what experienced participants know: diverse teams consistently outperform all-technical teams. When everyone has the same background, they tend to build technically impressive solutions that no one actually needs. Mixed teams ask different questions, catch usability issues early, and present their work more compellingly.",
 
-        <strong className="text-hackathone-font-rocket-red" key="getting-ready">
+        <strong className="text-brightYellow" key="getting-ready">
           Getting Ready
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0If you're joining HackAthlone without programming experience:",
@@ -1005,7 +804,7 @@ const BlogPage: React.FC = () => {
         "• Study successful projects: Analyze what made them compelling beyond technical implementation",
         "• Know your value: Be confident about your unique perspective",
 
-        <strong className="text-hackathone-font-rocket-red" key="bottom-line">
+        <strong className="text-brightYellow" key="bottom-line">
           The Bottom Line
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space Apps isn't really about space. It's about using space data to solve problems that affect people on Earth. That requires understanding people, not just technology. If you can research user needs, design clear interfaces, manage projects, or think strategically about implementation, you have skills that every serious team needs.",
@@ -1026,17 +825,14 @@ const BlogPage: React.FC = () => {
       points: [
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0So you've decided to register for HackAthlone. You're probably excited, maybe a little nervous, and definitely wondering what you've gotten yourself into. Good news: you're about to have one of the most intense and rewarding weekends of your life. Here's what you actually need to know.",
 
-        <strong className="text-hackathone-font-rocket-red" key="before-arrive">
+        <strong className="text-brightYellow" key="before-arrive">
           Before You Arrive
         </strong>,
         "• Pack like you're camping. Bring a sleeping bag, pillow, and comfortable clothes for 48 hours. Yes, people actually sleep there during the overnight format.",
         "• Download everything beforehand. Get your software, accounts, and tools set up before arriving. The wifi will be packed with participants downloading datasets.",
         "• Eat well. TU Shannon provides F&B throughout, but your eating schedule is about to become random. Start the weekend well-nourished.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key="team-formation"
-        >
+        <strong className="text-brightYellow" key="team-formation">
           Team Formation Reality
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Team formation is organized chaos, and that's normal.",
@@ -1044,49 +840,46 @@ const BlogPage: React.FC = () => {
         "• Look for enthusiasm over credentials. Someone genuinely excited about climate monitoring but new to satellite data might be better than a bored expert.",
         "• Teams of 4-5 work best based on past HackAthlone experience.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key="choosing-challenge"
-        >
+        <strong className="text-brightYellow" key="choosing-challenge">
           Choosing Your Challenge
         </strong>,
         "• Pick problems you care about. You'll spend 48 hours on this challenge. If it doesn't fascinate you, those hours will drag.",
         '• Remember the theme: "Learn, Launch, Lead." Focus on developing skills, transforming NASA data into solutions, and leading innovation.',
 
-        <strong className="text-hackathone-font-rocket-red" key="reality">
+        <strong className="text-brightYellow" key="reality">
           The 48-Hour Reality
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Expect energy waves: high enthusiasm initially, fatigue mid-way, then final-push adrenaline. Use the early energy for planning. Support each other during the grind. Be amazed at what you accomplish in the final hours.",
 
-        <strong className="text-hackathone-font-rocket-red" key="nasa-data">
+        <strong className="text-brightYellow" key="nasa-data">
           Working with NASA Data
         </strong>,
         "• Start simple. NASA datasets are overwhelming. Basic analysis beats complex processing you don't understand.",
         "• Document everything. Sleep-deprived you will forget decisions. Keep notes on your approach and reasoning.",
         "• Use TU Shannon's resources. Professional labs, 3D printers, and VR/AR headsets are available. Plan how they could enhance your solution.",
 
-        <strong className="text-hackathone-font-rocket-red" key="presentation">
+        <strong className="text-brightYellow" key="presentation">
           Presentation Tips
         </strong>,
         "• Practice your pitch. You have limited time to explain 48 hours of work.",
         "• Tell a story. Problem → why it matters → your solution → impact. Save technical details for questions.",
         "• Prepare for tech failures. Have screenshots and backup plans when demos break.",
 
-        <strong className="text-hackathone-font-rocket-red" key="success">
+        <strong className="text-brightYellow" key="success">
           What Success Looks Like
         </strong>,
         "• Winning isn't everything. The best experiences come from solving interesting problems, learning skills, and making connections.",
         "• Focus on real impact. NASA experts judge for solutions that could make a difference. Simple tools addressing important problems beat complex systems solving nothing.",
         "• Document your journey. Photos, notes, and code help you remember and build on the experience.",
 
-        <strong className="text-hackathone-font-rocket-red" key="after-weekend">
+        <strong className="text-brightYellow" key="after-weekend">
           After the Weekend
         </strong>,
         "• Follow up with your team. Some of the best outcomes happen weeks after the event.",
         "• Submit properly. Projects get judged by NASA and space agency experts for 10 global awards.",
         "• Apply what you learned. Rapid prototyping, leadership, and problem-solving skills transfer everywhere.",
 
-        <strong className="text-hackathone-font-rocket-red" key="why-matters">
+        <strong className="text-brightYellow" key="why-matters">
           Why This Matters
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space hackathons aren't really about space. They're about discovering what you're capable of when constraints are tight, stakes are real, and everyone around you is pushing limits.",
@@ -1107,53 +900,47 @@ const BlogPage: React.FC = () => {
       points: [
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Thinking about joining HackAthlone 2025? Here's what you actually get when you spend a weekend solving space challenges with NASA data.",
 
-        <strong className="text-hackathone-font-rocket-red" key="real-data">
+        <strong className="text-brightYellow" key="real-data">
           1. Real NASA Data, Not Practice Problems
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0You'll work with the same satellite imagery, climate data, and space observations that NASA scientists use for actual missions. Want to analyze solar storms or track deforestation? The data's there. Most people pay thousands for courses with less comprehensive datasets than what you'll use in a weekend.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key="expert-network"
-        >
+        <strong className="text-brightYellow" key="expert-network">
           2. People Who Actually Know What They're Talking About
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Forget awkward networking events. You'll naturally connect with climate scientists, aerospace engineers, and space industry professionals while solving real problems together. When you're stuck on satellite data processing at 2 AM, having an actual NASA researcher available to help is pretty valuable.",
 
-        <strong className="text-hackathone-font-rocket-red" key="pro-equipment">
+        <strong className="text-brightYellow" key="pro-equipment">
           3. Professional Equipment You Can't Access Elsewhere
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0TU Shannon provides professional labs, 3D printers, and VR/AR equipment like Meta Quest and HoloLens headsets. Building climate visualizations? Use the VR setup. Need prototypes? The 3D printers and electronics lab are available. Most makerspaces charge membership fees for equipment this advanced.",
 
-        <strong className="text-hackathone-font-rocket-red" key="real-support">
+        <strong className="text-brightYellow" key="real-support">
           4. Support That Actually Helps
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Mentorship comes from people who've built similar solutions professionally. Academic mentors understand research. Industry mentors know real applications. Plus, meals, beverages, workspace, and technical resources are provided for 48 hours.",
 
-        <strong
-          className="text-hackathone-font-rocket-red"
-          key="worthy-problems"
-        >
+        <strong className="text-brightYellow" key="worthy-problems">
           5. Problems Worth Solving
         </strong>,
         '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Instead of building another social media app, you\'re tackling climate change, space exploration, and agricultural sustainability. The 2025 theme "Learn, Launch, Lead" connects to real NASA priorities. Past Space Apps projects have been adopted by governments and used in actual space missions.',
 
-        <strong className="text-hackathone-font-rocket-red" key="recognition">
+        <strong className="text-brightYellow" key="recognition">
           6. Recognition That Opens Doors
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Global winners get invited to NASA facilities for rocket launches. But even participating gives you portfolio material that stands out. Employers notice NASA data experience. Graduate schools value interdisciplinary team experience. All projects become open-source contributions to global research.",
 
-        <strong className="text-hackathone-font-rocket-red" key="unique-skills">
+        <strong className="text-brightYellow" key="unique-skills">
           7. Skills You Can't Learn in Classrooms
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0HackAthlone teaches working under pressure, learning rapidly, leading diverse teams, and communicating complex ideas simply. You'll master new technical tools in hours and coordinate with people from different backgrounds. After leading a technical project from concept to presentation in 48 hours, regular deadlines feel manageable.",
 
-        <strong className="text-hackathone-font-rocket-red" key="reality-check">
+        <strong className="text-brightYellow" key="reality-check">
           The Reality Check
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0It's an intense 48 hours. You'll be tired and occasionally frustrated around hour 30. But that's where growth happens. The teams that have the most fun balance ambition with realistic goals. You're not going to revolutionize space exploration, but you might build something genuinely useful.",
 
-        <strong className="text-hackathone-font-rocket-red" key="value-prop">
+        <strong className="text-brightYellow" key="value-prop">
           What This Actually Gets You
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Investment: One weekend\nValue: Premium datasets, professional equipment, expert mentorship, space industry networking, portfolio enhancement, skill development",
@@ -1176,14 +963,14 @@ const BlogPage: React.FC = () => {
       points: [
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0When NASA announced \"Learn, Launch, Lead\" as their 2025 Space Apps Challenge theme, it wasn't just placing cool sounding words together. This theme reflects how breakthrough space technology gets developed and why the old way isn't working.",
 
-        <strong className="text-hackathone-font-rocket-red" key="learn-means">
+        <strong className="text-brightYellow" key="learn-means">
           What "Learn" Really Means
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Forget everything you know about learning from textbooks and lectures. NASA noticed something interesting about how astronauts pick up complex skills. They don't spend years studying theory before touching real equipment. They learn by working on actual problems where mistakes have consequences.",
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Space Apps follows this approach. You won't learn Python from a tutorial and then wonder what to do with it. Instead, you'll learn Python because you need to analyze real satellite data this weekend to solve a climate monitoring challenge.",
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0At HackAthlone, people consistently tell us they learned more in 48 hours than in entire university courses. Why? Because you're not learning for a test. You're learning to solve something that matters.",
 
-        <strong className="text-hackathone-font-rocket-red" key="launch-means">
+        <strong className="text-brightYellow" key="launch-means">
           What "Launch&quot; Actually Looks Like
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0This isn't about rockets (though that would be cool). It's about getting from idea to working solution incredibly fast.",
@@ -1191,20 +978,20 @@ const BlogPage: React.FC = () => {
         '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Sounds impossible? SpaceX proved that "fast and good enough" often beats "slow and perfect." They didn\'t build better rockets than NASA. They built adequate rockets much faster. At HackAthlone, you\'ll use the same approach with TU Shannon\'s professional equipment and real NASA datasets.',
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0The goal isn't perfection. It's building something that works and could make a difference.",
 
-        <strong className="text-hackathone-font-rocket-red" key="lead-means">
+        <strong className="text-brightYellow" key="lead-means">
           What "Lead" Means for You
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0This might be the most important part. NASA realizes that waiting for people to get 20 years of experience before leading projects doesn't work anymore. Space challenges are too urgent.",
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0So they're flipping the script. At Space Apps, you can lead technical decisions on your first day. You can propose solutions to problems that NASA scientists are actually working on. You can coordinate a diverse team under pressure.",
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Many people leave having made more complex technical decisions than their day jobs involve. HackAthlone's 48-hour format gives you even more leadership opportunities than standard weekend events.",
 
-        <strong className="text-hackathone-font-rocket-red" key="why-works">
+        <strong className="text-brightYellow" key="why-works">
           Why This Approach Works
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Traditional aerospace moves slowly because it has to get everything right the first time. But most innovation problems don't require that level of perfection initially. They need good solutions quickly, then iteration.",
         '\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0The "Learn, Launch, Lead" cycle builds on itself. You learn new skills to tackle a challenge. You launch a solution that creates real impact. You lead a team to tackle bigger problems. Then you learn from that experience and launch even more ambitious projects.',
 
-        <strong className="text-hackathone-font-rocket-red" key="october-means">
+        <strong className="text-brightYellow" key="october-means">
           What This Means for October
         </strong>,
         "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0If you join HackAthlone this year, you won't just be participating in a hackathon. You'll be experiencing NASA's new approach to innovation firsthand.",
@@ -1215,6 +1002,44 @@ const BlogPage: React.FC = () => {
       author: "Shaiv Mehrotra",
       date: "Aug 31, 2025",
       slug: "14",
+    },
+    {
+      image: Space6,
+      tags: [{ name: "How-To" }],
+      title:
+        "Steps to Change Your Registration from Minor to Major in NASA Space Apps Athlone",
+      summary:
+        "If you registered as a minor by mistake but are over 18, follow these steps to correct your account and re-register for HackAthlone with the correct age status.",
+      points: [
+        "If you have mistakenly registered as a minor by selecting the 'check this box if you are under the age of 18' option on spaceappschallenge.org and you are not under 18, it's important to change it. Follow the steps below.",
+        "1. Go to Your Profile Page: Click your username at the top right, open the dropdown and choose 'Profile'.",
+        "2. Change your email: In Account Information update your current email to a different email address that you own and save the changes.",
+        "3. Log Out: Click your profile icon (top left) and choose 'Sign out' to log out of spaceappschallenge.org.",
+        "4. Sign Up Again with Your Original Email: Start the sign-up process again and use the original email address you first used to register. This resets the account tied to that email.",
+        "5. Register again for NASA Space Apps Athlone (make sure the location is Athlone).",
+        "6. Keep the 'Minor' box unchecked during registration: Do not select the 'Check this box if you are a minor under the age of 18' option.",
+        "Once completed, your registration will be set as Major and you can attend the hackathon without minor-specific restrictions. You're all set for participating in NASA Space Apps Athlone!",
+      ],
+      author: "HackAthlone Team",
+      date: "Sep 1, 2025",
+      slug: "16",
+    },
+    {
+      image: Space9,
+      tags: [{ name: "How-To" }],
+      title:
+        "Changing Your Email if You Registered with a Non-University Email for NASA Space Apps Challenge Athlone",
+      summary:
+        "If you registered for HackAthlone using a personal email (Gmail, Yahoo, etc.) and want to switch to your university email for validation and communication, follow these quick steps.",
+      points: [
+        "Go to Your Profile Page: Click your username at the top right corner and choose 'Profile' from the dropdown.",
+        "Change your email: In Account Information, update your current email to your university email address and save the changes.",
+        "You are now successfully registered with your university email address, ensuring smooth communication and validation for the hackathon.",
+        "Let’s rock NASA Space Apps Athlone!",
+      ],
+      author: "HackAthlone Team",
+      date: "Sep 23, 2025",
+      slug: "17",
     },
   ];
   const blog = blogs.find((b) => b.slug === slug);
@@ -1248,7 +1073,7 @@ const BlogPage: React.FC = () => {
                   size="small"
                   color="primary"
                   onClick={handleBack}
-                  className="mb-4 mr-4 hidden text-white hover:text-hackathone-font-rocket-red lg:block"
+                  className="mb-4 mr-4 hidden text-white hover:text-brightYellow lg:block"
                   edge="start"
                   sx={{
                     fontSize: "4rem",
@@ -1290,7 +1115,7 @@ const BlogPage: React.FC = () => {
                 initial={{ y: -50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
-                className="mb-10 mt-2 font-hackathoneSFProDisplay text-hackathone-font-rocket-red"
+                className="mb-10 mt-2 font-hackathoneSFProDisplay text-brightYellow"
               >
                 {blog.author} - {blog.date}
               </motion.p>
@@ -1344,7 +1169,7 @@ const BlogPage: React.FC = () => {
                 size="large"
                 color="primary"
                 onClick={handleBack}
-                className="mb-8 mr-4 text-white hover:text-hackathone-font-rocket-red"
+                className="mb-8 mr-4 text-white hover:text-brightYellow"
                 edge="start"
                 sx={{
                   fontSize: "4rem",
@@ -1403,7 +1228,7 @@ const BlogPage: React.FC = () => {
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
-              className="mb-10 mt-2 text-base text-hackathone-font-rocket-red md:text-2xl"
+              className="mb-10 mt-2 text-base text-brightYellow md:text-2xl"
             >
               {blog.author} - {blog.date}
             </motion.p>

@@ -96,14 +96,14 @@ export const CardGrid = () => {
           return (
             <div
               key={index}
-              className={`start-[4rem] flex flex-col items-center justify-center text-center`}
+              className={`start-[4rem] flex flex-col items-center justify-end text-center`}
               style={{ transition: "transform 0.3s ease-in-out" }} // Smooth transition
               onClick={() => handleCardClick(index)}
             >
               {/* Container for the image */}
               <div className="relative max-h-[280px] w-auto max-w-[300px] overflow-hidden rounded-full sm:w-80">
                 <Image
-                  className="h-auto w-full cursor-pointer rounded-2xl object-cover"
+                  className="h-auto w-full cursor-pointer rounded-full object-cover"
                   src={item.image}
                   alt={item.name}
                   // layout="fill"  // Ensures the image fills the container

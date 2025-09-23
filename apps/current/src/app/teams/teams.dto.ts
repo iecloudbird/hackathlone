@@ -1,7 +1,9 @@
+import James from "@/assets/images/general/landing-page/teams/james.jpg";
 import Ken from "@/assets/images/general/landing-page/teams/ken.jpg";
 import Kkwaish from "@/assets/images/general/landing-page/teams/Kkhawaish Gulati.jpeg";
 import Manav from "@/assets/images/general/landing-page/teams/Manav_Shah.jpg";
 import Nitish from "@/assets/images/general/landing-page/teams/Nitish.jpg";
+import Pitor from "@/assets/images/general/landing-page/teams/pitor.jpg";
 import AB from "@/assets/images/general/landing-page/teams/Raj_Bhalla.jpg";
 import Sahir from "@/assets/images/general/landing-page/teams/Sahir Sharma.jpg";
 import Shean from "@/assets/images/general/landing-page/teams/Shean Hans Teoh.jpg";
@@ -99,6 +101,28 @@ export const teamMembers = [
     socials: {
       github: null,
       linkedin: "https://www.linkedin.com/in/aradhya-bhalla/",
+      twitter: null,
+    },
+  },
+  {
+    bio: null,
+    image: James,
+    name: "James Mc Neill Killeen",
+    role: "On-Ground Support",
+    socials: {
+      github: null,
+      linkedin: "https://www.linkedin.com/in/james-mc-neill-killeen-944233295/",
+      twitter: null,
+    },
+  },
+  {
+    bio: null,
+    image: Pitor,
+    name: "Piotr Warkocki",
+    role: "On-Ground Support",
+    socials: {
+      github: null,
+      linkedin: "https://www.linkedin.com/in/piotr-warkocki/",
       twitter: null,
     },
   },
