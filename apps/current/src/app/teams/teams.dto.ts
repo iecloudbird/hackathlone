@@ -1,13 +1,25 @@
-import James from "@/assets/images/general/landing-page/teams/james.jpg";
+import Aaron from "@/assets/images/general/landing-page/teams/Aaron.jpeg";
+import Albert from "@/assets/images/general/landing-page/teams/Albert.jpeg";
+import Babar from "@/assets/images/general/landing-page/teams/Babar.png";
+import Bhagyabati from "@/assets/images/general/landing-page/teams/Bhagyabati.jpg";
+import Darshana from "@/assets/images/general/landing-page/teams/Darshana.jpg";
+import Dylan from "@/assets/images/general/landing-page/teams/Dylan.png";
+import Fabrizio from "@/assets/images/general/landing-page/teams/fabrizio.png";
+import Harsh from "@/assets/images/general/landing-page/teams/Harsh.jpeg";
+import James from "@/assets/images/general/landing-page/teams/james.png";
 import Ken from "@/assets/images/general/landing-page/teams/ken.jpg";
 import Kkwaish from "@/assets/images/general/landing-page/teams/Kkhawaish Gulati.jpeg";
 import Manav from "@/assets/images/general/landing-page/teams/Manav_Shah.jpg";
+import Mehwish from "@/assets/images/general/landing-page/teams/Mehwish.jpg";
+import Michael from "@/assets/images/general/landing-page/teams/Michael.jpg";
 import Nitish from "@/assets/images/general/landing-page/teams/Nitish.jpg";
-import Pitor from "@/assets/images/general/landing-page/teams/pitor.jpg";
-import AB from "@/assets/images/general/landing-page/teams/Raj_Bhalla.jpg";
+import Pitor from "@/assets/images/general/landing-page/teams/pitor.png";
+import Pratik from "@/assets/images/general/landing-page/teams/Pratik.jpeg";
 import Sahir from "@/assets/images/general/landing-page/teams/Sahir Sharma.jpg";
+import Sanjana from "@/assets/images/general/landing-page/teams/Sanjana.jpeg";
 import Shean from "@/assets/images/general/landing-page/teams/Shean Hans Teoh.jpg";
 import Shantanu from "@/assets/images/general/landing-page/teams/sk.jpg";
+import Yujing from "@/assets/images/general/landing-page/teams/Yujing.png";
 
 export const teamMembers = [
   {
@@ -72,6 +84,28 @@ export const teamMembers = [
   },
   {
     bio: null,
+    image: James,
+    name: "James Mc Neill Killeen",
+    role: "On-Ground Support",
+    socials: {
+      github: null,
+      linkedin: "https://www.linkedin.com/in/james-mc-neill-killeen-944233295/",
+      twitter: null,
+    },
+  },
+  {
+    bio: null,
+    image: Pitor,
+    name: "Piotr Warkocki",
+    role: "On-Ground Support",
+    socials: {
+      github: null,
+      linkedin: "https://www.linkedin.com/in/piotr-warkocki/",
+      twitter: null,
+    },
+  },
+  {
+    bio: null,
     image: Kkwaish,
     name: "Kkhawaish Gulati",
     role: "Event Anchor",
@@ -93,37 +127,97 @@ export const teamMembers = [
       twitter: null,
     },
   },
+
+  /* Appended On-Ground Support team members */
   {
     bio: null,
-    image: AB,
-    name: "Aradhya Bhalla",
+    image: Aaron,
+    name: "Aaron",
     role: "On-Ground Support",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/aradhya-bhalla/",
-      twitter: null,
-    },
+    socials: { github: null, linkedin: null, twitter: null },
   },
   {
     bio: null,
-    image: James,
-    name: "James Mc Neill Killeen",
+    image: Albert,
+    name: "Albert",
     role: "On-Ground Support",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/james-mc-neill-killeen-944233295/",
-      twitter: null,
-    },
+    socials: { github: null, linkedin: null, twitter: null },
   },
   {
     bio: null,
-    image: Pitor,
-    name: "Piotr Warkocki",
+    image: Babar,
+    name: "Babar",
     role: "On-Ground Support",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/piotr-warkocki/",
-      twitter: null,
-    },
+    socials: { github: null, linkedin: null, twitter: null },
+  },
+  {
+    bio: null,
+    image: Bhagyabati,
+    name: "Bhagyabati",
+    role: "On-Ground Support",
+    socials: { github: null, linkedin: null, twitter: null },
+  },
+  {
+    bio: null,
+    image: Darshana,
+    name: "Darshana",
+    role: "On-Ground Support",
+    socials: { github: null, linkedin: null, twitter: null },
+  },
+  {
+    bio: null,
+    image: Dylan,
+    name: "Dylan",
+    role: "On-Ground Support",
+    socials: { github: null, linkedin: null, twitter: null },
+  },
+  {
+    bio: null,
+    image: Fabrizio,
+    name: "Fabrizio",
+    role: "On-Ground Support",
+    socials: { github: null, linkedin: null, twitter: null },
+  },
+  {
+    bio: null,
+    image: Harsh,
+    name: "Harsh",
+    role: "On-Ground Support",
+    socials: { github: null, linkedin: null, twitter: null },
+  },
+  {
+    bio: null,
+    image: Mehwish,
+    name: "Mehwish",
+    role: "On-Ground Support",
+    socials: { github: null, linkedin: null, twitter: null },
+  },
+  {
+    bio: null,
+    image: Michael,
+    name: "Michael",
+    role: "On-Ground Support",
+    socials: { github: null, linkedin: null, twitter: null },
+  },
+  {
+    bio: null,
+    image: Pratik,
+    name: "Pratik",
+    role: "On-Ground Support",
+    socials: { github: null, linkedin: null, twitter: null },
+  },
+  {
+    bio: null,
+    image: Sanjana,
+    name: "Sanjana",
+    role: "On-Ground Support",
+    socials: { github: null, linkedin: null, twitter: null },
+  },
+  {
+    bio: null,
+    image: Yujing,
+    name: "Yujing",
+    role: "On-Ground Support",
+    socials: { github: null, linkedin: null, twitter: null },
   },
 ];

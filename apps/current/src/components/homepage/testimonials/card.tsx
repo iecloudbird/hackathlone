@@ -130,8 +130,8 @@ export const TestimonialCard: FC<TestimonialCardProps> = ({
         }}
       >
         <div className="relative z-10 flex h-full flex-col">
-          <p className={`${textClass} text-base`}>{text}</p>
-          <p className={teamNameClass}>{teamName}</p>
+          <p className={`${textClass} text-base`}>&ldquo;{text}&rdquo;</p>
+          <p className={teamNameClass}>~{teamName}</p>
         </div>
       </MotionDiv>
     </Suspense>

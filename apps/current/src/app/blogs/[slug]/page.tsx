@@ -1007,7 +1007,7 @@ const BlogPage: React.FC = () => {
       image: Space6,
       tags: [{ name: "How-To" }],
       title:
-        "Steps to Change Your Registration from Minor to Major in NASA Space Apps Athlone",
+        "Steps to Change Your Registration from Minor to Adult in NASA Space Apps Athlone",
       summary:
         "If you registered as a minor by mistake but are over 18, follow these steps to correct your account and re-register for HackAthlone with the correct age status.",
       points: [
@@ -1018,7 +1018,7 @@ const BlogPage: React.FC = () => {
         "4. Sign Up Again with Your Original Email: Start the sign-up process again and use the original email address you first used to register. This resets the account tied to that email.",
         "5. Register again for NASA Space Apps Athlone (make sure the location is Athlone).",
         "6. Keep the 'Minor' box unchecked during registration: Do not select the 'Check this box if you are a minor under the age of 18' option.",
-        "Once completed, your registration will be set as Major and you can attend the hackathon without minor-specific restrictions. You're all set for participating in NASA Space Apps Athlone!",
+        "Once completed, your registration will be set as Adult and you can attend the hackathon without minor-specific restrictions. You're all set for participating in NASA Space Apps Athlone!",
       ],
       author: "HackAthlone Team",
       date: "Sep 1, 2025",

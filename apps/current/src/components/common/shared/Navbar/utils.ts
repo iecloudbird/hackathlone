@@ -53,6 +53,12 @@ export const navigationData = (
     isActive: currentPath.startsWith("/sponsors"),
   },
   {
+    route: () => router.push("/mentors"),
+    text: "Mentors",
+    path: "/mentors",
+    isActive: currentPath.startsWith("/mentors"),
+  },
+  {
     route: () => router.push("/contact-us"),
     text: "Contact Us",
     path: "/contact-us",

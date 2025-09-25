@@ -121,24 +121,9 @@ export const footerData: FooterData = {
           isExternal: false,
         },
         {
-          text: "UL 21 Opening Ceremony",
-          href: "https://www.youtube.com/watch?v=n_KqGdnlOcU",
-          isExternal: true,
-        },
-        {
-          text: "UL 21 Mentor Sessions",
-          href: "https://www.youtube.com/watch?v=zFdhwgOyqho",
-          isExternal: true,
-        },
-        {
-          text: "UL 21 Practice Presentations",
-          href: "https://www.youtube.com/watch?v=EjbDhhmpgEk",
-          isExternal: true,
-        },
-        {
-          text: "UL 21 Closing Ceremony",
-          href: "https://www.youtube.com/watch?v=CFN7ewwBYT0",
-          isExternal: true,
+          text: "Glimpse 21",
+          href: "/glimpse21",
+          isExternal: false,
         },
       ],
     },
