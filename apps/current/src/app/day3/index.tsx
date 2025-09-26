@@ -13,7 +13,8 @@ export function TimelineDemo() {
             Breakfast
           </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            Team confirmation breakfast
+            Team confirmation breakfast. Send at least one member to the Atrium
+            X to the support desk for official confirmation on team status.
           </div>
         </div>
       ),
@@ -24,11 +25,14 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            Submit Draft Presentations
+            Submit Draft Presentations (Optional)
           </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
             It is a good practice to submit a PDF that can be printed and later
-            reviewed by the judges.
+            reviewed by the judges. This PPT submission is relevant for and
+            followed by a private practice session with an assigned mentor. This
+            can help you refine your projects before you make it public,
+            although it is optional to submit.
           </div>
         </div>
       ),
@@ -42,8 +46,9 @@ export function TimelineDemo() {
             Practice Presentations and Feedback Session
           </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            Time and feedback will be given to assist the hackers with a dry run
-            of the presentation.
+            Practice presentation will run ONLY for the teams that submitted
+            draft presentations at 9:00 AM. Time and feedback will be given to
+            assist the hackers with this dry run of the presentation.
           </div>
         </div>
       ),
@@ -54,33 +59,28 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            Lunch
+            Lunch (And Due time to submit final presentations)
           </p>
+          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
+            Hot meals will be served.
+          </div>
         </div>
       ),
     },
     {
       link: "/day3",
-      title: "2:00 PM",
+      title: "1:30 PM",
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
             Final Presentations Start
           </p>
-        </div>
-      ),
-    },
-    {
-      link: "/day3",
-      title: "3:30 PM",
-      content: (
-        <div>
-          <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            Show Off your Work
-          </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
             The time for the participants to show off their hard work done
-            during the Space Apps Challenge!
+            during the Space Apps Challenge in Athlone! The exact room location
+            for the presentations will be announced at the venue during the
+            event. Please Note - The presentations will be live-streamed on
+            YouTube.
           </div>
         </div>
       ),
@@ -91,11 +91,26 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            Judges Deliberation and Feedback Session
+            Feedback Session with Participants
           </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            Participants will be reminded to focus on giving kind, specific and
-            helpful feedback.
+            While the judges tally the scores, participants will be reminded to
+            focus on giving kind, specific and helpful feedback.
+          </div>
+        </div>
+      ),
+    },
+    {
+      link: "/day3",
+      title: "5:30 PM",
+      content: (
+        <div>
+          <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
+            Awards and Closing Ceremony
+          </p>
+          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
+            The most awaited moment! Winners and category specific winners are
+            announced, along with the next steps.
           </div>
         </div>
       ),
@@ -106,11 +121,12 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            Closing Ceremony and Results
+            Photo Op and Breakout!
           </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            The most awaited moment! The Global Nominees are announced, along
-            with the next steps.
+            We love to stick around and capture few moments after the hackathon
+            with everyone, and you can also join the volunteering team for some
+            drinks later at the nearby college bar (Tack Room).
           </div>
         </div>
       ),

@@ -47,10 +47,10 @@ export const navigationData = (
     isActive: currentPath.startsWith("/faq"),
   },
   {
-    route: () => router.push("/sponsors"),
-    text: "Sponsors",
-    path: "/sponsors",
-    isActive: currentPath.startsWith("/sponsors"),
+    route: () => router.push("/local_collaborators"),
+    text: "Local Collaborators",
+    path: "/local_collaborators",
+    isActive: currentPath.startsWith("/local_collaborators"),
   },
   {
     route: () => router.push("/mentors"),

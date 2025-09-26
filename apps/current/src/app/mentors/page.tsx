@@ -31,11 +31,11 @@ const mentors: Mentor[] = [
     linkedin: "https://www.linkedin.com/in/rohith-addula/",
     expertise: ["Web Dev"],
   },
-  {
-    name: "Ray Fitzpatrick",
-    linkedin: "https://www.linkedin.com/in/ray-fitzpatrick-351a801a2/",
-    expertise: ["Agile", "Scrum Master"],
-  },
+  // {
+  //   name: "Ray Fitzpatrick",
+  //   linkedin: "https://www.linkedin.com/in/ray-fitzpatrick-351a801a2/",
+  //   expertise: ["Agile", "Scrum Master"],
+  // },
   {
     name: "Guilherme Daniel Gomes",
     linkedin: "https://www.linkedin.com/in/guilhermedaniel/",
@@ -52,7 +52,7 @@ const mentors: Mentor[] = [
     expertise: ["Creative", "Remote sensing", "Sound Engineering"],
   },
   {
-    name: "Amit",
+    name: "Amit Hirway",
     linkedin: "https://www.linkedin.com/in/amithirway",
     expertise: ["Agile", "Spatial Audio", "General Mentorship"],
   },
@@ -86,21 +86,21 @@ const mentors: Mentor[] = [
     linkedin: "/mentors",
     expertise: ["Business Modelling", "Agriculture"],
   },
-  {
-    name: "Adrielle Nazar Moraes",
-    linkedin: "/mentors",
-    expertise: ["Web Dev", "Sound Engineering"],
-  },
-  {
-    name: "Eoghan Hynes",
-    linkedin: "/mentors",
-    expertise: ["XR", "QoE", "General Research"],
-  },
-  {
-    name: "Conor Keighrey",
-    linkedin: "/mentors",
-    expertise: ["Game Dev"],
-  },
+  // {
+  //   name: "Adrielle Nazar Moraes",
+  //   linkedin: "/mentors",
+  //   expertise: ["Web Dev", "Sound Engineering"],
+  // },
+  // {
+  //   name: "Eoghan Hynes",
+  //   linkedin: "/mentors",
+  //   expertise: ["XR", "QoE", "General Research"],
+  // },
+  // {
+  //   name: "Conor Keighrey",
+  //   linkedin: "/mentors",
+  //   expertise: ["Game Dev"],
+  // },
   {
     name: "Bhagyabati Moharana",
     linkedin: "https://www.linkedin.com/in/bhagyabati-m-a07619172/",
@@ -116,11 +116,11 @@ const mentors: Mentor[] = [
     linkedin: "https://www.linkedin.com/in/yuhang-ye-89a93183/",
     expertise: ["Data Science and AI"],
   },
-  {
-    name: "David Concannon",
-    linkedin: "https://www.linkedin.com/in/david-concannon-90685796/",
-    expertise: ["Unity"],
-  },
+  // {
+  //   name: "David Concannon",
+  //   linkedin: "https://www.linkedin.com/in/david-concannon-90685796/",
+  //   expertise: ["Unity"],
+  // },
 ];
 
 const containerVariants = {

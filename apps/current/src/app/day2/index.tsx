@@ -10,10 +10,12 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            Breakfast
+            Breakfast with Mentors
           </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            Networking breakfast, head down to the atrium.
+            Fresh fruits and bakery buffet to fuel this networking breakfast.
+            Head down to Atrium X and get a chance to meet some of the mentors
+            at HackAthlone this year.
           </div>
         </div>
       ),
@@ -24,18 +26,33 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            Mentor Hours (10 AM - 10 PM)
+            Mentor Hours
           </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            Mentors from diverse backgrounds would be accessible to all the
-            participants (first come - first served basis).
+            Mentors from diverse backgrounds would be going around the event
+            venue. They would be accessible to all the participants on a first
+            come-first served basis.
           </div>
         </div>
       ),
     },
     {
       link: "/day2",
-      title: "11:00 AM",
+      title: "12:30 PM",
+      content: (
+        <div>
+          <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
+            Lunch
+          </p>
+          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
+            Hot meals will be served.
+          </div>
+        </div>
+      ),
+    },
+    {
+      link: "/day2",
+      title: "2:00 PM",
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
@@ -49,20 +66,6 @@ export function TimelineDemo() {
     },
     {
       link: "/day2",
-      title: "12:30 PM",
-      content: (
-        <div>
-          <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            Lunch Time
-          </p>
-          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            Grab your Lunch Coupons from the organizers and make sure to refill.
-          </div>
-        </div>
-      ),
-    },
-    {
-      link: "/day2",
       title: "7:00 PM",
       content: (
         <div>
@@ -70,7 +73,8 @@ export function TimelineDemo() {
             Important announcements
           </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            Tips & Tricks for final presentations.
+            Come down to the atrium X for some final considerations before you
+            present your projects in front of judges.
           </div>
         </div>
       ),
@@ -81,11 +85,24 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            Dinner Break
+            Dinner
           </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            Hackers in the hacker house need fuel to survive. Pizza on the
-            house.
+            Pizza Party
+          </div>
+        </div>
+      ),
+    },
+    {
+      link: "/day2",
+      title: "11:59 PM",
+      content: (
+        <div>
+          <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
+            Coffee doesn't Stop...
+          </p>
+          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
+            We have tea as well.
           </div>
         </div>
       ),

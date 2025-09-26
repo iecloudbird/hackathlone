@@ -20,7 +20,7 @@ export interface VenueSectionData {
 
 export const venueSectionData: VenueSectionData = {
   eventVenue: "Event Venue",
-  title: "Technological University of the Shannon",
+  title: "Technological University of the Shannon, Athlone ",
   rows: [
     {
       content: {},

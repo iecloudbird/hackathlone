@@ -52,7 +52,7 @@ export const TimelineDay3 = ({ data }: { data: TimelineEntry[] }) => {
             transition={{ duration: 0.4, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            5th October, 2025
+            Sunday, October 5<sup>th</sup> 2025
           </motion.p>
         </div>
 

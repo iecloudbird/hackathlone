@@ -8,7 +8,6 @@ import Fabrizio from "@/assets/images/general/landing-page/teams/fabrizio.png";
 import Harsh from "@/assets/images/general/landing-page/teams/Harsh.jpeg";
 import James from "@/assets/images/general/landing-page/teams/james.png";
 import Ken from "@/assets/images/general/landing-page/teams/ken.jpg";
-import Kkwaish from "@/assets/images/general/landing-page/teams/Kkhawaish Gulati.jpeg";
 import Manav from "@/assets/images/general/landing-page/teams/Manav_Shah.jpg";
 import Mehwish from "@/assets/images/general/landing-page/teams/Mehwish.jpg";
 import Michael from "@/assets/images/general/landing-page/teams/Michael.jpg";
@@ -104,17 +103,17 @@ export const teamMembers = [
       twitter: null,
     },
   },
-  {
-    bio: null,
-    image: Kkwaish,
-    name: "Kkhawaish Gulati",
-    role: "Event Anchor",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/kkhawaish-gulati-050b511ab/",
-      twitter: null,
-    },
-  },
+  // {
+  //   bio: null,
+  //   image: Kkwaish,
+  //   name: "Kkhawaish Gulati",
+  //   role: "Event Anchor",
+  //   socials: {
+  //     github: null,
+  //     linkedin: "https://www.linkedin.com/in/kkhawaish-gulati-050b511ab/",
+  //     twitter: null,
+  //   },
+  // },
   {
     bio: null,
     image: Ken,

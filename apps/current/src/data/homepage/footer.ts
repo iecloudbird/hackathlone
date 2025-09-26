@@ -74,11 +74,6 @@ export const footerData: FooterData = {
     {
       title: "Participation Kit",
       links: [
-        {
-          text: "Meet Our Team",
-          href: "/teams",
-          isExternal: false,
-        },
         // Uncomment when challenges release
         // {
         //   text: "Challenges",
@@ -91,13 +86,13 @@ export const footerData: FooterData = {
           isExternal: true,
         },
         {
-          text: "Choose a Challenge",
-          href: "https://www.youtube.com/watch?v=37dqOg2ljMw",
+          text: "Space Apps Connect",
+          href: "https://www.youtube.com/watch?v=Js08rFuWGWI",
           isExternal: true,
         },
         {
-          text: "How to Form Teams",
-          href: "https://www.youtube.com/watch?v=37dqOg2ljMw",
+          text: "Challenges and Team Formation",
+          href: "https://www.youtube.com/watch?v=re2ROB2OOpY",
           isExternal: true,
         },
         {

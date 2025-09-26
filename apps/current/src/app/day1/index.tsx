@@ -10,84 +10,61 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            Registration Check and Opening Ceremony
+            Kick-Off Ceremony
           </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            Participants register themselves at the Engineering Building desk to
-            collect IDs, T-Shirts and Merchandise.
+            Welcome to HackAthlone! We'll start with a high-energy kick-off
+            ceremony to get you ready for the weekend.
           </div>
         </div>
       ),
     },
     {
       link: "/day1",
-      title: "6:30 PM",
+      title: "7:00 PM",
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            HACK101
+            Hacking Begins
           </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            NASA Space Apps Challenge 2025 Itinerary and Problem statements
-            would be discussed (in detail)
-          </div>
-          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            Participants would be introduced to NASA Open Data, judging criteria
-            and other helpful resources.
+            Grab your laptops, form your teams, and let the hacking begin!
           </div>
         </div>
       ),
     },
     {
       link: "/day1",
-      title: "7:15 PM",
+      title: "9:00 PM",
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            PITCH101 and Pitches
+            Dinner
           </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            s First it is explained, how to give a pitch, for which each
-            participant will be given a maximum of 30 seconds.
-          </div>
-          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            Everyone is welcome to get in a queue and one by one pitch own idea
-            and need on the stage. This is a good way to lookout for skilled
-            team mates that can collaborate.
+            Food is fuel, and we’ve got you covered. Dinner will be served in
+            the Atrium.
           </div>
         </div>
       ),
     },
     {
       link: "/day1",
-      title: "8:00 PM",
+      title: "11:59 PM",
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            The Hack begins officially
+            Midnight Snacks
           </p>
           <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            Networking sessions to help participants find teammates and approach
-            for collaboration after Pitches
-          </div>
-        </div>
-      ),
-    },
-    {
-      link: "/day1",
-      title: "11:00 PM",
-      content: (
-        <div>
-          <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            Fuel up, the night is young.
-          </p>
-          <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-xs text-neutral-300 md:text-sm">
-            Survival is a prerequisite for creating overnight marvels.
+            Coffee doesn’t stop. Snacks and drinks to keep you hacking through
+            the night.
           </div>
         </div>
       ),
     },
   ];
+
   return (
     <div className="relative w-full text-clip">
       <TimelineDay1 data={data} />
