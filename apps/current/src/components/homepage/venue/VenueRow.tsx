@@ -1,6 +1,8 @@
+"use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { type FC } from "react";
+import { useState, type FC } from "react";
 
 interface VenueProps {
   content: {
@@ -29,23 +31,19 @@ export const Venue: FC<VenueProps> = ({
   eventVenue,
   title,
 }) => {
-  const ImageComponent = (
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  /** Image Component */
+  const ImageWrapper = (
     <div className="flex justify-center lg:justify-start">
-      <div className="relative overflow-hidden rounded-2xl bg-white/10 p-4 backdrop-blur-sm">
-        <div className="overflow-hidden rounded-xl">
-          <Image
-            src={image.src}
-            alt={image.alt}
-            width={600}
-            height={400}
-            className="h-auto w-full object-cover lg:min-w-[600px]"
-          />
-        </div>
+      <div className="relative aspect-[3/2] w-full overflow-hidden rounded-2xl bg-white/10 p-4 backdrop-blur-sm">
+        <Image src={image.src} alt={image.alt} fill className="object-cover" />
       </div>
     </div>
   );
 
-  const TextComponent = (
+  /** Text Content Component */
+  const TextContent = (
     <div className="space-y-6 text-left">
       {isFirstRow && eventVenue && title && (
         <>
@@ -101,18 +99,62 @@ export const Venue: FC<VenueProps> = ({
   );
 
   return (
-    <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
-      {layout === "text-left" ? (
-        <>
-          {TextComponent}
-          {ImageComponent}
-        </>
-      ) : (
-        <>
-          {ImageComponent}
-          {TextComponent}
-        </>
+    <>
+      {/* Grid Layout */}
+      <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
+        <div className={layout === "text-left" ? "order-1" : "order-2"}>
+          {TextContent}
+        </div>
+        <div className={layout === "text-left" ? "order-2" : "order-1"}>
+          {ImageWrapper}
+        </div>
+      </div>
+
+      {/* Buttons: rendered once below the grid */}
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm">
+          <div className="relative max-h-[90vh] w-full max-w-xl overflow-auto rounded-2xl bg-black/60 p-6 text-white shadow-xl">
+            <h3 className="mb-4 font-nokaTrial text-2xl text-brightYellow">
+              Getting to TUS Athlone
+            </h3>
+            <ul className="space-y-4 font-hackathoneCabinetGrotesk text-lg">
+              <li>
+                <span className="font-semibold">By bus?</span>{" "}
+                <span className="font-semibold text-brightYellow">
+                  Hop on CityLink
+                </span>{" "}
+                and get down at the TUS bus stop.
+              </li>
+              <li>
+                <span className="font-semibold">By train?</span> Arrive at
+                Athlone station via{" "}
+                <span className="font-semibold text-brightYellow">
+                  IrishRail
+                </span>
+                , then take a short local bus ride to TUS.
+              </li>
+              <li>
+                <span className="font-semibold">By car?</span> Come directly to{" "}
+                <span className="font-semibold text-brightYellow">
+                  TUS Athlone
+                </span>
+                , and park behind the engineering building (Do share the license
+                plate number with us).
+              </li>
+            </ul>
+            <div className="mt-6 flex justify-end">
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="rounded-xl bg-brightYellow px-5 py-2 font-nokaTrial font-semibold text-black transition hover:bg-yellow-400"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
       )}
-    </div>
+    </>
   );
 };

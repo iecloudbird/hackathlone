@@ -15,14 +15,14 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            The Beginning: A Vision Takes Shape
+            The Beginning: A Vision Takes Shape (2021)
           </p>
           <div className="flex w-[80%] items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
             It started with Sahir Sharma, a PhD student at TU Shannon with an
-            ambitious dream. Having previously organized the NASA Space Apps
-            Challenge in Vellore, India in 2017 with 55 volunteers, Sahir knew
-            the transformative power of bringing people together to solve space
-            challenges.
+            ambitious dream. Having won the NASA Space Apps Challenge in 2016
+            and later organized the event in Vellore, India in 2017 with over
+            700 participants, Sahir knew the transformative power of bringing
+            people together to solve space challenges.
           </div>
           <div className="flex w-[80%] items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
             In 2021, while working as a teaching fellow at the University of
@@ -31,11 +31,11 @@ export function TimelineDemo() {
             hackathon that changes how people think about innovation.
           </div>
           <div className="flex w-[80%] items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
-            So he did what visionaries do: he made it happen. Working with a
-            team of 20 volunteers, Sahir organized NASA Space Apps Challenge
-            Limerick 2021. It was Ireland's first open-source data science
-            hackathon featuring real NASA problem statements, held virtually
-            during the pandemic but laying the groundwork for something bigger.
+            So he did what visionaries do: he made it happen. NASA Space Apps
+            Challenge Limerick 2021 brought together 100+ participants for
+            Ireland's first open-source data science hackathon featuring real
+            NASA problem statements, held virtually during the pandemic but
+            laying the groundwork for something bigger.
           </div>
         </div>
       ),
@@ -46,7 +46,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            Building the Foundation: The Athlone Chapter
+            Building the Foundation: The Athlone Chapter (2023)
           </p>
           <div className="flex w-[80%] items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
             Two years later, the vision evolved. Sahir was joined by Manav Shah
@@ -60,7 +60,7 @@ export function TimelineDemo() {
             didn't just provide space - they became true partners, offering
             their engineering facilities, labs, and full institutional support.
             It was the kind of partnership that makes ambitious projects
-            possible.
+            possible. possible.
           </div>
           <div className="flex w-[80%] items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
             HackAthlone 2023 brought together 100+ participants from across
@@ -114,7 +114,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            The Breakthrough: Going International{" "}
+            The Breakthrough: Going International (2024)
           </p>
           <div className="flex w-[80%] items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
             By 2024, word had spread beyond Ireland's borders. The event that
@@ -186,7 +186,7 @@ export function TimelineDemo() {
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
-            The Vision Realized: Learn, Launch, Lead{" "}
+            The Vision Realized: Learn, Launch, Lead (2025)
           </p>
           <div className="mb-8">
             <div className="flex w-[80%] items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">

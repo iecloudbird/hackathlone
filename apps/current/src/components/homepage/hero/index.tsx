@@ -40,7 +40,7 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
           viewport={{ once: true }}
         >
           <span className="text-brightYellow">HackAth</span>l
-          <span className="text-brightYellow">on</span>e 25
+          <span className="text-brightYellow">on</span>e 2025
         </motion.h1>
 
         <motion.p

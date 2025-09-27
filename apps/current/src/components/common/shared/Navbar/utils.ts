@@ -23,7 +23,6 @@ export const navigationData = (
     path: "/teams",
     isActive: currentPath.startsWith("/teams"),
   },
-
   {
     route: () =>
       window.open(
@@ -35,22 +34,10 @@ export const navigationData = (
     isActive: false, // External link, never active
   },
   {
-    route: () => router.push("/blogs"),
-    text: "Blogs",
-    path: "/blogs",
-    isActive: currentPath.startsWith("/blogs"),
-  },
-  {
-    route: () => router.push("/faq"),
-    text: "FAQ's",
-    path: "/faq",
-    isActive: currentPath.startsWith("/faq"),
-  },
-  {
-    route: () => router.push("/local_collaborators"),
-    text: "Local Collaborators",
-    path: "/local_collaborators",
-    isActive: currentPath.startsWith("/local_collaborators"),
+    route: () => router.push("/partners"),
+    text: "Partners",
+    path: "/partners",
+    isActive: currentPath.startsWith("/partners"),
   },
   {
     route: () => router.push("/mentors"),
@@ -59,8 +46,20 @@ export const navigationData = (
     isActive: currentPath.startsWith("/mentors"),
   },
   {
+    route: () => router.push("/blogs"),
+    text: "Blogs",
+    path: "/blogs",
+    isActive: currentPath.startsWith("/blogs"),
+  },
+  {
+    route: () => router.push("/faq"),
+    text: "FAQs",
+    path: "/faq",
+    isActive: currentPath.startsWith("/faq"),
+  },
+  {
     route: () => router.push("/contact-us"),
-    text: "Contact Us",
+    text: "Contact us",
     path: "/contact-us",
     isActive: currentPath.startsWith("/contact-us"),
   },

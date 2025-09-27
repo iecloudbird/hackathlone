@@ -121,57 +121,55 @@ export const CardGrid = () => {
         })}
       </div>
       {/* Popup Modal */}
-      {selectedMember !== null &&
-        (gridItems[selectedMember].socials.instagram ||
-          gridItems[selectedMember].socials.linkedin) && (
-          <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
-            onClick={handleOutsideClick}
+      {selectedMember !== null && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+          onClick={handleOutsideClick}
+        >
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -50 }}
+            className="relative w-11/12 rounded-2xl bg-gray-800 p-6 text-white shadow-lg sm:w-7/12 md:w-7/12 lg:w-6/12 xl:w-5/12"
+            ref={modalRef}
           >
-            <motion.div
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -50 }}
-              className="relative w-11/12 rounded-2xl bg-gray-800 p-6 text-white shadow-lg sm:w-7/12 md:w-7/12 lg:w-6/12 xl:w-5/12"
-              ref={modalRef}
+            <button
+              className="absolute right-0 top-0 p-2 text-3xl text-white"
+              onClick={handleClosePopup}
             >
-              <button
-                className="absolute right-0 top-0 p-2 text-3xl text-white"
-                onClick={handleClosePopup}
-              >
-                &times;
-              </button>
+              &times;
+            </button>
 
-              {/* Image */}
-              <div className="flex w-full justify-center">
-                <div className="relative my-4 size-80 overflow-hidden rounded-xl">
-                  <Image
-                    src={gridItems[selectedMember].image}
-                    layout="fill"
-                    objectFit="cover"
-                    alt={gridItems[selectedMember].name}
-                  />
-                </div>
+            {/* Image */}
+            <div className="flex w-full justify-center">
+              <div className="relative my-4 size-80 overflow-hidden rounded-xl">
+                <Image
+                  src={gridItems[selectedMember].image}
+                  layout="fill"
+                  objectFit="cover"
+                  alt={gridItems[selectedMember].name}
+                />
               </div>
+            </div>
 
-              <div className="ml-6">
-                <h2 className="mb-2 text-2xl font-bold md:text-3xl">
-                  {gridItems[selectedMember].name}
-                </h2>
-                <p className="mb-4 text-base font-bold text-red-500 md:text-lg">
-                  {gridItems[selectedMember].role}
-                </p>
+            <div className="ml-6">
+              <h2 className="mb-2 text-2xl font-bold md:text-3xl">
+                {gridItems[selectedMember].name}
+              </h2>
+              <p className="mb-4 text-base font-bold text-red-500 md:text-lg">
+                {gridItems[selectedMember].role}
+              </p>
 
-                {/* Display bio or other details */}
+              {/* Display bio or other details */}
 
-                <p className="mb-6 text-base">Check for socials media below:</p>
-              </div>
+              <p className="mb-6 text-base">Check for socials media below:</p>
+            </div>
 
-              {/* Social Media Links */}
-              {renderSocialIcons(gridItems[selectedMember].socials)}
-            </motion.div>
-          </div>
-        )}
+            {/* Social Media Links */}
+            {renderSocialIcons(gridItems[selectedMember].socials)}
+          </motion.div>
+        </div>
+      )}
     </div>
   );
 };

@@ -10,7 +10,7 @@ import { HeroSection } from "@/components/homepage/hero";
 import { SpaceAgenciesSection } from "@/components/homepage/space-agencies";
 import { TestimonialsSection } from "@/components/homepage/testimonials";
 import { TimelineSection } from "@/components/homepage/timeline";
-import { VenueSection } from "@/components/homepage/venue";
+import VenueSection from "@/components/homepage/venue";
 import Xr4uSection from "@/components/homepage/xr4u";
 import { briefData } from "@/data/homepage/brief";
 import { collaboratorsData } from "@/data/homepage/collaborators";
@@ -19,7 +19,6 @@ import { heroData } from "@/data/homepage/hero";
 import { spaceAgenciesData } from "@/data/homepage/space-agencies";
 import { testimonialData } from "@/data/homepage/testimonials";
 import { timelineData } from "@/data/homepage/timeline";
-import { venueSectionData } from "@/data/homepage/venue";
 
 export const HomePage = () => {
   return (
@@ -32,7 +31,7 @@ export const HomePage = () => {
         <BentoSection />
         <SpaceAgenciesSection spaceAgenciesData={spaceAgenciesData} />
         <CollaboratorsSection collaboratorsData={collaboratorsData} />
-        <VenueSection venueData={venueSectionData} />
+        <VenueSection />
         <GallerySection galleryData={gallerySectionData} />
         <TimelineSection timelineData={timelineData} />
         <TestimonialsSection testimonialData={testimonialData} />

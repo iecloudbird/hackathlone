@@ -54,9 +54,8 @@ const Faq = () => {
               }}
               className="font-hackathoneCabinetGrotesk text-gray-300"
             >
-              Support the next generation of innovators and problem-solvers.{" "}
-              <br /> Your sponsorship helps us create an unforgettable
-              experience for participants
+              Find answers to frequently asked questions about <br /> NASA Space
+              Apps Athlone 2025.
             </motion.p>
           </div>
 

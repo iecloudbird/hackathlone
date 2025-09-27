@@ -25,11 +25,11 @@ export const testimonialData: TestimonialData = {
       text: "Everything was amazing! The vibes were great, the event was very well organized, and there were plenty of resources with incredibly helpful mentors. We are truly thankful for all the support.",
       teamName: "Aquaferst",
     },
-    {
-      id: "Eco-Morphix",
-      text: "Overall, it was a wonderful experience.",
-      teamName: "Eco-Morphix",
-    },
+    // {
+    //   id: "Eco-Morphix",
+    //   text: "Overall, it was a wonderful experience.",
+    //   teamName: "Eco-Morphix",
+    // },
     {
       id: "Climate forecast 404",
       text: "It was truly an amazing experience. The event was very well organized, and the mentors were extremely helpful. We are grateful for all the support we received.",

@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import { motion } from "framer-motion";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { ShootingStars } from "@/components/ui/shooting-stars";
@@ -29,9 +30,8 @@ export function CardGrid() {
           }}
           className="font-hackathoneCabinetGrotesk text-gray-300"
         >
-          Support the next generation of innovators and problem-solvers. <br />{" "}
-          Your sponsorship helps us create an unforgettable experience for
-          participants
+          Catch up on highlights, projects, and reflections from NASA Space Apps
+          Athlone.
         </motion.p>
       </div>
       <HoverEffect

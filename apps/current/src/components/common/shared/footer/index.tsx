@@ -83,7 +83,7 @@ export const Footer: React.FC<FooterProps> = ({ data = footerData }) => {
   };
 
   return (
-    <footer className="flex flex-col gap-4 py-4 text-sm text-[#F6F4F4]">
+    <footer className="z-50 flex flex-col gap-4 py-4 text-sm text-[#F6F4F4]">
       <div className="flex flex-col items-start justify-between gap-4 px-4 py-2 sm:px-[5%] lg:flex-row">
         {/* Logo and Social Icons */}
         <div className="flex w-full flex-col items-center gap-6 lg:mt-4 lg:w-auto lg:gap-12">
@@ -168,6 +168,18 @@ export const Footer: React.FC<FooterProps> = ({ data = footerData }) => {
             ))}
           </p>
         </div>
+        {/* <div className="">
+          <p className="font-hackathoneCabinetGrotesk">
+            Developed by{" "}
+            <Link
+              className="font-bold text-brightYellow"
+              target="_blank"
+              href={"https://www.linkedin.com/in/shantanu-khosla-48b8ba21b/"}
+            >
+              Shantanu Khosla
+            </Link>
+          </p>
+        </div> */}
       </div>
     </footer>
   );

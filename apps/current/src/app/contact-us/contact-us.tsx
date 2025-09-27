@@ -2,7 +2,7 @@
 "use client";
 import Footer from "@/components/common/shared/footer";
 import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
-import { ShootingStars } from "@/components/ui/shooting-stars";
+// import { ShootingStars } from "@/components/ui/shooting-stars";
 
 const ContactUs: React.FunctionComponent = () => {
   //   const [formData, setFormData] = useState({
@@ -125,7 +125,7 @@ const ContactUs: React.FunctionComponent = () => {
   // );
   return (
     <div className="relative min-h-screen bg-deepSpace text-white">
-      <ShootingStars />
+      {/* <ShootingStars /> */}
 
       <div className="relative z-20 h-screen py-[12px] sm:py-[24px]">
         <NavbarDemo />

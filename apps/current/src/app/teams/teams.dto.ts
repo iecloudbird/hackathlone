@@ -2,7 +2,7 @@ import Aaron from "@/assets/images/general/landing-page/teams/Aaron.jpeg";
 import Albert from "@/assets/images/general/landing-page/teams/Albert.jpeg";
 import Babar from "@/assets/images/general/landing-page/teams/Babar.png";
 import Bhagyabati from "@/assets/images/general/landing-page/teams/Bhagyabati.jpg";
-import Darshana from "@/assets/images/general/landing-page/teams/Darshana.jpg";
+import Darshana from "@/assets/images/general/landing-page/teams/darshana.png";
 import Dylan from "@/assets/images/general/landing-page/teams/Dylan.png";
 import Fabrizio from "@/assets/images/general/landing-page/teams/fabrizio.png";
 import Harsh from "@/assets/images/general/landing-page/teams/Harsh.jpeg";
@@ -10,7 +10,7 @@ import James from "@/assets/images/general/landing-page/teams/james.png";
 import Ken from "@/assets/images/general/landing-page/teams/ken.jpg";
 import Manav from "@/assets/images/general/landing-page/teams/Manav_Shah.jpg";
 import Mehwish from "@/assets/images/general/landing-page/teams/Mehwish.jpg";
-import Michael from "@/assets/images/general/landing-page/teams/Michael.jpg";
+// import Michael from "@/assets/images/general/landing-page/teams/Michael.jpg";
 import Nitish from "@/assets/images/general/landing-page/teams/Nitish.jpg";
 import Pitor from "@/assets/images/general/landing-page/teams/pitor.png";
 import Pratik from "@/assets/images/general/landing-page/teams/Pratik.jpeg";
@@ -63,7 +63,7 @@ export const teamMembers = [
     ],
     image: Shean,
     name: "Shean Hans Teoh",
-    role: "Lead Full Stack Developer",
+    role: "Lead App Developer",
     socials: {
       github: "https://github.com/iecloudbird",
       linkedin: "https://www.linkedin.com/in/shean-hans-teoh-3005b024b/",
@@ -74,7 +74,7 @@ export const teamMembers = [
     bio: null,
     image: Shantanu,
     name: "Shantanu Khosla",
-    role: "Senior Web Developer",
+    role: "Lead Web Developer",
     socials: {
       github: null,
       linkedin: "https://www.linkedin.com/in/shantanu-khosla-48b8ba21b/",
@@ -191,13 +191,13 @@ export const teamMembers = [
     role: "On-Ground Support",
     socials: { github: null, linkedin: null, twitter: null },
   },
-  {
-    bio: null,
-    image: Michael,
-    name: "Michael",
-    role: "On-Ground Support",
-    socials: { github: null, linkedin: null, twitter: null },
-  },
+  // {
+  //   bio: null,
+  //   image: Michael,
+  //   name: "Michael",
+  //   role: "On-Ground Support",
+  //   socials: { github: null, linkedin: null, twitter: null },
+  // },
   {
     bio: null,
     image: Pratik,

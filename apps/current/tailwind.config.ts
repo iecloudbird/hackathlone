@@ -23,6 +23,7 @@ const config: Config = {
   },
 
   plugins: [require("tailwindcss-animate")],
+  safelist: ["font-hackathoneCabinetGrotesk"],
   theme: {
     extend: {
       backgroundImage: {

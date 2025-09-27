@@ -19,7 +19,6 @@ import Space9 from "@/assets/images/blogs/space9.jpg";
 import { Footer } from "@/components/common/shared/footer";
 import { NavbarDemo } from "@/components/common/shared/Navbar/Navbar";
 import { ShootingStars } from "@/components/ui/shooting-stars";
-import { StarsBackground } from "@/components/ui/stars-background";
 import Tooltip from "../../general/tooltip";
 import { cards } from "../blogs.dto";
 
@@ -1056,7 +1055,6 @@ const BlogPage: React.FC = () => {
   return (
     <div className="relative min-h-screen bg-black text-slate-50">
       <ShootingStars />
-      <StarsBackground />
       <div className="relative z-10 py-[12px] sm:py-[24px]">
         <NavbarDemo />
         {/* laptop view */}
