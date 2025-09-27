@@ -6,7 +6,7 @@ export function TimelineDemo() {
   const data = [
     {
       link: "/day2",
-      title: "8:00 AM",
+      title: "08:00",
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
@@ -22,7 +22,7 @@ export function TimelineDemo() {
     },
     {
       link: "/day2",
-      title: "10:00 AM",
+      title: "10:00",
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
@@ -38,7 +38,7 @@ export function TimelineDemo() {
     },
     {
       link: "/day2",
-      title: "12:30 PM",
+      title: "12:30",
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
@@ -52,7 +52,7 @@ export function TimelineDemo() {
     },
     {
       link: "/day2",
-      title: "2:00 PM",
+      title: "14:00",
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
@@ -66,7 +66,7 @@ export function TimelineDemo() {
     },
     {
       link: "/day2",
-      title: "7:00 PM",
+      title: "19:00",
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
@@ -81,7 +81,7 @@ export function TimelineDemo() {
     },
     {
       link: "/day2",
-      title: "9:00 PM",
+      title: "21:00",
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
@@ -95,7 +95,7 @@ export function TimelineDemo() {
     },
     {
       link: "/day2",
-      title: "11:59 PM",
+      title: "23:59",
       content: (
         <div>
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">

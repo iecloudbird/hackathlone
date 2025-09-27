@@ -37,24 +37,24 @@ const mentors: Mentor[] = [
     name: "Mark Daly",
     linkedin: "https://www.linkedin.com/in/mark-daly-9393a310/",
     expertise: ["Maths"],
-    bio: "Mark is a mathematics expert with extensive experience in statistical analysis and problem-solving. He specializes in helping teams tackle complex mathematical challenges and data-driven solutions for space applications.",
-    availability: "Weekend mornings",
+    bio: "Senior Lecturer at TUS Athlone with a PhD in Theoretical Physics. Over 30 years teaching science and tech. Researching AI and Computer Vision, supervising PhDs with I-LOFAR. Member of the European Southern Observatory advisory committee and recipient of €250k+ in funding for AI/CV projects and the TUS–DIAS partnership.",
+    availability: "Both days in person (09:00 - 21:00)",
     image: Mark.src,
   },
   {
     name: "Sandeep Dattatrya Joshi",
     linkedin: "https://www.linkedin.com/in/sandeep-dattatraya-joshi/",
     expertise: ["Business"],
-    bio: "Sandeep brings deep business acumen and strategic thinking to guide teams in developing viable business models and go-to-market strategies for space-related innovations.",
-    availability: "Friday evening, Saturday",
+    bio: "Senior Lean & Digital Transformation Advisor with 22 years in manufacturing and process industries. I lead operational excellence using analytics and change management, driving cultural transformations across India, Ireland, the Middle East, Thailand, and Myanmar. At IDEAM Research Institute, I deliver data analytics, ML, and AI projects and guide companies toward data-driven, circular growth.",
+    availability: "Saturday Only (10:30 - 17:00)",
     image: Sandeep.src,
   },
   {
     name: "Rohith Addula",
     linkedin: "https://www.linkedin.com/in/rohith-addula/",
     expertise: ["Web Dev"],
-    bio: "Rohith is a skilled web developer specializing in modern frameworks and full-stack applications. He helps teams build robust and scalable web solutions for their space projects.",
-    availability: "Full weekend",
+    bio: "Senior Software Engineer with 8 years as a full-stack developer focused on web applications. Quantum enthusiast and space explorer, experienced in solution design, code review, and mentoring participants.",
+    availability: "Both days (Saturday 09:00 - 18:00, Online Sunday)",
     image: Rohith.src,
   },
   {
@@ -66,24 +66,24 @@ const mentors: Mentor[] = [
       "Remote sensing",
       "General Mentorship",
     ],
-    bio: "Guilherme combines creativity with technical expertise in data science, AI, and remote sensing. His interdisciplinary approach helps teams develop innovative solutions to complex space challenges.",
-    availability: "Saturday and Sunday",
+    bio: "I like to mess up with electronics, 3d prints, pcbs, prototyping, etc.",
+    availability: "Both days (Onsite) - Entire day",
     image: Guilherme.src,
   },
   {
     name: "Shane Byrnes",
     linkedin: "https://www.linkedin.com/in/shane-byrne-phd-7054a715/",
     expertise: ["Creative", "Remote sensing", "Sound Engineering"],
-    bio: "Dr. Shane Byrnes brings PhD-level expertise in remote sensing and sound engineering, helping teams develop innovative solutions at the intersection of creativity and space technology.",
-    availability: "Saturday afternoon",
+    bio: "Shane Byrne is an electroacoustic composer and sound artist from Wicklow, Ireland. His work explores interactivity, participation, and human-computer interaction, integrating motion, gesture, and wearables into immersive performances and installations. He creates responsive audio works using motion sensors, wearable controllers, micro-controllers, OSC, and real-time processing in environments like Csound.",
+    availability: "Saturday (Onsite) 10:00 - 15:00",
     image: Shane.src,
   },
   {
     name: "Amit Hirway",
     linkedin: "https://www.linkedin.com/in/amithirway",
     expertise: ["Agile", "Spatial Audio", "General Mentorship"],
-    bio: "Amit specializes in agile methodologies and spatial audio technologies. He guides teams in implementing efficient project management and innovative audio solutions for space applications.",
-    availability: "Throughout the weekend",
+    bio: "Assistant Lecturer at TUS with 12+ years in software engineering, agile practices, and cloud-native development. I mentor students on CI/CD, Git, and rapid prototyping, and I'm passionate about guiding teams to turn ideas into working solutions while fostering creativity and collaboration.",
+    availability: "Saturday (Onsite) 10:00 - 14:00",
     image: Amit.src,
   },
   {
@@ -95,8 +95,8 @@ const mentors: Mentor[] = [
       "Web App Dev",
       "General Mentorship",
     ],
-    bio: "Mary is a versatile mentor with expertise spanning data science, AI, remote sensing, and web development. She helps teams leverage cutting-edge technologies for space exploration projects.",
-    availability: "Friday evening, full weekend",
+    bio: "Lecturer in cybersecurity and software engineering, researching smart textile sensors for emotion detection using AI and federated learning",
+    availability: "Saturday (Onsite) 09:00 - 15:00",
     image: Pidgem.src,
   },
   {
@@ -108,8 +108,8 @@ const mentors: Mentor[] = [
       "Web App Dev",
       "General Mentorship",
     ],
-    bio: "Albert brings a unique blend of data science expertise and creative thinking to help teams develop innovative web-based solutions for space challenges.",
-    availability: "Saturday and Sunday",
+    bio: "PhD researcher in emotion-aware, human-centred computing at TUS and software engineer with nearly 10 years building data-driven systems in finance, payments, and education. My work combines applied machine learning, HCI, and practical systems architecture",
+    availability: "Both days (Onsite) 08:00 - 18:00",
     image: Albert.src,
   },
   {
@@ -132,25 +132,27 @@ const mentors: Mentor[] = [
     name: "Bhagyabati Moharana",
     linkedin: "https://www.linkedin.com/in/bhagyabati-m-a07619172/",
     expertise: ["VR", "Physiological Synchrony", "General Mentorship"],
-    bio: "Bhagyabati brings expertise in virtual reality and physiological synchrony research, helping teams create immersive and human-centered experiences for space exploration.",
-    availability: "Weekend mornings",
+    bio: "PhD in Collaborative VR & Quality of Experience. Skilled in Unity, AI/ML, and data science, with experience in emotion and workload detection. Passionate about rapid prototyping and mentoring in game development and algorithms.",
+    availability: "Friday (15:00 - 19:00) + Saturday (09:00 - 13:00) - Onsite",
     image: Bhagyabati.src,
   },
   {
     name: "Bryan Dunphy",
     linkedin: "https://www.linkedin.com/in/bryandunphy/",
     expertise: ["Sound Engineering", "XR", "Creative"],
-    bio: "Bryan is an expert in sound engineering and XR technologies, guiding teams in creating immersive audio-visual experiences for space-related applications.",
-    availability: "Friday and Saturday",
+    bio: "XR Researcher working with VR, AR, MR, volumetric and 360° video. Background in audio (synthesis, recording, performance) and real-time graphics.",
+    availability:
+      "Both days (Online) - Saturday (15:00 - 17:00), Sunday (14:00 - 16:00)",
     image: Bryan.src,
   },
   // {
   //   name: "Yuhang Ye",
   //   linkedin: "https://www.linkedin.com/in/yuhang-ye-89a93183/",
   //   expertise: ["Data Science and AI"],
-  //   bio: "Yuhang specializes in advanced AI and machine learning techniques, helping teams implement sophisticated data-driven solutions for space exploration challenges.",
-  //   availability: "Sunday",
-  //   image: Mark.src,
+  //   bio: "Lecturer at TUS | Research in AI & Computer Vision | Experienced in Data Analytics & Visualization",
+  //   availability:
+  //     "Both days (Online) - Limited availability, can visit campus if needed",
+  //   image: Mark.src, // Note: You'll need to add Yuhang's actual image
   // },
 ];
 
@@ -330,19 +332,19 @@ export default function MentorsPage() {
                 <motion.div
                   layoutId={`card-${active.name}-${id}`}
                   ref={ref}
-                  className="flex size-full max-w-[400px] flex-col overflow-hidden bg-neutral-900 max-md:w-full sm:rounded-3xl md:h-fit md:max-h-[90%]"
+                  className="flex size-full max-w-[500px] flex-col overflow-hidden bg-neutral-900 max-md:w-full sm:rounded-3xl md:h-full"
                 >
                   <motion.div layoutId={`image-${active.name}-${id}`}>
                     <img
-                      width={200}
-                      height={200}
+                      width={400}
+                      height={400}
                       src={active.image}
                       alt={active.name}
-                      className="h-96 w-full object-cover object-top sm:rounded-t-lg lg:h-80"
+                      className="h-96 w-full object-cover object-top sm:rounded-t-lg"
                     />
                   </motion.div>
 
-                  <div>
+                  <div className="flex min-h-0 flex-1 flex-col">
                     <div className="flex items-start justify-between p-4">
                       <div className="flex-1">
                         <motion.h3
@@ -365,9 +367,14 @@ export default function MentorsPage() {
                         </div>
 
                         {/* Availability */}
-                        <div className="flex items-center gap-2 font-hackathoneCabinetGrotesk text-sm text-neutral-400">
-                          <Calendar size={14} />
-                          <span>{active.availability}</span>
+                        <div className="flex items-start gap-2 font-hackathoneCabinetGrotesk text-sm text-neutral-400">
+                          <Calendar
+                            size={16}
+                            className="mt-0.5 flex-shrink-0"
+                          />
+                          <span className="leading-relaxed">
+                            {active.availability}
+                          </span>
                         </div>
                       </div>
 
@@ -379,21 +386,30 @@ export default function MentorsPage() {
                         href={active.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 rounded-full bg-brightYellow px-4 py-2 font-hackathoneCabinetGrotesk text-sm font-bold text-black hover:opacity-90"
+                        className="ml-4 flex items-center gap-2 rounded-full bg-brightYellow px-4 py-2 font-hackathoneCabinetGrotesk text-sm font-bold text-black hover:opacity-90"
                       >
                         <Linkedin size={16} />
                         LinkedIn
                       </motion.a>
                     </div>
 
-                    <div className="relative px-4 pt-4">
+                    <div className="flex-1 overflow-hidden px-4 pb-4">
                       <motion.div
                         layout
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="flex h-40 flex-col items-start gap-4 overflow-auto pb-10 font-hackathoneCabinetGrotesk text-sm text-neutral-400 [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] md:h-fit lg:text-base"
+                        className="h-full overflow-y-auto font-hackathoneCabinetGrotesk text-sm leading-relaxed text-neutral-400 [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch] [scrollbar-width:none]"
+                        style={{
+                          scrollbarWidth: "none",
+                          msOverflowStyle: "none",
+                        }}
                       >
+                        <style jsx>{`
+                          div::-webkit-scrollbar {
+                            display: none;
+                          }
+                        `}</style>
                         {active.bio}
                       </motion.div>
                     </div>

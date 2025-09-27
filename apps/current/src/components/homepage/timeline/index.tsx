@@ -55,7 +55,7 @@ const TimelineItem = ({
         <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-brightYellow/10 to-maastrichtBlue/15 blur-xl" />
       </div>
 
-      <div className="relative flex w-full items-center">
+      <div className="relative flex w-full items-start">
         {/* Desktop side date pill */}
         <div
           className={classNames(
@@ -78,7 +78,7 @@ const TimelineItem = ({
         </div>
 
         {/* Timeline line + dot */}
-        <div className="order-2 hidden flex-col items-center px-4 md:flex">
+        <div className="order-2 hidden flex-col items-center px-4 pt-6 md:flex">
           {index === totalItems - 1 && (
             <div
               className={classNames(
@@ -105,11 +105,11 @@ const TimelineItem = ({
           {index < totalItems - 1 && (
             <div
               className={classNames(
-                "w-0.5 transition-all duration-500",
+                "w-0.5 flex-1 transition-all duration-500",
                 isHovered ? "bg-brightYellow shadow-md" : "bg-battleship"
               )}
               style={{
-                height: isHovered ? contentHeight + 60 : contentHeight + 20,
+                minHeight: isHovered ? contentHeight + 80 : contentHeight + 40,
               }}
             />
           )}
@@ -181,7 +181,7 @@ const TimelineItem = ({
                       className={classNames(
                         "prose prose-invert mt-4 overflow-hidden whitespace-pre-line font-hackathoneCabinetGrotesk text-sm text-gray-400 transition-all duration-500",
                         isHovered
-                          ? "max-h-40 text-gray-300 opacity-100"
+                          ? "max-h-none text-gray-300 opacity-100"
                           : "max-h-0 opacity-0"
                       )}
                       dangerouslySetInnerHTML={{
@@ -249,7 +249,7 @@ const TimelineItem = ({
                     className={classNames(
                       "prose prose-invert mt-4 overflow-hidden whitespace-pre-line font-hackathoneCabinetGrotesk text-sm text-gray-400 transition-all duration-500",
                       isHovered
-                        ? "max-h-40 text-gray-300 opacity-100"
+                        ? "max-h-none text-gray-300 opacity-100"
                         : "max-h-0 opacity-0"
                     )}
                     dangerouslySetInnerHTML={{
@@ -272,7 +272,7 @@ export const TimelineSection = ({ timelineData }: TimelineSectionProps) => {
 
   useEffect(() => {
     if (hoveredIndex !== null) {
-      setContentHeight(140);
+      setContentHeight(200); // Increased base height
     }
   }, [hoveredIndex]);
 
@@ -291,7 +291,7 @@ export const TimelineSection = ({ timelineData }: TimelineSectionProps) => {
       </div>
 
       <motion.div
-        className="relative mx-auto flex max-w-6xl flex-col gap-12 md:gap-0"
+        className="relative mx-auto flex max-w-6xl flex-col gap-12 md:gap-8"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
