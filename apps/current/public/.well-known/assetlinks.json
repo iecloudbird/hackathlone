@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "com.hackathlone.hackathlone_app",
       "sha256_cert_fingerprints": [
-        "AD:60:FC:CA:AB:DA:C7:4C:95:02:5C:1F:AB:81:81:70:DE:B8:09:3D:F4:03:D6:11:97:49:F6:F0:BE:EA:BD:F9"
+        "AD:60:FC:CA:AB:DA:C7:4C:95:02:5C:1F:AB:81:81:70:DE:B8:09:3D:F4:03:D6:11:97:49:F6:F0:BE:EA:BD:F9",
+        "DD:4E:A0:9A:D7:74:B0:5A:D1:39:AB:9B:34:2C:2E:B1:65:C6:29:C0:CB:E5:5B:5F:CF:1C:C5:7F:5F:90:78:85"
       ]
     }
   }
