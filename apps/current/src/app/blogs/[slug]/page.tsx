@@ -5,6 +5,10 @@ import { motion } from "framer-motion";
 import Image, { type StaticImageData } from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import React from "react";
+import Blog_17_1 from "@/assets/images/blogs/17_1.png";
+import Blog_17_2 from "@/assets/images/blogs/17_2.png";
+import Blog_18_1 from "@/assets/images/blogs/18_1.png";
+import Blog_18_2 from "@/assets/images/blogs/18_2.png";
 import Space1 from "@/assets/images/blogs/space1.png";
 import Space10 from "@/assets/images/blogs/space10.jpg";
 import Space2 from "@/assets/images/blogs/space2.png";
@@ -1011,12 +1015,52 @@ const BlogPage: React.FC = () => {
         "If you registered as a minor by mistake but are over 18, follow these steps to correct your account and re-register for HackAthlone with the correct age status.",
       points: [
         "If you have mistakenly registered as a minor by selecting the 'check this box if you are under the age of 18' option on spaceappschallenge.org and you are not under 18, it's important to change it. Follow the steps below.",
+        <Image
+          key="step1-image"
+          src={Blog_18_1}
+          alt="Profile page screenshot"
+          width={800}
+          height={400}
+          className="my-4 rounded-lg"
+        />,
         "1. Go to Your Profile Page: Click your username at the top right, open the dropdown and choose 'Profile'.",
+        <Image
+          key="step1-image"
+          src={Blog_17_1}
+          alt="Profile page screenshot"
+          width={800}
+          height={400}
+          className="my-4 rounded-lg"
+        />,
         "2. Change your email: In Account Information update your current email to a different email address that you own and save the changes.",
+        <Image
+          key="step1-image"
+          src={Blog_17_2}
+          alt="Profile page screenshot"
+          width={800}
+          height={400}
+          className="my-4 rounded-lg"
+        />,
         "3. Log Out: Click your profile icon (top left) and choose 'Sign out' to log out of spaceappschallenge.org.",
+        <Image
+          key="step1-image"
+          src={Blog_18_2}
+          alt="Profile page screenshot"
+          width={800}
+          height={400}
+          className="my-4 rounded-lg"
+        />,
         "4. Sign Up Again with Your Original Email: Start the sign-up process again and use the original email address you first used to register. This resets the account tied to that email.",
         "5. Register again for NASA Space Apps Athlone (make sure the location is Athlone).",
         "6. Keep the 'Minor' box unchecked during registration: Do not select the 'Check this box if you are a minor under the age of 18' option.",
+        <Image
+          key="step1-image"
+          src={Blog_18_1}
+          alt="Profile page screenshot"
+          width={800}
+          height={400}
+          className="my-4 rounded-lg"
+        />,
         "Once completed, your registration will be set as Adult and you can attend the hackathon without minor-specific restrictions. You're all set for participating in NASA Space Apps Athlone!",
       ],
       author: "HackAthlone Team",
@@ -1032,7 +1076,23 @@ const BlogPage: React.FC = () => {
         "If you registered for HackAthlone using a personal email (Gmail, Yahoo, etc.) and want to switch to your university email for validation and communication, follow these quick steps.",
       points: [
         "Go to Your Profile Page: Click your username at the top right corner and choose 'Profile' from the dropdown.",
+        <Image
+          key="step1-image"
+          src={Blog_17_1}
+          alt="Profile page screenshot"
+          width={800}
+          height={400}
+          className="my-4 rounded-lg"
+        />,
         "Change your email: In Account Information, update your current email to your university email address and save the changes.",
+        <Image
+          key="step1-image"
+          src={Blog_17_2}
+          alt="Profile page screenshot"
+          width={800}
+          height={400}
+          className="my-4 rounded-lg"
+        />,
         "You are now successfully registered with your university email address, ensuring smooth communication and validation for the hackathon.",
         "Let’s rock NASA Space Apps Athlone!",
       ],

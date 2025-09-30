@@ -5,12 +5,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Linkedin, Calendar } from "lucide-react";
 import React, { useEffect, useId, useRef, useState, useMemo } from "react";
 // import { ShootingStars } from "@/components/ui/shooting-stars";
+import Adrielle from "@/assets/images/general/landing-page/mentors/Adrielle.jpg";
 import Albert from "@/assets/images/general/landing-page/mentors/Albert.jpeg";
+import Yuhang from "@/assets/images/general/landing-page/mentors/Aleko.jpg";
 import Amit from "@/assets/images/general/landing-page/mentors/Amit.jpg";
 import Bhagyabati from "@/assets/images/general/landing-page/mentors/Bhagyabati.jpg";
 import Bryan from "@/assets/images/general/landing-page/mentors/Bryan.jpg";
 import Guilherme from "@/assets/images/general/landing-page/mentors/Guilherme.jpeg";
-import Kkhawaish from "@/assets/images/general/landing-page/mentors/Kkhawaish.jpeg";
+import Kkhawaish from "@/assets/images/general/landing-page/mentors/Khawaish.jpg";
 import Mark from "@/assets/images/general/landing-page/mentors/Mark.png";
 import Peadar from "@/assets/images/general/landing-page/mentors/Peadar.jpeg";
 import Pidgem from "@/assets/images/general/landing-page/mentors/Pidgem.jpg";
@@ -42,10 +44,10 @@ const mentors: Mentor[] = [
     image: Mark.src,
   },
   {
-    name: "Sandeep Dattatrya Joshi",
+    name: "Sandeep Dattatraya Joshi",
     linkedin: "https://www.linkedin.com/in/sandeep-dattatraya-joshi/",
     expertise: ["Business"],
-    bio: "Senior Lean & Digital Transformation Advisor with 22 years in manufacturing and process industries. I lead operational excellence using analytics and change management, driving cultural transformations across India, Ireland, the Middle East, Thailand, and Myanmar. At IDEAM Research Institute, I deliver data analytics, ML, and AI projects and guide companies toward data-driven, circular growth.",
+    bio: "Senior Lean and Digital Business Transformation Advisor with over two decades of work experience across Defence, Manufacturing, Construction, Food processing, Textile and Chemical industries. He has led operations excellence Consulting assignments across Ireland, APAC and Middle East leveraging data analytics and change management methodologies. He founded and profitably run his Consulting startup SUDHAR Business Consulting. At IDEAM Research Institute, he partners with regional Companies to help them identify operational improvement business growth opportunities and hand hold them through the digitalisation based change implementation projects (Data analytics, ML, AI and IoT based), with keen focus on business circularity and sustainability. He is also leading three EU cascade funding projects.",
     availability: "Saturday Only (10:30 - 17:00)",
     image: Sandeep.src,
   },
@@ -114,15 +116,24 @@ const mentors: Mentor[] = [
   },
   {
     name: "Khawaish Gulati",
-    linkedin: "/mentors",
+    linkedin:
+      "https://www.linkedin.com/in/kkhawaish-gulati-050b511ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     expertise: ["General Mentorship"],
-    bio: "Khawaish provides comprehensive mentorship across various domains, helping teams navigate challenges and achieve their project goals in the space apps competition.",
-    availability: "Full weekend",
+    bio: "I've recently completed my master's in Computer and Electronic Engineering at TCD now I'm working as a Software developer at AMD. I've organised and participated in a bunch of Hackathons and enjoy the vibe a lot",
+    availability: "Saturday (Onsite) - 3 hours",
     image: Kkhawaish.src,
   },
   {
+    name: "Adrielle Nazar Moraes",
+    linkedin: "https://www.linkedin.com/in/adrielle-moraes/",
+    expertise: ["Web Dev", "Game Dev", "Sound Engineering", "XR", "Sensing"],
+    bio: "Adrielle Moraes is a researcher and lecturer at the Technological University of the Shannon, holding a PhD in Software Engineering. Her research background lies in virtual reality and spatial audio, with a focus on auditory attention and localization using user data. In addition to her research, she teaches web development and game development, always aiming at creating interactive applications and games. Her main programming languages are Python, JavaScript, Java, and C++, which she applies across both academic and teaching contexts. This is her second time participating in the hackathon as a tutor, and she is always excited to see how participants from diverse backgrounds and levels—ranging from undergraduate to master’s students—can achieve remarkable results when they put their creativity and skills into practice.",
+    availability: "Both days (Onsite) - 9am - 12pm",
+    image: Adrielle.src,
+  },
+  {
     name: "Peadar Casey",
-    linkedin: "/mentors",
+    linkedin: "https://www.linkedin.com/in/peadar-casey-13b489110/",
     expertise: ["Business Modelling", "Agriculture"],
     bio: "Peadar specializes in sustainable business models with a focus on agricultural innovations and how space technology can benefit Earth's agricultural systems.",
     availability: "Saturday",
@@ -145,15 +156,14 @@ const mentors: Mentor[] = [
       "Both days (Online) - Saturday (15:00 - 17:00), Sunday (14:00 - 16:00)",
     image: Bryan.src,
   },
-  // {
-  //   name: "Yuhang Ye",
-  //   linkedin: "https://www.linkedin.com/in/yuhang-ye-89a93183/",
-  //   expertise: ["Data Science and AI"],
-  //   bio: "Lecturer at TUS | Research in AI & Computer Vision | Experienced in Data Analytics & Visualization",
-  //   availability:
-  //     "Both days (Online) - Limited availability, can visit campus if needed",
-  //   image: Mark.src, // Note: You'll need to add Yuhang's actual image
-  // },
+  {
+    name: "Yuhang Ye",
+    linkedin: "https://www.linkedin.com/in/yuhang-ye-89a93183/",
+    expertise: ["Data Science and AI"],
+    bio: "Lecturer at TUS | Research in AI & Computer Vision | Experienced in Data Analytics & Visualization",
+    availability: "Both days (Online) - 9AM-12PM (Online)	6PM - 9PM (Online)",
+    image: Yuhang.src, // Note: You'll need to add Yuhang's actual image
+  },
 ];
 
 const CloseIcon = () => {
