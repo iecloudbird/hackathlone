@@ -290,8 +290,8 @@ const getMentorStatus = (mentor: Mentor): AvailabilityStatus => {
     currentDate = 4; // 5 = Sunday October 5th
     currentMonth = 9; // 9 = October (0-indexed)
     currentYear = 2025;
-    currentHour = 17; // 10 AM
-    currentMinute = 59;
+    currentHour = 11; // 10 AM
+    currentMinute = 58;
 
     // TO TEST DIFFERENT TIMES, CHANGE THESE VALUES:
     // Saturday 9:30 AM: date=4, hour=9, minute=30
@@ -456,6 +456,29 @@ export default function MentorsPage() {
   const id = useId();
   const ref = useRef<HTMLDivElement>(null);
 
+  // Check if availability features should be shown (Oct 4-5, 2025)
+  const shouldShowAvailability = useMemo(() => {
+    const now = new Date();
+    const irishTimeString = now.toLocaleString("en-US", {
+      timeZone: "Europe/Dublin",
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+    });
+    const irishDate = new Date(irishTimeString);
+    const currentDate = irishDate.getDate();
+    const currentMonth = irishDate.getMonth();
+    const currentYear = irishDate.getFullYear();
+
+    // Show availability features only on Oct 4-5, 2025
+    const isHackathonDates =
+      currentYear === 2025 &&
+      currentMonth === 9 &&
+      (currentDate === 4 || currentDate === 5);
+
+    return isHackathonDates;
+  }, [currentTime]);
+
   // Update time every minute
   useEffect(() => {
     const interval = setInterval(() => {
@@ -492,26 +515,35 @@ export default function MentorsPage() {
       );
     }
 
-    // Filter by availability status
-    if (selectedAvailability.length > 0) {
+    // Filter by availability status (only if availability features are shown)
+    if (shouldShowAvailability && selectedAvailability.length > 0) {
       filtered = filtered.filter((mentor) =>
         selectedAvailability.includes(getMentorStatus(mentor))
       );
     }
 
-    // Sort by availability status
-    return filtered.sort((a, b) => {
-      const statusOrder: AvailabilityStatus[] = [
-        "available",
-        "leaving-soon",
-        "available-soon",
-        "not-available",
-      ];
-      const statusA = getMentorStatus(a);
-      const statusB = getMentorStatus(b);
-      return statusOrder.indexOf(statusA) - statusOrder.indexOf(statusB);
-    });
-  }, [selectedExpertise, selectedAvailability, currentTime]);
+    // Sort by availability status (only on hackathon dates)
+    if (shouldShowAvailability) {
+      return filtered.sort((a, b) => {
+        const statusOrder: AvailabilityStatus[] = [
+          "available",
+          "leaving-soon",
+          "available-soon",
+          "not-available",
+        ];
+        const statusA = getMentorStatus(a);
+        const statusB = getMentorStatus(b);
+        return statusOrder.indexOf(statusA) - statusOrder.indexOf(statusB);
+      });
+    }
+
+    return filtered;
+  }, [
+    selectedExpertise,
+    selectedAvailability,
+    currentTime,
+    shouldShowAvailability,
+  ]);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -607,35 +639,39 @@ export default function MentorsPage() {
             </div>
           </div>
 
-          {/* Availability Filters */}
-          <div className="mb-6">
-            <h3 className="mb-3 text-center text-sm font-semibold text-gray-400">
-              Filter by Availability
-            </h3>
-            <div className="mx-auto flex flex-wrap items-center justify-center gap-2">
-              {availabilityOptions.map((option) => {
-                const isSelected = selectedAvailability.includes(option.value);
-                const config = getStatusConfig(option.value);
-                return (
-                  <button
-                    key={option.value}
-                    onClick={() => toggleAvailability(option.value)}
-                    className={`flex items-center gap-2 rounded-full px-3 py-1 text-sm font-medium transition-all duration-200 ${
-                      isSelected
-                        ? `${config.bgOpacity} ${config.textColor} ring-2 ring-${config.color}`
-                        : "bg-neutral-800/50 text-neutral-300 hover:bg-neutral-700/80"
-                    }`}
-                    aria-pressed={isSelected}
-                  >
-                    <span
-                      className={`h-2 w-2 rounded-full ${config.color}`}
-                    ></span>
-                    {option.label}
-                  </button>
-                );
-              })}
+          {/* Availability Filters - Only show on Oct 4-5 */}
+          {shouldShowAvailability && (
+            <div className="mb-6">
+              <h3 className="mb-3 text-center text-sm font-semibold text-gray-400">
+                Filter by Availability
+              </h3>
+              <div className="mx-auto flex flex-wrap items-center justify-center gap-2">
+                {availabilityOptions.map((option) => {
+                  const isSelected = selectedAvailability.includes(
+                    option.value
+                  );
+                  const config = getStatusConfig(option.value);
+                  return (
+                    <button
+                      key={option.value}
+                      onClick={() => toggleAvailability(option.value)}
+                      className={`flex items-center gap-2 rounded-full px-3 py-1 text-sm font-medium transition-all duration-200 ${
+                        isSelected
+                          ? `${config.bgOpacity} ${config.textColor} ring-2 ring-${config.color}`
+                          : "bg-neutral-800/50 text-neutral-300 hover:bg-neutral-700/80"
+                      }`}
+                      aria-pressed={isSelected}
+                    >
+                      <span
+                        className={`h-2 w-2 rounded-full ${config.color}`}
+                      ></span>
+                      {option.label}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
-          </div>
+          )}
 
           {(selectedExpertise.length > 0 ||
             selectedAvailability.length > 0) && (
@@ -836,25 +872,30 @@ export default function MentorsPage() {
                 key={mentor.name}
                 onClick={() => setActive(mentor)}
                 className={`relative flex cursor-pointer flex-col rounded-xl p-4 transition-all duration-300 ${
-                  isNotAvailable
+                  shouldShowAvailability && isNotAvailable
                     ? "opacity-50 hover:bg-neutral-800/30"
                     : "hover:bg-neutral-800/50"
                 }`}
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: isNotAvailable ? 0.5 : 1, y: 0 }}
+                animate={{
+                  opacity: shouldShowAvailability && isNotAvailable ? 0.5 : 1,
+                  y: 0,
+                }}
                 transition={{ delay: index * 0.05 }}
               >
-                {/* Status Badge - Top Right */}
-                <div className="absolute right-6 top-6 z-10 flex items-center gap-1.5 rounded-full bg-black/60 px-2 py-1 backdrop-blur-sm">
-                  <span
-                    className={`h-2 w-2 animate-pulse rounded-full ${statusConfig.color}`}
-                  ></span>
-                  <span
-                    className={`text-xs font-medium ${statusConfig.textColor}`}
-                  >
-                    {statusConfig.text}
-                  </span>
-                </div>
+                {/* Status Badge - Top Right - Only show on Oct 4-5 */}
+                {shouldShowAvailability && (
+                  <div className="absolute right-6 top-6 z-10 flex items-center gap-1.5 rounded-full bg-black/60 px-2 py-1 backdrop-blur-sm">
+                    <span
+                      className={`h-2 w-2 animate-pulse rounded-full ${statusConfig.color}`}
+                    ></span>
+                    <span
+                      className={`text-xs font-medium ${statusConfig.textColor}`}
+                    >
+                      {statusConfig.text}
+                    </span>
+                  </div>
+                )}
 
                 <div className="flex w-full flex-col gap-4">
                   <motion.div layoutId={`image-${mentor.name}-${id}`}>
@@ -864,7 +905,9 @@ export default function MentorsPage() {
                       src={mentor.image}
                       alt={mentor.name}
                       className={`h-96 w-full rounded-lg object-cover object-top transition-all duration-300 ${
-                        isNotAvailable ? "grayscale" : ""
+                        shouldShowAvailability && isNotAvailable
+                          ? "grayscale"
+                          : ""
                       }`}
                     />
                   </motion.div>
