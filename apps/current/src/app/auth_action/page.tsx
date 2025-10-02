@@ -30,61 +30,135 @@ function AuthActionContent() {
 
   const type = searchParams.get("type"); // 'signup' or 'recovery'
   const token = searchParams.get("token");
+  const tokenHash = searchParams.get("token_hash");
+  const code = searchParams.get("code");
   const isPasswordReset = type === "recovery";
   const isEmailConfirmation = type === "signup";
 
   // Auto-process magic links when component loads
   useEffect(() => {
     const processAuthAction = async () => {
-      if (!token || !type) {
-        setError("Invalid or missing authentication token");
+      // Check if we have the minimum required parameters
+      if (!type) {
+        setError("Invalid or missing authentication type");
         setIsProcessing(false);
         return;
       }
 
       try {
-        if (isEmailConfirmation) {
-          // For email confirmation, verify the OTP token
-          const { error: verifyError } = await supabase.auth.verifyOtp({
-            token_hash: token,
-            type: "signup",
-          });
+        // For web-based email confirmation with raw token, we need to use verifyOtp differently
+        if (token && (isEmailConfirmation || isPasswordReset)) {
+          // First try the simplest approach - just exchange the token as a session code
+          try {
+            const { error: exchangeError } =
+              await supabase.auth.exchangeCodeForSession(token);
 
-          if (verifyError) {
-            // Handle specific error cases
-            const isUrlMismatch =
-              verifyError.message?.includes("invalid") ||
-              verifyError.message?.includes("expired") ||
-              ("status" in verifyError && verifyError.status === 403);
-
-            if (isUrlMismatch) {
-              setError(
-                "Email confirmation failed. The link may be invalid or expired. Please request a new confirmation email."
-              );
-            } else {
-              setError(`Email confirmation failed: ${verifyError.message}`);
+            if (!exchangeError) {
+              // Success with code exchange
+              setSuccess(true);
+              setTimeout(() => {
+                router.push("/");
+              }, 3000);
+              return;
             }
+          } catch (exchangeErr) {
+            // Code exchange failed, trying other methods
+          }
+
+          // If code exchange fails, try with token_hash
+          try {
+            const { error: hashError } = await supabase.auth.verifyOtp({
+              token_hash: token,
+              type: type as "signup" | "recovery",
+            });
+
+            if (!hashError) {
+              // Success with token_hash
+              if (isPasswordReset) {
+                setIsProcessing(false);
+                return;
+              } else {
+                setSuccess(true);
+                setTimeout(() => {
+                  router.push("/");
+                }, 3000);
+              }
+              return;
+            }
+          } catch (hashErr) {
+            // Token hash verification failed, trying manual session
+          }
+
+          // If all else fails, try to manually set the session using the current URL
+          // This handles the case where the magic link just needs to establish a session
+          try {
+            const { data, error: sessionError } =
+              await supabase.auth.getSession();
+
+            if (sessionError) {
+              console.error("Session retrieval failed:", sessionError);
+              setError(
+                "Authentication failed. The link may be invalid, expired, or already used. Please request a new link."
+              );
+            } else if (data.session) {
+              // Already have a session, mark as success
+              setSuccess(true);
+              setTimeout(() => {
+                router.push("/");
+              }, 3000);
+            } else {
+              setError(
+                "Unable to verify email. Please try opening the link from your email client or request a new confirmation email."
+              );
+            }
+          } catch (sessionErr) {
+            console.error("All verification methods failed:", sessionErr);
+            setError(
+              "Authentication failed. The link may be invalid, expired, or already used. Please request a new link."
+            );
+          }
+        }
+        // First, try to exchange the code if present (newer Supabase auth flow)
+        else if (code) {
+          const { error: exchangeError } =
+            await supabase.auth.exchangeCodeForSession(code);
+
+          if (exchangeError) {
+            console.error("Code exchange error:", exchangeError);
+            setError(`Authentication failed: ${exchangeError.message}`);
           } else {
             setSuccess(true);
             setTimeout(() => {
               router.push("/");
             }, 3000);
           }
-        } else if (isPasswordReset) {
-          // For password reset, verify the token but don't complete the process
-          // User needs to enter new password
+        }
+        // Try token_hash parameter (direct hash)
+        else if (tokenHash) {
           const { error: verifyError } = await supabase.auth.verifyOtp({
-            token_hash: token,
-            type: "recovery",
+            token_hash: tokenHash,
+            type: type as "signup" | "recovery",
           });
 
           if (verifyError) {
-            console.error("Password reset token error:", verifyError);
-            setError("Invalid or expired password reset link.");
+            console.error("Token hash verification error:", verifyError);
+            setError(`Verification failed: ${verifyError.message}`);
+          } else {
+            if (isPasswordReset) {
+              // For password reset, don't mark as success yet - show the form
+              setIsProcessing(false);
+              return;
+            } else {
+              setSuccess(true);
+              setTimeout(() => {
+                router.push("/");
+              }, 3000);
+            }
           }
-          // If no error, show password reset form
-        } else {
-          setError("Invalid authentication type");
+        }
+        // No authentication parameters found
+        else {
+          setError("Invalid authentication link. Missing required parameters.");
         }
       } catch (err) {
         console.error("Auth action error:", err);
@@ -97,6 +171,8 @@ function AuthActionContent() {
     processAuthAction();
   }, [
     token,
+    tokenHash,
+    code,
     type,
     isEmailConfirmation,
     isPasswordReset,
@@ -228,7 +304,7 @@ function AuthActionContent() {
               >
                 <Link
                   href="/"
-                  className="block w-full rounded-lg bg-gray-600 px-6 py-3 font-hackathoneCabinetGrotesk font-bold text-white transition-colors hover:bg-gray-500"
+                  className="block w-full rounded-lg bg-white px-6 py-3 font-hackathoneCabinetGrotesk font-bold text-black transition-colors hover:bg-white/85"
                 >
                   Return to Homepage
                 </Link>
@@ -262,7 +338,7 @@ function AuthActionContent() {
               >
                 <Link
                   href="/"
-                  className="block w-full rounded-lg bg-gray-600 px-6 py-3 font-hackathoneCabinetGrotesk font-bold text-white transition-colors hover:bg-gray-500"
+                  className="block w-full rounded-lg bg-white px-6 py-3 font-hackathoneCabinetGrotesk font-bold text-black transition-colors hover:bg-white/85"
                 >
                   Return to Homepage
                 </Link>
@@ -346,11 +422,11 @@ function AuthActionContent() {
                   disabled={loading}
                   whileHover={!loading ? { scale: 1.02 } : {}}
                   whileTap={!loading ? { scale: 0.98 } : {}}
-                  className="w-full rounded-lg bg-gray-600 px-6 py-3 font-hackathoneCabinetGrotesk font-bold text-white transition-colors hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400/50 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="w-full rounded-lg bg-white px-6 py-3 font-hackathoneCabinetGrotesk font-bold text-black transition-colors hover:bg-white/85 focus:outline-none focus:ring-2 focus:ring-white/50 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {loading ? (
                     <span className="flex items-center justify-center">
-                      <div className="mr-3 size-5 animate-spin rounded-full border-2 border-white/30 border-t-white"></div>
+                      <div className="mr-3 size-5 animate-spin rounded-full border-2 border-black/30 border-t-black"></div>
                       Updating Password...
                     </span>
                   ) : (
@@ -362,7 +438,7 @@ function AuthActionContent() {
               <div className="mt-6 text-center">
                 <Link
                   href="/"
-                  className="font-hackathoneSFProDisplay text-sm text-gray-400 hover:text-gray-300"
+                  className="inline-block rounded-lg bg-white/10 px-4 py-2 font-hackathoneSFProDisplay text-sm text-white transition-colors hover:bg-white/20"
                 >
                   Return to Homepage
                 </Link>
@@ -384,7 +460,7 @@ function AuthActionContent() {
               >
                 <Link
                   href="/"
-                  className="block w-full rounded-lg bg-gray-600 px-6 py-3 font-hackathoneCabinetGrotesk font-bold text-white transition-colors hover:bg-gray-500"
+                  className="block w-full rounded-lg bg-white px-6 py-3 font-hackathoneCabinetGrotesk font-bold text-black transition-colors hover:bg-white/85"
                 >
                   Return to Homepage
                 </Link>
