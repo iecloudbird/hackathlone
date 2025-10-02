@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "VF83BVDL84.com.hackathlone.hackathloneApp",
+        "paths": [
+          "/auth_action",
+          "/auth_action/*"
+        ]
+      }
+    ]
+  }
+}
