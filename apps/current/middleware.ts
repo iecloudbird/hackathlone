@@ -1,0 +1,26 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { createMiddlewareClient } from "@supabase/auth-helpers-nextjs";
+import { NextResponse } from "next/server";
+
+export async function middleware(req: {
+  nextUrl: { pathname: string };
+  url: string | URL | undefined;
+}) {
+  const res = NextResponse.next();
+  const supabase = createMiddlewareClient({ req, res });
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  // If user is not signed in and the current path is not /auth_action, redirect to login
+  if (!user && req.nextUrl.pathname.startsWith("/dashboard")) {
+    return NextResponse.redirect(new URL("/login", req.url));
+  }
+
+  return res;
+}
+
+export const config = {
+  matcher: ["/dashboard/:path*", "/profile/:path*"],
+};
