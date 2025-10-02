@@ -7,6 +7,7 @@ import { BriefSection } from "@/components/homepage/brief";
 import { CollaboratorsSection } from "@/components/homepage/collaborators";
 import { GallerySection } from "@/components/homepage/gallery";
 import { HeroSection } from "@/components/homepage/hero";
+import RiverShannon from "@/components/homepage/shannonRiver";
 import { SpaceAgenciesSection } from "@/components/homepage/space-agencies";
 import { TestimonialsSection } from "@/components/homepage/testimonials";
 import { TimelineSection } from "@/components/homepage/timeline";
@@ -31,6 +32,7 @@ export const HomePage = () => {
         <BentoSection />
         <SpaceAgenciesSection spaceAgenciesData={spaceAgenciesData} />
         <CollaboratorsSection collaboratorsData={collaboratorsData} />
+        <RiverShannon />
         <VenueSection />
         <GallerySection galleryData={gallerySectionData} />
         <TimelineSection timelineData={timelineData} />
