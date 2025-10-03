@@ -1,8 +1,9 @@
 /* eslint-disable tailwindcss/no-custom-classname */
 "use client";
 import { motion } from "framer-motion";
-import { RedirectButton } from "@/components/common/shared/RedirectButton";
-import RegistrationHelp from "@/components/common/shared/RegistrationHelp";
+// import { RedirectButton } from "@/components/common/shared/RedirectButton";
+// import RegistrationHelp from "@/components/common/shared/RegistrationHelp";
+import Link from "next/link";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { type HeroSectionData } from "@/data/homepage/hero";
 import { SectionContainer } from "../SectionContainer";
@@ -12,7 +13,7 @@ interface HeroSectionProps {
 }
 
 export const HeroSection = ({ heroData }: HeroSectionProps) => {
-  const { registerButtonText, registerButtonHref, backgroundImage } = heroData;
+  const { backgroundImage } = heroData;
 
   return (
     <SectionContainer className="relative h-screen" marginTop="lg:mt-[5%]">
@@ -31,7 +32,6 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
         >
           Welcome to
         </motion.h1>
-
         <motion.h1
           className="font-nokaTrial text-6xl font-bold max-md:py-1 max-md:text-5xl"
           initial={{ opacity: 0, y: -20 }}
@@ -42,21 +42,17 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
           <span className="text-brightYellow">HackAth</span>l
           <span className="text-brightYellow">on</span>e 2025
         </motion.h1>
-
         <motion.p
           key="subtitle1"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.4 }}
-          className="w-[90%] py-6 font-hackathoneCabinetGrotesk text-sm"
+          className="w-[90%] py-6 font-hackathoneCabinetGrotesk text-xl"
         >
-          We&apos;re one of 450+ locations worldwide, but the only one in
-          Ireland offering the full 48-hour overnight experience. <br />
-          This October, join the world’s largest space hackathon in Ireland and
-          tackle real NASA challenges using their data.
+          HackAthlone 2025 is live! <br />
+          48 hours of innovation, collaboration, and space exploration await.
         </motion.p>
-
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -64,8 +60,17 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
           viewport={{ once: true }}
           className="flex items-center justify-center gap-6 font-hackathoneCabinetGrotesk max-md:flex-col"
         >
-          <RedirectButton href={registerButtonHref} text={registerButtonText} />
-          <RegistrationHelp />
+          <Link
+            href="/rulesRegulations"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="relative w-full overflow-hidden rounded-lg bg-white px-8 py-2.5 text-sm font-bold text-black transition-colors duration-300 hover:bg-white/85">
+              <div className="flex items-center justify-center text-black">
+                Rules & Regulations
+              </div>
+            </button>
+          </Link>
         </motion.div>
       </div>
       <ShootingStars className="z-[-1]" />

@@ -6,14 +6,14 @@ import Jupiter from "@/assets/images/jupiter.png";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { type BriefSectionData } from "@/data/homepage/brief";
 import { SectionContainer } from "../SectionContainer";
-import { CountdownTimer } from "./CountdownTimer";
+// import { CountdownTimer } from "./CountdownTimer";
 
 interface BriefSectionProps {
   briefData: BriefSectionData;
 }
 
 export const BriefSection: FC<BriefSectionProps> = ({ briefData }) => {
-  const { title, countdownLabel, eventDate, imageUrl, imageAlt } = briefData;
+  const { title, imageUrl, imageAlt } = briefData;
 
   return (
     <SectionContainer className="relative bg-deepSpace p-0 text-white">
@@ -49,9 +49,9 @@ export const BriefSection: FC<BriefSectionProps> = ({ briefData }) => {
             </p>
           </div>
 
-          <div className="mt-2 font-hackathoneCabinetGrotesk">
+          {/* <div className="mt-2 font-hackathoneCabinetGrotesk">
             <CountdownTimer targetDate={eventDate} label={countdownLabel} />
-          </div>
+          </div> */}
         </div>
 
         <div className="relative flex items-center justify-center">
