@@ -28,7 +28,7 @@ export default function Rules() {
               }}
               className="mt-10 bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text p-4 text-center font-nokaTrial text-5xl font-bold text-transparent"
             >
-              Rules & Regulations
+              Rules and Regulations
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: -50 }}
@@ -75,7 +75,7 @@ export default function Rules() {
               </ul>
             </motion.div>
 
-            {/* Workspace & Cleanliness */}
+            {/* Workspace and Cleanliness */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -84,7 +84,7 @@ export default function Rules() {
               className="rounded-[30px] border border-gray-700 bg-black/40 p-8 backdrop-blur-xl"
             >
               <h2 className="mb-4 font-nokaTrial text-2xl font-bold text-white">
-                2. Workspace & Cleanliness
+                2. Workspace and Cleanliness
               </h2>
               <p className="mb-4 font-hackathoneCabinetGrotesk text-gray-300">
                 Each team will be assigned a workspace consisting of a table
@@ -140,7 +140,7 @@ export default function Rules() {
               </p>
             </motion.div>
 
-            {/* Food & Meals */}
+            {/* Food and Meals */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -149,7 +149,7 @@ export default function Rules() {
               className="rounded-[30px] border border-gray-700 bg-black/40 p-8 backdrop-blur-xl"
             >
               <h2 className="mb-4 font-nokaTrial text-2xl font-bold text-white">
-                4. Food & Meals
+                4. Food and Meals
               </h2>
 
               <div className="space-y-4 font-hackathoneCabinetGrotesk text-gray-300">
@@ -218,7 +218,7 @@ export default function Rules() {
               </div>
             </motion.div>
 
-            {/* Lab & HackShop Access */}
+            {/* Lab and HackShop Access */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -227,7 +227,7 @@ export default function Rules() {
               className="rounded-[30px] border border-gray-700 bg-black/40 p-8 backdrop-blur-xl"
             >
               <h2 className="mb-4 font-nokaTrial text-2xl font-bold text-white">
-                5. Lab & HackShop Access
+                5. Lab and HackShop Access
               </h2>
 
               <div className="space-y-4 font-hackathoneCabinetGrotesk text-gray-300">
@@ -511,7 +511,7 @@ export default function Rules() {
                 </li>
                 <li className="ml-8 flex gap-3">
                   <span className="text-brightYellow">◦</span>
-                  <span>2 minutes for Q&A with judges.</span>
+                  <span>2 minutes for QandA with judges.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-brightYellow">•</span>
@@ -536,7 +536,7 @@ export default function Rules() {
               </ul>
             </motion.div>
 
-            {/* Disclaimer & Event Guidelines */}
+            {/* Disclaimer and Event Guidelines */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -545,13 +545,13 @@ export default function Rules() {
               className="rounded-[30px] border border-gray-700 bg-black/40 p-8 backdrop-blur-xl"
             >
               <h2 className="mb-6 font-nokaTrial text-2xl font-bold text-white">
-                Disclaimer & Event Guidelines
+                Disclaimer and Event Guidelines
               </h2>
 
               <div className="space-y-6 font-hackathoneCabinetGrotesk text-gray-300">
                 <div>
                   <h3 className="mb-2 font-semibold text-white">
-                    Media & Photography:
+                    Media and Photography:
                   </h3>
                   <ul className="space-y-2">
                     <li className="flex gap-3">
@@ -606,8 +606,8 @@ export default function Rules() {
                     <li className="flex gap-3">
                       <span className="text-brightYellow">•</span>
                       <span>
-                        Need a nap? We've got a Silence & No-Noise Room just for
-                        that.
+                        Need a nap? We've got a Silence and No-Noise Room just
+                        for that.
                       </span>
                     </li>
                     <li className="flex gap-3">
@@ -626,7 +626,7 @@ export default function Rules() {
 
                 <div>
                   <h3 className="mb-2 font-semibold text-white">
-                    T-Shirts & Goodies:
+                    T-Shirts and Goodies:
                   </h3>
                   <ul className="space-y-2">
                     <li className="flex gap-3">
@@ -662,7 +662,7 @@ export default function Rules() {
 
                 <div>
                   <h3 className="mb-2 font-semibold text-white">
-                    Food & Vouchers:
+                    Food and Vouchers:
                   </h3>
                   <ul className="space-y-2">
                     <li className="flex gap-3">
