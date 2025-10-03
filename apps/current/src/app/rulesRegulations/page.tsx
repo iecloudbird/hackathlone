@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
@@ -27,7 +28,7 @@ export default function Rules() {
               }}
               className="mt-10 bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text p-4 text-center font-nokaTrial text-5xl font-bold text-transparent"
             >
-              Rules and Regulations
+              Rules & Regulations
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: -50 }}
@@ -74,7 +75,7 @@ export default function Rules() {
               </ul>
             </motion.div>
 
-            {/* Workspace and Cleanliness */}
+            {/* Workspace & Cleanliness */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -83,7 +84,7 @@ export default function Rules() {
               className="rounded-[30px] border border-gray-700 bg-black/40 p-8 backdrop-blur-xl"
             >
               <h2 className="mb-4 font-nokaTrial text-2xl font-bold text-white">
-                2. Workspace and Cleanliness
+                2. Workspace & Cleanliness
               </h2>
               <p className="mb-4 font-hackathoneCabinetGrotesk text-gray-300">
                 Each team will be assigned a workspace consisting of a table
@@ -139,7 +140,7 @@ export default function Rules() {
               </p>
             </motion.div>
 
-            {/* Food and Meals */}
+            {/* Food & Meals */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -148,7 +149,7 @@ export default function Rules() {
               className="rounded-[30px] border border-gray-700 bg-black/40 p-8 backdrop-blur-xl"
             >
               <h2 className="mb-4 font-nokaTrial text-2xl font-bold text-white">
-                4. Food and Meals
+                4. Food & Meals
               </h2>
 
               <div className="space-y-4 font-hackathoneCabinetGrotesk text-gray-300">
@@ -217,7 +218,7 @@ export default function Rules() {
               </div>
             </motion.div>
 
-            {/* Lab and HackShop Access */}
+            {/* Lab & HackShop Access */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -226,7 +227,7 @@ export default function Rules() {
               className="rounded-[30px] border border-gray-700 bg-black/40 p-8 backdrop-blur-xl"
             >
               <h2 className="mb-4 font-nokaTrial text-2xl font-bold text-white">
-                5. Lab and HackShop Access
+                5. Lab & HackShop Access
               </h2>
 
               <div className="space-y-4 font-hackathoneCabinetGrotesk text-gray-300">
@@ -238,8 +239,8 @@ export default function Rules() {
                       <span>
                         To use a lab (3D printing, Sound engineering, Games and
                         Mechanical) report to the Support Desk, state your
-                        requirements, and youandapos;ll be escorted to the
-                        appropriate lab.
+                        requirements, and you'll be escorted to the appropriate
+                        lab.
                       </span>
                     </li>
                   </ul>
@@ -510,7 +511,7 @@ export default function Rules() {
                 </li>
                 <li className="ml-8 flex gap-3">
                   <span className="text-brightYellow">◦</span>
-                  <span>2 minutes for QandA with judges.</span>
+                  <span>2 minutes for Q&A with judges.</span>
                 </li>
                 <li className="flex gap-3">
                   <span className="text-brightYellow">•</span>
@@ -533,6 +534,185 @@ export default function Rules() {
                   </span>
                 </li>
               </ul>
+            </motion.div>
+
+            {/* Disclaimer & Event Guidelines */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              viewport={{ once: true }}
+              className="rounded-[30px] border border-gray-700 bg-black/40 p-8 backdrop-blur-xl"
+            >
+              <h2 className="mb-6 font-nokaTrial text-2xl font-bold text-white">
+                Disclaimer & Event Guidelines
+              </h2>
+
+              <div className="space-y-6 font-hackathoneCabinetGrotesk text-gray-300">
+                <div>
+                  <h3 className="mb-2 font-semibold text-white">
+                    Media & Photography:
+                  </h3>
+                  <ul className="space-y-2">
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>
+                        Not a fan of being in photos? No worries! Just grab a
+                        black lanyard (No Photos ❌) at registration. Our team
+                        will make sure not to capture you in official media.
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>
+                        Please note: while we'll do our best, we cannot control
+                        or take responsibility if other participants capture
+                        photos/videos.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="mb-2 font-semibold text-white">Showers:</h3>
+                  <ul className="space-y-2">
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>
+                        Showers will be available at specific time slots only.
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>
+                        You must come to the support desk and book your slots.
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>
+                        A volunteer will escort you to the shower area, random
+                        use isn't possible.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="mb-2 font-semibold text-white">
+                    Quiet/No Noise Room:
+                  </h3>
+                  <ul className="space-y-2">
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>
+                        Need a nap? We've got a Silence & No-Noise Room just for
+                        that.
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>Access is first come, first served.</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>
+                        Please vacate the space once you're done so others can
+                        also rest peacefully.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="mb-2 font-semibold text-white">
+                    T-Shirts & Goodies:
+                  </h3>
+                  <ul className="space-y-2">
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>
+                        T-shirt sizes will only be guaranteed if you completed
+                        on-time registration.
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>
+                        If your preferred size isn't available, don't worry
+                        you'll still get:
+                      </span>
+                    </li>
+                    <li className="ml-8 flex gap-3">
+                      <span className="text-brightYellow">◦</span>
+                      <span>A TUS badge</span>
+                    </li>
+                    <li className="ml-8 flex gap-3">
+                      <span className="text-brightYellow">◦</span>
+                      <span>A Keychain</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>
+                        Everyone will also receive a swag bag + a sticker pack.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="mb-2 font-semibold text-white">
+                    Food & Vouchers:
+                  </h3>
+                  <ul className="space-y-2">
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>
+                        Pizzas will be served in 4 slots during the hackathon.
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>Each participant gets 2 vouchers per slot.</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>
+                        If you have dietary needs or allergies, please inform us
+                        in advance so we can accommodate you.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="mb-2 font-semibold text-white">
+                    Mentor Access:
+                  </h3>
+                  <ul className="space-y-2">
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>
+                        Mentors will be available during specific time slots.
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>
+                        To meet them, you must book your slot at the support in
+                        advance.
+                      </span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-brightYellow">•</span>
+                      <span>
+                        No random drop-ins let's keep it fair and organized for
+                        everyone.
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>

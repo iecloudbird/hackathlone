@@ -71,6 +71,17 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
               </div>
             </button>
           </Link>
+          <Link
+            href="https://www.youtube.com/watch?v=o--H9pAD-wE"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="relative w-full overflow-hidden rounded-lg bg-[#FFA220] px-8 py-2.5 text-sm font-bold text-black transition-colors duration-300 hover:bg-white/85">
+              <div className="flex items-center justify-center text-black">
+                Live Stream
+              </div>
+            </button>
+          </Link>
         </motion.div>
       </div>
       <ShootingStars className="z-[-1]" />

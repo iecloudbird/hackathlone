@@ -1,6 +1,5 @@
 import { type Metadata } from "next";
 import React from "react";
-import { AuthProvider } from "@/lib/contexts/AuthContext";
 import "./globals.css";
 import { SFProDisplay, CabinetGrotesk, NokaTrial } from "@/utils/custom-fonts";
 
@@ -38,7 +37,7 @@ export default function RootLayout({
       <body
         className={`${SFProDisplay.variable} ${CabinetGrotesk.variable} ${NokaTrial.variable}`}
       >
-        <AuthProvider>{children}</AuthProvider>
+        {children}
       </body>
     </html>
   );
