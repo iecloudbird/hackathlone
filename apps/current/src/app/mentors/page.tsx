@@ -13,10 +13,15 @@ import Yuhang from "@/assets/images/general/landing-page/mentors/Aleko.jpg";
 import Amit from "@/assets/images/general/landing-page/mentors/Amit.jpg";
 import Bhagyabati from "@/assets/images/general/landing-page/mentors/Bhagyabati.jpg";
 import Bryan from "@/assets/images/general/landing-page/mentors/Bryan.jpg";
+import Cian from "@/assets/images/general/landing-page/mentors/Cian.jpg";
+import Daniela from "@/assets/images/general/landing-page/mentors/Daniela_Butan.jpg";
 import Eoghan from "@/assets/images/general/landing-page/mentors/Eoghan.jpg";
 import Guilherme from "@/assets/images/general/landing-page/mentors/Guilherme.jpeg";
 import Kkhawaish from "@/assets/images/general/landing-page/mentors/Khawaish.jpg";
 import Mark from "@/assets/images/general/landing-page/mentors/Mark.png";
+import MarkKelly from "@/assets/images/general/landing-page/mentors/mark_kelly.png";
+import Micheal from "@/assets/images/general/landing-page/mentors/Micheál_Gill.jpg";
+import Patrick from "@/assets/images/general/landing-page/mentors/Patrick_Dunne.jpg";
 import Peadar from "@/assets/images/general/landing-page/mentors/Peadar.jpeg";
 import Pidgem from "@/assets/images/general/landing-page/mentors/Pidgem.jpg";
 import Rohith from "@/assets/images/general/landing-page/mentors/Rohith.jpg";
@@ -276,6 +281,67 @@ const mentors: Mentor[] = [
       { day: "Sunday", startTime: "10:00", endTime: "15:00", mode: "Onsite" },
     ],
     image: Eoghan.src,
+  },
+  {
+    name: "Daniela Butan",
+    linkedin: "https://www.linkedin.com/in/daniela-butan-84886612",
+    expertise: ["General Mentorship"],
+    bio: "Experienced Mechanical Design Engineer with a demonstrated history of working on collaborations between academia and industry. Strong professional skilled in Engineering design and development, Mechanical and Fluid flow simulations, analysis and Validation.",
+    availability: "Saturday: 10AM-2PM",
+    timeSlots: [
+      { day: "Saturday", startTime: "10:00", endTime: "14:00", mode: "Onsite" },
+    ],
+    image: Daniela.src, // Placeholder - needs actual image
+  },
+  {
+    name: "Mark Kelly",
+    linkedin: "https://www.linkedin.com/in/mark-kelly-0a335931/",
+    expertise: [
+      "Business",
+      "Data Science and AI",
+      "Remote sensing",
+      "General Mentorship",
+    ],
+    bio: "15 years experience in tech startups as a software engineer and data scientist in Ireland. Switched to renewable energy in recent years, completing a Masters in Renewable Energy Systems. Working for the Sustainable Development Research Institute, TUS in Thurles and farming part-time. Currently interested in biochar, regenerative agriculture and robotics in agriculture with a good overview of Earth Observation data.",
+    availability: "Saturday: 10AM-4PM",
+    timeSlots: [
+      { day: "Saturday", startTime: "10:00", endTime: "16:00", mode: "Onsite" },
+    ],
+    image: MarkKelly.src, // Placeholder - needs actual image
+  },
+  {
+    name: "Cian Gallagher",
+    linkedin: "https://ie.linkedin.com/in/cian-gallagher-b060a440",
+    expertise: ["Remote sensing"],
+    bio: "Owner of a remote sensing business called Applied Aerial Technology providing analytics for natural resource managers. Particularly interested in the applied nature of RS within the Irish landscape and its potential to help sustainably manage our natural assets.",
+    availability: "Saturday: 10AM-12PM | Sunday: 10AM-12PM",
+    timeSlots: [
+      { day: "Saturday", startTime: "10:00", endTime: "12:00", mode: "Onsite" },
+      { day: "Sunday", startTime: "10:00", endTime: "12:00", mode: "Onsite" },
+    ],
+    image: Cian.src, // Placeholder - needs actual image
+  },
+  {
+    name: "Micheál Gill",
+    linkedin: "https://www.linkedin.com/in/micheal-gill/",
+    expertise: ["Business", "Maths", "General Mentorship"],
+    bio: "Studying Mechanical and Polymer Engineering, specializing in 3D printing and CAD modelling. Part of the winning team in 2023 NASA Space Apps Challenge.",
+    availability: "Saturday: 6AM-8PM",
+    timeSlots: [
+      { day: "Saturday", startTime: "06:00", endTime: "20:00", mode: "Onsite" },
+    ],
+    image: Micheal.src, // Placeholder - needs actual image
+  },
+  {
+    name: "Patrick Dunne",
+    linkedin: "https://www.linkedin.com/in/patrick-dunne/",
+    expertise: ["Creative", "Game Dev"],
+    bio: "Research Masters Student in the field of audio visual composition. Can assist in tasks related to the capturing and editing of audio material.",
+    availability: "Saturday: 9AM-3PM",
+    timeSlots: [
+      { day: "Saturday", startTime: "09:00", endTime: "15:00", mode: "Onsite" },
+    ],
+    image: Patrick.src, // Placeholder - needs actual image
   },
 ];
 
