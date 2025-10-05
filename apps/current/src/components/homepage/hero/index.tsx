@@ -72,7 +72,7 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
             </button>
           </Link>
           <Link
-            href="https://www.youtube.com/watch?v=o--H9pAD-wE"
+            href="https://www.youtube.com/live/x5fZU-df3qI?si=b9bPgswGjtZVobZg"
             target="_blank"
             rel="noopener noreferrer"
           >
