@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-unnecessary-arbitrary-value */
 /* eslint-disable import/no-unresolved */
 "use client";
 import DownloadIcon from "@mui/icons-material/Download";

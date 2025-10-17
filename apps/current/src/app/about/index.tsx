@@ -17,14 +17,14 @@ export function TimelineDemo() {
           <p className="bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text pb-4 font-hackathoneCabinetGrotesk text-2xl font-semibold text-transparent">
             The Beginning: A Vision Takes Shape (2021)
           </p>
-          <div className="flex w-[80%] items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
+          <div className="flex w-4/5 items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
             It started with Sahir Sharma, a PhD student at TU Shannon with an
             ambitious dream. Having won the NASA Space Apps Challenge in 2016
             and later organized the event in Vellore, India in 2017 with over
             700 participants, Sahir knew the transformative power of bringing
             people together to solve space challenges.
           </div>
-          <div className="flex w-[80%] items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
+          <div className="flex w-4/5 items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
             In 2021, while working as a teaching fellow at the University of
             Limerick, Sahir saw an opportunity. Ireland had never hosted the
             full NASA Space Apps experience - the kind of immersive, 48-hour
@@ -81,14 +81,14 @@ export function TimelineDemo() {
               alt="startup template"
               width={300}
               height={300}
-              className="h-20 w-[40%] rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+              className="h-20 w-2/5 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <Image
               src={J23_2}
               alt="startup template"
               width={300}
               height={300}
-              className="h-20 w-[40%] rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+              className="h-20 w-2/5 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             {/* <Image
               src={J23_3}
@@ -153,7 +153,7 @@ export function TimelineDemo() {
               alt="hero template"
               width={300}
               height={300}
-              className="h-20 w-[40%] rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+              className="h-20 w-2/5 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             {/* <Image
               src={M02}
@@ -167,7 +167,7 @@ export function TimelineDemo() {
               alt="feature template"
               width={300}
               height={300}
-              className="h-20 w-[40%] rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
+              className="h-20 w-2/5 rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             {/* <Image
               src={M10}
@@ -189,13 +189,13 @@ export function TimelineDemo() {
             The Vision Realized: Learn, Launch, Lead (2025)
           </p>
           <div className="mb-8">
-            <div className="flex w-[80%] items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
+            <div className="flex w-4/5 items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
               This year brings NASA's "Learn, Launch, Lead" theme - exactly what
               HackAthlone has been fostering since day one. With 220+
               participants expected, 2025 represents the maturation of Sahir's
               original vision.
             </div>
-            <div className="flex w-[80%] items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
+            <div className="flex w-4/5 items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
               The improvements are concrete and participant-driven. Based on
               2024 feedback, the team has enhanced food options, upgraded
               overnight amenities, and added shower facilities. TU Shannon

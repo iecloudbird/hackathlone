@@ -118,7 +118,7 @@ const Brand = () => {
                     <Image
                       src={Logo}
                       alt="Brand Logo"
-                      className="h-full w-full object-cover"
+                      className="size-full object-cover"
                     />
                   </div>
                   <div>
@@ -135,7 +135,7 @@ const Brand = () => {
                       }
                       className="flex items-center gap-2 rounded-full bg-white px-4 py-2 font-hackathoneCabinetGrotesk text-sm font-semibold text-black transition-all hover:scale-105 hover:bg-gray-100"
                     >
-                      <DownloadIcon className="h-4 w-4" />
+                      <DownloadIcon className="size-4" />
                       Download Logo
                     </button>
                   </div>
@@ -157,7 +157,7 @@ const Brand = () => {
                     <Image
                       src={Assets}
                       alt="Extra Assets"
-                      className="h-full w-full object-cover"
+                      className="size-full object-cover"
                     />
                   </div>
                   <div>
@@ -176,7 +176,7 @@ const Brand = () => {
                       }
                       className="flex items-center gap-2 rounded-full bg-white px-4 py-2 font-hackathoneCabinetGrotesk text-sm font-semibold text-black transition-all hover:scale-105 hover:bg-gray-100"
                     >
-                      <DownloadIcon className="h-4 w-4" />
+                      <DownloadIcon className="size-4" />
                       Download Backdrops
                     </button>
                   </div>
