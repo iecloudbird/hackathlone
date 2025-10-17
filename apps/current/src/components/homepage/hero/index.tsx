@@ -42,10 +42,12 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
                 className="rounded-full border-4 border-[#CD7F32] object-cover shadow-lg"
               />
             </div>
-            <h3 className="mt-4 text-xl font-bold text-[#CD7F32]">
+            <h3 className="mt-4 font-hackathoneCabinetGrotesk text-xl font-bold text-[#CD7F32]">
               Dilly Dally
             </h3>
-            <span className="mt-1 text-sm font-medium text-[#CD7F32]">2nd</span>
+            <span className="mt-1 font-nokaTrial text-sm font-medium text-[#CD7F32]">
+              2nd
+            </span>
           </motion.div>
 
           {/* 1st Place - Center */}
@@ -63,8 +65,12 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
                 className="rounded-full border-4 border-[#FFD700] object-cover shadow-lg"
               />
             </div>
-            <h3 className="mt-4 text-2xl font-bold text-[#FFD700]">CeaSAR</h3>
-            <span className="mt-1 text-lg font-medium text-[#FFD700]">1st</span>
+            <h3 className="mt-4 font-hackathoneCabinetGrotesk text-2xl font-bold text-[#FFD700]">
+              CeaSAR
+            </h3>
+            <span className="mt-1 font-nokaTrial text-lg font-medium text-[#FFD700]">
+              1st
+            </span>
           </motion.div>
 
           {/* 3rd Place - Right */}
@@ -83,10 +89,12 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
                 className="rounded-full border-4 border-[#C0C0C0] object-cover shadow-lg"
               />
             </div>
-            <h3 className="mt-4 text-xl font-bold text-[#C0C0C0]">
+            <h3 className="mt-4 font-hackathoneCabinetGrotesk text-xl font-bold text-[#C0C0C0]">
               Debugonauts
             </h3>
-            <span className="mt-1 text-sm font-medium text-[#C0C0C0]">3rd</span>
+            <span className="mt-1 font-nokaTrial text-sm font-medium text-[#C0C0C0]">
+              3rd
+            </span>
           </motion.div>
         </div>
       </div>
