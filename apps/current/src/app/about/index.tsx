@@ -18,11 +18,10 @@ export function TimelineDemo() {
             The Beginning: A Vision Takes Shape (2021)
           </p>
           <div className="flex w-4/5 items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
-            It started with Sahir Sharma, a PhD student at TU Shannon with an
-            ambitious dream. Having won the NASA Space Apps Challenge in 2016
-            and later organized the event in Vellore, India in 2017 with over
-            700 participants, Sahir knew the transformative power of bringing
-            people together to solve space challenges.
+            It started with Sahir Sharma, having won the NASA Space Apps
+            Challenge in 2016 and later organized the event in Vellore, India in
+            2017 with over 700 participants, Sahir knew the transformative power
+            of bringing people together to solve space challenges.
           </div>
           <div className="flex w-4/5 items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
             In 2021, while working as a teaching fellow at the University of
@@ -31,11 +30,10 @@ export function TimelineDemo() {
             hackathon that changes how people think about innovation.
           </div>
           <div className="flex w-[80%] items-center gap-2 pb-2 text-justify font-hackathoneCabinetGrotesk text-xs text-neutral-300 max-md:w-[90%] md:text-sm">
-            So he did what visionaries do: he made it happen. NASA Space Apps
-            Challenge Limerick 2021 brought together 100+ participants for
-            Ireland's first open-source data science hackathon featuring real
-            NASA problem statements, held virtually during the pandemic but
-            laying the groundwork for something bigger.
+            NASA Space Apps Challenge Limerick 2021 brought together 100+
+            participants for Ireland's first open-source data science hackathon
+            featuring real NASA problem statements, held virtually during the
+            pandemic but laying the groundwork for something bigger.
           </div>
         </div>
       ),

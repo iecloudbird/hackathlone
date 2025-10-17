@@ -29,23 +29,24 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
         <div className="absolute flex w-full justify-center">
           {/* 2nd Place - Left */}
           <motion.div
-            className="relative -left-2 flex flex-col items-center"
+            className="relative -left-4 flex flex-col items-center"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="relative size-32 md:h-40 md:w-40">
+            <div className="relative h-32 w-40 md:h-40 md:w-48">
               <Image
-                src={third}
+                src={second}
                 alt="3rd Place Winner"
                 fill
-                className="rounded-full border-4 border-[#CD7F32] object-cover shadow-lg"
+                className="rounded-lg border-4 border-[#C0C0C0] object-cover shadow-lg"
+                sizes="(max-width: 768px) 8rem, 10rem"
               />
             </div>
-            <h3 className="mt-4 font-hackathoneCabinetGrotesk text-xl font-bold text-[#CD7F32]">
+            <h3 className="mt-4 font-hackathoneCabinetGrotesk text-xl font-bold text-[#C0C0C0]">
               Dilly Dally
             </h3>
-            <span className="mt-1 font-nokaTrial text-sm font-medium text-[#CD7F32]">
+            <span className="mt-1 font-nokaTrial text-sm font-medium text-[#C0C0C0]">
               2nd
             </span>
           </motion.div>
@@ -57,12 +58,13 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="relative size-40 md:h-48 md:w-48">
+            <div className="relative h-40 w-48 md:h-48 md:w-56">
               <Image
                 src={first}
                 alt="1st Place Winner"
                 fill
-                className="rounded-full border-4 border-[#FFD700] object-cover shadow-lg"
+                className="rounded-lg border-4 border-[#FFD700] object-cover shadow-lg"
+                sizes="(max-width: 768px) 10rem, 12rem"
               />
             </div>
             <h3 className="mt-4 font-hackathoneCabinetGrotesk text-2xl font-bold text-[#FFD700]">
@@ -76,23 +78,24 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
           {/* 3rd Place - Right */}
 
           <motion.div
-            className="relative -right-2 flex flex-col items-center"
+            className="relative -right-4 flex flex-col items-center"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="relative size-32 md:h-40 md:w-40">
+            <div className="relative h-32 w-40 md:h-40 md:w-48">
               <Image
-                src={second}
+                src={third}
                 alt="2nd Place Winner"
                 fill
-                className="rounded-full border-4 border-[#C0C0C0] object-cover shadow-lg"
+                className="rounded-lg border-4 border-[#CD7F32] object-cover shadow-lg"
+                sizes="(max-width: 768px) 8rem, 10rem"
               />
             </div>
-            <h3 className="mt-4 font-hackathoneCabinetGrotesk text-xl font-bold text-[#C0C0C0]">
+            <h3 className="mt-4 font-hackathoneCabinetGrotesk text-xl font-bold text-[#CD7F32]">
               Debugonauts
             </h3>
-            <span className="mt-1 font-nokaTrial text-sm font-medium text-[#C0C0C0]">
+            <span className="mt-1 font-nokaTrial text-sm font-medium text-[#CD7F32]">
               3rd
             </span>
           </motion.div>
