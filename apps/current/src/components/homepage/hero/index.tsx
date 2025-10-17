@@ -29,23 +29,23 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
         <div className="absolute flex w-full justify-center">
           {/* 2nd Place - Left */}
           <motion.div
-            className="relative -right-2 flex flex-col items-center"
-            initial={{ opacity: 0, x: -20 }}
+            className="relative -left-2 flex flex-col items-center"
+            initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
             <div className="relative size-32 md:h-40 md:w-40">
               <Image
-                src={second}
-                alt="2nd Place Winner"
+                src={third}
+                alt="3rd Place Winner"
                 fill
-                className="rounded-full border-4 border-[#C0C0C0] object-cover shadow-lg"
+                className="rounded-full border-4 border-[#CD7F32] object-cover shadow-lg"
               />
             </div>
-            <h3 className="mt-4 text-xl font-bold text-[#C0C0C0]">
-              Debugonauts
+            <h3 className="mt-4 text-xl font-bold text-[#CD7F32]">
+              Dilly Dally
             </h3>
-            <span className="mt-1 text-sm font-medium text-[#C0C0C0]">2nd</span>
+            <span className="mt-1 text-sm font-medium text-[#CD7F32]">2nd</span>
           </motion.div>
 
           {/* 1st Place - Center */}
@@ -68,24 +68,25 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
           </motion.div>
 
           {/* 3rd Place - Right */}
+
           <motion.div
-            className="relative -left-2 flex flex-col items-center"
-            initial={{ opacity: 0, x: 20 }}
+            className="relative -right-2 flex flex-col items-center"
+            initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
             <div className="relative size-32 md:h-40 md:w-40">
               <Image
-                src={third}
-                alt="3rd Place Winner"
+                src={second}
+                alt="2nd Place Winner"
                 fill
-                className="rounded-full border-4 border-[#CD7F32] object-cover shadow-lg"
+                className="rounded-full border-4 border-[#C0C0C0] object-cover shadow-lg"
               />
             </div>
-            <h3 className="mt-4 text-xl font-bold text-[#CD7F32]">
-              Dilly Dally
+            <h3 className="mt-4 text-xl font-bold text-[#C0C0C0]">
+              Debugonauts
             </h3>
-            <span className="mt-1 text-sm font-medium text-[#CD7F32]">3rd</span>
+            <span className="mt-1 text-sm font-medium text-[#C0C0C0]">3rd</span>
           </motion.div>
         </div>
       </div>
