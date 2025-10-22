@@ -105,6 +105,11 @@ export const footerData: FooterData = {
     {
       title: "Archive",
       links: [
+        // {
+        //   text: "Glimpse 25",
+        //   href: "/glimpse25",
+        //   isExternal: false,
+        // },
         {
           text: "Glimpse 24",
           href: "https://nasa-spaceapps.vercel.app/",

@@ -63,7 +63,7 @@ const JoinUsPage = () => {
             Join this 48-hour hackathon, where you’ll tackle problem statements
             curated by NASA and other space agencies, all centered around this
             year’s theme, {'"The Sun Touches Everything"'}, across various STEAM
-            fields. Register now and be part of this extraordinary event!
+            fields.
           </p>
           <motion.a
             whileHover={{

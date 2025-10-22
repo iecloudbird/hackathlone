@@ -7,7 +7,6 @@ import {
   Navbar,
   NavBody,
   MobileNav,
-  NavbarButton,
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
@@ -49,7 +48,7 @@ export function NavbarDemo() {
               </button>
             ))}
           </div>
-
+          {/* 
           <div className="flex items-center gap-4 font-hackathoneCabinetGrotesk">
             <NavbarButton
               variant="primary"
@@ -58,7 +57,7 @@ export function NavbarDemo() {
             >
               Register Now
             </NavbarButton>
-          </div>
+          </div> */}
         </NavBody>
 
         {/* Mobile Navigation */}
@@ -101,7 +100,7 @@ export function NavbarDemo() {
                 {item.text}
               </button>
             ))}
-            <div className="mt-4 flex w-full flex-col gap-4">
+            {/* <div className="mt-4 flex w-full flex-col gap-4">
               <NavbarButton
                 variant="primary"
                 href="https://www.spaceappschallenge.org/2025/local-events/athlone/"
@@ -110,7 +109,7 @@ export function NavbarDemo() {
               >
                 Register Now
               </NavbarButton>
-            </div>
+            </div> */}
           </MobileNavMenu>
         </MobileNav>
       </Navbar>

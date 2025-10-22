@@ -25,7 +25,7 @@ export const HeroSection = ({ heroData }: HeroSectionProps) => {
       />
 
       {/* Winners Section */}
-      <div className="relative mx-auto flex w-full max-w-3xl items-center justify-center px-4 py-16">
+      <div className="relative mx-auto flex max-w-lg scale-75 items-center justify-center p-16">
         <div className="absolute flex w-full justify-center">
           {/* 2nd Place - Left */}
           <motion.div

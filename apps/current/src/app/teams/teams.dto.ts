@@ -14,9 +14,9 @@ import Ken from "@/assets/images/general/landing-page/teams/ken.jpg";
 import Manav from "@/assets/images/general/landing-page/teams/Manav_Shah.jpg";
 import Mehwish from "@/assets/images/general/landing-page/teams/Mehwish.jpg";
 // import Michael from "@/assets/images/general/landing-page/teams/Michael.jpg";
-import Micheal_Mahony from "@/assets/images/general/landing-page/teams/Michael_Mahony.jpg";
+// import Micheal_Mahony from "@/assets/images/general/landing-page/teams/Michael_Mahony.jpg";
 import Micheal_Gill from "@/assets/images/general/landing-page/teams/Micheál_Gill.jpg";
-import Navoda from "@/assets/images/general/landing-page/teams/Navoda.jpg";
+// import Navoda from "@/assets/images/general/landing-page/teams/Navoda.jpg";
 import Nitish from "@/assets/images/general/landing-page/teams/Nitish.jpg";
 import Pitor from "@/assets/images/general/landing-page/teams/pitor.png";
 import Pratik from "@/assets/images/general/landing-page/teams/Pratik.jpeg";
@@ -276,28 +276,28 @@ export const teamMembers = [
       twitter: null,
     },
   },
-  {
-    bio: null,
-    image: Micheal_Mahony,
-    name: "Michael Mahony",
-    role: "On-Ground Support",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/michael-mahony-04407b295/",
-      twitter: null,
-    },
-  },
-  {
-    bio: null,
-    image: Navoda,
-    name: "Jayasekara Kapukotuwa",
-    role: "On-Ground Support",
-    socials: {
-      github: null,
-      linkedin: "https://www.linkedin.com/in/kapukotuwa/",
-      twitter: null,
-    },
-  },
+  // {
+  //   bio: null,
+  //   image: Micheal_Mahony,
+  //   name: "Michael Mahony",
+  //   role: "On-Ground Support",
+  //   socials: {
+  //     github: null,
+  //     linkedin: "https://www.linkedin.com/in/michael-mahony-04407b295/",
+  //     twitter: null,
+  //   },
+  // },
+  // {
+  //   bio: null,
+  //   image: Navoda,
+  //   name: "Jayasekara Kapukotuwa",
+  //   role: "On-Ground Support",
+  //   socials: {
+  //     github: null,
+  //     linkedin: "https://www.linkedin.com/in/kapukotuwa/",
+  //     twitter: null,
+  //   },
+  // },
   {
     bio: null,
     image: Joey, // Need Zheng Yi Lee image

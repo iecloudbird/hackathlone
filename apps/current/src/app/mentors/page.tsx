@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default */
 /* eslint-disable tailwindcss/no-custom-classname */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-unused-vars */
@@ -723,13 +724,13 @@ export default function MentorsPage() {
                       onClick={() => toggleAvailability(option.value)}
                       className={`flex items-center gap-2 rounded-full px-3 py-1 text-sm font-medium transition-all duration-200 ${
                         isSelected
-                          ? `${config.bgOpacity} ${config.textColor} ring-2 ring-${config.color}`
+                          ? `${config.bgOpacity} ${config.textColor} ring- ring-2${config.color}`
                           : "bg-neutral-800/50 text-neutral-300 hover:bg-neutral-700/80"
                       }`}
                       aria-pressed={isSelected}
                     >
                       <span
-                        className={`h-2 w-2 rounded-full ${config.color}`}
+                        className={`size-2 rounded-full ${config.color}`}
                       ></span>
                       {option.label}
                     </button>
@@ -953,7 +954,7 @@ export default function MentorsPage() {
                 {shouldShowAvailability && (
                   <div className="absolute right-6 top-6 z-10 flex items-center gap-1.5 rounded-full bg-black/60 px-2 py-1 backdrop-blur-sm">
                     <span
-                      className={`h-2 w-2 animate-pulse rounded-full ${statusConfig.color}`}
+                      className={`size-2 animate-pulse rounded-full ${statusConfig.color}`}
                     ></span>
                     <span
                       className={`text-xs font-medium ${statusConfig.textColor}`}

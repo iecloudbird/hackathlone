@@ -18,7 +18,7 @@ export const timelineData: TimelineSectionData = {
   title: "Timeline",
   events: [
     {
-      date: "Now",
+      date: "Closed",
       title: "Register for the Hackathon",
       subtitle: "Registrations are open!",
       content: `HackAthlone spots fill up quickly - we hosted 150+ participants last year and expect even more this time.
