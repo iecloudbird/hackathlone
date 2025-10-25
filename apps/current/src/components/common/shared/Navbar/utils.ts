@@ -46,6 +46,12 @@ export const navigationData = (
     isActive: currentPath.startsWith("/mentors"),
   },
   {
+    route: () => router.push("/judges"),
+    text: "Judges",
+    path: "/judges",
+    isActive: currentPath.startsWith("/judges"),
+  },
+  {
     route: () => router.push("/blogs"),
     text: "Blogs",
     path: "/blogs",

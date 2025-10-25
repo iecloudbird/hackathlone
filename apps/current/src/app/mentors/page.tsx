@@ -662,7 +662,7 @@ export default function MentorsPage() {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="mb-3 bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text p-2 text-center text-4xl font-bold text-transparent"
+            className="mb-3 bg-gradient-to-b from-white from-30% via-gray-600 via-70% to-black to-95% bg-clip-text p-2 text-center font-nokaTrial text-4xl font-bold text-transparent"
           >
             Meet Our Mentors
           </motion.h1>
@@ -671,7 +671,7 @@ export default function MentorsPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.45, delay: 0.15 }}
             viewport={{ once: true }}
-            className="w-full px-4 text-center text-lg text-gray-300"
+            className="w-full px-4 text-center font-hackathoneCabinetGrotesk text-gray-300"
           >
             Experienced professionals who will guide teams during NASA Space
             Apps Athlone, 2025.
